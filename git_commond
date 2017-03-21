@@ -1,0 +1,6 @@
+git add
+git commit -m ""
+git status
+git log
+git reset --hard HARD
+git reflog
