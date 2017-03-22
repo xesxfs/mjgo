@@ -7,10 +7,21 @@ git reflog
 git checkout -- file
 git reset HEAD file
 git rm file
-git branch 						//查看分支
-git branch <name>				//创建分支
-git checkout <name>				//切换分支
-git checkout -b <name>			//创建并切换分支
+git branch 						    //查看分支
+git branch <name>				   //创建分支
+git checkout <name>				  //切换分支
+git checkout -b <name>			 //创建并切换分支
 git merge <name>				//合并分支
-git branch -d <name>          //删除分支
-git merge <name>             //合并分支
+git branch -d <name>           //删除分支
+git merge <name>              //合并分支
+git push origin <name>		 //推送远程分支
+git checkout -b <name> origin/<name>
+git pull
+git branch --set-upstream <name> origin/<name>//本地分支与远程分支关联
+git remote -v //查看远程分支
+git tag <tag_name>
+git tag 
+git tag <tag_name> <version_name>
+git tag -d <tag_name>
+git push origin <tag_name>
+git push origin :refs/tags/<tag_name>
