@@ -4,3 +4,6 @@ git status
 git log
 git reset --hard HARD
 git reflog
+git checkout -- file
+git reset HEAD file
+git rm file
