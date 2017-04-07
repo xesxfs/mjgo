@@ -1,4 +1,4 @@
-package main
+package mj
 
 import (
 	"fmt"
@@ -733,8 +733,9 @@ func (mj *CMJ) CheckAllPai(GetOrPut bool) {
 }
 
 func (mj *CMJ) CheckHU() bool {
-	tOk := false
+	// tOk := false
 	iJinagNum := 0
+	//中发白
 	iSize := len(mj.mMyPAvec[MJPAI_ZFB])
 	if iSize > 0 {
 		zfbPai := mj.mMyPAvec[0]
@@ -789,7 +790,7 @@ func (mj *CMJ) CheckHU() bool {
 		}
 
 	}
-
+	//东南西北
 	iSize = len(mj.mMyPAvec[1])
 	if iSize > 0 {
 		dnsbPai := mj.mMyPAvec[1]
@@ -811,22 +812,241 @@ func (mj *CMJ) CheckHU() bool {
 			} else {
 				return false
 			}
+		} else if iSize == 8 {
+			if mj.CheckAAPai(dnsbPai[0], dnsbPai[1]) && mj.CheckAAAPai(dnsbPai[2], dnsbPai[3], dnsbPai[4]) && mj.CheckAAAPai(dnsbPai[5], dnsbPai[6], dnsbPai[7]) {
+				iJinagNum++
+			} else if mj.CheckAAAPai(dnsbPai[0], dnsbPai[1], dnsbPai[2]) && mj.CheckAAPai(dnsbPai[3], dnsbPai[4]) && mj.CheckAAAPai(dnsbPai[5], dnsbPai[6], dnsbPai[7]) {
+				iJinagNum++
+			} else if mj.CheckAAAPai(dnsbPai[0], dnsbPai[1], dnsbPai[2]) && mj.CheckAAAPai(dnsbPai[3], dnsbPai[4], dnsbPai[5]) && mj.CheckAAPai(dnsbPai[6], dnsbPai[7]) {
+				iJinagNum++
+			} else {
+				return false
+			}
+
+		} else if iSize == 11 {
+			if mj.CheckAAPai(dnsbPai[0], dnsbPai[1]) && mj.CheckAAAPai(dnsbPai[2], dnsbPai[3], dnsbPai[4]) && mj.CheckAAAPai(dnsbPai[5], dnsbPai[6], dnsbPai[7]) && mj.CheckAAAPai(dnsbPai[8], dnsbPai[9], dnsbPai[10]) {
+				iJinagNum++
+			} else if mj.CheckAAAPai(dnsbPai[0], dnsbPai[1], dnsbPai[2]) && mj.CheckAAPai(dnsbPai[3], dnsbPai[4]) && mj.CheckAAAPai(dnsbPai[5], dnsbPai[6], dnsbPai[7]) && mj.CheckAAAPai(dnsbPai[8], dnsbPai[9], dnsbPai[10]) {
+				iJinagNum++
+			} else if mj.CheckAAAPai(dnsbPai[0], dnsbPai[1], dnsbPai[2]) && mj.CheckAAAPai(dnsbPai[3], dnsbPai[4], dnsbPai[5]) && mj.CheckAAPai(dnsbPai[6], dnsbPai[7]) && mj.CheckAAAPai(dnsbPai[8], dnsbPai[9], dnsbPai[10]) {
+				iJinagNum++
+
+			} else if mj.CheckAAAPai(dnsbPai[0], dnsbPai[1], dnsbPai[2]) && mj.CheckAAAPai(dnsbPai[3], dnsbPai[4], dnsbPai[5]) && mj.CheckAAAPai(dnsbPai[6], dnsbPai[7], dnsbPai[8]) && mj.CheckAAPai(dnsbPai[9], dnsbPai[10]) {
+				iJinagNum++
+
+			} else {
+				return false
+			}
+
+		} else {
+			return false
 		}
 
-	} else {
-		return false
+	}
+	//万
+	iSize = len(mj.mMyPAvec[2])
+	if iSize > 0 {
+		wanPai := mj.mMyPAvec[2]
+		if iSize == 2 {
+			if !mj.CheckAAPai(wanPai[0], wanPai[1]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 3 {
+			if !mj.CheckAAAPai(wanPai[0], wanPai[1], wanPai[2]) {
+				if mj.CheckABCPai(wanPai[0], wanPai[1], wanPai[2]) {
+					return false
+				}
+			}
+
+		} else if iSize == 5 {
+			if !mj.Check5Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 6 {
+			if !mj.Check6Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5]) {
+				return false
+			}
+
+		} else if iSize == 8 {
+			if !mj.Check8Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5], wanPai[6], wanPai[7]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 9 {
+			if !mj.Check9Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5], wanPai[6], wanPai[7], wanPai[8]) {
+				return false
+			}
+
+		} else if iSize == 11 {
+			if !mj.Check11Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5], wanPai[6], wanPai[7], wanPai[8], wanPai[9], wanPai[10]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 12 {
+			if !mj.Check12Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5], wanPai[6], wanPai[7], wanPai[8], wanPai[9], wanPai[10], wanPai[11]) {
+				return false
+			}
+
+		} else if iSize == 14 {
+			if !mj.Check14Pai(wanPai[0], wanPai[1], wanPai[2], wanPai[3], wanPai[4], wanPai[5], wanPai[6], wanPai[7], wanPai[8], wanPai[9], wanPai[10], wanPai[11], wanPai[12], wanPai[13]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else {
+			return false
+		}
+	}
+	//条
+	iSize = len(mj.mMyPAvec[3])
+	if iSize > 0 {
+
+		tiaoPai := mj.mMyPAvec[2]
+		if iSize == 2 {
+			if !mj.CheckAAPai(tiaoPai[0], tiaoPai[1]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 3 {
+			if !mj.CheckAAAPai(tiaoPai[0], tiaoPai[1], tiaoPai[2]) {
+				if mj.CheckABCPai(tiaoPai[0], tiaoPai[1], tiaoPai[2]) {
+					return false
+				}
+			}
+
+		} else if iSize == 5 {
+			if !mj.Check5Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 6 {
+			if !mj.Check6Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5]) {
+				return false
+			}
+
+		} else if iSize == 8 {
+			if !mj.Check8Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5], tiaoPai[6], tiaoPai[7]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 9 {
+			if !mj.Check9Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5], tiaoPai[6], tiaoPai[7], tiaoPai[8]) {
+				return false
+			}
+
+		} else if iSize == 11 {
+			if !mj.Check11Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5], tiaoPai[6], tiaoPai[7], tiaoPai[8], tiaoPai[9], tiaoPai[10]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 12 {
+			if !mj.Check12Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5], tiaoPai[6], tiaoPai[7], tiaoPai[8], tiaoPai[9], tiaoPai[10], tiaoPai[11]) {
+				return false
+			}
+
+		} else if iSize == 14 {
+			if !mj.Check14Pai(tiaoPai[0], tiaoPai[1], tiaoPai[2], tiaoPai[3], tiaoPai[4], tiaoPai[5], tiaoPai[6], tiaoPai[7], tiaoPai[8], tiaoPai[9], tiaoPai[10], tiaoPai[11], tiaoPai[12], tiaoPai[13]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else {
+			return false
+		}
+
+	}
+
+	//饼
+	iSize = len(mj.mMyPAvec[4])
+	if iSize > 0 {
+
+		bingPai := mj.mMyPAvec[2]
+		if iSize == 2 {
+			if !mj.CheckAAPai(bingPai[0], bingPai[1]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 3 {
+			if !mj.CheckAAAPai(bingPai[0], bingPai[1], bingPai[2]) {
+				if mj.CheckABCPai(bingPai[0], bingPai[1], bingPai[2]) {
+					return false
+				}
+			}
+
+		} else if iSize == 5 {
+			if !mj.Check5Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 6 {
+			if !mj.Check6Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5]) {
+				return false
+			}
+
+		} else if iSize == 8 {
+			if !mj.Check8Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5], bingPai[6], bingPai[7]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 9 {
+			if !mj.Check9Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5], bingPai[6], bingPai[7], bingPai[8]) {
+				return false
+			}
+
+		} else if iSize == 11 {
+			if !mj.Check11Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5], bingPai[6], bingPai[7], bingPai[8], bingPai[9], bingPai[10]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else if iSize == 12 {
+			if !mj.Check12Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5], bingPai[6], bingPai[7], bingPai[8], bingPai[9], bingPai[10], bingPai[11]) {
+				return false
+			}
+
+		} else if iSize == 14 {
+			if !mj.Check14Pai(bingPai[0], bingPai[1], bingPai[2], bingPai[3], bingPai[4], bingPai[5], bingPai[6], bingPai[7], bingPai[8], bingPai[9], bingPai[10], bingPai[11], bingPai[12], bingPai[13]) {
+				return false
+			} else {
+				iJinagNum++
+			}
+
+		} else {
+			return false
+		}
+
 	}
 
 	if iJinagNum == 1 {
 		return true
 	}
+
 	return false
-
-}
-
-func main() {
-	fmt.Print("............")
-	mjgame := NewCMJ()
-	mjgame.Check()
-
 }
