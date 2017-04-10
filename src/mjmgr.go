@@ -1,11 +1,13 @@
 package mj
 
 import (
-// "fmt"
+	// "fmt"
+	"math/rand"
+	"time"
 )
 
 type stPAIEx struct {
-	// mNewPai stPAI
+	mNewPai stPAI
 	mPaiNum int
 	mIsHz   bool
 }
@@ -13,6 +15,14 @@ type stPAIEx struct {
 type CMJManage struct {
 	mMJVec    []stPAI
 	mHZPaiNum int
+}
+
+func RandInt(min int, max int) int {
+	if min >= max || min == 0 || max == 0 {
+		return max
+	}
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	return r.Intn(max-min) + min
 }
 
 func (cm *CMJManage) InitPai(pHzPaiNum int) {
@@ -74,17 +84,37 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	cm.XiPai()
 }
 
-	func (cm *CMJManage) XiPai() {
-		
+func (cm *CMJManage) XiPai() {
+
+	for i := 1; i < len(cm.mMJVec)-1; i++ {
+		randIdx := RandInt(i, len(cm.mMJVec)-1)
+		temp := cm.mMJVec[i-1]
+		cm.mMJVec[i-1] = cm.mMJVec[randIdx]
+		cm.mMJVec[randIdx] = temp
+
 	}
 
+}
 
-	func (cm *CMJManage) GetAPai() stPAIEx {
+func (cm *CMJManage) GetAPai() stPAIEx {
 
-		sPaiEx:= stPAIEx{}
-
-		return sPaiEx
-		
+	sPaiEx := stPAIEx{}
+	sPai := cm.mMJVec[0]
+	sPaiEx.mNewPai.mType = sPai.mType
+	sPaiEx.mNewPai.mValue = sPai.mValue
+	sPaiEx.mPaiNum = len(cm.mMJVec) - 1
+	if sPaiEx.mPaiNum == cm.mHZPaiNum {
+		sPaiEx.mIsHz = true
+	} else {
+		sPaiEx.mIsHz = false
 	}
+
+	if len(cm.mMJVec) > 1 {
+		cm.mMJVec = cm.mMJVec[1:]
+	} else {
+		cm.mMJVec = cm.mMJVec[:0]
+	}
+
+	return sPaiEx
 
 }
