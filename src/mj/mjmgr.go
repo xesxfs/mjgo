@@ -25,6 +25,12 @@ func RandInt(min int, max int) int {
 	return r.Intn(max-min) + min
 }
 
+func NewMgr() *CMJManage {
+	cm := &CMJManage{}
+	// cm.InitPai(pHzPaiNum)
+	return cm
+}
+
 func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	cm.mHZPaiNum = pHzPaiNum
 	cm.mMJVec = cm.mMJVec[0:0]
