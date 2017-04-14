@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="rankDetailItemSkin" width="579" height="194" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="579" height="194" verticalCenter="0" horizontalCenter="0">
+		<e:Group x="0" y="0">
+			<e:Label text="第一局" x="54" y="0" textColor="0x000000"/>
+			<e:Label text="2017-11-22" x="204" y="0" fontFamily="Microsoft YaHei" textColor="0x000000"/>
+			<e:Label text="16:14:20" x="420" y="0" fontFamily="Microsoft YaHei" textColor="0x000000"/>
+			<e:Image width="579" height="139" y="55" anchorOffsetX="0" anchorOffsetY="0" source="hall_within_box_png" scale9Grid="24,24,62,54" x="0"/>
+			<e:Label text="我是师弟：" x="45" y="87" textColor="0x000000" size="25" fontFamily="Microsoft YaHei"/>
+			<e:Label text="+30" x="186" y="86" textColor="0x000000" fontFamily="Microsoft YaHei" textAlign="center" size="25"/>
+			<e:Label text="我是师弟：" x="330" y="85" textColor="0x000000" size="25" fontFamily="Microsoft YaHei"/>
+			<e:Label text="我是师弟" x="450" y="84" textColor="0x000000" fontFamily="Microsoft YaHei" textAlign="center" size="25"/>
+			<e:Label text="我是师弟：" x="45" y="146" textColor="0x000000" size="25" fontFamily="Microsoft YaHei"/>
+			<e:Label text="我是师弟" x="191" y="146" textColor="0x000000" fontFamily="Microsoft YaHei" textAlign="center" size="25"/>
+			<e:Label text="我是师弟：" x="330" y="146" textColor="0x000000" size="25" fontFamily="Microsoft YaHei"/>
+			<e:Label text="我是师弟" x="450" y="146" textColor="0x000000" fontFamily="Microsoft YaHei" textAlign="center" size="25"/>
+			<e:Label text="" y="125" anchorOffsetX="0" width="515" backgroundColor="0x000000" background="true" height="1" x="32"/>
+			<e:Label text="" x="310" height="100" width="1" background="true" fontFamily="Microsoft YaHei" textColor="0x000000" y="76" backgroundColor="0x000000"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

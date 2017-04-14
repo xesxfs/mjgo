@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SetPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="1280" width="720">
+	<w:Config id="1594658eddc"/>
+	<e:Group width="720" height="1280" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		<e:Group id="bgGroup0" width="688" height="582" touchEnabled="false" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+			<e:Image width="688" y="0" scale9Grid="101,103,112,115" height="582" x="0" anchorOffsetX="0" source="set_newbg_png"/>
+			<e:Image y="14" width="230" height="56" source="set_title_png" horizontalCenter="0"/>
+			<e:Image  width="111" height="73" source="set_close_png" y="2" x="576"/>
+			<e:Image y="77" scale9Grid="49,50,86,69" width="639" height="479" anchorOffsetY="0" source="set_bg0_png" horizontalCenter="0"/>
+			
+		</e:Group>
+		<e:Group height="479" width="639" y="429" touchEnabled="false" anchorOffsetY="0" horizontalCenter="0">
+			<e:Image id="feedback_panel_title_img" height="40" width="74" x="282.44" source="set_set_png" y="-53"/>
+			<e:Group width="639" height="479" name="视图" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0">
+				<e:RadioButton id="set_guangdong_speak" x="179" y="75" selected="true" label="广东话" groupName="settingRadioGroup" anchorOffsetX="0" width="159" anchorOffsetY="0" height="63" >
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="set_unselect_png" source.down="set_select_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="25" verticalCenter="-4" size="26" textColor="0x812d08" fontFamily="SimHei" bold="true"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="set_putong_speak" y="75" x="410" label="普通话" groupName="settingRadioGroup"  anchorOffsetX="0" width="159" anchorOffsetY="0" height="63">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="set_unselect_png" source.down="set_select_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="25" size="26" verticalCenter="-4" textColor="0x812d08" fontFamily="SimHei" bold="true"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:Label text="语言" x="108" y="93" fontFamily="SimHei" bold="true"  size="26" textColor="0xd07f47"/>
+				<e:Label y="219" text="音乐" fontFamily="SimHei" bold="true" x="110" size="26" textColor="0xd07f47"/>
+				<e:Label y="348" text="音效" fontFamily="SimHei" bold="true" x="110" size="26" textColor="0xd07f47"/>
+				<e:Image x="68" y="344" source="set_bg2_png"/>
+				<e:Image x="70" y="88" source="set_bg3_png"/>
+				<e:Image x="69" y="214" source="set_bg1_png"/>
+				<e:ToggleSwitch id="set_music_toggle_switch" width="148" y="211" anchorOffsetX="0" anchorOffsetY="0" height="56" x="189">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="set_on_png" source.down="set_off_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:ToggleSwitch id="set_sound_toggle_switch" width="148" x="190" y="341" anchorOffsetX="0" height="56">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="set_on_png" source.down="set_off_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:Group id="shakeGroup" height="83" width="580" x="358" y="204" anchorOffsetX="0" anchorOffsetY="0">
+				<e:ToggleSwitch id="set_bration_toggle_switch" y="13" width="148" x="126" height="56" anchorOffsetX="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="set_on_png" source.down="set_off_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:Label y="20" text="震动" fontFamily="SimHei" bold="true" x="46" size="26" textColor="0xd07f47"/>
+				<e:Image x="2" y="17.68" source="set_bg3_png"/>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Button y="351" x="591" id="closeBtn">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="set_closeBtn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

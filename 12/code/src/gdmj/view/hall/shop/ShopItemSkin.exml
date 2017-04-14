@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group verticalCenter="0" horizontalCenter="0">
+
+		<e:Image source="shop_goods_bg_png"/>
+		<e:Label x="30" y="172" width="147" textColor="0x000000" textAlign="center" fontFamily="楷体" size="28" text="{data.buy_moneydec}"/>
+		<e:Label text="{data.name}" y="21" horizontalCenter="0" fontFamily="楷体" textColor="0x000000" textAlign="center" size="28"/>
+		<e:Image source="{data.icon}" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="{data.itemIcon}" x="42" y="171"/>
+		
+	</e:Group>
+</e:Skin>

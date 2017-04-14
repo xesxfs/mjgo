@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="rankItemSkin" width="600" height="917" xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0" y="0" width="600" height="917">
+		<e:Group y="5" horizontalCenter="0">
+			<e:Image width="578" height="140" y="0" source="hall_within_box_png" scale9Grid="24,24,64,53" x="0"/>
+			<e:Label text="2017-11-20" x="46" y="25" size="22" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="16:14:20" x="195" y="25" size="22" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="局数：" x="354" y="25" textColor="0x000000" size="22" fontFamily="Microsoft YaHei"/>
+			<e:Label text="4/4局" x="438" y="25" size="22" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="" y="69" background="true" backgroundColor="0x000000" height="1" width="497" horizontalCenter="0"/>
+			<e:Label text="房号：" x="156" y="84.97" textColor="0x000000" size="25" fontFamily="Microsoft YaHei"/>
+			<e:Label text="12345678" x="249" y="88" size="25" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+		<e:Group width="578" height="761.33" y="155" anchorOffsetY="0" horizontalCenter="0">
+			<e:Image width="578" height="495" y="0" horizontalCenter="0" source="hall_within_box_png" scale9Grid="24,24,63,53"/>
+			<e:Label text="" y="90" background="true" backgroundColor="0x000000" height="1" width="497" horizontalCenter="0"/>
+			<e:Label text="" y="165" background="true" backgroundColor="0x000000" height="1" width="497" horizontalCenter="0"/>
+			<e:Label text="" y="240" background="true" backgroundColor="0x000000" height="1" width="497" horizontalCenter="0"/>
+			<e:Label text="" y="315" background="true" backgroundColor="0x000000" height="1" width="497" horizontalCenter="0"/>
+			<e:Button label="" x="113" y="530">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="hall_two_bt_png"/>
+                    <e:Image width="83" height="37" x="22" y="17" width.down="79" height.down="33" horizontalCenter="0" verticalCenter="0" source="share_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button label="" x="349" y="530">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="hall_two_bt_png"/>
+	                <e:Image width="83" height="37" x="22" y="17" width.down="79" height.down="33" horizontalCenter="0" verticalCenter="0" source="hall_details_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label text="东成西就" x="62" y="40" fontFamily="Microsoft YaHei" textColor="0x000000"/>
+			<e:Label text="-30" x="430" y="40" fontFamily="Microsoft YaHei" textColor="0x000000"/>
+			<e:Label text="东成西就" x="60" y="115" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="东成西就" x="58" y="190" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="东成西就" x="60" y="265" textColor="0x000000" fontFamily="Microsoft YaHei"/>
+			<e:Label text="+30" x="430" y="114" textColor="0x000000"/>
+			<e:Label text="+30" x="430" y="180" textColor="0x000000"/>
+			<e:Label text="+30" x="430" y="262" textColor="0x000000"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

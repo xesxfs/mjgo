@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="footGroup" top="0" bottom="0" touchEnabled="false" right="0" left="0">
+		<e:Image id="gameSceneBg0" top="0" left="0" right="0" bottom="0" source="game_table_bg2_png"/>
+		<e:Image id="gameSceneBg1" width="100%" height="100%" x="-1.52" y="0" source="game_table_bg_jpg"/>
+		<e:Image width="750" height="129" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="title_bg_png"/>
+		<e:Label text="长沙麻将-游戏场/扎1鸟" y="39" anchorOffsetX="0" width="494" horizontalCenter="0" textAlign="center"/>
+	</e:Group>
+	<e:Group id="gameUIGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Group id="loadingGroup" width="260" height="60" horizontalCenter="0" y="583" visible="false">
+			<e:Image width="257" height="58" y="0" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="6,7,40,39" scaleX="1" scaleY="1" horizontalCenter="0" source="game_bg1_png"/>
+			<e:Label text="拼命匹配中..." size="30" anchorOffsetX="0" width="234" horizontalCenter="0" verticalCenter="0" textColor="0x47b5cc" textAlign="center" fontFamily="SimHei"/>
+		</e:Group>
+		<e:Group id="pipeiGroup" width="244" height="215" y="533" x="236" visible="false">
+			<e:Image width="100%" height="100%" y="0" scaleX="1" scaleY="1" source="loading_bg_png" scale9Grid="6,7,40,39" horizontalCenter="0"/>
+			<e:Label text="房号：" x="33" y="11" scaleX="1" scaleY="1" fontFamily="SimHei" textColor="0x47b5cc"/>
+			<e:Label text="123456" x="122" y="11" fontFamily="SimHei" textColor="0x47b5cc"/>
+			<e:Button id="game_xiugai" label="" y="52" horizontalCenter="0.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="hall_four_bt_png"/>
+	<e:Image width="160" height="40" source="f_xiugai2_png"  width.down="150" height.down="35" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="game_yaoqing" label="" y="129" horizontalCenter="0.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="hall_four_bt_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image width="160" height="40" source="f_yaoqing3_png" width.down="150" height.down="35" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="juGroup0" touchThrough="false" touchEnabled="false" verticalCenter="-32" horizontalCenter="1" visible="false">
+			<e:Image width="150" height="40" x="0" y="0" source="game_bg2_png" scale9Grid="24,5,149,36"/>
+		<e:Image width="120" height="30" anchorOffsetX="0" anchorOffsetY="0" source="game_shengyu_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="leftCardLabel0" size="30" text="00" verticalAlign="middle" textAlign="center" width="53" height="30" bold="true" horizontalCenter="14.5" textColor="0xE5CE4F" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="discGroup0" height="100%" width="100%" touchThrough="false" touchEnabled="false" x="0" visible="false">
+		<e:Image horizontalCenter="0" verticalCenter="-152" source="game_feng_bottom_png"/>
+		<e:Image horizontalCenter="0" verticalCenter="-152" source="game_light0_png"/>
+		<e:Image source="game_light1_png" horizontalCenter="0" verticalCenter="-152"/>
+		<e:Image source="game_light2_png" horizontalCenter="0" verticalCenter="-152"/>
+		<e:Image source="game_light3_png" horizontalCenter="1" verticalCenter="-152"/>
+		<e:Image horizontalCenter="0" verticalCenter="-152" source="game_feng0_png"/>
+		<e:Image source="game_feng3_png" horizontalCenter="0" verticalCenter="-153"/>
+		<e:Image horizontalCenter="0" verticalCenter="-153" source="game_feng2_png"/>
+		<e:Image horizontalCenter="0" verticalCenter="-154" source="game_feng1_png"/>
+		<e:BitmapLabel id="cdLabel0" text="99" width="70" height="30" horizontalCenter="0" verticalCenter="-153" font="daojishi_fnt"/>
+		</e:Group>
+		<e:Group id="rectGroup0" touchEnabled="false" touchChildren="false" touchThrough="false" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Group id="hand4" right="0" left="0" touchEnabled="false" top="0" bottom="0" touchThrough="false" touchChildren="false">
+			<e:Image x="394.4" source="card_big_bg1_png" bottom="290"/>
+			<e:Image source="card_big_bg1_png" x="477.04" bottom="290"/>
+			<e:Image id="hand0_start0" source="card_big_bg1_png" x="559.63" bottom="289"/>
+			<e:Image source="card_big_bg1_png" x="35.27" bottom="155"/>
+			<e:Image source="card_big_bg1_png" x="117.91" bottom="155"/>
+			<e:Image source="card_big_bg1_png" x="200.55" bottom="155"/>
+			<e:Image source="card_big_bg1_png" x="283.11" bottom="155"/>
+			<e:Image source="card_big_bg1_png" x="364.22" bottom="155"/>
+			<e:Image source="card_big_bg1_png" x="446.83" bottom="155"/>
+			<e:Image id="hand0_start1" x="529.45" source="card_big_bg1_png" bottom="155"/>
+			<e:Image id="locateGet4" source="card_big_bg1_png" x="630.42" y="1057"/>
+		</e:Group>
+		<e:Group bottom="0" touchChildren="false" left="0" touchThrough="false" top="0" x="20" right="0" y="20" touchEnabled="false" id="hand0">
+			<e:Image id="locateGet0" scaleX="-1" x="700" source="card_left_bg1_png" verticalCenter="-409.5"/>
+			<e:Image id="hand1_start0" source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-356.5"/>
+			<e:Image x="700" scaleX="-1" source="card_left_bg1_png" verticalCenter="-320.5"/>
+			<e:Image source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-284.5"/>
+			<e:Image source="card_left_bg1_png" x="700" scaleX="-1" verticalCenter="-250.5"/>
+			<e:Image source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-214.5"/>
+			<e:Image source="card_left_bg1_png" x="700" scaleX="-1" verticalCenter="-178.5"/>
+			<e:Image source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-144.5"/>
+			<e:Image source="card_left_bg1_png" x="700" scaleX="-1" verticalCenter="-108.5"/>
+			<e:Image source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-72.5"/>
+			<e:Image id="hand1_end0" source="card_left_bg1_png" scaleX="-1" x="700" verticalCenter="-36.5"/>
+		</e:Group>
+		<e:Group bottom="0" x="30" left="0" touchThrough="false" top="0" id="hand1" right="0" y="30" touchEnabled="false" touchChildren="false">
+			<e:Image id="hand2_start0" source="card_bg0_png" x="126" top="114"/>
+			<e:Image source="card_bg0_png" x="163" top="114"/>
+			<e:Image source="card_bg0_png" x="200" top="114"/>
+			<e:Image x="238" source="card_bg0_png" top="114"/>
+			<e:Image source="card_bg0_png" x="275" top="114"/>
+			<e:Image source="card_bg0_png" x="312" top="114"/>
+			<e:Image source="card_bg0_png" x="350" top="114"/>
+			<e:Image source="card_bg0_png" x="387" top="114"/>
+			<e:Image source="card_bg0_png" x="424" top="114"/>
+			<e:Image id="hand2_end0" source="card_bg0_png" x="462" top="114"/>
+			<e:Image id="locateGet1" source="card_bg0_png" x="73" top="115"/>
+		</e:Group>
+		<e:Group bottom="0" id="eat4" left="0" touchThrough="false" top="0" x="50" right="0" y="50" touchEnabled="false" touchChildren="false">
+			<e:Image id="eat3_start0" source="card_left_bg0_png" x="36.72" verticalCenter="-305.5"/>
+			<e:Image source="card_left_bg0_png" x="36.72" verticalCenter="-280.5"/>
+			<e:Image source="card_left_bg0_png" x="36.72" verticalCenter="-255.5"/>
+		</e:Group>
+		<e:Group right="0" touchChildren="false" left="0" touchEnabled="false" top="0" x="40" bottom="0" y="40" touchThrough="false" id="hand2">
+			<e:Image id="hand3_end0" source="card_left_bg1_png" x="50.31" y="403.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="439.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="475.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="511.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="547.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="583.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="619.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="655.03"/>
+			<e:Image source="card_left_bg1_png" x="50.31" y="691.03"/>
+			<e:Image id="hand3_start0" source="card_left_bg1_png" x="50.31" y="727.03"/>
+			<e:Image id="locateGet2" source="card_left_bg1_png" x="50.31" verticalCenter="142.5"/>
+		</e:Group>
+		<e:Group id="out4" right="0" x="50" left="0" touchEnabled="false" top="0" bottom="0" y="50" touchThrough="false" touchChildren="false">
+			<e:Image id="out0_start3" source="card_mid_bg0_png" x="217.84" bottom="533"/>
+			<e:Image source="card_mid_bg0_png" y="719.77" x="268.49"/>
+			<e:Image source="card_mid_bg0_png" y="719.77" x="319.11"/>
+			<e:Image source="card_mid_bg0_png" y="719.77" x="369.76"/>
+			<e:Image source="card_mid_bg0_png" y="719.77" x="420.37"/>
+			<e:Image source="card_mid_bg0_png" y="719.77" x="471.05"/>
+			<e:Image id="out0_start1" source="card_mid_bg0_png" x="167.89" bottom="471"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="218.53"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="269.15"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="319.81"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="370.42"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="419.58"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="470.2"/>
+			<e:Image source="card_mid_bg0_png" y="783.41" x="520.64"/>
+		</e:Group>
+		<e:Group right="0" id="out0" left="0" touchEnabled="false" top="0" touchChildren="false" bottom="0" y="60" touchThrough="false" x="60">
+			<e:Image source="card_left_bg0_png" y="417.45" x="566" scaleX="-1"/>
+			<e:Image source="card_left_bg0_png" y="456.77" scaleX="-1" x="566"/>
+			<e:Image source="card_left_bg0_png" y="495.41" x="566" scaleX="-1"/>
+			<e:Image source="card_left_bg0_png" y="532.56" scaleX="-1" x="566"/>
+			<e:Image source="card_left_bg0_png" y="569.74" x="566" scaleX="-1"/>
+			<e:Image id="out1_start0" source="card_left_bg0_png" scaleX="-1" x="566" verticalCenter="-33.5"/>
+			<e:Image source="card_left_bg0_png" y="370.47" scaleX="-1" x="627"/>
+			<e:Image source="card_left_bg0_png" y="408.35" scaleX="-1" x="627"/>
+			<e:Image source="card_left_bg0_png" y="446.98" x="627" scaleX="-1"/>
+			<e:Image source="card_left_bg0_png" y="484.11" scaleX="-1" x="627"/>
+			<e:Image source="card_left_bg0_png" x="627" y="521.18" scaleX="-1"/>
+			<e:Image source="card_left_bg0_png" y="559.8" x="627" scaleX="-1"/>
+			<e:Image source="card_left_bg0_png" y="598.47" scaleX="-1" x="627"/>
+			<e:Image id="out1_start3" source="card_left_bg0_png" x="627" scaleX="-1" verticalCenter="-5.5"/>
+		</e:Group>
+		<e:Group right="0" touchChildren="false" left="0" touchEnabled="false" top="0" x="70" bottom="0" y="70" touchThrough="false" id="out1">
+			<e:Image source="card_bg1_png" y="280" x="235"/>
+			<e:Image source="card_bg1_png" y="280" x="280"/>
+			<e:Image source="card_bg1_png" y="280" x="325"/>
+			<e:Image source="card_bg1_png" y="280" x="370"/>
+			<e:Image source="card_bg1_png" y="280" x="415"/>
+			<e:Image id="out2_start1" source="card_bg1_png" x="460" y="280"/>
+			<e:Image source="card_bg1_png" y="217" x="200"/>
+			<e:Image source="card_bg1_png" y="217" x="245"/>
+			<e:Image source="card_bg1_png" y="217" x="290"/>
+			<e:Image source="card_bg1_png" y="217" x="335"/>
+			<e:Image source="card_bg1_png" y="217" x="380"/>
+			<e:Image source="card_bg1_png" y="217" x="425"/>
+			<e:Image source="card_bg1_png" y="217" x="470"/>
+			<e:Image id="out2_start2" source="card_bg1_png" x="515" top="217"/>
+		</e:Group>
+		<e:Group right="0" touchChildren="false" left="0" touchEnabled="false" top="0" x="70" bottom="0" y="70" touchThrough="false" id="out2">
+			<e:Image id="out3_start3" source="card_left_bg0_png" x="115.2" verticalCenter="-245.5"/>
+			<e:Image source="card_left_bg0_png" y="431.82" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="469.93" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="507.05" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="545.68" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="584.83" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="623.51" x="115.2"/>
+			<e:Image source="card_left_bg0_png" y="662.85" x="115.19"/>
+			<e:Image id="out3_start2" source="card_left_bg0_png" x="177.28" verticalCenter="-223.5"/>
+			<e:Image source="card_left_bg0_png" y="456.53" x="177.28"/>
+			<e:Image source="card_left_bg0_png" y="495.16" x="177.28"/>
+			<e:Image source="card_left_bg0_png" y="533.76" x="177.28"/>
+			<e:Image source="card_left_bg0_png" y="571.92" x="177.28"/>
+			<e:Image source="card_left_bg0_png" y="612.04" x="177.28"/>
+		</e:Group>
+		<e:Group id="eat3" right="0" left="0" touchEnabled="false" top="0" x="20" bottom="0" y="20" touchThrough="false" touchChildren="false">
+			<e:Image id="eat0_start0" x="180" source="card_big_bg0_png" bottom="295"/>
+			<e:Image source="card_big_bg0_png" y="937.56" x="248"/>
+			<e:Image source="card_big_bg0_png" y="937.56" x="316.96"/>
+			<e:Image source="card_big_bg0_png" y="913.6" x="246.97"/>
+		</e:Group>
+		<e:Group bottom="0" touchChildren="false" left="0" touchThrough="false" top="0" id="eat0" right="0" y="30" touchEnabled="false" x="30">
+			<e:Image y="652.36" x="700" scaleX="-1" source="card_left_bg0_png" anchorOffsetY="0" height="48"/>
+			<e:Image source="card_left_bg0_png" y="677.36" scaleX="-1" x="700"/>
+			<e:Image id="eat1_start0" source="card_left_bg0_png" scaleX="-1" x="700" verticalCenter="67.5"/>
+		</e:Group>
+		<e:Group right="0" x="40" left="0" touchEnabled="false" top="0" touchChildren="false" bottom="0" y="40" touchThrough="false" id="eat1">
+			<e:Image y="113" x="509"  source="card_bg2_png"/>
+			<e:Image y="113" x="545" source="card_bg2_png"/>
+			<e:Image id="eat2_start0" x="582" top="113" source="card_bg2_png"/>
+			<ns1:HeadUI xmlns:ns1="*" x="39.29" scaleX="0.8" scaleY="0.8" skinName="headUISkin1" y="848.06"/>
+			<ns1:HeadUI xmlns:ns1="*" scaleY="0.8" x="582.17" scaleX="0.8" skinName="headUISkin1" y="740.24"/>
+			<ns1:HeadUI xmlns:ns1="*" scaleY="0.8" scaleX="0.8" x="604.4" skinName="headUISkin1" y="46.25"/>
+			<ns1:HeadUI xmlns:ns1="*" scaleY="0.8" x="13.47" scaleX="0.8" skinName="headUISkin1" y="140.98"/>
+			
+		</e:Group>
+		</e:Group>
+		<e:Group id="diceGroup0" touchThrough="true" touchEnabled="false" touchChildren="true" left="0" right="0" top="0" bottom="0" visible="false">
+		<ns1:DiceAnim xmlns:ns1="*" skinName="DiceAnimSkin" horizontalCenter="0" bottom="498"/>
+		<ns1:DiceAnim xmlns:ns1="*" skinName="DiceAnimSkin" x="468" verticalCenter="-135"/>
+		<ns1:DiceAnim xmlns:ns1="*" skinName="DiceAnimSkin" horizontalCenter="0" top="210"/>
+		<ns1:DiceAnim xmlns:ns1="*" skinName="DiceAnimSkin" x="103" verticalCenter="-135"/>
+		</e:Group>
+		<e:Group id="outGroup0" touchEnabled="false" touchChildren="false" touchThrough="false" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group id="cardGroup0" touchThrough="true" touchEnabled="false" touchChildren="true" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group id="outFlagGroup0" touchEnabled="false" touchChildren="true" touchThrough="true" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group id="outEffectGroup0" touchEnabled="false" touchThrough="false" touchChildren="false" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Group height="145" width="110" horizontalCenter="0" bottom="493">
+			<e:Image x="0" y="0" source="game_outffect_png"/>
+		</e:Group>
+		<e:Group width="110" height="145" x="509" verticalCenter="-150.5">
+			<e:Image y="0" x="0" source="game_outffect_png"/>
+		</e:Group>
+		<e:Group width="110" height="145" horizontalCenter="0" top="221">
+			<e:Image y="0" x="0" source="game_outffect_png"/>
+		</e:Group>
+		<e:Group width="110" height="145" x="120" verticalCenter="-150.5">
+			<e:Image y="0" x="0" source="game_outffect_png"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="headGroup0" touchEnabled="false" touchThrough="true" width="100%" height="100%" x="0" y="0" visible="false">
+		<ns1:HeadUI xmlns:ns1="*" x="281" y="818" skinName="headUISkin1"/>
+		<ns1:HeadUI xmlns:ns1="*" x="490" y="533" skinName="headUISkin1"/>
+		<ns1:HeadUI xmlns:ns1="*" x="280" y="300" skinName="headUISkin1"/>
+		<ns1:HeadUI xmlns:ns1="*" x="60" y="533" skinName="headUISkin1"/>
+		</e:Group>
+		<e:Group id="readyGroup0" touchThrough="true" width="100%" x="0" height="100%" y="0" visible="false">
+		<e:Image touchEnabled="false" x="340" bottom="446" source="ready_png"/>
+		<e:Image x="547" top="568" source="ready_png"/>
+		<e:Image x="335" top="329" source="ready_png"/>
+		<e:Image x="116" top="564" source="ready_png"/>
+		<e:Image touchEnabled="false" x="78.3" bottom="303" source="ready_png"/>
+		<e:Image x="629.34" bottom="410" source="ready_png"/>
+		<e:Image x="649.7" top="199" source="ready_png"/>
+		<e:Image x="58.03" top="291" source="ready_png"/>
+		<e:Button id="readyBtn0" width="140" height="70" x="299" bottom="139" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  width.down="95%" horizontalCenter="0" verticalCenter="0" height.down="95%"  source="hall_two_bt_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:ns1="*"/>
+	<e:Image width="80" height="38"  width.down="75" height.down="35" anchorOffsetX="0" anchorOffsetY="0" source="f_ready2_png" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		</e:Group>
+		<e:Group id="overShutupGroup0" touchThrough="true" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Image id="gameKick0" height="50" width="50" x="650" source="game_over0_png" y="550"/>
+		<e:Image id="gameKick1" height="50" width="50" x="440" source="game_over0_png" y="313"/>
+		<e:Image id="gameKick2" height="50" width="50" x="20" source="game_over0_png" y="550"/>
+		<e:Image id="gameShutup0" height="50" width="50" x="650" source="game_shutup0_png" y="615"/>
+		<e:Image id="gameShutup1" height="50" width="50" x="440" source="game_shutup0_png" y="374"/>
+		<e:Image id="gameShutup2" height="50" width="50" x="20" source="game_shutup0_png" y="615"/>
+		</e:Group>
+		<e:Group id="tipGroup0" touchThrough="true" touchEnabled="false" left="0" right="0" top="0" bottom="0" visible="false">
+		<ns1:ActTipUI xmlns:ns1="*" skinName="ActTipSkin" anchorOffsetX="55" anchorOffsetY="50" x="335" bottom="419"/>
+		<ns1:ActTipUI xmlns:ns1="*" skinName="ActTipSkin" anchorOffsetX="55" x="523" verticalCenter="-139"/>
+		<ns1:ActTipUI xmlns:ns1="*" skinName="ActTipSkin" anchorOffsetX="55" x="335" top="181"/>
+		<ns1:ActTipUI xmlns:ns1="*" skinName="ActTipSkin" anchorOffsetX="55" verticalCenter="-139" x="157"/>
+		<ns1:SelectActUI xmlns:ns1="*" id="selectActUI0" skinName="SelectActUISkin" width="600" height="150" touchEnabled="false" horizontalCenter="0" bottom="449"/>
+		<e:Group id="eatComboGroup0" height="84" width="600" touchThrough="true" horizontalCenter="0" bottom="514"/>
+		</e:Group>
+		<e:Group id="chatGroup1" height="100%" width="100%" touchThrough="true" touchEnabled="false" touchChildren="false" y="0" visible="false">
+		<e:Image source="dface_0_0_png" left="140" bottom="266"/>
+		<e:Image source="dface_0_0_png" right="110" bottom="416"/>
+		<e:Image source="dface_0_0_png" right="110" top="190"/>
+		<e:Image source="dface_0_0_png" left="100" top="301"/>
+		<e:Group height="174" width="211" left="63" bottom="334">
+			<e:Image source="game_chatbg_png"/>
+			<e:Label width="181" height="138" size="22" text="聊天信息聊天信息聊天信息聊天信息" verticalAlign="middle" textAlign="left" x="15" y="0" maxChars="16" textColor="0xFFF3E2" lineSpacing="15"/>
+		</e:Group>
+		<e:Group width="211" height="174" right="59" bottom="453">
+			<e:Image scaleX="-1" x="211" source="game_chatbg_png"/>
+			<e:Label y="5" height="138" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" size="22" verticalAlign="middle" x="15" maxChars="16" textColor="0xFFF3E2" lineSpacing="15"/>
+		</e:Group>
+		<e:Group width="211" height="174" right="58" top="282">
+			<e:Image x="211" y="174" source="game_chatbg_png" scaleX="-1" scaleY="-1"/>
+			<e:Label y="29" size="22" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" height="138" verticalAlign="middle" x="16" maxChars="16" textColor="0xFFF3E2" lineSpacing="15"/>
+		</e:Group>
+		<e:Group width="211" height="174" left="53" top="384">
+			<e:Image source="game_chatbg_png" scaleY="-1" x="0" y="174"/>
+			<e:Label y="6" height="138" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" size="22" verticalAlign="middle" x="16" maxChars="16" textColor="0xFFF3E2"/>
+		</e:Group>
+		</e:Group>
+		<e:Group y="0" touchThrough="true" touchChildren="false" width="100%" height="100%" touchEnabled="false" id="chatGroup2" visible="false">
+		<e:Group width="235" height="150" right="458" bottom="237">
+			<e:Image y="0" x="0" source="chat_right_png" width="100%" height="100%"/>
+			<e:Label y="6" textColor="0xFFF3E2" height="138" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" maxChars="16" size="22" verticalAlign="middle" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="211" height="174" right="56" top="745">
+			<e:Image width="100%" height="100%" source="chat_top_png"/>
+			<e:Label y="0" textColor="0xFFF3E2" height="138" verticalAlign="middle" textAlign="left" width="181" maxChars="16" size="22" text="聊天信息聊天信息聊天信息聊天信息" lineSpacing="15" x="15"/>
+		</e:Group>
+		<e:Group width="235" height="150" top="249" left="440">
+			<e:Image y="150" scaleY="-1" x="235" scaleX="-1" source="chat_right_png" width="100%" height="100%"/>
+			<e:Label y="6" textColor="0xFFF3E2" size="22" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" maxChars="16" height="138" verticalAlign="middle" lineSpacing="15" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="211" height="174" left="25" top="406">
+			<e:Image scaleX="-1" x="211" width="100%" height="100%" source="chat_down_png"/>
+			<e:Label y="5" textColor="0xFFF3E2" height="138" text="聊天信息聊天信息聊天信息聊天信息" textAlign="left" width="181" maxChars="16" size="22" verticalAlign="middle" lineSpacing="15" horizontalCenter="0"/>
+		</e:Group>
+		</e:Group>
+		<e:Group id="actFaceGroup0" touchEnabled="false" touchThrough="true" touchChildren="true" width="100%" height="100%" visible="false">
+		<ns1:ActFaceUI xmlns:ns1="*" y="950" skinName="ActFaceUISkin" x="135"/>
+		<ns1:ActFaceUI xmlns:ns1="*" y="790" skinName="ActFaceUISkin" x="242"/>
+		<ns1:ActFaceUI xmlns:ns1="*" y="189" skinName="ActFaceUISkin" x="242"/>
+		<ns1:ActFaceUI xmlns:ns1="*" y="301" skinName="ActFaceUISkin" x="98"/>
+		</e:Group>
+		<e:Group id="gangFenGroup0" touchThrough="true" width="100%" touchEnabled="false" height="100%" touchChildren="true" visible="false">
+		<e:BitmapLabel text="-123" bottom="375" horizontalCenter="-244" font="lose_num_fnt"/>
+		<e:BitmapLabel text="-123" right="12" bottom="492" font="lose_num_fnt"/>
+		<e:BitmapLabel text="-123" right="14" top="118" font="lose_num_fnt"/>
+		<e:BitmapLabel text="-123" left="27" top="204" font="lose_num_fnt"/>
+		<e:BitmapLabel text="+123" bottom="375" horizontalCenter="-244" font="win_num_fnt"/>
+		<e:BitmapLabel text="+123" right="12" bottom="492" font="win_num_fnt"/>
+		<e:BitmapLabel text="+123" right="14" top="119" font="win_num_fnt"/>
+		<e:BitmapLabel text="+123" top="204" left="27" font="win_num_fnt"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="inviteGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Button x="17" width="171" label="赠送房间" id="zsBtn0" top="67" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="com_btn1_png" scale9Grid="55,20,29,16"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x8f3715" bold="true"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button verticalCenter="0" horizontalCenter="0" id="inviteBtn0" x="10" y="10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="game_invite_friends_png"/>
+			<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="swapCardGroup" height="80" touchEnabled="false" touchChildren="true" touchThrough="false" x="260" y="180" width="260" visible="false"/>
+	<e:Group id="optionGroup" left="0" right="0" top="0" bottom="0" touchThrough="true" touchChildren="true" touchEnabled="true" visible="false">
+		<e:Group id="replayGroup0" touchThrough="true" width="720" height="111" bottom="69"/>
+	</e:Group>
+	<e:Group id="voiceGroup" touchThrough="true" touchChildren="true" touchEnabled="false" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Button id="voiceBtn0" right="12" bottom="220">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="game_shutup2_png"/>
+			<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Group id="tuoGuanGroup" touchEnabled="true" touchChildren="false" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect height="100%" width="100%" x="0" fillAlpha="0" bottom="0"/>
+		<e:Image width="100%" x="0" height="280" bottom="0" source="game_bg_png"/>
+		<e:Image horizontalCenter="0" bottom="140" source="game_tuoguan_png"/>
+	</e:Group>
+	<e:Group id="topGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0" touchThrough="true" visible="false"/>
+	<e:Group id="zhongniaoGroup" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Image width="180" height="150" x="278" y="94" source="game_zhongniao_png"/>
+		<e:Image width="180" height="150" x="34" y="474" source="game_zhongniao_png"/>
+		<e:Image width="180" height="150" x="294" y="954" source="game_zhongniao_png"/>
+		<e:Image width="180" height="150" x="556" y="404" source="game_zhongniao_png"/>
+	</e:Group>
+	<e:Group id="bordGroup" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Image width="140" height="128" x="308" y="454" anchorOffsetX="0" anchorOffsetY="0" source="game_bord_png"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ScoreDetailItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group>
+		<e:Image source="score_detail_item_bg_png"/>
+		<e:Image id="hightLight" y="216" source="score_detail_light_png"/>
+		<e:Label text="{data.n}" x="114" y="7" textAlign="center" size="22" textColor="0xB9E322"/>
+		<e:Label text="{data.time}" x="41" y="7" textAlign="center" size="22" textColor="0xB9E322"/>
+		<e:Label id="p1Lab" text="{data.p1}" y="62" size="30" textColor="0xFFFFFF" x="12" textAlign="center" strokeColor="2" width="190"/>
+		<e:Label id="p2Lab" text="{data.p2}" y="152" x="12" textAlign="center" width="190"/>
+		<e:Label id="p3Lab" y="242" x="12" text="{data.p3}" textAlign="center" width="190"/>
+		<e:Label id="p4Lab" y="332" x="12" text="{data.p4}" textAlign="center" width="190"/>
+		<e:Button id="shareBtn" x="8" y="400">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="95%" height="95%" width.down="100%" height.down="100%" verticalCenter="0" horizontalCenter="0" source="score_detail_share_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="lookBtn" y="400" x="111">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="95%" height="95%" width.down="100%" height.down="100%" verticalCenter="0" horizontalCenter="0" source="score_detail_lookback_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

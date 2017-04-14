@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="headUISkin1" width="180" height="219" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="nameLabel" y="183" size="26" width="183" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昵称昵称昵称" horizontalCenter="1.5" visible="false"/>
+	<e:Image y="54" source="avatar_png" horizontalCenter="0.5"/>
+	<e:Image id="headImg" y="59" width="110" height="110" horizontalCenter="-1"/>
+	<e:Image id="headShade" y="57" source="avater3_png" horizontalCenter="5"/>
+	<e:Image width="133" height="57" x="27" y="117" source="sidai_png"/>
+	<e:Image id="tuoGuanIcon" source="game_tuoguaning_png" y="105" horizontalCenter="0.5" visible="false"/>
+	<e:Image id="headQuestionImg" y="57" source="avater2_png" x="25" visible="false"/>
+	<e:Image id="headShutup" x="121" y="122" source="head_shutup1_png" visible="false"/>
+	<e:Image id="headOwner" x="14" y="50" source="game_house_png" visible="false"/>
+	<e:Image id="headzhuang" x="122" y="40" source="g_zhuang_png" visible="false"/>
+	<e:Label text="23130" x="55" y="137" size="25"/>
+	<e:Image id="duanxian" width="138" height="33" y="11" anchorOffsetX="0" anchorOffsetY="0" source="duanxin_png" horizontalCenter="0" visible="false"/>
+	<e:Image y="66" x="22" source="avater4_png" horizontalCenter="-0.5" visible="false"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="share" width="750" height="1334" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="750" height="1334" x="0" y="0">
+		<e:Image width="688.18" height="144.24" anchorOffsetX="0" anchorOffsetY="0" source="hall_within_box_png" scale9Grid="25,25,63,52" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image width="50" height="50" x="103.85" y="642.12" source="QQ_png"/>
+		<e:Image width="50" height="50" x="245.6" y="642" source="QQ_png"/>
+		<e:Image width="50" height="50" x="423.36" y="642" source="circlefriends_png"/>
+		<e:Image width="50" height="50" x="574.12" y="642" source="wechat_png"/>
+	</e:Group>
+</e:Skin>

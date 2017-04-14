@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NewFeedBackPanelSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="feedback_bg_png" anchorOffsetY="0" height="620" width="690" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image source="feedback_title_png" x="245" y="342.31"/>
+	<e:Image source="feedback_word1_png" x="321" y="351.3"/>
+	<e:Image source="feedback_close_png" x="592" y="332"/>
+	<e:Button id="closeBtn" label="" x="590" y="333">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="feedback_closeBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="feedback_bg0_png" x="40" y="462" scale9Grid="16,12,98,79" width="640" height="343"/>
+	<e:Image source="feedback_qr_code_jpg" x="40" y="811" anchorOffsetX="0" width="110" anchorOffsetY="0" height="110"/>
+	<e:Label text="您反馈的内容，我们都会非常重视，您的反馈是我们最大的动力。" fontFamily="FZHTK" x="37.11" y="421.46" size="22" textAlign="center" textColor="0x532e19"  bold="true"/>
+	<e:Label text="官方QQ群：160735397" x="160" y="850" size="24" fontFamily="FZHTK" textColor="0xc28036"/>
+	<e:Label text="官方公众号：zhongyu_game" x="160" y="890" size="24" fontFamily="FZHTK" textColor="0xc28036"/>
+	<e:Label id="promptLabel" text="请输入您的反馈内容..." x="220" y="615" size="26" textColor="0xc87f47" fontFamily="FZHTK"/>
+	<e:Label text="还可输入" fontFamily="FZHTK" x="490" y="760" size="26" textColor="0xd07f47"/>
+	<e:Label text="字" fontFamily="FZHTK" x="640" y="760" size="26" textColor="0xD07F47"/>
+	<e:Button id="feedBtn" label="" x="572" y="873" anchorOffsetX="100" width="200" anchorOffsetY="40" height="80">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0"  source="feedback_bt_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="numberWord" text="150" fontFamily="FZHTK" x="595" y="760" size="26" textAlign="center" width="45"/>
+	<e:EditableText id="feedback" fontFamily="FZHTK" width="600" height="310" text="" x="60" y="475" anchorOffsetX="0" anchorOffsetY="0" size="26" textColor="0xfeeee5" multiline="true"/>
+</e:Skin>

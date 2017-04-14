@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ruleSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="750" height="1334" x="0" y="0">
+		<e:Image width="667" height="995.3" y="146.5" source="hall_big_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="79,43,29,29" scaleX="1" scaleY="1" horizontalCenter="0.5"/>
+		<e:Image width="702" height="99" y="84" source="hall_door_png" anchorOffsetX="0" anchorOffsetY="0" x="22" scaleX="1" scaleY="1"/>
+		<e:Image width="94" height="43" x="326" y="112" anchorOffsetX="0" anchorOffsetY="0" source="record1_png"/>
+		<e:Button label="" y="1222" anchorOffsetX="0" width="89" anchorOffsetY="0" height="88" x="34" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hall_back_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="579" height="779" y="282" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" source="hall_within_box_png" scale9Grid="24,24,63,54"/>
+		<e:Group width="579" height="860" y="204.48" horizontalCenter="0.5" anchorOffsetY="0">
+			<e:RadioButton id="jp_rule_basic0" value="0" selected="true" groupName="jprule" y="12" x="4" width="165.21" height="70" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Group width="100%" height="100%">
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+					</e:layout>
+					<e:Image width="100%" height="100%" source.down="hall_four_bt_png" source.up="hall_two_bt1_png"/>
+				</e:Group>
+				<e:Image x="18.48" y="19.56" source.down="basic1_png" source.up="basic2_png" x.up="18.48" y.up="19.56"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="jp_rule_multiple0" value="1" selected="false" groupName="jprule" x="168.7" y="12" width="108.97" height="70" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Group width="100%" height="100%">
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+					</e:layout>
+					<e:Image width="100%" height="100%" source.down="hall_two_bt_png" source.up="hall_two_bt1_png"/>
+				</e:Group>
+				<e:Image x="28.48" y="19.56" source.down="sometype1_png" source.up="sometype2_png" x.up="28.48" y.up="19.56"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="jp_rule_crearing0" value="2" selected="false" groupName="jprule" y="12" x="275.84" width="146.42" height="70" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Group width="100%" height="100%">
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+					</e:layout>
+					<e:Image width="100%" height="100%" source.down="hall_four_bt_png" source.up="hall_two_bt1_png"/>
+				</e:Group>
+				<e:Image x="10" y="19.56" source.down="special1_png" source.up="special2_png" y.up="19.56"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="jp_rule_special0" value="3" selected="false" groupName="jprule" x="421.01" y="12" width="152.7" height="70" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Group width="100%" height="100%">
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+					</e:layout>
+					<e:Image width="100%" height="100%" source.down="hall_four_bt_png" source.up="hall_two_bt1_png"/>
+				</e:Group>
+				<e:Image x="15.44" y="19.56" source.down="settlement1_png" source.up="settlement2_png" x.up="15.44" y.up="19.56"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:ViewStack id="jp_view_stack0" width="579" height="779" y="77" selectedIndex="3" anchorOffsetX="0" x="3">
+			<e:Group width="100%" height="100%" name="基本规则视图" visible="false">
+				<e:Scroller id="jpruleScroller_basic0" height="100%" width="100%" scrollPolicyH="off">
+				<e:Group width="100%" height="100%" anchorOffsetX="0">
+					<e:Label id="jp_rule_basic_text0" width="527" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+				</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="基本番型视图" visible="false">
+				<e:Scroller id="jpruleScroller_multiple0" width="100%" height="100%" scrollPolicyH="off">
+				<e:Group id="jpFanTypeGroup0">
+					<e:layout>
+					<e:VerticalLayout/>
+					</e:layout>
+				</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="算法视图" visible="false">
+				<e:Scroller id="jpruleScroller_crearing0" height="100%" width="100%" scrollPolicyH="off">
+				<e:Group width="100%" height="100%">
+					<e:Label id="jp_rule_crearing_text0" width="525" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+				</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="特殊规则视图">
+				<e:Scroller id="jpruleScroller_special0" width="100%" height="100%" scrollPolicyH="off">
+				<e:Group>
+					<e:Label id="jp_rule_special_text0" text="" fontFamily="黑体" width="535" size="24" textColor="0xF9F5D8" x="20" y="10" lineSpacing="4"/>
+				</e:Group>
+				</e:Scroller>
+			</e:Group>
+			</e:ViewStack>
+		</e:Group>
+	</e:Group>
+</e:Skin>

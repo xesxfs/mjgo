@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="rank" width="750" height="1334" xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0" y="0" width="750" height="1334">
+		<e:Image width="667" height="1065" y="146.5" source="hall_big_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="79,43,29,29" horizontalCenter="0"/>
+		<e:Image width="702" height="99" y="84" source="hall_door_png" anchorOffsetX="0" anchorOffsetY="0" x="22"/>
+		<e:Button label="" y="1225.45" anchorOffsetX="0" width="89" anchorOffsetY="0" height="88" x="44.64">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hall_back_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="记录最多保存7天" y="194.81" textColor="0x000000" size="22" horizontalCenter="0" fontFamily="SimHei"/>
+		<e:Image width="94" height="43" x="326" y="112" anchorOffsetX="0" anchorOffsetY="0" source="record1_png"/>
+		<e:Group width="600" height="917" x="77" y="225" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Scroller width="100%" height="100%" x="0" y="0">
+				<e:List/>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

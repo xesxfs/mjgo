@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SharePanelSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="667" height="1065" x="40" y="140" source="hall_big_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="79,43,29,29"/>
+	<e:Image width="579" height="672" x="84" y="220" source="hall_within_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="23,24,64,54"/>
+	<e:Label text="扫码直接下载游戏" y="580" anchorOffsetX="0" width="448" anchorOffsetY="0" height="50" textColor="0x000000" size="25" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+	<e:Button label="" x="173" y="667">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="QQ_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="" backgroundColor="0x000000" background="true" width="450" anchorOffsetY="0" height="1" y="335" horizontalCenter="0"/>
+	<e:Image width="670" height="100" x="26" y="78" source="hall_door_png" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image x="314" y="109" anchorOffsetX="0" anchorOffsetY="0" source="share_png"/>
+	<e:Label text="分享应用" y="235" anchorOffsetX="0" width="448" anchorOffsetY="0" height="98" textColor="0x000000" size="35" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+	<e:Label text="QQ" x="168.7" y="760" anchorOffsetX="0" width="94.97" anchorOffsetY="0" height="31.82" textColor="0x000000" size="25" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center"/>
+	<e:Label text="微信" y="760" anchorOffsetX="0" width="94.97" anchorOffsetY="0" height="31.82" textColor="0x000000" size="25" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" horizontalCenter="0"/>
+	<e:Label text="朋友圈" y="760" anchorOffsetX="0" width="94.97" anchorOffsetY="0" height="31.82" textColor="0x000000" size="25" fontFamily="Microsoft YaHei" verticalAlign="middle" textAlign="center" x="490"/>
+	<e:Button id="share_close" label="" x="627.5" y="62" anchorOffsetX="0" anchorOffsetY="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_close_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image width="200" height="200" y="370" source="feedback_qr_code_jpg" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-1"/>
+	<e:Button label="" y="667" horizontalCenter="0.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="WX_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button label="" x="490" y="667">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="Friend_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

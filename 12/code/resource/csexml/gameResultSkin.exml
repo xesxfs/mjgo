@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameResultSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%" x="0" y="0">
+		<e:Image width="678" height="845.64" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" source="hall_big_box_png" scale9Grid="74,49,44,20"/>
+		<e:Button label="" x="166.48" y="965">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hall_two_bt_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" x="447" y="965">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="hall_two_bt_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="596.97" height="669.7" x="77" y="286" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Scroller width="100%" height="100%" x="0" y="0">
+				<e:List id="resultList"/>
+			</e:Scroller>
+		</e:Group>
+		<e:Button label="" x="639" y="212.5" width="99" height="91">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="hall_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

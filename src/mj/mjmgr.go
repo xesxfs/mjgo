@@ -6,10 +6,10 @@ import (
 	"time"
 )
 
-type stPAIEx struct {
-	mNewPai stPAI
-	mPaiNum int
-	mIsHz   bool
+type STPAIEX struct {
+	NewPai stPAI
+	PaiNum int
+	IsHz   bool
 }
 
 type CMJManage struct {
@@ -102,17 +102,17 @@ func (cm *CMJManage) XiPai() {
 
 }
 
-func (cm *CMJManage) GetAPai() stPAIEx {
+func (cm *CMJManage) GetAPai() STPAIEX {
 
-	sPaiEx := stPAIEx{}
+	sPaiEx := STPAIEX{}
 	sPai := cm.mMJVec[0]
-	sPaiEx.mNewPai.mType = sPai.mType
-	sPaiEx.mNewPai.mValue = sPai.mValue
-	sPaiEx.mPaiNum = len(cm.mMJVec) - 1
-	if sPaiEx.mPaiNum == cm.mHZPaiNum {
-		sPaiEx.mIsHz = true
+	sPaiEx.NewPai.Type = sPai.Type
+	sPaiEx.NewPai.Value = sPai.Value
+	sPaiEx.PaiNum = len(cm.mMJVec) - 1
+	if sPaiEx.PaiNum == cm.mHZPaiNum {
+		sPaiEx.IsHz = true
 	} else {
-		sPaiEx.mIsHz = false
+		sPaiEx.IsHz = false
 	}
 
 	if len(cm.mMJVec) > 1 {
@@ -120,7 +120,5 @@ func (cm *CMJManage) GetAPai() stPAIEx {
 	} else {
 		cm.mMJVec = cm.mMJVec[:0]
 	}
-
 	return sPaiEx
-
 }

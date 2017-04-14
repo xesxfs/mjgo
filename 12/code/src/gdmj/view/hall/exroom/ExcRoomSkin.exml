@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExcRoomSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image source="hall_input_bg_png" scale9Grid="182,233,391,251" y="0"/>
+		<e:Button id="closeBtn" y="20" top="0" right="0" x="20">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="set_close_png"/>
+					<e:Image width="100%" height="100%" source="set_closeBtn_png" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="set_title_png" y="15" horizontalCenter="0"/>
+		<e:Image source="hall_input_bg1_png" scale9Grid="31,31,118,193" horizontalCenter="0" width="640" height="555" y="79"/>
+		<e:Image top="28" horizontalCenter="-2" source="croom_title_png"/>
+		<e:Button id="confirmBtn" y="642" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="croom_change_btn_png" width.down="95%" height.down="95%" horizontalCenter.down="0" verticalCenter.down="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		
+		<e:Label text="房间名称：" x="66" y="118" size="26" textColor="0xC87F47"/>
+		<e:Label y="188" textColor="0xC87F47" size="26" text="房间号码：" x="66"/>
+		<e:Label y="258" textColor="0xC87F47" size="26" text="游戏类型：" x="66"/>
+		<e:Label y="568" textColor="0xC87F47" size="26" text="底分：" x="118"/>
+		<e:Button id="swMinKeyboardBtn" x="270" y="566">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="croom_down_flag_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="点击更多选项" x="316" y="570" size="24" textColor="0x904922"/>
+		<e:Button id="editBtn" x="444" y="105">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="croom_ex_btn_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="basePointLab" text="10" x="196" y="567" size="26" fontFamily="黑体" width="53" textAlign="center" verticalAlign="middle"/>
+		<e:Image source="croom_name_bg_png" x="209" y="101" scale9Grid="14,13,56,20" width="201" height="48"/>
+		<e:EditableText id="roomNameLab" x="212" y="108" size="24" textAlign="center" verticalAlign="middle" width="192" maxChars="7" fontFamily="黑体" textColor="0xCDCFAD" promptColor="0x7A4324" prompt="输入房间昵称..."/>
+		<e:Label id="roomNumLab" text="888888" x="212" y="186" textColor="0xDEBA86" fontFamily="黑体" stroke="2" strokeColor="0x8F441B"/>
+		<e:RadioButton id="ptJpRBtn" x="205" y="244" label="鸡平胡" groupName="MJTYPEG" value="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+					<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="ptTdRBtn" label="推到胡" y="244" x="432" groupName="MJTYPEG" value="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+					<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:ViewStack id="typeViewStack" width="557" height="230" x="59" y="317" selectedIndex="0">
+			<e:Group width="100%" height="100%" name="视图">
+				<e:Label y="13" textColor="0xC87F47" size="26" text="个性玩法：" x="6"/>
+				<e:CheckBox id="ptHasYiPaoSanXiangCk" label="一炮多响" y="5" x="145">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptHasSanYuanCk" label="三元牌" y="5" x="372">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptHasGangAddFan" label="杠牌加番" y="75" x="145">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptHasHaiDiLaoYueCk" label="海底捞月" y="71" x="372">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptHasFenWeiFengQuangCk" label="风位风圈刻子" y="151" x="145">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="视图">
+				<e:Label y="13" textColor="0xC87F47" size="26" text="个性玩法：" x="6"/>
+				<e:Label y="83" textColor="0xC87F47" size="26" text="抓马数量：" x="6"/>
+				<e:CheckBox id="ptHasQiangGangCk" label="抢杠胡" y="5" x="145">
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptHasGangShangKaiHuaCk" label="杠上开花" y="5" x="372">
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ma2Rad" label="2" y="75" x="145" >
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ma4Rad" label="4" y="71" x="372" >
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ma6Rad" label="6" y="151" x="145" >
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+							<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:CheckBox id="ptBubuGaoRb" label="步步高" y="151" x="372" enabled="false">
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+							<e:Image source="com_unchk_png" source.down="com_chk_png" alpha.disabled="0.5"/>
+							<e:Label id="labelDisplay" x="61" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA" alpha.disabled="0.5"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+			</e:Group>
+		</e:ViewStack>
+		<ns1:MinKeyBorad id="minKey" x="151" y="600" skinName="MinKeyBoradSkin" visible="false"/>
+		<e:Label text="____" x="193" y="567" textColor="0xA35A35" fontFamily="楷体"/>
+		
+	</e:Group>
+</e:Skin>

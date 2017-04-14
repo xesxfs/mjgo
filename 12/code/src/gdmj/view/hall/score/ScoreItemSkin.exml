@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ScoreItemSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group>
+		<e:Image source="hall_com_item_png"/>
+		<e:Image x="29" verticalCenter="0" source="{data.s}" width="73" height="59"/>
+		<e:Image verticalCenter="0" y="10" source="score_item_detail_png" right="10"/>
+		<e:Label id="roomNumLab" x="175" size="32" fontFamily="黑体" textColor="0xF7F8D9" verticalCenter="0" text="{data.deskCode}"/>
+		<e:Label textColor="0xF7F8D9" text="{data.mp}" fontFamily="黑体" size="24" x="406" verticalCenter="0"/>
+		<e:Label id="playDateLab" textColor="0xF7F8D9" fontFamily="黑体" size="24" x="567" verticalCenter="0" height="52" width="124" text="{data.time}"/>
+		<e:Image source="score_cutline_png" x="124" verticalCenter="0"/>
+		<e:Image source="score_cutline_png" verticalCenter="0.5" x="334" y="10"/>
+		<e:Image source="score_cutline_png" y="20" verticalCenter="0.5" x="524"/>
+		<e:Image source="score_cutline_png" y="30" verticalCenter="0" x="714"/>
+	</e:Group>
+</e:Skin>

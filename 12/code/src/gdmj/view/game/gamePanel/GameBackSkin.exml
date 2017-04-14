@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameBackSkin" width="750" height="505" xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="0" y="34" source="chat_bg_png" scale9Grid="32,38,122,149" width="750" anchorOffsetY="0" height="466"/>
+	<e:Image y="0" horizontalCenter="0" source="game_bb_png"/>
+	<e:Group y="85" anchorOffsetX="0" width="650" height="144" horizontalCenter="0">
+		<e:Image width="650" height="144" x="0" y="0" source="hall_within_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="23,24,64,54"/>
+		<e:Label text="房卡1张" x="139" y="0" anchorOffsetX="0" width="244" anchorOffsetY="0" height="68" textColor="0x020000" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+		<e:Label text="可以开设好友房" x="139" y="68" anchorOffsetX="0" width="244" anchorOffsetY="0" height="68" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0x943300" size="25"/>
+		<e:Button id="mall_one1" label="" x="480" y="35" anchorOffsetX="0" anchorOffsetY="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_two_bt_png"/>
+			<e:Image anchorOffsetX="0" anchorOffsetY="0" source="hall_use_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image x="20" source="hall_one_card_png" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0"/>
+		<e:Label text="" x="135" backgroundColor="0x000000" background="true" width="321" anchorOffsetY="0" height="1" y="68"/>
+	</e:Group>
+</e:Skin>

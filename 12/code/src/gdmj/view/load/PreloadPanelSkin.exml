@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PreloadPanelSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="login_login_bg_jpg" width="100%" x="0" height="100%" y="0"/>
+		<e:Label id="percentLab" fontFamily="黑体" bold="true" size="28" horizontalCenter="0" verticalCenter="94"/>
+		<e:Label text="首次进入游戏建议在WIFI状态下进行" horizontalCenter="0" verticalCenter="0" size="26" bold="true" textAlign="center" textColor="0xFDFBFB" visible="false"/>
+	</e:Group>
+</e:Skin>

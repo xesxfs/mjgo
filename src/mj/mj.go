@@ -17,9 +17,9 @@ const (
 	MJPAI_PUTPAI = false
 )
 
-type stPAI struct {
-	mType  int
-	mValue int
+type STPAI struct {
+	Type  int
+	Value int
 }
 
 type stCHI struct {
@@ -34,7 +34,7 @@ type stGoodInfo struct {
 	mGoodValue int
 }
 
-type VecPai []stPAI
+type VecPai []STPAI
 
 type CMJ struct {
 	mMyPAvec   [6][]int
@@ -42,7 +42,7 @@ type CMJ struct {
 	mPengPAvec [6][]int
 	mGangPAvec [6][]int
 
-	mLastPAI  stPAI
+	mLaSTPAI  STPAI
 	mGoodInfo stGoodInfo
 
 	mMkNum int
@@ -52,8 +52,8 @@ type CMJ struct {
 	m4Ak   bool
 
 	mTempChiPAvec  []stCHI
-	mTempPengPAvec []stPAI
-	mTempGangPAvec []stPAI
+	mTempPengPAvec []STPAI
+	mTempGangPAvec []STPAI
 }
 
 func PrintSpace(icount int) {
@@ -65,10 +65,11 @@ func PrintSpace(icount int) {
 
 func NewCMJ() *CMJ {
 	mj := CMJ{}
+	mj.Init()
 	return &mj
 }
 
-func (mj *CMJ) init() {
+func (mj *CMJ) Init() {
 	mj.m9LBD = false
 	mj.m13Y = false
 	mj.m4Ak = false
@@ -84,8 +85,8 @@ func (mj *CMJ) Check() {
 func (mj *CMJ) AddPai(pType int, pValue int) bool {
 	mj.mMyPAvec[pType] = append(mj.mMyPAvec[pType], pValue)
 	sort.Sort(sort.IntSlice(mj.mMyPAvec[pType]))
-	mj.mLastPAI.mType = pType
-	mj.mLastPAI.mValue = pValue
+	mj.mLaSTPAI.mType = pType
+	mj.mLaSTPAI.mValue = pValue
 
 	return true
 }
@@ -386,7 +387,7 @@ func (mj *CMJ) CheckPengPai(pType int, pValue int) bool {
 		if size >= 2 {
 			for i := 0; i < size-1; i++ {
 				if mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+1] == pValue {
-					tPeng := stPAI{}
+					tPeng := STPAI{}
 					tPeng.mType = pType
 					tPeng.mValue = pValue
 					mj.mTempPengPAvec = append(mj.mTempPengPAvec, tPeng)
@@ -444,7 +445,7 @@ func (mj *CMJ) CheckGangPai(pType int, pValue int) bool {
 		if size >= 3 {
 			for i := 0; i < size-2; i++ {
 				if mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+1] == pValue && mj.mMyPAvec[pType][i-2] == pValue {
-					tGang := stPAI{}
+					tGang := STPAI{}
 					tGang.mType = pType
 					tGang.mValue = pValue
 					mj.mTempGangPAvec = append(mj.mTempGangPAvec, tGang)
