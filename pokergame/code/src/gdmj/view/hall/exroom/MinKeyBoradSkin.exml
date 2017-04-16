@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MinKeyBoradSkin" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="croom_base_bg_png"/>
+	<e:Group y="75" horizontalCenter="0">
+		<e:Button label="1" x="2" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="0" label="5" x="158">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="0" label="10" x="310">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="92" label="20" x="2">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="92" label="50" x="158">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="92" label="100" x="310">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="183" label="200" x="2">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="183" label="500" x="158">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button y="183" label="1000" x="310">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="croom_base_up_png" source.down="croom_base_down_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" fontFamily="楷体" textColor="0xD0A45D" strokeColor="0xB4622A" stroke="3" size="42"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

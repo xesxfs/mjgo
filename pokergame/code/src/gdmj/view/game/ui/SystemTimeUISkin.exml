@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SystemTimeUISkin" width="100" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="hourLabel" text="21" x="14" y="5" size="20" width="30" verticalAlign="middle" textAlign="center" textColor="0xF7FBFA"/>
+	<e:Label id="colonLabel" text=":" x="45" y="3" size="20" textColor="0xF1F8F7"/>
+	<e:Label id="minLabel" text="12" x="52" y="5" size="20" width="30" verticalAlign="middle" textAlign="center" textColor="0xF9FBFA"/>
+</e:Skin>

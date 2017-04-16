@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RulePanelSkin1" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group height="1280" width="720" horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		<e:Group width="688" verticalCenter="0" height="981" y="10" touchEnabled="false" horizontalCenter="0">
+			<e:Image width="688" height="981" x="0" y="0" source="rule_bg_png"/>
+			<e:Image horizontalCenter="0" y="14" source="rule_title_png"/>
+			<e:RadioButton id="jpRBtn" label="" y="875" x="131" value="0" selected="true" width="53" height="48">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="rule_unselect_png" source.down="rule_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="tdRBtn" label="" y="875" x="438" value="1" selected="false" width="53" height="48">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="rule_unselect_png" source.down="rule_select_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:Image width="640" height="755" x="20" y="80" source="rule_bg1_png" scale9Grid="16,12,98,79"/>
+			<e:Image width="154" height="42" x="268" y="24" source="rule_word7_png"/>
+			<e:Image width="89" height="33" x="193" y="882" source="rule_word1_png"/>
+			<e:Image width="89" height="33" x="500" y="882" source="rule_word6_png"/>
+			<e:Image width="632" height="62" x="24" y="92" source="rule_tiltle5_png"/>
+			<e:Image width="111" height="73" x="577" y="0" source="set_close_png"/>
+		</e:Group>
+		<e:Button  id="closeBtn" y="151" width="111" height="73" x="591">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="set_closeBtn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>	
+		 
+		
+		<e:ViewStack y="230" width="640" height="755" selectedIndex="1" id="ruleViewStack" horizontalCenter="0">
+			
+			<e:Group width="100%" height="100%" visible="false">
+				<e:RadioButton id="jp_rule_basic" value="0" selected="true" groupName="jprule"  y="12" x="4" width="141" height="70">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title2_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="20" y="15" source="rule_word3_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			<e:RadioButton id="jp_rule_multiple" value="1" selected="false" groupName="jprule" x="149" y="12"  width="165" height="70">
+				<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title3_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="30" y="15" source="rule_word2_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			
+			<e:RadioButton id="jp_rule_crearing" value="2" selected="false" groupName="jprule"  y="12" x="318" width="167" height="70">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title3_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="60" y="15" source="rule_word4_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			
+			<e:RadioButton id="jp_rule_special" value="3" selected="false" groupName="jprule" x="489" y="12"  width="140" height="70">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title4_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="20" y="15" source="rule_word5_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			
+			<e:ViewStack id="jp_view_stack" width="630" height="658" y="94" selectedIndex="3" horizontalCenter="0">
+					
+					<e:Group width="100%" height="100%" name="基本规则视图">
+						<e:Scroller id="jpruleScroller_basic" height="100%" width="100%" scrollPolicyH="off">
+							<e:Group width="630" height="658">					
+								<e:Label id="jp_rule_basic_text" width="590" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+							</e:Group >
+						</e:Scroller>
+						
+					</e:Group> 
+					
+					<e:Group width="100%" height="100%" name="基本番型视图">
+						<e:Scroller id="jpruleScroller_multiple" width="100%" height="100%" scrollPolicyH="off">
+							<e:Group id="jpFanTypeGroup">
+								<e:layout>
+									<e:VerticalLayout/>
+								</e:layout>
+							</e:Group>
+						</e:Scroller> 
+					</e:Group>
+					<e:Group width="100%" height="100%" name="算法视图">
+						<e:Scroller id="jpruleScroller_crearing"  height="100%" width="100%" scrollPolicyH="off">
+							<e:Group width="630" height="650">					
+								<e:Label id="jp_rule_crearing_text" width="590" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+							</e:Group >
+						</e:Scroller>
+						 
+					</e:Group>
+					
+					<e:Group width="100%" height="100%" name="特殊规则视图">
+						<e:Scroller id="jpruleScroller_special" width="100%" height="100%" scrollPolicyH="off">
+							<e:Group>
+								<e:Label id="jp_rule_special_text" text="" fontFamily="黑体" width="590" size="24" textColor="0xF9F5D8" x="20" y="10" lineSpacing="4"/>
+							</e:Group>
+						</e:Scroller>
+					</e:Group>
+				</e:ViewStack>
+				 
+			</e:Group>
+			
+			<e:Group width="100%" height="100%" x="0" y="0" visible="false">
+				<e:RadioButton id="td_rule_basic" value="0" selected="true" groupName="rueljj" label="基本规则" y="12" x="4" width="141">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title2_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="20" y="15" source="rule_word3_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="td_rule_multiple" value="1" selected="false" groupName="rueljj" x="149" y="12" label="基本番型" height="70" width="165">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title3_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="30" y="15" source="rule_word2_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				
+				<e:RadioButton id="td_rule_crearing" value="2" selected="false" groupName="rueljj" label="结算" y="12" x="318" width="165" height="70">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title3_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="60" y="15" source="rule_word4_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				
+				<e:RadioButton id="td_rule_special" value="3" selected="false" groupName="rueljj" x="489" y="12" label="特殊规则" width="141" height="70">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						
+						<e:Group width="100%" height="100%">
+								<e:layout>
+									<e:HorizontalLayout verticalAlign="middle"/>
+								</e:layout>
+								<e:Image width="100%" height="100%" source.down="rule_title4_png" source.disabled=""/>
+								
+							</e:Group>
+							<e:Image x="20" y="15" source="rule_word5_png"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:ViewStack id="td_view_stack" width="630" height="658" y="94" selectedIndex="0" x="5">
+					
+					<e:Group width="100%" height="100%" name="基本规则视图">
+						<e:Scroller id="tdruleScroller_basic" height="658" width="100%" scrollPolicyH="off">
+							<e:Group width="721" height="269">					
+								<e:Label id="td_rule_basic_text" width="590" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+							</e:Group >
+						</e:Scroller>
+						
+					</e:Group> 
+					
+					<e:Group width="100%" height="100%" name="基本番型视图">
+						<e:Scroller id="tdruleScroller_multiple" width="100%" height="658" scrollPolicyH="off">
+							<e:Group id="tdFanTypeGroup">
+								<e:layout>
+									<e:VerticalLayout/>
+								</e:layout>
+							</e:Group>
+						</e:Scroller>
+					</e:Group>
+					<e:Group width="100%" height="100%" name="算法视图">
+						<e:Scroller id="tdruleScroller_crearing"  height="658" width="100%" scrollPolicyH="off">
+							<e:Group width="721" height="269">					
+								<e:Label id="td_rule_crearing_text"  width="590" fontFamily="黑体" size="24" wordWrap="true" textColor="0xF9F5D8" y="10" x="20" lineSpacing="4"/>
+							</e:Group >
+						</e:Scroller>
+						
+					</e:Group>
+					 
+					<e:Group width="100%" height="100%" name="特殊规则视图">
+						<e:Scroller id="tdruleScroller_special" width="100%" height="658" scrollPolicyH="off">
+							<e:Group>
+								<e:Label id="td_rule_special_text" text="" fontFamily="黑体" width="590" size="24" textColor="0xF9F5D8" x="20" y="10" lineSpacing="4"/>
+							</e:Group>
+						</e:Scroller>
+					</e:Group>
+				</e:ViewStack>
+				
+			</e:Group>
+			
+		</e:ViewStack>
+		
+
+		
+		
+	</e:Group>
+</e:Skin>

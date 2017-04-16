@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ActFaceUISkin" width="370" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="itemGroup" height="110" width="370" x="0" y="0" touchEnabled="true" touchChildren="true" touchThrough="false">
+		<e:Image source="actface_itembg_png" x="14" y="9"/>
+		<e:Image source="actface_itembg_png" y="9" x="72"/>
+		<e:Image source="actface_itembg_png" y="9" x="130"/>
+		<e:Image source="actface_itembg_png" y="10" x="187"/>
+		<e:Image source="actface_itembg_png" y="9" x="246"/>
+		<e:Image source="actface_itembg_png" y="9" x="304"/>
+	</e:Group>
+	<e:Group left="0" right="0" top="0" bottom="0" touchEnabled="false">
+		<e:Image x="-49" y="-50" width="138" height="157" touchEnabled="false" source="actface_boom0_png"/>
+		<e:Image source="actface_fanqie0_png" x="17" y="-13" width="163" height="130" touchEnabled="false"/>
+		<e:Image source="actface_flower_png" x="306" y="10" width="48" height="48" touchEnabled="false"/>
+		<e:Image source="actface_stone_png" x="133" y="15" width="45" height="39" touchEnabled="false"/>
+		<e:Image source="actface_zan_png" x="121" y="-45" width="97" height="97" touchEnabled="false"/>
+		<e:Image source="actface_kiss_png" x="248" y="13" width="54" height="47" touchEnabled="false"/>
+		<e:Image source="actface_textbg_png" x="16" y="64" scale9Grid="13,12,14,8" width="339"/>
+	</e:Group>
+	<e:Label text="使用道具需要消耗100金币" x="22" y="66" width="325" textAlign="center" verticalAlign="middle" textColor="0x82EAF5" size="26"/>
+</e:Skin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ScoreShareSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0" width="720" height="1280">
+		<e:Image width="479" height="400" source="score_share_bg_png" scale9Grid="31,42,116,211" x="121" y="491"/>
+		<e:Button id="closeBtn" label="" x="559" y="497" width="36" height="37">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="score_share_bt_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="jt_img" width="331" height="469" x="324" y="19" source="score_share_bg2_png" anchorOffsetY="0" anchorOffsetX="0" scale9Grid="37,51,223,309"/>
+		<e:Label id="share_label" text="" width="420" height="201" size="34" verticalAlign="middle" textAlign="center" textColor="0x000000" anchorOffsetX="0" anchorOffsetY="0" x="152" y="552"/>
+		<e:Label text="回放码：" x="187" y="771" size="24"/>
+		<e:Label id="recodeLabel" text="" x="297" y="771" size="24" textAlign="center"/>
+		<e:Button id="copyBtn" label="复制" x="313" y="815" width="80" height="50">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="yellow_btn_png"/>
+				<e:Label id="labelDisplay" width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="20" verticalCenter="13" size="20" />
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

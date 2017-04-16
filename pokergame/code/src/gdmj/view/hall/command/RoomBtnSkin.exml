@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoomBtnSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group height="641">
+		<e:Group horizontalCenter="0" verticalCenter="0" height="494">
+			<e:Image source="hall_longline_png" horizontalCenter="9.5" y="-77"/>
+			<e:Image id="roomBtn"  y="150" horizontalCenter="0" verticalCenter="0" source="hall_createroom_btn_png"/>
+			<e:Image source="hall_bamboo_up_png" y="44"/>
+		</e:Group>
+		<e:Group id="dwonGroup" horizontalCenter="0" y="-130">
+			<e:Rect id="maskRect" height="348" width="100%" fillAlpha="1" mask="createRoomBtn"/>
+			<e:Image source="hall_cycle_png" horizontalCenter="0" y="355"/>
+			<e:Image source="hall_bamboo_down_png" y="275"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhuaMaPanel1Skin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group scaleX="1" scaleY="1" verticalCenter="0" width="720" horizontalCenter="0">
+		<e:Image source="hall_input_bg_png" y="0" horizontalCenter="0"/>
+		<e:Image width="230" height="56" y="12" source="rule_title_png" horizontalCenter="0"/>
+		<e:Image y="25" source="zhuama_title_png" horizontalCenter="0"/>
+		<e:Image width="642" height="640" y="72" scale9Grid="16,12,98,79" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" source="rule_bg1_png"/>
+		<e:Group id="showCardGroup" height="100%" width="100%">
+			<e:Group id="bg1Group0" width="642" height="558" x="37" y="76">
+				<e:Image   source="card_bg0_png" y="193" x="158"/>
+				<e:Image source="card_bg0_png"   y="193" x="391"/>
+			</e:Group>
+			<e:Group id="bg1Group" width="642" height="558" y="76" x="37">
+				<e:Image y="187"   x="26" source="card_bg0_png"/>
+				<e:Image y="187"   x="184" source="card_bg0_png"/>
+				<e:Image source="card_bg0_png" y="187"   x="349"/>
+				<e:Image source="card_bg0_png" y="187"   x="507"/>
+			</e:Group>
+			<e:Group id="bg2Group" width="642" height="558" y="76" x="37">
+				<e:Image source="card_bg0_png" y="109"   x="59"/>
+				<e:Image source="card_bg0_png" y="109"   x="270"/>
+				<e:Image source="card_bg0_png" y="109"   x="464"/>
+				<e:Image source="card_bg0_png" y="309"   x="59"/>
+				<e:Image source="card_bg0_png" y="309"   x="270"/>
+				<e:Image source="card_bg0_png" y="309"   x="464"/>
+			</e:Group>
+			<e:Group id="bg3Group" width="642" height="558" x="37" y="76">
+				<e:Image source="card_bg0_png" y="17"   x="36"/>
+				<e:Image source="card_bg0_png" y="17"   x="193"/>
+				<e:Image source="card_bg0_png" y="17"   x="344"/>
+				<e:Image source="card_bg0_png" y="17"   x="488"/>
+				<e:Image source="card_bg0_png" y="199"   x="36"/>
+				<e:Image source="card_bg0_png" y="199"   x="193"/>
+				<e:Image source="card_bg0_png" y="199"   x="344"/>
+				<e:Image source="card_bg0_png" y="199"   x="488"/>
+				<e:Image source="card_bg0_png" y="380"   x="36"/>
+				<e:Image source="card_bg0_png" y="380"   x="193"/>
+				<e:Image source="card_bg0_png" y="380"   x="344"/>
+				<e:Image source="card_bg0_png" y="380"   x="488"/>
+			</e:Group>
+			<e:Group id="bg4Group" height="558" width="642" y="76" x="37">
+				<e:Image y="29" x="37"   source="card_big_bg_3_png"/>
+				<e:Image  y="29"  x="162" source="card_big_bg_3_png"/>
+				<e:Image  y="29"  x="284" source="card_big_bg_3_png"/>
+				<e:Image source="card_big_bg_3_png"  y="29"  x="409"/>
+				<e:Image source="card_big_bg_3_png"  y="29"  x="534"/>
+				<e:Image source="card_big_bg_3_png"  y="164"  x="37"/>
+				<e:Image source="card_big_bg_3_png"  y="164"  x="162"/>
+				<e:Image source="card_big_bg_3_png"  y="164"  x="284"/>
+				<e:Image source="card_big_bg_3_png"  y="164"  x="409"/>
+				<e:Image source="card_big_bg_3_png"  y="164"  x="534"/>
+				<e:Image source="card_big_bg_3_png"  y="296"  x="37"/>
+				<e:Image source="card_big_bg_3_png"  y="296"  x="162"/>
+				<e:Image source="card_big_bg_3_png"  y="296"  x="284"/>
+				<e:Image source="card_big_bg_3_png"  y="296"  x="409"/>
+				<e:Image source="card_big_bg_3_png"  y="296"  x="534"/>
+				<e:Image source="card_big_bg_3_png"  y="427"  x="37"/>
+				<e:Image source="card_big_bg_3_png"  y="427"  x="162"/>
+				<e:Image source="card_big_bg_3_png"  y="427"  x="284"/>
+				<e:Image source="card_big_bg_3_png"  y="427"  x="409"/>
+				<e:Image source="card_big_bg_3_png"  y="427"  x="534"/>
+			</e:Group>
+			<e:Group id="ligh1Group0" y="76" width="642" height="558" x="37">
+				<e:Image source="zhuama_big_frame_png"   x="149" y="184"/>
+				<e:Image source="zhuama_big_frame_png"   x="382" y="184"/>
+			</e:Group>
+			<e:Group id="ligh1Group" width="642" height="558" x="37" y="76">
+				<e:Image y="178"   x="17" source="zhuama_big_frame_png"/>
+				<e:Image y="178"   x="175" source="zhuama_big_frame_png"/>
+				<e:Image y="178"   x="340" source="zhuama_big_frame_png"/>
+				<e:Image y="178"   x="498" source="zhuama_big_frame_png"/>
+			</e:Group>
+			<e:Group id="ligh2Group" width="642" height="558" x="37" y="76">
+				<e:Image y="100"   source="zhuama_big_frame_png" x="49"/>
+				<e:Image y="100"   source="zhuama_big_frame_png" x="260"/>
+				<e:Image y="100"   source="zhuama_big_frame_png" x="454"/>
+				<e:Image y="300"   x="49" source="zhuama_big_frame_png"/>
+				<e:Image y="300"   x="260" source="zhuama_big_frame_png"/>
+				<e:Image y="300"   x="454" source="zhuama_big_frame_png"/>
+			</e:Group>
+			<e:Group id="ligh3Group" width="642" height="558" x="37" y="76">
+				<e:Image y="8"   x="27" source="zhuama_big_frame_png"/>
+				<e:Image y="8"   source="zhuama_big_frame_png" x="184"/>
+				<e:Image y="8"   source="zhuama_big_frame_png" x="335"/>
+				<e:Image y="8"   source="zhuama_big_frame_png" x="479"/>
+				<e:Image y="190"   x="26" source="zhuama_big_frame_png"/>
+				<e:Image y="190"   x="184" source="zhuama_big_frame_png"/>
+				<e:Image y="190"   x="335" source="zhuama_big_frame_png"/>
+				<e:Image y="190"   x="479" source="zhuama_big_frame_png"/>
+				<e:Image y="371"   x="27" source="zhuama_big_frame_png"/>
+				<e:Image y="371"   x="184" source="zhuama_big_frame_png"/>
+				<e:Image y="371"   x="335" source="zhuama_big_frame_png"/>
+				<e:Image y="371"   x="479" source="zhuama_big_frame_png"/>
+			</e:Group>
+			<e:Group id="ligh4Group" y="76" width="642" height="558" x="37">
+				<e:Image y="18"   x="27" source="zhuama_small_frame_png"/>
+				<e:Image source="zhuama_small_frame_png" y="18"   x="152"/>
+				<e:Image source="zhuama_small_frame_png" y="18"   x="274"/>
+				<e:Image source="zhuama_small_frame_png" y="18"   x="399"/>
+				<e:Image source="zhuama_small_frame_png" y="18"   x="524"/>
+				<e:Image source="zhuama_small_frame_png" y="153"   x="27"/>
+				<e:Image source="zhuama_small_frame_png" y="153"   x="152"/>
+				<e:Image source="zhuama_small_frame_png" y="153"   x="274"/>
+				<e:Image source="zhuama_small_frame_png" y="153"   x="400"/>
+				<e:Image source="zhuama_small_frame_png" y="153"   x="524"/>
+				<e:Image source="zhuama_small_frame_png" y="285"   x="27"/>
+				<e:Image source="zhuama_small_frame_png" y="285"   x="152"/>
+				<e:Image source="zhuama_small_frame_png" y="285"   x="274"/>
+				<e:Image source="zhuama_small_frame_png" y="285"   x="400"/>
+				<e:Image source="zhuama_small_frame_png" y="285"   x="525"/>
+				<e:Image source="zhuama_small_frame_png" y="416"   x="28"/>
+				<e:Image source="zhuama_small_frame_png" y="416"   x="152"/>
+				<e:Image source="zhuama_small_frame_png" y="416"   x="274"/>
+				<e:Image source="zhuama_small_frame_png" y="416"   x="399"/>
+				<e:Image source="zhuama_small_frame_png" y="416"   x="524"/>
+			</e:Group>
+			<e:Group id="cardGroup" height="558" width="642" y="76" x="37"/>
+		</e:Group>
+		<e:Image y="639" source="zhong_ma_hint_png" horizontalCenter="0" width="600" scale9Grid="8,7,123,42"/>
+		<e:Label text="中马个数:" y="654" horizontalCenter="0"/>
+		<e:Label id="countLabel" text="0" y="654" horizontalCenter="86.5"/>
+		</e:Group>
+	
+</e:Skin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatRecordSkin" width="686" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:ViewStack id="chatStack" width="681" height="80" x="0" y="0" selectedIndex="0" anchorOffsetY="0">
+		<e:Group x="20" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" height="80">
+			<e:Image x="0" verticalCenter="0" source="friend_txk_png" width="70" height="70"/>
+			<e:Image id="heHead" width="60" height="60" left="6" verticalCenter="0"/>
+			<e:Image source="chat_message_box_png" scale9Grid="21,41,111,14" anchorOffsetX="0" width="27" x="76" verticalCenter="0"/>
+			<e:Label id="heLabel" lineSpacing="1" maxWidth="370" backgroundColor="0x8a4f2c" background="true" size="22" fontFamily="FZHTK" height="62" verticalAlign="middle" anchorOffsetX="0" x="100" verticalCenter="0"/>
+			<e:Image source="chat_message_box_png" anchorOffsetX="0" width="13" right="-13" verticalCenter="0" scale9Grid="0,41,119,14"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" scaleX="1" scaleY="1" right="20" verticalCenter="0">
+			<e:Image source="friend_txk_png" y="0" right="0" width="70" height="70"/>
+			<e:Image id="meHead" width="60" height="60" top="6" right="6"/>
+			<e:Image scaleX="-1" anchorOffsetX="13.5" scale9Grid="21,41,111,14" width="27" right="64" source="chat_message0_box_png" verticalCenter="0"/>
+			<e:Label id="meLabel" lineSpacing="1" maxWidth="370" backgroundColor="0x5f962a" background="true" size="24" fontFamily="FZHTK" height="62" verticalAlign="middle" anchorOffsetX="0" right="91" verticalCenter="0"/>
+			<e:Image scaleX="-1" anchorOffsetX="6.5" width="13" scale9Grid="0,41,120,14" left="-13" source="chat_message0_box_png" verticalCenter="0"/>
+		</e:Group>
+	</e:ViewStack>
+</e:Skin>

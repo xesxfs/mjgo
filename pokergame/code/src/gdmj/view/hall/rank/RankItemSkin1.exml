@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankItemSkin1" width="624" height="84" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="624" height="84" y="0" anchorOffsetY="0" anchorOffsetX="0">
+		
+				<e:Image id="rankIcon" width="73" height="65" x="16" verticalCenter="0" source="{data.rankIcon}"/>
+				<e:Label id="myrank" text="{data.sort}" x="17" verticalCenter="0" size="26" fontFamily="SimHei" stroke="2" strokeColor="0xbc521e" textColor="0xf7a31e" textAlign="center" width="77" height="36"/>
+                <e:Label id="deskName" text="{data.deskName}" x="95" size="26" verticalCenter="0"  fontFamily="SimHei" textColor="0xf2ffda" textAlign="center" width="215" height="31"/>
+							<e:Label id="DeskNumber" text="{data.deskCode}" x="320" verticalCenter="0" size="26" fontFamily="SimHei" stroke="2" strokeColor="0xbc521e" textColor="0xf7a31e" textAlign="center" width="180" height="32"/>
+							<e:Label id="point" text="{data.point}" x="543" verticalCenter="0" size="26" fontFamily="SimHei"  textAlign="center" textColor="{data.pointColor}" width="77" height="33"/>
+                            <e:Image id="rankBg" width="616" height="82" x="4" y="4" scale9Grid="21,9,132,57" scaleX="1" scaleY="1" source="{data.rankBg}"/>
+			
+	</e:Group>
+</e:Skin>

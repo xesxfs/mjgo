@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ReNewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image width="688" height="582" source="feedback_bg_png" x="0" y="0"/>
+		<e:Image width="644" height="378" x="18" y="71" scale9Grid="21,23,129,139" source="feedback_bg0_png"/>
+		<e:Image width="230" height="56" x="230" y="12" source="feedback_title_png"/>
+		<e:Image y="22" source="renew_title_png" horizontalCenter="0"/>
+		
+		<e:Button id="closeBtn" label="" x="577" y="0" >
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="set_close_png"/>
+					<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="set_closeBtn_png"/>
+					
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="confirmBtn" y="472" width="202" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="renew_btn_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group x="120" y="210">
+			<e:Label id="editLabel" size="26" verticalCenter="0.5" horizontalCenter="0" width="432" height="60" textAlign="center" verticalAlign="middle" text="您的房间使用期限已到,请续费!" textColor="0xD07F47"/>
+		</e:Group>
+		<e:Group id="vipRadioGroup" y="391" width="100%">
+			<e:RadioButton id="vipMonthRadioBtn" value="0" label="25元/月" groupName="ReNewRadio" x="60" selected="false" y="-30">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+						<e:Label id="labelDisplay" x="52" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="vipSeasonRadioBtn" value="0" label="60/季" groupName="ReNewRadio" x="287" y="-30" selected="true">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+						<e:Label id="labelDisplay" x="52" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="vipYearRadioBtn" value="0" label="208元/年" groupName="ReNewRadio" x="480" y="-30">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image source="com_unchk_png" source.down="com_chk_png"/>
+						<e:Label id="labelDisplay" x="52" verticalCenter="0" size="26" fontFamily="楷体" textColor="0xF2FFDA"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+		</e:Group>
+	</e:Group>
+</e:Skin>

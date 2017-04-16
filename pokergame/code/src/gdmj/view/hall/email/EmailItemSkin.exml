@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin states="up,down" class="EmailItemSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="577" height="136">
+	<e:Image id="email_bg" width="577" height="136" x="0" y="0" source="hall_within_box_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="23,24,64,54"/>
+	<e:Label id="email_hard" text="房卡1张" x="130" y="0" anchorOffsetX="0" width="400" anchorOffsetY="0" height="68" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0x943402"/>
+	<e:Label id="email_time" text="2017-1-25" x="130" y="68" anchorOffsetX="0" width="400" anchorOffsetY="0" height="68" verticalAlign="middle" fontFamily="SimHei" size="25" textColor="0x943402"/>
+	<e:Label text="" x="130" backgroundColor="0x000000" background="true" width="380" anchorOffsetY="0" height="1" y="68"/>
+	<e:Image id="email_iamge" x="30" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" source="open_envelope_png"/>
+</e:Skin>

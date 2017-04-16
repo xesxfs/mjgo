@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SignInPanelSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="1280" height="720" touchThrough="true" touchEnabled="false" touchChildren="true">
+		<ns1:PanelBg id="panelBg" skinName="PanelBgBSkin" x="0" y="0"/>
+		<e:Group x="128" y="75">
+			<e:Image source="sign_filter0_png" x="506" y="9"/>
+		</e:Group>
+		<e:Group id="bgGroup" y="8" width="1142" height="692" horizontalCenter="0" touchEnabled="false" touchChildren="true">
+			<e:Image source="sign_award_txt_png" y="21" x="485"/>
+			<e:Image x="-44" y="72" source="com_icon_light1_png"/>
+			<e:Image x="461" y="84" scale9Grid="84,24,199,33" width="606" source="com_btn19_png"/>
+			<e:Button id="openVipBtn" x="786" y="609">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" verticalCenter="0" horizontalCenter="0" source="sign_openvip_png"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label text="VIP签到可领取双倍奖励！还有专属房免费送！" x="324" y="636" size="22" textColor="0xF7C13E" fontFamily="楷体"/>
+			<e:Label text="转动转盘，带给你更多奖励和福利哦！！连续七天签到可召唤财神下凡。" x="537" y="97" size="24" textColor="0xDC9B6C" height="56" width="436" fontFamily="楷体"/>
+			<e:Label id="signLightLabel" text="连签6天" x="24" y="110" width="25" height="95" size="24" textAlign="center" textColor="0xFFEDE5" fontFamily="楷体" bold="true" stroke="2" strokeColor="0xEB5210"/>
+		</e:Group>
+		
+		
+		<e:Group id="signInDayGroup" y="185" right="170">
+			<ns1:SignAward id="day1Sign" skinName="SignAwardSkin" y="0" x="0"/>
+			<ns1:SignAward id="day2Sign" x="165" y="3" skinName="SignAwardSkin"/>
+			<ns1:SignAward id="day3Sign" skinName="SignAwardSkin" y="0" x="330"/>
+			<ns1:SignAward id="day4Sign" skinName="SignAwardSkin" y="142" x="0"/>
+			<ns1:SignAward id="day5Sign" skinName="SignAwardSkin" y="146" x="165"/>
+			<ns1:SignAward id="day6Sign" skinName="SignAwardSkin" y="142" x="330"/>
+			<ns1:SignAward id="day7Sign" skinName="SignAwardSkin" y="292" x="0"/>
+			<e:Image x="205" y="342" source="com_btn18_png"/>
+			<e:Label text="连续签到：" x="224" y="350" size="22"/>
+			<e:Label id="dateLabel" text="6" x="329" y="349" size="22" textColor="0xE2C86C" bold="true"/>
+			<e:Label text="天" x="348" y="351" size="22"/>
+		</e:Group>
+		<ns1:Align id="align" x="0" skinName="AlignSkin" bottom="74"/>
+	</e:Group>
+</e:Skin>

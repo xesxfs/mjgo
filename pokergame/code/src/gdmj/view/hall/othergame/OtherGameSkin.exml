@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OtherGameSkin" width="720" height="1280" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group id="backgroup" left="0" right="0" top="0" bottom="0">
+			<e:Image source="game_bg_jpg" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="gstateLab" text="该桌正在对局中..." horizontalCenter="0" verticalCenter="0" fontFamily="黑体" visible="false"/>
+		</e:Group>
+		<e:Group id="headGroup" touchEnabled="false" touchThrough="true" left="0" right="0" top="0" bottom="0">
+			<ns1:HeadUI skinName="HeadUISkin" bottom="277" horizontalCenter="0"/>
+			<ns1:HeadUI skinName="HeadUISkin" right="60" verticalCenter="0"/>
+			<ns1:HeadUI skinName="HeadUISkin" top="300" horizontalCenter="0"/>
+			<ns1:HeadUI skinName="HeadUISkin" left="60" verticalCenter="0"/>
+		</e:Group>
+		<e:Group touchThrough="true" id="overShutupGroup" left="0" right="0" top="0" bottom="0">
+			<e:Image id="gameKick0" source="game_over0_png" width="50" height="50" x="442" bottom="429"/>
+			<e:Image id="gameKick1" source="game_over0_png" width="50" height="50" x="646" verticalCenter="-69"/>
+			<e:Image id="gameKick2" source="game_over0_png" width="50" height="50" x="440" top="313"/>
+			<e:Image id="gameKick3" source="game_over0_png" width="50" height="50" x="15" verticalCenter="-72"/>
+			<e:Image id="gameShutup0" source="game_shutup0_png" width="50" height="50" x="442" bottom="372"/>
+			<e:Image id="gameShutup1" source="game_shutup0_png" width="50" height="50" x="646" verticalCenter="-4"/>
+			<e:Image id="gameShutup2" source="game_shutup0_png" width="50" height="50" x="440" top="374"/>
+			<e:Image id="gameShutup3" width="50" height="50" x="15" source="game_shutup0_png" verticalCenter="-7"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankRuleDetailSkin"  xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0">
+		<e:Image source="rank_rule_bg_png" scale9Grid="20,101,33,375" width="900"/>
+		<e:Image source="rank_rule_title_png" y="9" horizontalCenter="0"/>
+		<e:Group height="100%" width="100%">
+			<e:Label y="83" textColor="0x3C7622" fontFamily="楷体" size="36" bold="true" text="今日巅峰排行榜积分规则" left="50"/>
+			<e:Label y="228" textColor="0x3C7622" text="今日巅峰排行前3名可领取奖励" fontFamily="楷体" bold="true" size="36" left="50"/>
+			<e:Label y="442" textColor="0x3C7622" text="每天24点过后可以领取前一天排行榜的奖励，并清空当天的记录" fontFamily="楷体" bold="true" left="50" size="36" x="10" width="743" multiline="true" height="80"/>
+			<e:Label y="123" fontFamily="楷体" size="36" textColor="0xBD890E" bold="true" multiline="true" text="每次结算时会将本局胜利的积分进行累计，负分不进行累计" width="715" height="97" left="50"/>
+			<e:Label multiline="true" y="277" textColor="0xBD890E" size="36" fontFamily="楷体" bold="true" height="36" text="第一名：10张房卡(独立型)" left="50"/>
+			<e:Label y="327" textColor="0xBD890E" height="36" text="第二名：5张房卡(独立型)，5张房卡(共付型)" fontFamily="楷体" bold="true" multiline="true" size="36" left="50"/>
+		</e:Group>
+		<e:Label multiline="true" y="377" textColor="0xBD890E" size="36" text="第三名：10张房卡(共付型)" fontFamily="楷体" bold="true" height="36" left="50"/>
+		<e:Button right="10" top="0" id="closeBtn" x="10" y="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="match_close_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

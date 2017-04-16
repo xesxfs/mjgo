@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PreloadPanelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="load_bg_png" width="100%" height="100%"/>
+	<e:ProgressBar width="20" height="20" x="192" y="417" skinName="skins.ProgressBarSkin"/>
+
+</e:Skin>

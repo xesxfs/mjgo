@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LookPswPanelSkin1" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="16" y="349">
+		<e:Image width="688" height="582" source="feedback_bg_png" x="0" y="0"/>
+		<e:Image width="644" height="378" x="18" y="71" source="feedback_bg0_png" scale9Grid="21,23,129,139"/>
+		<e:Image width="230" height="56" x="230" y="12" source="feedback_title_png"/>
+		<e:Image width="158" height="41" x="266" y="27" source="score_word4_png"/>
+		<e:Image width="111" height="73"  source="set_close_png" y="2" x="578"/>
+		<e:Button id="closeBtn" label="" x="577" y="0" >
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				
+				<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="set_closeBtn_png"/>
+				
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="cancleBtn" label="" x="93" y="484" width="202">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="score_btn5_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="okBtn" label="" x="393" y="484" width="202">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="score_btn6_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group x="106" y="231">
+			<e:Image width="440" height="63" x="0" y="0" source="score_edit_png" scale9Grid="14,7,89,49"/>
+			<e:Label id="editLabel" text="请输入他人分享的回放码" size="26" verticalCenter="0" horizontalCenter="0" textColor="0xfff3eb" fontFamily="SimHei"/>
+			<e:EditableText id="lookCodeEdt" width="422" height="40" text="" x="18" y="14" anchorOffsetY="0" anchorOffsetX="0" fontFamily="SimHei"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

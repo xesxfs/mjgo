@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WinEffectSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="winImage" source="result_winEffet_png" anchorOffsetX="150" anchorOffsetY="127" x="360" y="480"/>
+</e:Skin>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ScorePanelSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0">
+		<e:Image horizontalCenter="0" verticalCenter="0" width="1044" height="549" scale9Grid="63,153,35,302" source="hall_panel_bg_png"/>
+		<e:Image width="100%" height="543" source="hall_com_filter_png"/>
+		<e:Image horizontalCenter="0.5" source="score_title_png" top="9"/>
+		<e:Button id="closeBtn" x="938" top="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="com_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="816" y="93" horizontalCenter="0">
+			<e:Label text="结果" x="-44" size="32" fontFamily="黑体" verticalCenter="0" textColor="0xE7DE43"/>
+			<e:Label text="房间号" fontFamily="黑体" size="32" x="101" verticalCenter="0" textColor="0xE7DE43"/>
+			<e:Label text="时间" fontFamily="黑体" size="32" x="510" verticalCenter="0" textColor="0xE7DE43"/>
+			<e:Label text="分数" fontFamily="黑体" size="32" x="325" verticalCenter="0" textColor="0xE7DE43"/>
+		</e:Group>
+		<e:Button id="lookBtn" y="461" horizontalCenter="0.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="score_look_btn_png_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Scroller width="1004" height="298" y="149" horizontalCenter="0">
+		<e:List id="scoreList" height="816" width="429">
+				<e:itemRenderer>
+					<ns1:ScoreItem skinName="ScoreItemSkin"/>
+				</e:itemRenderer>
+
+				<e:layout>
+					<e:VerticalLayout paddingTop="6" horizontalAlign="center"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label id="nullTipsLab" text="您还没有和好友创建房间的记录" y="280" size="48" textColor="0x6DBC1C" bold="true" horizontalCenter="0" fontFamily="宋体" visible="false"/>
+
+	</e:Group>
+</e:Skin>

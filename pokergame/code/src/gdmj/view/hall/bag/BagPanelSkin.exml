@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BagPanelSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Group y="0" x="0">
+		<e:Image width="1044" source="hall_panel_bg_png" scale9Grid="56,122,48,333" height="100%"/>
+		<e:Image width="100%" height="636" source="hall_com_filter_png"/>
+		<e:Image source="bag_title_png" y="13" horizontalCenter="0.5"/>
+		<e:Image y="143" scale9Grid="34,26,53,66" width="990" height="446" horizontalCenter="0" source="hall_com_area_png"/>
+		<e:RadioButton id="propsType" value="0" y="73.5" x="52" groupName="bag" selected="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="bag_act_u_png" source.down="bag_act_d_png"/>
+					<e:Image width="100%" height="100%" source="bag_props_d_png" source.down="bag_props_u_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton value="1" y="73.5" x="296" groupName="bag" selected="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="bag_act_u_png" source.down="bag_act_d_png"/>
+					<e:Image width="100%" height="100%" source="bag_action_d_png" source.down="bag_action_u_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton value="2" y="73" x="536" groupName="bag" selected="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="bag_act_u_png" source.down="bag_act_d_png"/>
+					<e:Image width="100%" height="100%" source="bag_jok_d_png" source.down="bag_jok_u_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton value="3" y="73" x="775" groupName="bag" selected="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Image width="100%" height="100%" source="bag_act_u_png" source.down="bag_act_d_png"/>
+					<e:Image width="100%" height="100%" source="bag_scene_d_png" source.down="bag_scene_u_png"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:ViewStack id="typeView" width="971" height="440" y="147" x="33" selectedIndex="0">
+			<e:Group width="100%" height="100%" name="视图0">
+				<e:Scroller width="977">
+					
+						<e:List id="propsList" height="435" width="100%">
+							<e:itemRenderer>
+								<ns1:BagItem skinName="BagItemSkin" y="151" x="175"/>
+							</e:itemRenderer>
+
+							<e:layout>
+								<e:TileLayout requestedColumnCount="3" paddingLeft="10" paddingTop="10" horizontalGap="10" verticalGap="10"/>
+							</e:layout>
+						</e:List>
+					
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="视图1">
+				<e:Scroller width="977">
+					<e:List id="actList" width="100%" height="435">
+
+						<e:layout>
+							<e:TileLayout paddingTop="10" horizontalGap="10" requestedColumnCount="3" paddingLeft="10" verticalGap="10"/>
+						</e:layout>
+						<e:itemRenderer>
+							<ns1:BagItem skinName="BagItemSkin" y="151" x="175"/>
+						</e:itemRenderer>
+					</e:List>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="视图2">
+				<e:Scroller width="977">
+					<e:List id="faceList" width="100%" height="435">
+
+						<e:layout>
+							<e:TileLayout paddingTop="10" horizontalGap="10" requestedColumnCount="3" paddingLeft="10" verticalGap="10"/>
+						</e:layout>
+						<e:itemRenderer>
+							<ns1:BagItem skinName="BagItemSkin" y="151" x="175"/>
+						</e:itemRenderer>
+					</e:List>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="100%" name="视图3">
+				<e:Scroller width="977">
+					<e:List id="sceneList" width="100%" height="435">
+						<e:layout>
+							<e:TileLayout paddingTop="10" horizontalGap="10" requestedColumnCount="3" paddingLeft="10" verticalGap="10"/>
+						</e:layout>
+						<e:itemRenderer>
+							<ns1:BagItem skinName="BagItemSkin" y="151" x="175"/>
+						</e:itemRenderer>
+					</e:List>
+				</e:Scroller>
+			</e:Group>
+		</e:ViewStack>
+		<e:Button id="closeBtn" x="938" top="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="com_close_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

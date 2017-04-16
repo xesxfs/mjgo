@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="JjjSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:PanelBg id="panelBg" skinName="PanelBgASkin" x="0" y="0"/>
+	<e:Group width="1280" height="720"  touchEnabled="false" y="-10">
+		<e:Group width="100%" height="100%" touchEnabled="false">
+			<e:Image source="jjj_title_png" y="47" horizontalCenter="0"/>
+			<e:Image y="141" scale9Grid="59,16,163,74" width="524" horizontalCenter="0" height="140" source="com_box21_png"/>
+			<e:Image y="623" horizontalCenter="0" scale9Grid="25,13,156,23" width="358" source="com_btn17_png"/>
+			<e:Label text="今日剩余领取次数" x="497" y="636" textColor="0xFFF7E8" size="22"/>
+			<e:Label text="次(共3次)" x="698" y="636" size="22"/>
+			<e:Label id="countLabel" text="2" x="682" y="636" size="22" textColor="0xFFC554"/>
+			<e:Label id="tipLabel" text="快来领取一份救济金吧" x="436" textColor="0x965424" size="24" width="443" height="106" textAlign="center" y="156" verticalAlign="middle"/>
+			<e:Group id="boxGroup" y="270" horizontalCenter="0" touchEnabled="false">
+				<e:ToggleSwitch x="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="jjj_close_png" source.down="jjj_open_png"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:ToggleSwitch x="320" y="10">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="jjj_close_png" source.down="jjj_open_png"/>
+							<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:ToggleSwitch y="20" x="640">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="jjj_close_png" source.down="jjj_open_png"/>
+							<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+				<e:BitmapLabel x="80" y="242" font="jjj_f_fnt" text="+2000"/>
+				<e:BitmapLabel y="242" text="+2000" font="jjj_f_fnt" x="400"/>
+				<e:BitmapLabel y="242" text="+2000" font="jjj_f_fnt" x="720"/>
+				<e:Image x="32" y="226" source="icon_gold_png"/>
+				<e:Image y="226" x="352" source="icon_gold_png"/>
+				<e:Image y="226" x="672" source="icon_gold_png"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>
