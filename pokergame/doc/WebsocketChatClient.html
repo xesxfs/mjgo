@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WebSocket Chat</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var socket;
+        if (!window.WebSocket) {
+            window.WebSocket = window.MozWebSocket;
+        }
+        if (window.WebSocket) {
+            socket = new WebSocket("ws://localhost:8080/websocket");
+            socket.onmessage = function(event) {
+                var ta = document.getElementById('responseText');
+                ta.value = ta.value + '\n' + event.data
+            };
+            socket.onopen = function(event) {
+                var ta = document.getElementById('responseText');
+                ta.value = "连接开启!";
+            };
+            socket.onclose = function(event) {
+                var ta = document.getElementById('responseText');
+                ta.value = ta.value + "连接被关闭";
+            };
+        } else {
+            alert("你的浏览器不支持 WebSocket！");
+        }
+        /* 登录 */
+        function login() {
+        	if (!window.WebSocket) {
+                return;
+            }
+        	if (socket.readyState == WebSocket.OPEN) {
+        		var message ="{'cmd':'1','game':'-1','msg':[{'openId':'owUlNw9vcKUUlqxxSYg54i1ATAsc','nickname':'等风来'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        	
+        }
+        
+		/* 掉线数据恢复 */
+        function confirmData() {
+        	if (!window.WebSocket) {
+        		return;
+        	}
+        	if (socket.readyState == WebSocket.OPEN) {
+        		var message = "{'cmd':'56','game':'0','msg':[{'openId':'owUlNw9vcKUUlqxxSYg54i1ATAsc'}]}";
+        		socket.send(message);
+        	} else {
+        		alert("连接没有开启.");
+        	}
+        }
+        
+        /* 创建房间 */
+        function createRoom() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var message ="{'cmd':'4','game':'0','msg':[{'level':'1'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 解散房间 */
+        function roomOuts() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+            	var roomOutsValue = document.getElementById("roomOuts").value;
+            	var roomId = parseInt(roomOutsValue);
+        		var message ="{'cmd':'20','game':'0','msg':[{'roomId':'" + roomId + "'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 快速加入 */
+        function quickJoin() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var message ="{'cmd':'2','game':'5','msg':[{'cardnum':'24','id':'123','level':'1'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+  		/* 加入房间 */
+        function joinRoom() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var roomIdValue = document.getElementById('roomid').value;
+        		var roomId = parseInt(roomIdValue);
+        		var message ="{'cmd':'5','game':'0','msg':[{'roomId':" + roomId + "}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        } 
+        /* 退出房间 */
+        function outOfRoom() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var roomIdValue = document.getElementById('roomid').value;
+        		var roomId = parseInt(roomIdValue);
+        		var message ="{'cmd':'18','game':'0','msg':[{'roomId':" + roomId + "}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        /* 准备 */
+        function prepare() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+            	var roomIDValue = document.getElementById('prepareroomid').value;
+            	var roomId = parseInt(roomIDValue);
+            	var message ="{'cmd':'7','game':'0','msg':[{'playerId':'owUlNw9vcKUUlqxxSYg54i1ATAsc','roomId':'" + roomId + "','ready':'ready'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 出牌 */
+        function operate() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+            	var roomIDValue = document.getElementById('operateroomid').value;
+            	var cardValue = document.getElementById('operatecard').value;
+            	var roomId = parseInt(roomIDValue);
+            	var card = cardValue.split(",");
+            	/* 转换成整型数组 */
+            	var cards = new Array();
+            	var len = card.length;
+            	var cardMessage = '[';
+            	for (var i = 0; i < len; i++){
+            		cards[i] = parseInt(card[i]);
+            		alert(cards[i]);
+            		alert(isNaN(cards[i]));
+            		cardMessage += cards[i];
+            		if(i == len - 1){
+            			cardMessage += ']'
+            			break;
+            		}
+            		cardMessage += ',';
+            	}
+            	alert(cardMessage);
+            	var message ="{'cmd':'9','game':'0','msg':[{'openId':'owUlNw9vcKUUlqxxSYg54i1ATAsc','roomId':'" + roomId + "','card':" + cardMessage + "}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 提示 */
+        function reminder() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+            	var roomIDValue = document.getElementById('operateroomid').value;
+            	var roomId = parseInt(roomIDValue);
+        		var message ="{'cmd':'30','game':'0','msg':[{'openId':'owUlNw9vcKUUlqxxSYg54i1ATAsc','roomId':" + roomId  + "}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 要不起 */
+        function pass() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+            	var roomIDValue = document.getElementById('operateroomid').value;
+            	var roomId = parseInt(roomIDValue);
+            	var cardMessage = '[]';
+        		var message ="{'cmd':'13','game':'0','msg':[{'openId':'owUlNw9vcKUUlqxxSYg54i1ATAsc','roomId':'" + roomId + "','card':" + cardMessage + "}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        
+        /* 排行榜 */
+        function list() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var message ="{'cmd':'13','game':'5','msg':[{'cardnum':'24'}]}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+        function send21() {	
+            if (!window.WebSocket) {
+                return;
+            }
+            if (socket.readyState == WebSocket.OPEN) {
+        		var message ="{'cmd':'21','game':'5','msg':[{'cardnum':'24','ready':'ready','roomId':'8915236'}],'readyNum':'1'}";
+                socket.send(message);
+            } else {
+                alert("连接没有开启.");
+            }
+        }
+    </script>
+    <form onsubmit="return false;">
+        <h3>WebSocket 聊天室：</h3>
+        <textarea id="responseText" style="width: 500px; height: 300px;"></textarea>
+        <br> 
+        <input type="text" name="message"  style="width: 300px"><br/>
+        <input type="button" value="登录" onclick="login()">
+        <input type="button" value="确认掉线数据恢复" onclick="confirmData()"/><br/>
+        <input type="button" value="创建房间" onclick="createRoom()">
+        <input type="text" id="roomOuts"/>
+        <input type="button" value="解散房间" onclick="roomOuts()"/><br/>
+        <input type="button" value="保存用户信息" onclick="send1()"><br/>
+        <input type="button" value="快速加入" onclick="quickJoin()"><br/>
+        	房间号：<input type="text" id="roomid"/>
+        <input type="button" value="加入房间" onclick="joinRoom()">
+        <input type="button" value="退出房间" onclick="outOfRoom()"><br/>
+        	房间号：<input type="text" id="prepareroomid"/>
+        <input type="button" value="准备" onclick="prepare()"><br/>
+        	房间号：<input type="text" id="operateroomid"/>
+        	牌组：<input type="text" id="operatecard"/>
+        <input type="button" value="出牌" onclick="operate()">
+        <input type="button" value="提示" onclick="reminder()"/>
+        <input type="button" value="要不起" onclick="pass()"/><br/>
+        <input type="button" value="排行查询" onclick="list()"><br/>
+        <input type="button" onclick="javascript:document.getElementById('responseText').value=''" value="清空聊天记录">
+    </form>
+</body>
+</html>
