@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="cardGroup" width="100%" height="100%">
+		<e:Image source="Q_png" y="878" x="0"/>
+		<e:Image source="K_png" x="42" y="878"/>
+		<e:Image source="J_png" x="84" y="878"/>
+		<e:Image source="A_png" x="126" y="878"/>
+		<e:Image source="9_png" x="168" y="878"/>
+		<e:Image source="8_png" x="209" y="878"/>
+		<e:Image source="7_png" x="251" y="878"/>
+		<e:Image source="6_png" x="293" y="878"/>
+		<e:Image source="5_png" x="335" y="878"/>
+		<e:Image source="4_png" x="376" y="878"/>
+		<e:Image source="3_png" x="418" y="878"/>
+		<e:Image source="2_png" x="460" y="878"/>
+		<e:Image source="10_png" x="502" y="878"/>
+		<e:Image source="1_png" y="878" x="543"/>
+		<e:Group id="outCardGroup" y="634" horizontalCenter="0" height="139"/>
+	</e:Group>
+</e:Skin>
