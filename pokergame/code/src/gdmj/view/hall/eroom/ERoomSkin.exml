@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ERoomSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="com_panel_bg_png"/>
+	<e:Image source="eroom_title_png" y="9" horizontalCenter="0"/>
+	<e:Button id="closeBtn" label="" y="32.5" right="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="com_close_btn_png"/>			
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="roomNoGroup" width="492" x="32" y="94" anchorOffsetX="0">
+		<e:Image source="eroom_input_bg_png" x="47" y="0"/>
+		<e:Image source="eroom_input_bg_png" x="135" y="1"/>
+		<e:Image source="eroom_input_bg_png" y="1" x="224"/>
+		<e:Image source="eroom_input_bg_png" x="310" y="1"/>
+		<e:Image source="eroom_input_bg_png" x="397" y="0"/>
+		<e:Label text="" x="55" y="9" anchorOffsetX="0" width="27" textAlign="center" height="30"/>
+		<e:Label text="" x="144" y="9" anchorOffsetX="0" width="27" textAlign="center" height="30"/>
+		<e:Label text="" x="233" y="9" anchorOffsetX="0" width="27" textAlign="center" height="30"/>
+		<e:Label text="" x="319" y="9" anchorOffsetX="0" width="27" textAlign="center" height="30"/>
+		<e:Label text="" x="406" y="9" anchorOffsetX="0" width="27" textAlign="center" height="30"/>
+	</e:Group>
+	<e:Group id="noGroup" width="450" height="223" y="149" anchorOffsetX="0" horizontalCenter="0" anchorOffsetY="0">
+		<e:Button label="1" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="eroom_bg1_png"/>
+	            <e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="2" x="111" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="3" x="223" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="4" y="0" right="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_bg2_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="5" y="71" scaleX="1" scaleY="1" left="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="6" x="111" y="71" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="7" x="223" y="71" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="8" y="71" scaleX="1" scaleY="1" right="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="9" y="141" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_bg3_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="0" x="111" y="140" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:BitmapLabel id="labelDisplay" horizontalCenter="0" verticalCenter="0" font="efont_fnt"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="resetBtn" label="" x="223" y="140" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%"  width="100%" height="100%" source="eroom_other_bg_png"/>
+				<e:Image source="eroom_reinput_png" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="delBtn" label="" y="141" scaleX="1" scaleY="1" x="335">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="eroom_del_bg_png"/>
+				<e:Image source="eroom_del_txt_png" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

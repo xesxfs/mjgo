@@ -8,7 +8,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 /**
  * 弹框管理类
- * @author chenkai
+ * @author chenwei
  * @date 2016/11/9
  *
  */
@@ -52,24 +52,6 @@ var PanelManager = (function (_super) {
         if (lock === void 0) { lock = true; }
         if (transData === void 0) { transData = null; }
         var panel = this.panelList[panelID];
-        if (panelID == PanelConst.ChatPanel) {
-            App.PopUpManager.changeTransparency(0.0);
-        }
-        else if (panelID == PanelConst.RankNewRuleDetail) {
-            App.PopUpManager.changeTransparency(0.0);
-        }
-        else if (panelID == PanelConst.GameBack) {
-            App.PopUpManager.changeTransparency(0.0);
-        }
-        else if (panelID == PanelConst.GameMall) {
-            App.PopUpManager.changeTransparency(0.0);
-        }
-        else if (panelID == PanelConst.GameSet) {
-            App.PopUpManager.changeTransparency(0.0);
-        }
-        else {
-            App.PopUpManager.changeTransparency(0.7);
-        }
         if (panel == null) {
             var clz = this.panelClassList[panelID];
             if (clz != null) {

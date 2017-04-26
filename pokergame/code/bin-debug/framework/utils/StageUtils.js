@@ -78,13 +78,12 @@ var StageUtils = (function (_super) {
      * 只有当浏览器横置时，宽高比才会超过16:9。
      */
     StageUtils.prototype.changeScaleMode = function () {
-        if (egret.Capabilities.boundingClientWidth / egret.Capabilities.boundingClientHeight > 9 / 16) {
-            this.stage.scaleMode = egret.StageScaleMode.SHOW_ALL;
-        }
-        else {
-            this.stage.scaleMode = egret.StageScaleMode.FIXED_WIDTH;
-        }
-        console.log("当前适配模式:", this.stage.scaleMode);
+        // if(egret.Capabilities.boundingClientWidth / egret.Capabilities.boundingClientHeight > 9/16){
+        //     this.stage.scaleMode = egret.StageScaleMode.SHOW_ALL;
+        // }else{
+        //     this.stage.scaleMode = egret.StageScaleMode.FIXED_WIDTH;
+        // }
+        // console.log("当前适配模式:",this.stage.scaleMode);
     };
     return StageUtils;
 }(SingleClass));

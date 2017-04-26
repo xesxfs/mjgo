@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DKGameSceneSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" height="100%">
+		<e:Image source="game_bg_png" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group width="100%" height="100%">
+		<e:Group bottom="0" right="40">
+			<e:Image source="dikuang_tubiao_png" scaleX="1" scaleY="1"/>
+			<e:Button label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="xiaoxi_tubiao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group left="40" top="40">
+			<e:Image source="dikuang_tubiao_png" scaleX="1" scaleY="1"/>
+			<e:Button label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="likai_tubiao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group right="40" top="40">
+			<e:Image source="dikuang_tubiao_png" scaleX="1" scaleY="1"/>
+			<e:Button label="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="shezhi-tubiao_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group x="884.01" y="69" anchorOffsetX="0">
+			<e:Image source="kuang_png" right="0"/>
+			<e:Image source="guizhekuang_png" right="74" verticalCenter="0"/>
+			<e:Image source="guizhe_txt_png" right="58.66999999999999" verticalCenter="-7"/>
+		</e:Group>
+		<e:Group bottom="14" horizontalCenter="-140">
+			<e:Image source="da_kuang_bg_png" verticalCenter="0"/>
+			<e:Image source="ju_bg_png" right="0"/>
+			<e:Image source="game_fen_png" right="0" y="0"/>
+			<e:BitmapLabel y="5.66" font="roomfont1_fnt" text="1" anchorOffsetX="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group bottom="14" horizontalCenter="140">
+			<e:Image source="da_kuang_bg_png" verticalCenter="0"/>
+			<e:Image source="ju_bg_png" right="0"/>
+			<e:Image source="ju_txt_png" scaleX="1" scaleY="1" right="0" verticalCenter="0"/>
+			<e:Image source="fuhao_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:BitmapLabel font="roomfont1_fnt" text="2" anchorOffsetX="0" horizontalCenter="-13.5" verticalCenter="0.5"/>
+			<e:BitmapLabel font="roomfont1_fnt" text="4" anchorOffsetX="0" horizontalCenter="10.5" verticalCenter="0"/>
+		</e:Group>
+		<e:Group anchorOffsetX="0" width="511" horizontalCenter="0" top="40">
+			<e:Label text="经典双扣" fontFamily="Microsoft YaHei" y="0" left="0" textColor="0xe1ece5" size="20"/>
+			<e:Label text="4局" fontFamily="Microsoft YaHei" y="0" right="0" size="20" textColor="0xe1ece5"/>
+			<e:Group anchorOffsetX="0" top="0" horizontalCenter="29">
+				<e:Label text="房间号:" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" textColor="0xe1ece5" size="20"/>
+				<e:Label text="12345" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" x="65" textColor="0xe1ece5" size="20"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group width="100%" height="100%">
+		<e:Group left="0" verticalCenter="0">
+			<ns1:HeadUI skinName="HeadUISkin" horizontalCenter="0"/>
+			<e:Label id="nameLabel" size="18" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昨夜清风来" anchorOffsetX="0" width="130" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x032514" textColor="0xFCDB3C" y="100"/>
+		</e:Group>
+		<e:Group x="291" top="70">
+			<ns1:HeadUI skinName="HeadUISkin" horizontalCenter="0"/>
+			<e:Label id="nameLabel0" size="18" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昨夜清风来" anchorOffsetX="0" width="130" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x032514" textColor="0xFCDB3C" y="100"/>
+		</e:Group>
+		<e:Group right="0" verticalCenter="0">
+			<ns1:HeadUI skinName="HeadUISkin" horizontalCenter="0"/>
+			<e:Label id="nameLabel1" size="18" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昨夜清风来" anchorOffsetX="0" width="130" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x032514" textColor="0xFCDB3C" y="100"/>
+		</e:Group>
+		<e:Group bottom="0" left="0">
+			<ns1:HeadUI skinName="HeadUISkin" left="0"/>
+			<e:Label id="nameLabel2" size="18" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昨夜清风来" anchorOffsetX="0" width="130" fontFamily="Microsoft YaHei" stroke="2" strokeColor="0x032514" textColor="0xFCDB3C" y="52" x="95"/>
+		</e:Group>
+	</e:Group>
+	<e:Group width="100%" height="100%">
+		<ns1:OutTimeUI skinName="OutTimeUISkin" left="159" verticalCenter="0"/>
+		<ns1:OutTimeUI y="192" skinName="OutTimeUISkin" x="449"/>
+		<ns1:OutTimeUI skinName="OutTimeUISkin" x="742.34" verticalCenter="0"/>
+		<ns1:OutTimeUI y="412" skinName="OutTimeUISkin" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="100%" height="100%">
+		<ns1:ResidueUI skinName="ResidueUISkin" left="146" verticalCenter="65"/>
+		<ns1:ResidueUI x="236.33" y="112.65" skinName="ResidueUISkin"/>
+		<ns1:ResidueUI x="779.65" y="362.66" skinName="ResidueUISkin"/>
+	</e:Group>
+	
+</e:Skin>

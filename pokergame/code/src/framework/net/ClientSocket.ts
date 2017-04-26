@@ -1,7 +1,7 @@
 /**
  * Socket管理类
- * @author chenkai
- * @date 2016/6/28
+ * @author chenwei
+ * @date 2017/4/24
  * 
  * 1 连接socket
  * 2 注册回调
@@ -28,8 +28,7 @@ class ClientSocket {
     public serverType:Server_Type;           //服务器类型
     public gameID:Game_ID;                   //游戏ID
     public roomLevel:Room_Level;             //金币房间等级
-    public deskCode:string;                  //加入的房间号
-    private headSize:number =24              //头大小
+  
 
 
     /**
@@ -78,7 +77,7 @@ class ClientSocket {
         }
 
         this.socket = new egret.WebSocket();
-        this.socket.type = egret.WebSocket.TYPE_BINARY;
+        this.socket.type = egret.WebSocket.TYPE_STRING;
         this.socket.addEventListener(egret.Event.CONNECT, this.onConnect, this);         
         this.socket.addEventListener(egret.Event.CLOSE,this.onClose,this);
         this.socket.addEventListener(egret.IOErrorEvent.IO_ERROR,this.onError,this);
@@ -170,26 +169,19 @@ class ClientSocket {
      * @param d1 协议号1
      * @param d2 协议号2
      */ 
-    public send(proto: string,data:any = {}){
+    public send(data:any = {}){
+
         if(this.socket && this.socket.connected) {
-           
-            var sendDataByte:egret.ByteArray =new egret.ByteArray();
+
             var sendJson = JSON.stringify(data)
-            sendDataByte.writeUTFBytes(sendJson)
-            var size: number = this.headSize + sendDataByte.length; 
-//            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",data)
-            var protoList = proto.split("_");
-            var head: egret.ByteArray = this.getHead(size, protoList[0], protoList[1], protoList[2]);
-            head.writeBytes(sendDataByte);
-//            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",JSON.stringify(data).length)
-            this.socket.writeBytes(head);
+            console.log("send:"+sendJson)
+            this.socket.writeUTF(sendJson);
             this.socket.flush();
-            console.log("send:",proto,JSON.stringify(data));
+   
           
         } else {
             egret.log("socket is not connected");
-            this.dataBuffer = data;
-            this.protoBuffer = proto;
+            this.dataBuffer = data;//临时保存数据,在发送数据时断线，再重新发            
             App.EventManager.sendEvent(EventConst.SocketNotConnect,this);
             
         }
@@ -197,37 +189,29 @@ class ClientSocket {
     
     //接收数据
     private onRecieve(e: egret.ProgressEvent): void {
-        var b: egret.ByteArray = new egret.ByteArray();
-        b.endian = egret.Endian.LITTLE_ENDIAN;
-        this.socket.readBytes(b);
-        this.process(b);
-        
+        var revData=this.socket.readUTF();
+        console.log("rev:"+revData);     
+        this.process(revData);   
     }
 
     /**
      * 解析数据
      * @param b 待解析数据
      */
-    public process(b: egret.ByteArray): void {
-        var size = b.readInt();
-        if(size!=b.length){
-            console.log("数据错误!!")
-            return
-        }
-        var id1 = b.readInt();
-        var id2 = b.readInt();
-        var id3 = b.readInt();
-        var reserve1 = b.readInt();
-        var reserve2 = b.readInt();
-        var str = b.readUTFBytes(b.length - this.headSize);
-        var data;
+    public process(b: string): void {
+        var str =b;
+
+        var data:Object;
         if("" != str) {
             data = JSON.parse(str);
         }
-        var proto: string = id1 + '_' + id2 + '_' + id3;
+        if(!data.hasOwnProperty("cmd")){
+            console.log("未知指令")
+            return
+        }
+        var proto: string = "cmd"+data["cmd"];
         var callBack: Function = this.callBackList[proto];
-        var thisObject = this.objList[proto];
-        console.log("rev:",ErrorCode.cn(proto),proto,data);
+        var thisObject = this.objList[proto];        
         if(callBack && thisObject) {
             callBack.call(thisObject,data);
         } else {
@@ -235,22 +219,5 @@ class ClientSocket {
         }
     }
     
-    /**
-     * 消息头部
-     * @param size 数据长度
-     * @param id1 
-     * @param id2
-     */
-    private getHead(size, id1, id2,id3):egret.ByteArray{
-        var a: egret.ByteArray = new egret.ByteArray();       
-        a.endian = egret.Endian.LITTLE_ENDIAN;
-        a.writeInt(size);
-        a.writeInt(id1);
-        a.writeInt(id2);
-        a.writeInt(id3);
-        a.writeInt(0);
-        a.writeInt(0);
-        return a;
-    }
 }
 

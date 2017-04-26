@@ -1,0 +1,11 @@
+{"file":"roomfont2.png","frames":{
+"0":{"x":21,"y":15,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"1":{"x":11,"y":29,"w":7,"h":12,"offX":2,"offY":1,"sourceW":10,"sourceH":14},
+"2":{"x":1,"y":1,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"3":{"x":1,"y":43,"w":7,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"4":{"x":1,"y":29,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"5":{"x":20,"y":29,"w":7,"h":12,"offX":2,"offY":1,"sourceW":10,"sourceH":14},
+"6":{"x":21,"y":1,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"7":{"x":1,"y":15,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"8":{"x":11,"y":1,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14},
+"9":{"x":11,"y":15,"w":8,"h":12,"offX":1,"offY":1,"sourceW":10,"sourceH":14}}}

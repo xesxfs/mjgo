@@ -3,8 +3,8 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 };
 /**
  * Socket管理类
- * @author chenkai
- * @date 2016/6/28
+ * @author chenwei
+ * @date 2017/4/24
  *
  * 1 连接socket
  * 2 注册回调
@@ -23,7 +23,6 @@ var ClientSocket = (function () {
         this.protoBuffer = ""; //断线时，协议缓存
         this.dataBuffer = null; //断线时，数据缓存
         this.url = ""; //IP地址
-        this.headSize = 24; //头大小
     }
     /**
      * 注册通讯回调
@@ -69,7 +68,7 @@ var ClientSocket = (function () {
             this.socket.connected && this.socket.close();
         }
         this.socket = new egret.WebSocket();
-        this.socket.type = egret.WebSocket.TYPE_BINARY;
+        this.socket.type = egret.WebSocket.TYPE_STRING;
         this.socket.addEventListener(egret.Event.CONNECT, this.onConnect, this);
         this.socket.addEventListener(egret.Event.CLOSE, this.onClose, this);
         this.socket.addEventListener(egret.IOErrorEvent.IO_ERROR, this.onError, this);
@@ -151,83 +150,49 @@ var ClientSocket = (function () {
      * @param d1 协议号1
      * @param d2 协议号2
      */
-    ClientSocket.prototype.send = function (proto, data) {
+    ClientSocket.prototype.send = function (data) {
         if (data === void 0) { data = {}; }
         if (this.socket && this.socket.connected) {
-            var sendDataByte = new egret.ByteArray();
             var sendJson = JSON.stringify(data);
-            sendDataByte.writeUTFBytes(sendJson);
-            var size = this.headSize + sendDataByte.length;
-            //            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",data)
-            var protoList = proto.split("_");
-            var head = this.getHead(size, protoList[0], protoList[1], protoList[2]);
-            head.writeBytes(sendDataByte);
-            //            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",JSON.stringify(data).length)
-            this.socket.writeBytes(head);
+            console.log("send:" + sendJson);
+            this.socket.writeUTF(sendJson);
             this.socket.flush();
-            console.log("send:", proto, JSON.stringify(data));
         }
         else {
             egret.log("socket is not connected");
-            this.dataBuffer = data;
-            this.protoBuffer = proto;
+            this.dataBuffer = data; //临时保存数据,在发送数据时断线，再重新发            
             App.EventManager.sendEvent(EventConst.SocketNotConnect, this);
         }
     };
     //接收数据
     ClientSocket.prototype.onRecieve = function (e) {
-        var b = new egret.ByteArray();
-        b.endian = egret.Endian.LITTLE_ENDIAN;
-        this.socket.readBytes(b);
-        this.process(b);
+        var revData = this.socket.readUTF();
+        console.log("rev:" + revData);
+        this.process(revData);
     };
     /**
      * 解析数据
      * @param b 待解析数据
      */
     ClientSocket.prototype.process = function (b) {
-        var size = b.readInt();
-        if (size != b.length) {
-            console.log("数据错误!!");
-            return;
-        }
-        var id1 = b.readInt();
-        var id2 = b.readInt();
-        var id3 = b.readInt();
-        var reserve1 = b.readInt();
-        var reserve2 = b.readInt();
-        var str = b.readUTFBytes(b.length - this.headSize);
+        var str = b;
         var data;
         if ("" != str) {
             data = JSON.parse(str);
         }
-        var proto = id1 + '_' + id2 + '_' + id3;
+        if (!data.hasOwnProperty("cmd")) {
+            console.log("未知指令");
+            return;
+        }
+        var proto = "cmd" + data["cmd"];
         var callBack = this.callBackList[proto];
         var thisObject = this.objList[proto];
-        console.log("rev:", ErrorCode.cn(proto), proto, data);
         if (callBack && thisObject) {
             callBack.call(thisObject, data);
         }
         else {
             console.log("不存在对应消息:", proto);
         }
-    };
-    /**
-     * 消息头部
-     * @param size 数据长度
-     * @param id1
-     * @param id2
-     */
-    ClientSocket.prototype.getHead = function (size, id1, id2, id3) {
-        var a = new egret.ByteArray();
-        a.endian = egret.Endian.LITTLE_ENDIAN;
-        a.writeInt(size);
-        a.writeInt(id1);
-        a.writeInt(id2);
-        a.writeInt(id3);
-        a.writeInt(0);
-        a.writeInt(0);
-        return a;
     };
     return ClientSocket;
 }());

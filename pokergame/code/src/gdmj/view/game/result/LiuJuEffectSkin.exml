@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="LiuJuEffectSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image id="image1" source="result_liuju1_png" anchorOffsetY="100" anchorOffsetX="50" y="720" horizontalCenter="0"/>
-	<e:Image id="image0" source="result_liuju0_png" y="300" horizontalCenter="0"/>
-</e:Skin>

@@ -16,6 +16,16 @@ var BasePanel = (function (_super) {
     function BasePanel() {
         return _super.call(this) || this;
     }
+    /**组件创建完毕*/
+    BasePanel.prototype.childrenCreated = function () {
+    };
+    /**添加到场景中*/
+    BasePanel.prototype.onEnable = function () {
+        this.setCenter();
+    };
+    /**从场景中移除*/
+    BasePanel.prototype.onRemove = function () {
+    };
     /**
      * 显示
      * @lock 是否锁定屏幕(增加半透明黑色背景)
@@ -29,10 +39,6 @@ var BasePanel = (function (_super) {
     /**隐藏*/
     BasePanel.prototype.hide = function () {
         App.PopUpManager.removePopUp(this);
-    };
-    /**接收参数 */
-    BasePanel.prototype.recDataFun = function (data) {
-        this.recData = data;
     };
     return BasePanel;
 }(BaseUI));

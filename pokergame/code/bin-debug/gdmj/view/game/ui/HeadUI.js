@@ -30,31 +30,17 @@ var HeadUI = (function (_super) {
         this.headShutup.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onclickShutup, this);
     };
     HeadUI.prototype.onclickShutup = function () {
-        this.gameScene = App.SceneManager.getScene(SceneConst.GameScene);
-        for (var i = 0; i < this.gameScene.headUIList.length; i++) {
-            if (this.userID == this.gameScene.headUIList[i].userID) {
-                this.setHeadUiShutup(this.userID);
-            }
-        }
+        // this.gameScene = App.SceneManager.getScene(SceneConst.GameScene);
+        // for(var i=0;i<this.gameScene.headUIList.length;i++){
+        //     if(this.userID == this.gameScene.headUIList[i].userID){
+        //         this.setHeadUiShutup(this.userID);
+        //     }
+        // }
     };
     /**禁言处理*/
     HeadUI.prototype.setHeadUiShutup = function (userId) {
-        var _this = this;
         if (this.headShutup.source == "game_say1_png")
             return;
-        //禁言
-        var messageBox = App.MsgBoxManager.getBoxA();
-        messageBox.showMsg("将此玩家禁言，3分钟内无法使用语音及聊天功能，是否确定禁言?");
-        messageBox.ok = function () {
-            console.log("发送禁言:___________", userId);
-            _this.headShutup.source = "game_say1_png";
-            ProtocolData.Send111_2_0.banPostUserID = userId;
-            ProtocolData.Send111_2_0.type = 1; //1 禁言3分钟  2本局禁言
-            _this.gameScene.sendGameShutup();
-        };
-        messageBox.cancel = function () {
-            messageBox.hide();
-        };
     };
     /**
      * 加载头像图片

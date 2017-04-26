@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CroomSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="com_panel_bg_png"/>
+	<e:Image source="cr_create_png" y="6" horizontalCenter="0"/>
+	<e:Button id="closeBtn" label="" y="33.5" right="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="com_close_btn_png"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="cr_blackline_png" y="119" anchorOffsetX="0" width="354" horizontalCenter="0"/>
+	<e:Image source="cr_rule_bg_png" x="47" y="97"/>
+	<e:Image source="cr_ju_txt_png" x="47" y="161"/>
+	<e:Image source="cr_bg1_png" x="47" y="224"/>
+	<e:Button id="okBtn" label="" y="277" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" width.down="95%" height.down="95%" horizontalCenter="0" verticalCenter="0" source="cr_ok_btn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:RadioButton id="jdDKRb" label="" x="123" y="82" groupName="gameTypeGroup" selected="true" value="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="cr_jddk_chk_png" source.down="cr_jddk_chk_png"/>
+	<e:Image id="selectImg" source="cr_chked_png" left="0" bottom="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton label="" x="258" y="84" groupName="gameTypeGroup" value="1">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cr_hdk_chke_png" source.down="cr_hdk_chke_png"/>
+	        <e:Image source="cr_chked_png" left="0" bottom="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton label="" x="393" y="84" groupName="gameTypeGroup" value="2">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cr_13dao_chk_png" source.down="cr_13dao_chk_png"/>
+	        <e:Image source="cr_chked_png" left="0" bottom="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+
+
+    	<e:RadioButton id="fourRb" label="" x="123" y="152" groupName="gameCountGroup" selected="true" value="4">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="cr_4chk_png" source.down="cr_4chk_png"/>
+	        <e:Image id="selectImg" source="cr_chked_png" left="0" bottom="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton label="" x="258" y="152" groupName="gameCountGroup" value="8">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cr_8chk_png" source.down="cr_8chk_png"/>		
+	       <e:Image source="cr_chked_png" left="0" bottom="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton label="" x="393" y="152" groupName="gameCountGroup" value="16">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="cr_16chk_png" source.down="cr_16chk_png"/>			
+			<e:Image source="cr_chked_png" left="0" bottom="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+</e:Skin>

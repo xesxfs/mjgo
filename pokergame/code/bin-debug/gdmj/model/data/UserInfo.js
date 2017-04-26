@@ -16,16 +16,31 @@ var UserInfo = (function () {
      * @param userVo 用户数据Vo
      */
     UserInfo.prototype.addUser = function (userVo) {
-        if (this.userList[userVo.userID]) {
-            console.log("用户重复添加:", userVo.userID);
+        if (this.userList[userVo.id]) {
+            console.log("用户重复添加:", userVo.id);
         }
         else {
-            this.userList[userVo.userID] = userVo;
+            this.userList[userVo.id] = userVo;
         }
     };
     /**获取自己用户信息*/
     UserInfo.prototype.getMyUserVo = function () {
-        return this.getUser(this.httpUserInfo.userID);
+        return this.getUser(this.httpUserInfo.id);
+    };
+    UserInfo.prototype.setMyUserVo = function () {
+        this.httpUserInfo = new UserVO();
+        var playStr = egret.getOption("play");
+        if (playStr) {
+            var playObj = JSON.parse(playStr);
+            this.httpUserInfo.banker = playObj["banker"];
+            this.httpUserInfo.headImgUrl = playObj["headImgUrl"];
+            this.httpUserInfo.id = playObj["id"];
+            this.httpUserInfo.nickname = playObj["nickname"];
+            this.httpUserInfo.playerId = playObj["playerId"];
+            this.httpUserInfo.roomCard = playObj["roomCard"];
+            this.httpUserInfo.roomId = playObj["roomId"];
+            this.httpUserInfo.status = playObj["status"];
+        }
     };
     /**
      * 获取用户
@@ -70,7 +85,7 @@ var UserInfo = (function () {
     /**删除所有用户信息，除了自己*/
     UserInfo.prototype.deleteAllUserExcptMe = function () {
         for (var key in this.userList) {
-            if (parseInt(key) != this.httpUserInfo.userID) {
+            if (parseInt(key) != this.httpUserInfo.id) {
                 delete this.userList[key];
             }
         }

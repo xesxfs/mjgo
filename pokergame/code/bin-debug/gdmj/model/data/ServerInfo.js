@@ -3,11 +3,13 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 };
 /**
  * 服务器信息
- * @author chenkai
- * @date 2016/6/28
+ * @author chenwei
+ * @date 2017/4/24
  */
 var ServerInfo = (function () {
     function ServerInfo() {
+        //游戏服务器
+        this.GAME_SERVER = "ws://118.89.22.251:3350";
         /**微信授权页面(无用)*/
         this.WX_URL = "";
     }

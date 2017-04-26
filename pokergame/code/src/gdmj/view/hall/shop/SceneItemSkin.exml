@@ -1,4 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="SceneItemSkin"  states="up,down,disabled" xmlns:e="http://ns.egret.com/eui">
-  <e:Image width="100%" height="100%" source="{data.def}" source.down="{data.select}"/>
-</e:Skin>

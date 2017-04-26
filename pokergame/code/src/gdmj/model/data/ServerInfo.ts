@@ -1,7 +1,7 @@
 /**
  * 服务器信息
- * @author chenkai
- * @date 2016/6/28
+ * @author chenwei
+ * @date 2017/4/24
  */
 class ServerInfo {
     /**Python调度服务器IP地址*/
@@ -9,7 +9,7 @@ class ServerInfo {
     /**Python推送服务器IP地址*/
     public PUSH_SERVER_URL: string;
     //游戏服务器
-    public GAME_SERVER:string;
+    public GAME_SERVER:string="ws://118.89.22.251:3350";
     //游戏断口
     public GAME_PORT:number;
     /**密码MD5码*/

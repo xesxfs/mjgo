@@ -15,9 +15,9 @@ class WelfareInfo {
 
 	/**是否可以申请领取救济金*/
 	public isCanApply(){
-		if(this.benefit_cnt >= this.benefitMax || App.DataCenter.UserInfo.getMyUserVo().gold >= this.broke_money){
-			return false;
-		}
+		// if(this.benefit_cnt >= this.benefitMax || App.DataCenter.UserInfo.getMyUserVo().gold >= this.broke_money){
+		// 	return false;
+		// }
 		return true;
 	}
 }

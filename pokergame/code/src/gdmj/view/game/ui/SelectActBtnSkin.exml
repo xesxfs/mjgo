@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SelectActBtnSkin" width="150" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Image source="game_s_chi2_png" anchorOffsetX="75" anchorOffsetY="75" x="75" y="75"/>
-	<e:Image source="game_s_chi1_png" anchorOffsetX="75" anchorOffsetY="75" x="75" y="75"/>
-	<e:Image source="game_s_chi0_png" anchorOffsetX="75" anchorOffsetY="75" x="75" y="75"/>
-</e:Skin>

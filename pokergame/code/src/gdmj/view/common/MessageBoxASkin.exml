@@ -1,35 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="MessageBoxASkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
-	<e:Group height="1280" width="720">
-		<e:Image source="message_bg_png" verticalCenter="0" horizontalCenter="0"/>
-		<e:Image source="message_bg0_png" y="434" scale9Grid="21,23,129,139" anchorOffsetX="0" width="640" anchorOffsetY="0" height="364" horizontalCenter="0"/>
-		<e:Image source="message_title_png" y="368" horizontalCenter="0"/>
-		<e:Image source="messageTitle_png" y="376" horizontalCenter="0"/>
-		<e:Image x="592" y="351" source="message_close_png"/>
-		<e:Button id="closeBtn" label="" x="590" y="350">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%"  horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="message_closeBtn_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-				</e:Skin>
-			</e:skinName>
-		</e:Button>
-		<e:Button id="okBtn" x="420" label="确  定" y="825" width="179" height="78">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="messageDetermine_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xfff3e3" bold="true" fontFamily="FZHTK" y="18" verticalAlign="justify" stroke="2" strokeColor="0x9f3c0c"/>
-				</e:Skin>
-			</e:skinName>
-		</e:Button>
-		<e:Button id="cancelBtn" y="825" width="179" label="取  消" height="78" x="120">
-			<e:skinName>
-				<e:Skin states="up,down,disabled">
-				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%"  source="messageCancle_png"/>
-				<e:Label id="labelDisplay" horizontalCenter="0" textColor="0xfff3e3" bold="true" fontFamily="FZHTK" y="18" verticalAlign="justify" stroke="2" strokeColor="0x9f3c0c"/>
-				</e:Skin>
-			</e:skinName>
-		</e:Button>
-		<e:Label id="msgLabel" text="解散房间不扣房卡，是否确定解散？" y="444" anchorOffsetX="0" width="620" anchorOffsetY="0" height="339" horizontalCenter="0" verticalAlign="middle" fontFamily="FZHTK" size="26" textColor="0xfff3eb" textAlign="center"/>
-	</e:Group>
+<e:Skin class="MessageBoxASkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image source="notice_panel_bg_png"/>
+	<e:Image source="notice_room1_png" y="144" horizontalCenter="0.5"/>
+	<e:Button label="" y="220" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="notice_ok_btn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+
 </e:Skin>

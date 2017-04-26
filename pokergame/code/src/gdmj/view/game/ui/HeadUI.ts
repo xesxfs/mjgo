@@ -36,29 +36,16 @@ class HeadUI extends eui.Component {
 
     
     private onclickShutup() {
-        this.gameScene = App.SceneManager.getScene(SceneConst.GameScene);
-        for(var i=0;i<this.gameScene.headUIList.length;i++){
-            if(this.userID == this.gameScene.headUIList[i].userID){
-                this.setHeadUiShutup(this.userID);
-            }
-        }
+        // this.gameScene = App.SceneManager.getScene(SceneConst.GameScene);
+        // for(var i=0;i<this.gameScene.headUIList.length;i++){
+        //     if(this.userID == this.gameScene.headUIList[i].userID){
+        //         this.setHeadUiShutup(this.userID);
+        //     }
+        // }
     }
     /**禁言处理*/
     private setHeadUiShutup(userId) {
         if(this.headShutup.source == "game_say1_png") return;
-        //禁言
-        var messageBox: MessageBox = App.MsgBoxManager.getBoxA();
-        messageBox.showMsg("将此玩家禁言，3分钟内无法使用语音及聊天功能，是否确定禁言?");
-        messageBox.ok = () => {
-            console.log("发送禁言:___________",userId)
-            this.headShutup.source = "game_say1_png"
-            ProtocolData.Send111_2_0.banPostUserID = userId;
-            ProtocolData.Send111_2_0.type = 1//1 禁言3分钟  2本局禁言
-            this.gameScene.sendGameShutup();
-        };
-        messageBox.cancel = () => {
-            messageBox.hide();
-        }
     }
     
     /**

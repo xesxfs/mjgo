@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="avaterSkin" width="62" height="62" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Group x="0" y="0">
-		<e:Image width="62" height="62" x="0" y="0" source="result_icon_png"/>
-		<e:Image id="avater" width="54" height="54" x="4" y="4" source="yellow_btn_png"/>
-	</e:Group>
-</e:Skin>

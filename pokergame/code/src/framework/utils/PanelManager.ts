@@ -1,6 +1,6 @@
 /**
  * 弹框管理类
- * @author chenkai
+ * @author chenwei
  * @date 2016/11/9
  *
  */
@@ -34,19 +34,7 @@ class PanelManager extends SingleClass{
  	 */ 
     public open(panelID:number, callBack:Function = null, thisObject:any = null,click:boolean=true,lock = true,transData:any=null){
      	 var panel = this.panelList[panelID];
-     	 if(panelID == PanelConst.ChatPanel){
-			  App.PopUpManager.changeTransparency(0.0);
-		 }else if(panelID == PanelConst.RankNewRuleDetail){
-			  App.PopUpManager.changeTransparency(0.0);
-		 }else if(panelID == PanelConst.GameBack){
-			  App.PopUpManager.changeTransparency(0.0);
-		 }else if(panelID == PanelConst.GameMall){
-			  App.PopUpManager.changeTransparency(0.0);
-		 }else if(panelID == PanelConst.GameSet){
-			  App.PopUpManager.changeTransparency(0.0);
-		 }else{
-			  App.PopUpManager.changeTransparency(0.7);
-		 }
+
      	 if(panel == null){
                var clz = this.panelClassList[panelID];
          	 if(clz != null){

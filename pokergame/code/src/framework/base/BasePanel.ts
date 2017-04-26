@@ -5,10 +5,24 @@
  */
 class BasePanel extends BaseUI{
     
-    public recData:any;
-
     public constructor() {
         super();
+    }
+
+     /**组件创建完毕*/
+    protected childrenCreated() {
+        
+    }
+
+    /**添加到场景中*/
+    protected onEnable() {
+        this.setCenter();
+        
+    }
+
+    /**从场景中移除*/
+    protected onRemove() {
+
     }
     
     /**
@@ -25,8 +39,4 @@ class BasePanel extends BaseUI{
         App.PopUpManager.removePopUp(this);
     }
 
-    /**接收参数 */
-    public recDataFun(data:any) {
-        this.recData = data;
-    }
 }

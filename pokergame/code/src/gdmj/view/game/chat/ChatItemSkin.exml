@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="ChatItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="60">
-	<e:Label id="chatLabel" text="{data.label}" size="28" x="20" textColor="0xffe4da" verticalCenter="0" fontFamily="FZHTK"/>
-	<e:Image source="chat_split_png" x="0" y="56" alpha="0.5" />
-</e:Skin>

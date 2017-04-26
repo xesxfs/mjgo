@@ -19,7 +19,6 @@ var LoginScene = (function (_super) {
         return _this;
     }
     LoginScene.prototype.onEnable = function () {
-        this.startCloudAnim();
         if (App.DeviceUtils.IsNative) {
             this.isToken();
             this.backWXLogin();
@@ -35,7 +34,6 @@ var LoginScene = (function (_super) {
         if (refreshToken != null && refreshToken != undefined) {
             this.wxLoginBtn.visible = false;
             var ctrl1 = new LoginController();
-            ctrl1.sendLoginAppReq("", refreshToken);
         }
         else {
             this.wxLoginBtn.visible = true;
@@ -44,13 +42,14 @@ var LoginScene = (function (_super) {
     //原生登陆放回     
     LoginScene.prototype.backWXLogin = function () {
         egret.ExternalInterface.addCallback("wxLoginBack", function (message) {
-            var ctrl1 = new LoginController();
-            ctrl1.sendLoginAppReq(message, "");
+            // var ctrl1 = new LoginController();             
+            // ctrl1.sendLoginAppReq(message,"");         
         });
     };
     /**点击微信登录*/
     LoginScene.prototype.onWXLogin = function (e) {
-        egret.ExternalInterface.call("wxLogin", "wx");
+        // egret.ExternalInterface.call("wxLogin","wx"); 
+        this.ctrl.onLogin();
     };
     /**Native资源更新列表*/
     LoginScene.prototype.getChangeList = function () {
@@ -60,62 +59,6 @@ var LoginScene = (function (_super) {
         for (var i = 0; i < len; i++) {
             console.log("加载列表" + i + ":" + changeList[i].url + "," + changeList[i].size);
         }
-    };
-    /**测试账号按钮*/
-    LoginScene.prototype.debugBtns = function () {
-        var _this = this;
-        var row = 2;
-        var column = 6;
-        var xoffset = 450;
-        var yoffset = 40;
-        for (var i = 1; i <= 16; i++) {
-            var b = new eui.Label();
-            var ii = i - 1;
-            b.background = true;
-            b.backgroundColor = 0x000000;
-            b.text = "test" + i.toString();
-            b.x = ii % column * 100 + xoffset;
-            b.y = yoffset + ~~(ii / column) * 60;
-            b.x = ~~(ii / row) * 80 + xoffset;
-            b.y = yoffset + (ii % row) * 60;
-            this.addChild(b);
-            b.addEventListener(egret.TouchEvent.TOUCH_TAP, function (e) {
-                var lab = e.target;
-                _this.ctrl.sendDebugLoginReq(lab.text, App.DataCenter.debugInfo.password);
-            }, this);
-        }
-    };
-    /**?*/
-    LoginScene.prototype.createPrticle = function () {
-        if (!this.particleSys) {
-            var txtute = RES.getRes("blink_png");
-            var json = RES.getRes("blink_json");
-            this.particleSys = new particle.GravityParticleSystem(txtute, json);
-            this.particleSys.x = -200;
-            this.particleSys.y = -30;
-            this.addChild(this.particleSys);
-        }
-        if (!this.particleFlower) {
-            var txtute = RES.getRes("fly_flower_png");
-            var json = RES.getRes("fly_flower_json");
-            this.particleFlower = new particle.GravityParticleSystem(txtute, json);
-            this.addChild(this.particleFlower);
-        }
-    };
-    /**云飘动画*/
-    LoginScene.prototype.startCloudAnim = function () {
-        //云浮动
-        var c2x = this.clund2.x;
-        var c4x = this.clund4.x;
-        var ttime = 2500;
-        egret.Tween.get(this.clund2, { loop: true }).to({ x: -10 }, ttime).to({ x: c2x }, ttime);
-        egret.Tween.get(this.clund4, { loop: true }).wait(300).to({ x: -10 }, ttime).to({ x: c4x }, ttime);
-        var c1x = this.clund1.x;
-        var c5x = this.clund5.x;
-        egret.Tween.get(this.clund1, { loop: true }).to({ x: c1x - 30 }, ttime).to({ x: c1x }, ttime);
-        egret.Tween.get(this.clund5, { loop: true }).wait(300).to({ x: c5x - 40 }, ttime).to({ x: c5x }, ttime);
-        var s1x = this.sclund1.x;
-        egret.Tween.get(this.sclund1, { loop: true }).wait(300).to({ x: s1x - 30 }, ttime).to({ x: s1x }, ttime);
     };
     return LoginScene;
 }(BaseScene));

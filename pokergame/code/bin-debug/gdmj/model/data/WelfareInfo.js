@@ -19,9 +19,9 @@ var WelfareInfo = (function () {
     }
     /**是否可以申请领取救济金*/
     WelfareInfo.prototype.isCanApply = function () {
-        if (this.benefit_cnt >= this.benefitMax || App.DataCenter.UserInfo.getMyUserVo().gold >= this.broke_money) {
-            return false;
-        }
+        // if(this.benefit_cnt >= this.benefitMax || App.DataCenter.UserInfo.getMyUserVo().gold >= this.broke_money){
+        // 	return false;
+        // }
         return true;
     };
     return WelfareInfo;

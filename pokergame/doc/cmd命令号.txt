@@ -1,0 +1,231 @@
+package com.vequn.constat;
+
+/**
+ * 指令类
+ * @author Administrator
+ *
+ */
+public class Command {
+	
+	/**
+	 * 登录
+	 */
+	public static final int CMD_1 = 1;
+	
+	/**
+	 * 登录成功，进入大厅
+	 */
+	public static final int CMD_2 = 2;
+	
+	/**
+	 * 创建房间
+	 */
+	public static final int CMD_3 = 3;
+	
+	/**
+	 * 创建房间成功，并进入房间
+	 */
+	public static final int CMD_4 = 4;
+	
+	/**
+	 * 棒棒糖不足，创建房间失败
+	 */
+	public static final int CMD_5 = 5;
+	
+	/**
+	 * 加入房间
+	 */
+	public static final int CMD_6 = 6;
+	
+	/**
+	 * 加入房间成功，广播玩家信息
+	 */
+	public static final int CMD_7 = 7;
+	
+	/**
+	 * 房间不存在，加入失败
+	 */
+	public static final int CMD_8 = 8;
+	
+	/**
+	 * 退出房间，清除玩家信息
+	 */
+	public static final int CMD_9 = 9;
+	
+	/**
+	 * 准备
+	 */
+	public static final int CMD_10 = 10;
+	
+	/**
+	 * 取消准备
+	 */
+	public static final int CMD_11 = 11;
+	
+	/**
+	 * 服务器发牌
+	 */
+	public static final int CMD_12 = 12;
+	
+	/**
+	 * 双扣交换位置
+	 */
+	public static final int CMD_13 = 13;
+	
+	/**
+	 * 操作牌状态
+	 */
+	public static final int CMD_14 = 14;
+	
+	/**
+	 * 玩家点击出牌
+	 */
+	public static final int CMD_15 = 15;
+	
+	/**
+	 * 玩家点击提示
+	 */
+	public static final int CMD_16 = 16;
+	
+	/**
+	 * 提示牌反馈
+	 */
+	public static final int CMD_17 = 17;
+	
+	/**
+	 * 玩家过牌，并广播
+	 */
+	public static final int CMD_18 = 18;
+	
+	/**
+	 * 出牌成功
+	 */
+	public static final int CMD_19 = 19;
+	
+	/**
+	 * 玩家出牌，广播显示
+	 */
+	public static final int CMD_20 = 20;
+	
+	/**
+	 * 出牌不符合牌型
+	 */
+	public static final int CMD_21 = 21;
+	
+	/**
+	 * 出牌小于上家牌型
+	 */
+	public static final int CMD_22 = 22;
+	
+	/**
+	 * 倒计时结束，过牌
+	 */
+	public static final int CMD_23 = 23;
+	
+	/**
+	 * 倒计时结束，必须出牌
+	 */
+	public static final int CMD_24 = 24;
+	
+	/**
+	 * 房间内聊天
+	 */
+	public static final int CMD_25 = 25;
+	
+	/**
+	 * 手牌数量显示
+	 */
+	public static final int CMD_26 = 26;
+	
+	/**
+	 * 单局游戏结束，摊牌
+	 */
+	public static final int CMD_27 = 27;
+	
+	/**
+	 * 玩家单局积分结算
+	 */
+	public static final int CMD_28 = 28;
+	
+	/**
+	 * 开始下一局游戏
+	 */
+	public static final int CMD_29 = 29;
+	
+	/**
+	 * 下一局游戏开始
+	 */
+	public static final int CMD_30 = 30;
+	
+	/**
+	 * 申请解散房间
+	 */
+	public static final int CMD_31 = 31;
+	
+	/**
+	 * 确认解散房间
+	 */
+	public static final int CMD_32 = 32;
+	
+	/**
+	 * 房间解散成功
+	 */
+	public static final int CMD_33 = 33;
+	
+	/**
+	 * 玩家掉线，广播信息
+	 */
+	public static final int CMD_34 = 34;
+	
+	/**
+	 * 掉线玩家上线，广播信息
+	 */
+	public static final int CMD_35 = 35;
+	
+	/**
+	 * 掉线玩家上线，确认恢复数据
+	 */
+	public static final int CMD_36 = 36;
+	
+	/**
+	 * 房间中游戏未开始前，房主点击退出房间询问是否解散房间
+	 */
+	public static final int CMD_37 = 37;
+	
+	/**
+	 * 房间中游戏未开始前,房主确认解散房间
+	 */
+	public static final int CMD_38 = 38;
+	
+	/**
+	 * 掉线玩家上线，提示恢复数据
+	 */
+	public static final int CMD_39 = 39;
+	
+	/**
+	 * 玩家统分计算
+	 */
+	public static final int CMD_40 = 40;
+	
+	/**
+	 * 战绩查询
+	 */
+	public static final int CMD_41 = 41;
+	
+	/**
+	 * 第二道
+	 */
+	public static final int DIERDAO=1002;
+	/**
+	 * 第三道
+	 */
+	public static final int DISANDAO=1003;
+	/**
+	 * 房主已解散房间
+	 */
+	public static final int CMD_45 = 45;
+	/**
+	 * 解散成功,已退还棒棒糖
+	 */
+	public static final int CMD_46 = 46;
+}

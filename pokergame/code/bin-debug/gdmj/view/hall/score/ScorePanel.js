@@ -15,85 +15,42 @@ var ScorePanel = (function (_super) {
     __extends(ScorePanel, _super);
     function ScorePanel() {
         var _this = _super.call(this) || this;
+        _this.cmd = "41";
         _this.skinName = "ScorePanelSkin";
         return _this;
     }
-    ScorePanel.prototype.onEnable = function () {
-        this.getData();
-        this.closeBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.closeTouch, this);
-        this.lookBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onLookTouch, this);
-        this.setCenter();
-    };
+    /**组件创建完毕*/
     ScorePanel.prototype.childrenCreated = function () {
     };
-    ScorePanel.prototype.closeTouch = function (e) {
-        this.hide();
+    /**添加到场景中*/
+    ScorePanel.prototype.onEnable = function () {
+        this.setCenter();
+        App.gameSocket.register(ProtocolHead.RevCmd41, this.revData, this);
+        this.dkScoreList.dataProvider.removeAll();
+        this.sendData();
+        this.closeBtn.addEventListener("touchTap", this.hide, this);
+        this.radioRbt.group.addEventListener(eui.UIEvent.CHANGE, this.changeViewStack, this);
     };
-    ScorePanel.prototype.onLookTouch = function (e) {
-        var codebox = new LookPswPanel();
-        codebox.show();
+    ScorePanel.prototype.sendData = function () {
+        var scoreData = ProtocolData.commond;
+        scoreData.cmd = this.cmd;
+        scoreData.game = "-1";
+        App.gameSocket.send(ProtocolData.commond);
     };
-    ScorePanel.prototype.setScoreListData = function (scoreArray) {
-        this.scoreList.dataProvider;
+    ScorePanel.prototype.revData = function (data) {
+        var ac = this.dkScoreList.dataProvider;
+        // var item = new Object();
+        var dataItem = data["msg"][0][0];
+        ac.addItem(dataItem);
+    };
+    ScorePanel.prototype.changeViewStack = function (e) {
+        var group = e.target;
+        this.vs.selectedIndex = group.selectedValue;
     };
     ScorePanel.prototype.onRemove = function () {
-        this.closeBtn.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.closeTouch, this);
-        this.lookBtn.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.onLookTouch, this);
-    };
-    ScorePanel.prototype.getData = function () {
-        var http = new HttpSender();
-        var sendData = ProtocolHttp.send_z_combat;
-        //        sendData.param.playerID
-        http.send(sendData, this.setData, this);
-    };
-    ScorePanel.prototype.setData = function (data) {
-        //        { "gameID":"99999999","deskno":"3","buildDate":"1470477243","ownerID":"9223","playerGameInfo":"","num":"81","deskCode":"149399" }
-        if (!data.ret) {
-            this.nullTipsLab.visible = false;
-            var ac = new eui.ArrayCollection();
-            var rList = data;
-            var arr = [];
-            for (var i = 0; i < rList.data.length; i++) {
-                var rObj = rList.data[i];
-                var dataObj = new Object();
-                dataObj["ownerID"] = rObj.ownerID;
-                //                dataObj["score"] = rObj.score;
-                dataObj["buildDate"] = rObj.buildDate;
-                dataObj["deskCode"] = rObj.deskCode;
-                dataObj["num"] = rObj.num;
-                dataObj["deskno"] = rObj.deskno;
-                dataObj["roomid"] = rObj.roomid;
-                //                let playerGameInfo: Object = JSON.parse(rObj.playerGameInfo);
-                //                dataObj["playerGameInfo"] = rObj.playerGameInfo;               
-                var gdate = new Date();
-                gdate.setTime(rObj.buildDate * 1000);
-                dataObj["time"] = gdate.getFullYear() + "-" + NumberTool.formatTime((gdate.getMonth() + 1)) + "-" + NumberTool.formatTime(gdate.getDate()) + " " + NumberTool.formatTime(gdate.getHours()) + ":" + NumberTool.formatTime(gdate.getMinutes()) + ":" + NumberTool.formatTime(gdate.getSeconds());
-                dataObj["playerGameInfo"] = JSON.parse(rObj.playerGameInfo);
-                dataObj["RecordList"] = dataObj["playerGameInfo"].RecordList;
-                if (!dataObj["RecordList"].length) {
-                    continue;
-                }
-                for (var i_1 = 0; i_1 < dataObj["RecordList"].length; i_1++) {
-                    //4个玩家数据
-                    var play = dataObj["RecordList"][i_1];
-                    if (play.userID == App.DataCenter.UserInfo.httpUserInfo.userID) {
-                        dataObj["mp"] = play.point;
-                        if (play.point > 0) {
-                            dataObj["s"] = "score_win_png";
-                        }
-                        else {
-                            dataObj["s"] = "score_lost_png";
-                        }
-                    }
-                }
-                arr.unshift(dataObj);
-            }
-            ac.source = arr;
-            this.scoreList.dataProvider = ac;
-        }
-        else {
-            this.nullTipsLab.visible = true;
-        }
+        App.gameSocket.unRegister(ProtocolHead.RevCmd41);
+        this.closeBtn.removeEventListener("touchTap", this.hide, this);
+        this.radioRbt.group.removeEventListener(eui.UIEvent.CHANGE, this.changeViewStack, this);
     };
     return ScorePanel;
 }(BasePanel));

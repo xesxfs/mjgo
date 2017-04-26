@@ -1,6 +1,6 @@
 /**
  * App主类
- * @author chenkai
+ * @author chenwei
  * @date 2016/7/7 
 
  */
@@ -45,58 +45,16 @@ class App extends BaseApp{
 
         //注册弹框
         var panel: PanelManager = App.PanelManager;
-
-        //默认表情资源组，由于表情多达500张图片，得分开加载
-        var defalutFace:string = FaceFactory.getInstance().getFaceItemGroupName(ItemType.default);
-
-        panel.register(PanelConst.ChatPanel,ChatPanel, [AssetConst.Chat, defalutFace]);//聊天面板
-        panel.register(PanelConst.ResultPanel,ResultPanel);                        //结算面板
-        panel.register(PanelConst.ResultPanel1,ResultPanel);                        //结算面板
-        panel.register(PanelConst.MacthInfoPanel,MatchInfoPanel);                  //牌局信息面板
-        panel.register(PanelConst.ZhuaMaPanel,ZhuaMaPanel);                        //抓马面板
-        panel.register(PanelConst.SharePanel,SharePanel,AssetConst.Share);         //分享面板
-        panel.register(PanelConst.MallPanel,MallPanel);                            //商城面板
-        panel.register(PanelConst.PaymentPanel,PaymentPanel);                      //支付面板
-        panel.register(PanelConst.PaymentMethod,PaymentMethod);                    //选择支付面板
-        panel.register(PanelConst.BackpackPanel,BackpackPanel);                    //背包面板
-        panel.register(PanelConst.FriendPanel,FriendPanel);                        //好友房列表
-        panel.register(PanelConst.JoinRoomPanel,JoinRoomPanel);                    //加入房间
-        panel.register(PanelConst.JoinNumber,JoinNumber);                          //输入加入房间
-        panel.register(PanelConst.GameBack,GameBack);                              //游戏内背包
-        panel.register(PanelConst.GameMall,GameMall);                              //游戏内商城
-        panel.register(PanelConst.GameSet,GameSet);                                //游戏内设置
-        panel.register(PanelConst.LookRlue,LookRlue);                              //游戏内查看规则
-        panel.register(PanelConst.ModifyRlue1,ModifyRlue1);                        //游戏内修改规则
-        panel.register(PanelConst.InvitePanel,InvitePanel);                        //邀请好友列表
-
-
-        panel.register(PanelConst.SignPanel,SignInPanel,AssetConst.Sign);          //签名面板
-        panel.register(PanelConst.RulePanel,RulePanel,[AssetConst.Rule,AssetConst.Card]); //玩法说明面板
-        panel.register(PanelConst.EmailPanel,EmailPanel);         //邮件面板
-        panel.register(PanelConst.EmailTwoPanel,EmailTwoPanel);         //二级邮件面板
-        panel.register(PanelConst.FuliPanel,FuliPanel,AssetConst.Fuli);            //福利面板
-        panel.register(PanelConst.NewFeedBackPanel,NewFeedBackPanel,AssetConst.Feedback);//反馈面板
-        panel.register(PanelConst.JjjPanel,JjjPanel,AssetConst.Jjj);               //金币场面板
-        panel.register(PanelConst.RankPanel,RankPanel,AssetConst.Rank);            //排行榜
-        panel.register(PanelConst.CreateRoomPanel,CreateRoomPanel,AssetConst.Create); //创建房间
-        panel.register(PanelConst.PreloadPanel, PreloadPanel );                     //加载
-        panel.register(PanelConst.ExRoomOpenVipPanel,ExRoomOpenVipPanel);            //非专属房提示面板
-        panel.register(PanelConst.QRCode,QRCode,AssetConst.Qrcode);                                   //二维码
-        panel.register(PanelConst.InputRoom,InputRoomNumPanel,AssetConst.InputRoom);//加入房间
-        panel.register(PanelConst.SetPanel,SetPanel,AssetConst.SetPanel);//设置
-        panel.register(PanelConst.ExcRoom,ExcRoom,AssetConst.ExcRoom);//修改房间
-
-       panel.register(PanelConst.RankPanel1,RankPanel1,AssetConst.Rank);  //排行榜
-       panel.register(PanelConst.RankNewRuleDetail,RankNewRuleDetail) //排行版规则
-       panel.register(PanelConst.ScorePanel,ScorePanel1,AssetConst.Score) //算分面板
-       panel.register(PanelConst.ScoreDetailPanel1,ScoreDetailPanel1,AssetConst.Score);//战绩详情
-       panel.register(PanelConst.LookPswPanel,LookPswPanel);            //牌局回放
-
-       panel.register(PanelConst.ReNew,ReNew);            //战局回放
-
-       panel.register(PanelConst.ScoreSharePanel,ScoreSharePanel);       //战绩分享
-
-
+        panel.register(PanelConst.PreloadPanel, PreloadPanel );//加载 
+       
+        panel.register(PanelConst.CroomPanle,CroomPanel);//创建房间
+        panel.register(PanelConst.EroomPanel,ERoomPanel);//进入房间
+        panel.register(PanelConst.SetPanel,SetPanel);//设置   
+        panel.register(PanelConst.PayPanel,PayPanel);//充值
+        panel.register(PanelConst.MsgPanel,MessagePanel);//消息
+        panel.register(PanelConst.RulePanel,RulePanel);//玩法
+        panel.register(PanelConst.ScorePanel,ScorePanel);  //战绩
+        panel.register(PanelConst.PersionInfoPanel,PersionInfoPanel)//个人信息
 
 
         //监听事件
@@ -127,7 +85,7 @@ class App extends BaseApp{
                 //这里回调必须用异步函数
                 egret.setTimeout(() => { 
                     var loginController:LoginController = App.getController(LoginController.NAME);
-                    loginController.sendLoginAppReq(code,"");
+                    // loginController.sendLoginAppReq(code,"");
                 },this,10);
             } else {
                 Tips.error("code is null");
@@ -140,7 +98,7 @@ class App extends BaseApp{
      * @isTimeline 是否分享到朋友圈
      */
     public nativeWxShare(isTimeline: boolean) {
-        egret.ExternalInterface.call("wxShare","http://gamemj.com/mj/index.php?pid="+App.DataCenter.UserInfo.getMyUserVo().userID+"&deskCode="+App.DataCenter.deskInfo.deskCode+"&deskId="+App.DataCenter.deskInfo.deskID+"&gameID="+App.serverSocket.gameID);
+        egret.ExternalInterface.call("wxShare","http://gamemj.com/mj/index.php?pid="+App.DataCenter.UserInfo.getMyUserVo().id+"&deskCode="+App.DataCenter.deskInfo.deskCode+"&deskId="+App.DataCenter.deskInfo.deskID+"&gameID="+App.serverSocket.gameID);
     }
 
     /**
@@ -226,9 +184,9 @@ class App extends BaseApp{
     }
 
     /**关键词屏蔽*/
-    public static get KeyWord():KeyWord{
-        return KeyWord.getInstance();
-    }
+    // public static get KeyWord():KeyWord{
+    //     return KeyWord.getInstance();
+    // }
 
     /**加载等待动画*/
     public static get LoadingLock():LoadingLock{

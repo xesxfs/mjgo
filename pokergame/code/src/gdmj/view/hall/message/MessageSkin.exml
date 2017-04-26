@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MessageSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="com_panel_bg2_png"/>
+	<e:Image y="8" horizontalCenter="0" source="msg_msg_txt_png"/>
+	<e:Button id="closeBtn" label="" y="33.5" right="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="com_close_btn_png"/>			
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:RadioButton id="radioRbt" x="50" y="115" groupName="msgRadios" value="1" selected="true">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="com_btn1_png" source.down="com_btn2_png"/>
+			<e:Image source="msg_new_txt1_png" source.down="msg_new_txt2_png" y="11" horizontalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:RadioButton x="50" y="173.5" groupName="msgRadios" value="0">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="com_btn1_png" source.down="com_btn2_png"/>
+			<e:Image source="msg_sys_txt2_png" source.down="msg_sys_txt1_png" horizontalCenter="0" y="10"/>
+		</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<e:ViewStack id="vs" width="479" height="357" x="191.76" y="99.12" anchorOffsetX="-1.24" anchorOffsetY="1.12" selectedIndex="1">
+		<e:Group width="100%" height="100%" name="Group" x="10" y="10">
+			<e:Scroller width="100%" height="100%">
+			<e:Group>
+				<e:Image source="score_bg1_png" x="24" y="20"/>
+				<e:Image source="score_bg2_png" x="-3" y="56"/>
+				<e:Image source="score_content_png" x="31" y="74"/>
+			</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group width="100%" height="100%" name="Group">
+		<e:Scroller width="100%" height="100%">
+			<e:Group>
+			</e:Group>
+		</e:Scroller>
+		</e:Group>
+	</e:ViewStack>
+</e:Skin>

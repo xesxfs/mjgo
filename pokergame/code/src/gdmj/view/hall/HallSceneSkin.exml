@@ -1,85 +1,89 @@
 <?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HallSceneSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Image source="hall_bg_png" x="0" y="0" scaleX="1" scaleY="1" width="100%" height="100%"/>
+	<e:Image source="hall_woman_png" x="264.99" bottom="-91"/>
+	<e:Button id="croomBtn" label="" y="193" right="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_create_png"/>
+			
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="eroomBtn" label="" y="317" right="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_enter_png"/>			
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button label="" y="440" right="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_qdai_png"/>			
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
 
-<e:Skin class="HallSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
-	<e:Group height="100%" width="100%">
-		<e:Image width="750" height="1334" anchorOffsetX="0" source="hall_bg_jpg"/>
-		<ns1:PageView id="pageView" skinName="PageViewSkin" horizontalCenter="0" width="100%" height="100%" visible="false"/>
-		<e:Group id="topHeadGroup" height="109" width="100%" top="0" visible="false">
-			<e:Image source="hall_bg1_png"/>
-			<e:Group top="0" left="0">
-				<e:Label id="userNameLab" text="咖啡不加糖" fontFamily="楷体" top="11" textColor="0xFFDA94" stroke="2" strokeColor="0xBB5C48" textAlign="center" width="274" horizontalCenter="50.5"/>
-				
-				<e:Button id="modifyDeskBtn" x="421" y="7">
-					<e:skinName>
-						<e:Skin states="up,down,disabled">
-							<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_roommodif_png"/>
 
-						</e:Skin>
-					</e:skinName>
-				</e:Button>
-				<e:Button id="QRCodeBtn" x="138" y="50">
-					<e:skinName>
-						<e:Skin states="up,down,disabled">
-							<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_twoma_png"/>
-						</e:Skin>
-					</e:skinName>
-				</e:Button>
-				<e:Image source="hall_bg2_png" x="204" y="49"/>
-				<e:Label id="roomIdLab" y="52" text="88888" fontFamily="楷体" x="297" stroke="2" strokeColor="0xBB5C48" textColor="0xFFDA94"/>
-			</e:Group>
-		</e:Group>
-		<e:Image right="36" top="64" source="hall_logo2_png"/>
 
-		<ns1:Marquee id="marquee" y="119" skinName="MarqueeSkin" x="6" width="533" visible="false"/>
-		<ns1:HallOption id="option" skinName="HallOptionSkin" right="4" top="64" visible="false"/>
-		<e:Group id="fullScreenGroup" y="51" x="630" visible="false">
-			<e:Button id="expandBtn">
-				<e:skinName>
-					<e:Skin states="up,down,disabled">
-						<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_expand_btn_png"/>
-						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-					</e:Skin>
-				</e:skinName>
-			</e:Button>
-			<e:Button id="shrinkBtn" visible="false">
-				<e:skinName>
-					<e:Skin states="up,down,disabled">
-						<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_shrink_btn_png"/>
-						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
-					</e:Skin>
-				</e:skinName>
-			</e:Button>
-		</e:Group>
-		<e:Group id="deskInfoGroup" y="110" left="0" visible="false">
-			<e:Image source="hall_deskInfo_bg_png"/>
-			<e:Label text="鸡平胡" x="23" y="21" size="24" fontFamily="黑体" textColor="0xFFD793"/>
-			<e:Label y="64" size="24" fontFamily="黑体" textColor="0xFFF4EC" width="181" x="16"/>
-			<e:Label textColor="0xFFF4EC" fontFamily="黑体" width="181" y="94" size="24" x="16"/>
-			<e:Label y="124" textColor="0xFFF4EC" fontFamily="黑体" width="181" size="24" x="16"/>
-			<e:Label textColor="0xFFF4EC" fontFamily="黑体" width="181" y="154" size="24" x="16"/>
-			<e:Label y="184" textColor="0xFFF4EC" fontFamily="黑体" width="181" size="24" x="16"/>
-			<e:Group x="16" y="214" width="183">
-				<e:Label textColor="0xFFF4EC" text="开局底分：" fontFamily="黑体" width="126" size="24" height="24"/>
-				<e:Label id="basePointLab" x="114" y="0" size="24" fontFamily="黑体" textColor="0xFFD793" width="65"/>
-			</e:Group>
-		</e:Group>
-		<e:Group id="room" x="426.9999999999999" y="479.00000000000006">
-			<e:Button id="hall_friends_room" label="" x="-170" y="240">
-				<e:skinName>
+
+	<ns1:Marquee y="92" skinName="MarqueeSkin" horizontalCenter="0"/>
+	<e:Button label="" x="44" y="173">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_zhaos_png"/>			
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="100%">
+		<e:Image source="hall_title_png" top="0" horizontalCenter="0" scale9Grid="120,10,720,66" width="100%"/>
+		<e:Group y="4.5" x="47">
+			<e:Image id="headImg" source="hall_head_png" x="1.34" y="3.68"/>
+			<e:Label id="nickNameLab" text="往事如风" x="73" size="22" bold="true" anchorOffsetX="0" width="110" y="0"/>
+			<e:Label text="ID:" x="73" y="24" size="22"/>
+			<e:Label id="userIdLab" text="1234567" x="100.5" y="24" size="22" anchorOffsetX="0" width="86" textAlign="left"/>
+			<e:Image source="hall_bbb_png" x="75" y="46" scale9Grid="19,9,57,3" anchorOffsetX="0" width="109.33"/>
+			<e:Image source="hall_bbt_png" x="78.5" y="48"/>
+			<e:Label id="roomCardLab" text="9999" x="95.5" y="47" size="22" anchorOffsetX="0" width="65" anchorOffsetY="0" height="19.5"/>
+			<e:Button id="payBtn" label="" x="163" y="45" width="22" height="22">
+			<e:skinName>
 				<e:Skin states="up,down,disabled">
-					<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_friends_room_png"/>
-					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_plus_png"/>
 				</e:Skin>
-				</e:skinName>
+			</e:skinName>
 			</e:Button>
-			<e:Button id="hall_playground" label="" x="-170" y="-16.5">
-				<e:skinName>
+		</e:Group>
+		<e:Group id="operateGroup" anchorOffsetX="0" width="277" scaleX="1" scaleY="1" y="9.32" right="48">
+			<e:Button id="msgBtn" label="">
+			<e:skinName>
 				<e:Skin states="up,down,disabled">
-					<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="hall_playground_png"/>
-					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_message_png"/>
 				</e:Skin>
-				</e:skinName>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="ruleBtn" label="" x="78">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_rule_png"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="scoreBtn" label="" x="157">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_score_png"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="setBtn" label="" right="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="hall_setting_png"/>
+				</e:Skin>
+			</e:skinName>
 			</e:Button>
 		</e:Group>
 	</e:Group>
+
 </e:Skin>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="AlignSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="653" height="526">
-	<e:Image id="bgImg" source="sign_award_bg_png" width="653" height="526"/>
-	<e:Group id="prizeGroup" width="653" height="526" horizontalCenter="0" verticalCenter="0">
-	</e:Group>
-	<e:Image id="runPointImg" source="sign_start_btn_png" anchorOffsetX="326.5" anchorOffsetY="263" y="261" x="340"/>
-	<e:Label text="开始抽奖" size="26" textColor="0xFFF9EC" bold="true" fontFamily="楷体" y="250" x="285" touchEnabled="false"/>
-	<e:Rect id="startBtn" height="228" width="236" x="210" y="146" fillAlpha="0"/>
-</e:Skin>

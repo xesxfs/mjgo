@@ -1,16 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="HeadUISkin" width="180" height="219" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Label id="nameLabel" y="136" size="26" width="183" verticalAlign="middle" textAlign="center" multiline="true" maxChars="5" text="昵称昵称昵称" horizontalCenter="-4.5"/>
-	<e:Image source="game_headbg1_png" y="11" horizontalCenter="-5"/>
-	<e:Image id="headImg" y="16" width="110" height="110" horizontalCenter="-5"/>
-	<e:Image id="headShade" y="16" source="head_shade_png" horizontalCenter="-5"/>
-	<e:Image id="tuoGuanIcon" source="game_tuoguaning_png" y="58" horizontalCenter="0" visible="false"/>
-	<e:Image id="headQuestionImg" y="49" horizontalCenter="-4.5" source="game_head_add_png"/>
-	<e:Group y="163" width="120" horizontalCenter="-5">
-		<e:Image height="100%" width="100%" x="0" y="0" source="game_score_bg_png"/>
-		<e:Label id="scoreLabel" y="0" size="22" text="99999" x="44" height="40" verticalAlign="middle" textAlign="left" textColor="0xFFFBCD" stroke="1" strokeColor="0xc14815"/>
-		<e:Image id="icon" x="0" y="0" source="game_icon_png"/>
-	</e:Group>
-	<e:Image id="headShutup" x="121" y="82" source="head_shutup1_png" visible="false"/>
-	<e:Image id="headOwner" x="9" y="96" source="owner_sign_png" visible="false"/>
+<e:Skin class="HeadUISkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="headQuestionImg" horizontalCenter="0" source="touxiangkuang_png"/>
+
+
+	<e:Image id="headImg" horizontalCenter="0" source="touxiang_png"/>
+
+
+
+
+
 </e:Skin>

@@ -347,7 +347,7 @@ ProtocolHttp.AddDesk = {
     uid: 0,
     skey: "",
     param: {
-        gameConfig: ProtocolData.gameConfig,
+        // gameConfig: ProtocolData.gameConfig,
         basePoint: 0,
         ip: "",
         port: 0
