@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="ResidueUISkin"  xmlns:e="http://ns.egret.com/eui">
+<e:Skin class="ResidueUISkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="shengyupaibeimian_png"/>
-	<e:BitmapLabel font="timefont2_fnt" text="13" horizontalCenter="-1" verticalCenter="0"/>
+	<e:BitmapLabel id="remainLab" font="timefont2_fnt" text="0" horizontalCenter="-1" verticalCenter="0"/>
 </e:Skin>

@@ -10,7 +10,7 @@
 		</e:skinName>
 	</e:Button>
 	<e:Image source="pinfo_titlle_png" x="112" y="10"/>
-	<e:Image id="headImg" source="pinfo_head_png" x="46" verticalCenter="0"/>
+	<e:Image id="headImg" source="pinfo_head_png" x="46" verticalCenter="0" width="92" height="97"/>
 	<e:Image source="com_bbt_png" x="149" y="175.5"/>
 	<e:Label id="nickNameLab" text="往事如风" x="149" y="112" textColor="0xcc2020" bold="true"/>
 	<e:Label text="ID：" x="149" y="152" textColor="0xef1515" size="22"/>

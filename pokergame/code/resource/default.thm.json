@@ -8,10 +8,11 @@
     "src/gdmj/view/common/MessageBoxBSkin.exml",
     "src/gdmj/view/common/MessageBoxCSkin.exml",
     "src/gdmj/view/common/MessageBoxDSkin.exml",
-    "src/gdmj/view/game/GameSceneSkin.exml",
+    "src/gdmj/view/game/13dao/ThridGameSceneSkin.exml",
     "src/gdmj/view/game/ui/HeadUISkin.exml",
     "src/gdmj/view/game/ui/OutTimeUISkin.exml",
     "src/gdmj/view/game/ui/ResidueUISkin.exml",
+    "src/gdmj/view/game/ui/DKActUI.exml",
     "src/gdmj/view/game/doublek/DKGameSceneSkin.exml",
     "src/gdmj/view/hall/marquee/MarqueeSkin.exml",
     "src/gdmj/view/hall/HallSceneSkin.exml",
@@ -25,8 +26,8 @@
     "src/gdmj/view/hall/score/ScoreItemSkin.exml",
     "src/gdmj/view/hall/score/ScorePanelSkin.exml",
     "src/gdmj/view/hall/set/SetPanelSkin.exml",
-    "src/gdmj/view/load/ProgressBarSkin.exml",
     "src/gdmj/view/load/PreloadPanelSkin.exml",
+    "src/gdmj/view/load/ProgressBarSkin.exml",
     "src/gdmj/view/login/LoginSceneSkin.exml"
   ],
   "skins": {

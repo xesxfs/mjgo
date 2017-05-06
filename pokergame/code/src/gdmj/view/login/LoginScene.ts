@@ -20,7 +20,10 @@ class LoginScene extends BaseScene{
         if(App.DeviceUtils.IsNative){
             this.isToken();
             this.backWXLogin();
+        }else{
+            WeixinSdk.getWxCofig();
         }
+        
         this.wxLoginBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onWXLogin,this);   
     }
 

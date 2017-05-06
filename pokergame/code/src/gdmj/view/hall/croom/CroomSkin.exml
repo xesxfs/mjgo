@@ -47,7 +47,7 @@
 	</e:RadioButton>
 
 
-    	<e:RadioButton id="fourRb" label="" x="123" y="152" groupName="gameCountGroup" selected="true" value="4">
+    	<e:RadioButton id="fourRb" label="" x="123" y="152" groupName="gameCountGroup" selected="true" value="2">
 		<e:skinName>
 			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
 			<e:Image width="100%" height="100%" source="cr_4chk_png" source.down="cr_4chk_png"/>
@@ -55,7 +55,7 @@
 			</e:Skin>
 		</e:skinName>
 	</e:RadioButton>
-	<e:RadioButton label="" x="258" y="152" groupName="gameCountGroup" value="8">
+	<e:RadioButton label="" x="258" y="152" groupName="gameCountGroup" value="3">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="cr_8chk_png" source.down="cr_8chk_png"/>		
@@ -63,7 +63,7 @@
 			</e:Skin>
 		</e:skinName>
 	</e:RadioButton>
-	<e:RadioButton label="" x="393" y="152" groupName="gameCountGroup" value="16">
+	<e:RadioButton label="" x="393" y="152" groupName="gameCountGroup" value="4">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="cr_16chk_png" source.down="cr_16chk_png"/>			
@@ -71,4 +71,5 @@
 			</e:Skin>
 		</e:skinName>
 	</e:RadioButton>
+	<e:Label id="bbtLab" text="2" x="191" y="224" textColor="0x8c4928" size="22" fontFamily="Microsoft YaHei"/>
 </e:Skin>

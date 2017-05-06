@@ -27,6 +27,8 @@ class ProtocolHead {
      /**发送退出房间，清楚玩家信息*/
     public static SendCmd9: string = "cmd9";
 
+    public static RevCmd13: string = "cmd13";
+
     public static SendCmd10: string = "cmd10";
    /**退掉线玩家上线，提示恢复数据*/
     public static RevCmd39: string = "cmd39";
@@ -40,8 +42,10 @@ class ProtocolHead {
 
     /**发送活动信息和反馈*/
     public static SendCmd42: string = "cmd42";
-    /**接收活动信息和反馈*/
+    /**最新消息*/
     public static RevCmd42: string = "cmd42";
+    /***系统消息**/
+    public static RevCmd43: string = "cmd43";
 
     
 

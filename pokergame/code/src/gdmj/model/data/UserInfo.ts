@@ -14,31 +14,39 @@ class UserInfo {
      * @param userVo 用户数据Vo
      */ 
     public addUser(userVo:UserVO){
-        if(this.userList[userVo.id]){
-            console.log("用户重复添加:",userVo.id);
+        if(this.userList[userVo.openId]){
+            console.log("用户重复添加:",userVo.openId);
         }else{
-            this.userList[userVo.id] = userVo;
+            this.userList[userVo.openId] = userVo;
         }
     }
     
     /**获取自己用户信息*/
     public getMyUserVo():UserVO{
-        return this.getUser(this.httpUserInfo.id);
+        return this.getUser(this.httpUserInfo.openId);
     }
 
     public setMyUserVo(){
         this.httpUserInfo =new UserVO();
-        var playStr:string= egret.getOption("play");
+        if(App.DataCenter.debugInfo.isDebug)
+        this.httpUserInfo.openId=App.DataCenter.debugInfo.account
+        this.addUser(this.httpUserInfo);
+        var playStr:string= egret.getOption("player");
+        playStr= decodeURIComponent(playStr);
+        console.log(playStr)
         if(playStr){
+           
           var playObj= JSON.parse(playStr);
-          this.httpUserInfo.banker =playObj["banker"];
+        //   this.httpUserInfo.banker =playObj["banker"];
           this.httpUserInfo.headImgUrl = playObj["headImgUrl"];
-          this.httpUserInfo.id = playObj["id"];
-          this.httpUserInfo.nickname =playObj["nickname"];
-          this.httpUserInfo.playerId = playObj["playerId"];
+        //   this.httpUserInfo.id = playObj["id"];
+          this.httpUserInfo.nickName =StringTool.formatNickName(playObj["nickName"]);
+          this.httpUserInfo.playerId = playObj["vcm_player_id"];
           this.httpUserInfo.roomCard = playObj["roomCard"];
-          this.httpUserInfo.roomId = playObj["roomId"];
-          this.httpUserInfo.status = playObj["status"];
+          this.httpUserInfo.openId = playObj["openId"];
+          this.addUser(this.httpUserInfo);
+        //   this.httpUserInfo.roomId = playObj["roomId"];
+        //   this.httpUserInfo.status = playObj["status"];
         }
     }
     
@@ -47,7 +55,7 @@ class UserInfo {
      * @param userId 用户userId
      * @returns 返回用户信息
      */ 
-    public getUser(userID:number){
+    public getUser(userID:string){
         return this.userList[userID];
     }
 
@@ -56,7 +64,7 @@ class UserInfo {
      * @userID 用户ID
      * @return 是否存在
      */
-    public isExist(userID:number){
+    public isExist(userID:string){
         if(this.getUser(userID)){
             return true;
         }else{
@@ -69,7 +77,7 @@ class UserInfo {
      * @param seatID 座位号
      * @returns 返回用户信息
      */ 
-    public getUserBySeatID(seatID:number):UserVO{
+    public getUserBySeatID(seatID:string):UserVO{
         for(var key in this.userList){
             if(this.userList[key].seatID == seatID){
                 return this.userList[key];
@@ -88,7 +96,7 @@ class UserInfo {
     /**删除所有用户信息，除了自己*/
     public deleteAllUserExcptMe(){
         for(var key in this.userList){
-            if(parseInt(key) != this.httpUserInfo.id){
+            if(key != this.httpUserInfo.openId){
                 delete this.userList[key];
             }
         }

@@ -22,7 +22,7 @@ class HeadUI extends eui.Component {
     public headShutup:eui.Image;        //头像禁言图片
     public headOwner:eui.Image;     //房主标识
     private headShade:eui.Image;    //头像遮罩
-    private gameScene: GameScene;   
+    
     public constructor() {
         super();
         this.skinName = "HeadUISkin";
@@ -30,8 +30,8 @@ class HeadUI extends eui.Component {
     }
 
     public childrenCreated(){
-        this.hideTuoGuanIcon();
-        this.headShutup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onclickShutup,this);
+        // this.hideTuoGuanIcon();
+        // this.headShutup.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onclickShutup,this);
     }
 
     

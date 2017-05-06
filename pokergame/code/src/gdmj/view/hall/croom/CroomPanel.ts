@@ -5,21 +5,22 @@ class CroomPanel extends BasePanel{
 	}
 		 /**组件创建完毕*/
     protected childrenCreated() {
-         this.updateRadios();
+        // 
     }
 
 	private closeBtn:eui.Button;
     private okBtn:eui.Button;
     private jdDKRb:eui.RadioButton;
     private fourRb:eui.RadioButton;
+    private bbtLab:eui.Label;
     /**添加到场景中*/
     protected onEnable() {
 		this.setCenter();
         this.closeBtn.addEventListener("touchTap",this.hide,this);
         this.okBtn.addEventListener("touchTap",this.onOkBtn,this)
         this.jdDKRb.group.addEventListener(eui.UIEvent.CHANGE,this.selectGameType,this)
-        this.fourRb.group.addEventListener(eui.UIEvent.CHANGE,this.selectGameType,this)
-       
+        this.fourRb.group.addEventListener(eui.UIEvent.CHANGE,this.selectGameCount,this)
+        this.updateRadios();
         
     }
 
@@ -32,6 +33,7 @@ class CroomPanel extends BasePanel{
         for(let i=0;i< this.fourRb.group.numRadioButtons;i++){
             this.updateRadioStatus(this.fourRb.group.getRadioButtonAt(i));
         }
+      
     }
 
     private updateRadioStatus(rbtn:eui.RadioButton){
@@ -47,13 +49,14 @@ class CroomPanel extends BasePanel{
 
     private selectGameCount(e:eui.UIEvent){
         this.updateRadios();
+        this.bbtLab.text =  this.fourRb.group.selectedValue;
 
     }
 
 
     private onOkBtn(){
         this.sendData();
-        this.hide();
+        this.hide();       
     }
 
     private sendData(){

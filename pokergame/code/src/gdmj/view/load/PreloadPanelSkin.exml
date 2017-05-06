@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="PreloadPanelSkin" width="960" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="load_bg_png" width="100%" height="100%"/>
-	<e:ProgressBar width="20" height="20" x="192" skinName="skins.ProgressBarSkin" bottom="203"/>
+	<e:ProgressBar id="loadProgress" width="500" height="20"  bottom="180" anchorOffsetX="0" horizontalCenter="0" value="0">
+	<e:Skin  minWidth="30" minHeight="18" xmlns:e="http://ns.egret.com/eui">
+	<e:Image width="100%"
+			 height="100%" verticalCenter="0" source="load_process_bottom_png" scale9Grid="36,6,385,5"/>
+	<e:Image id="thumb" height="100%" width="100%" source="load_process_up_png" scale9Grid="27,6,368,2"/>
+	<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle"
+			 size="15" fontFamily="Tahoma" textColor="0x707070"
+			 horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>
+	</e:ProgressBar>
 
 </e:Skin>

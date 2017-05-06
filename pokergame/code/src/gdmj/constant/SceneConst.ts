@@ -1,7 +1,7 @@
 /**
  * 场景常量
- * @author chenkai 
- * @date 2016/11/9
+ * @author chenwei 
+ * @date 2017/4/26
  */
 enum SceneConst {
     /**加载界面*/
@@ -10,6 +10,9 @@ enum SceneConst {
     LoginScene,
     /**大厅界面*/
     HallScene,
-    /**游戏界面*/
-    GameScene
+    /**双扣游戏界面*/
+    DKGameScene,
+     /**13道游戏界面*/
+    ThridGameScene
+
 }

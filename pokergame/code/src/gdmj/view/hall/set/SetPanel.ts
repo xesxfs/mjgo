@@ -30,12 +30,12 @@ class SetPanel extends BasePanel{
 
     private onMusicSlider(e:eui.UIEvent){
         var volume =e.target.value;     
-        App.SoundManager.bgmVolume=volume;
+        // App.SoundManager.bgmVolume=volume;
     }
 
 
     private onEffectSlider(e:eui.UIEvent){
-        App.SoundManager.effectVolume=e.target.value;
+        // App.SoundManager.effectVolume=e.target.value;
 
     }
 

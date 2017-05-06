@@ -28,8 +28,8 @@ class PersionInfoPanel extends BasePanel{
         if(!userVo){
             return;
         }
-        this.userIdLab.text = userVo.id.toString();
-        this.nickNameLab.text = userVo.nickname;
+        this.userIdLab.text = userVo.playerId.toString();
+        this.nickNameLab.text = userVo.nickName;
         this.roomCardLab.text = userVo.roomCard.toString();
         this.headImg.source = userVo.headImgUrl;
 

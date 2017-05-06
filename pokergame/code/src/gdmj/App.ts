@@ -1,7 +1,7 @@
 /**
  * App主类
  * @author chenwei
- * @date 2016/7/7 
+ * @date 2017/4/23 
 
  */
 class App extends BaseApp{
@@ -35,13 +35,14 @@ class App extends BaseApp{
         //注册Controller
         this.registerController(LoginController.NAME, new LoginController());
         this.registerController(HallController.NAME, new HallController());
-        this.registerController(GameController.NAME, new GameController());
+        this.registerController(DKGameController.NAME, new DKGameController());
 
         //注册场景
         var scene: SceneManager = App.SceneManager;
         scene.register(SceneConst.LoginScene,LoginScene);      //登录界面
         scene.register(SceneConst.HallScene,HallScene);        //大厅界面
-        scene.register(SceneConst.GameScene,GameScene);        //游戏界面
+        scene.register(SceneConst.DKGameScene,DKGameScene);    //双扣游戏界面
+         scene.register(SceneConst.ThridGameScene,ThridGameScene);    //双扣游戏界面
 
         //注册弹框
         var panel: PanelManager = App.PanelManager;
@@ -98,7 +99,7 @@ class App extends BaseApp{
      * @isTimeline 是否分享到朋友圈
      */
     public nativeWxShare(isTimeline: boolean) {
-        egret.ExternalInterface.call("wxShare","http://gamemj.com/mj/index.php?pid="+App.DataCenter.UserInfo.getMyUserVo().id+"&deskCode="+App.DataCenter.deskInfo.deskCode+"&deskId="+App.DataCenter.deskInfo.deskID+"&gameID="+App.serverSocket.gameID);
+       // egret.ExternalInterface.call("wxShare","http://gamemj.com/mj/index.php?pid="+App.DataCenter.UserInfo.getMyUserVo().playerId+"&deskCode="+App.DataCenter.deskInfo.deskCode+"&deskId="+App.DataCenter.deskInfo.deskID+"&gameID="+App.serverSocket.gameID);
     }
 
     /**
@@ -116,12 +117,12 @@ class App extends BaseApp{
      * @replayCode 回放码
      */
     public setWebWxShare(userID: number,deskCode: number, replayCode:string,deskId:number) {
-        var gameID:Game_ID = App.serverSocket.gameID;
-        console.log("调用微信分享,deskCode=" + deskCode + " userID=" + userID + " replayCode=" + replayCode 
-                    + " gameID=" + gameID);
-        if(window['wxShare']) {
-            window['wxShare'](userID,deskCode,replayCode,gameID,deskId);
-        }
+        // var gameID:Game_ID = App.serverSocket.gameID;
+        // console.log("调用微信分享,deskCode=" + deskCode + " userID=" + userID + " replayCode=" + replayCode 
+        //             + " gameID=" + gameID);
+        // if(window['wxShare']) {
+        //     window['wxShare'](userID,deskCode,replayCode,gameID,deskId);
+        // }
     }
     
     /**
@@ -187,6 +188,9 @@ class App extends BaseApp{
     // public static get KeyWord():KeyWord{
     //     return KeyWord.getInstance();
     // }
+    public static get HttpSender():HttpSender{
+        return HttpSender.getInstance();
+    }
 
     /**加载等待动画*/
     public static get LoadingLock():LoadingLock{

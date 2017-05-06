@@ -58,6 +58,7 @@ class ERoomPanel extends BasePanel{
             if(noLab.text==""||noLab.text==null){
                 noLab.text=noBtn.label;
                 if(i==(countIndex-1)){
+                   // App.SceneManager.runScene(SceneConst.ThridGameScene);
                     this.sendData();
                 }
                 break;

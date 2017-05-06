@@ -22,7 +22,7 @@ class LoginController extends BaseController{
 	public registerSocket(){
 		var gameSocket: ClientSocket = App.gameSocket;
         gameSocket.register(ProtocolHead.RevCmd2, this.revLogin, this);
-		gameSocket.register(ProtocolHead.RevCmd39, this.revLogin, this);
+		gameSocket.register(ProtocolHead.RevCmd39, this.reConnection, this);
 		//socket连接成功事件
         this.addEvent(EventConst.SocketConnect, this.onSocketConnect, this);
         //socket连接错误事件
@@ -32,14 +32,41 @@ class LoginController extends BaseController{
 	private revLogin(data:Object){	
 		this.gotoHall();
 	}
+	private reConnection(data:Object){
+		App.DataCenter.GameInfo.isReCon  = true;
+		 App.getInstance().sendEvent(DKGameController.EVENT_SHOW_GAME_SCENE);
+
+	}
 	/**登录*/
 	public onLogin(){
 		 App.gameSocket.startConnect(App.DataCenter.ServerInfo.GAME_SERVER,false);
 	}
 
+
+
      //连接成功
    private onSocketConnect(socket: ClientSocket) {
-         var loginData = ProtocolData.sendLogin         
+
+	   var loginData;
+	   var muser= App.DataCenter.UserInfo.httpUserInfo;
+	   if(App.DataCenter.debugInfo.isDebug){
+		ProtocolData.sendLogin.msg[0].openId=App.DataCenter.debugInfo.account;
+		muser.openId = App.DataCenter.debugInfo.account;
+		loginData = ProtocolData.sendLogin;	
+
+	   }else{
+		
+		 if(muser){
+			 loginData ={cmd:'1',game:'-1',msg:[
+				 {
+					 id:muser.playerId,
+					 openId:muser.openId,
+				 	nickName:muser.nickName,
+				    headImgUrl:muser.headImgUrl,
+					roomCard:muser.roomCard
+				}]}	
+		 }
+	   }
          App.gameSocket.send(loginData);
 
      }
@@ -62,7 +89,8 @@ class LoginController extends BaseController{
 	/**开始加载登录界面*/
 	private startLoadLogin(){
 		var preloadPanel: PreloadPanel = App.PanelManager.open(PanelConst.PreloadPanel);
-		App.ResUtils.loadGroup(["hall","common","login"],this, this.loadLoginComplete, this.loadLoginProgress);
+		var resource=["hall","card","common","login","create","rule","score","eroom","set","msg","pay","notice","award","pinfo","gamecom","dkgame"]
+		App.ResUtils.loadGroup(resource,this, this.loadLoginComplete, this.loadLoginProgress);
 	}
 
 	/**加载登录界面进度*/

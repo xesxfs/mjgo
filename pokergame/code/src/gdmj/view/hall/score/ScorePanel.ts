@@ -19,11 +19,15 @@ class ScorePanel extends BasePanel{
 
 	private closeBtn:eui.Button;
 	private dkScoreList:eui.List;
+	private thridScoreList:eui.List;
+	private scoreType:number;
     /**添加到场景中*/
     protected onEnable() {
 		this.setCenter();
+		this.scoreType =0;
 		App.gameSocket.register(ProtocolHead.RevCmd41,this.revData,this);
 		(<eui.ArrayCollection>this.dkScoreList.dataProvider).removeAll();
+		(<eui.ArrayCollection>this.thridScoreList.dataProvider).removeAll();
 		this.sendData();
         this.closeBtn.addEventListener("touchTap",this.hide,this);        
 		this.radioRbt.group.addEventListener(eui.UIEvent.CHANGE,this.changeViewStack,this);
@@ -39,14 +43,30 @@ class ScorePanel extends BasePanel{
 	}
 
 	private revData(data:Object){
+		if(!this.scoreType){
+			this.setDkScore(data["msg"][0]);
+
+		}else{
+			this.set13Score(data["msg"][0]);
+
+		}
+		this.scoreType++;	
+
+
+	}
+
+	private setDkScore(sdata:Array<Object>){
 
 		var ac:eui.ArrayCollection = this.dkScoreList.dataProvider as eui.ArrayCollection;
-		// var item = new Object();
-		var dataItem = data["msg"][0][0];
+		sdata.forEach((item)=>{ac.addItem(item);})	
 
-		ac.addItem(dataItem);
+	}
 
 
+
+	private set13Score(sdata:Array<Object>){
+		var ac:eui.ArrayCollection = this.thridScoreList.dataProvider as eui.ArrayCollection;
+		sdata.forEach((item)=>{ac.addItem(item);})	
 	}
 
 	    

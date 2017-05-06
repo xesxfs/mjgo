@@ -13,10 +13,17 @@ class DebugInfo {
 	public get isLocalPhp():number{
 		return parseInt(egret.getOption("local"));
 	};
+	public  testList=[
+		"o2P0bwV8zuxfrVSsmy1ZJf7USFw0",
+		"o2P0bwSorAjxiVlmvGzNmagjX3Z8",
+		"o2P0bwSTs13BEOZCrzGiq2wKvr6I",
+		"o2P0bwVIsXa8H2ZN-K8gvUo5ksiU",
+		"o2P0bwTIsCK1M4Aqy6YuxGPuxPXQ"
+		];
 
 	/**测试账号*/
 	public get account(){
-		return "test" + egret.getOption("debug");
+		return this.testList[egret.getOption("debug")];
 	}
 	/**测试密码*/
 	public password:string = "112233";

@@ -23,7 +23,7 @@ class ServerInfo {
         // if(App.DataCenter.debugInfo.isLocalPhp == 1){
         //     return "http://192.168.0.222:8090/majapi/api.php";
         // }else if(App.DataCenter.debugInfo.isLocalPhp == 2){
-        return "http://192.168.1.192/majapi/api.php";
+        return "http://hjwl.tunnel.qydev.com/LoginServer/share?url=http://hjwl.tunnel.qydev.com/LoginServer/index.jsp";
         // }else{
         //  return  "http://gamemj.com/majapi/api.php";
         // }

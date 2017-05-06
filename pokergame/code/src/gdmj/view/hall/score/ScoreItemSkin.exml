@@ -3,10 +3,10 @@
 	<e:Label id="dateLab" text="dateLab" textColor="0x864414" size="18" verticalCenter="0" fontFamily="Microsoft YaHei" x="8"/>
 	<e:Label id="roomNoLab" text="Label" x="122" textColor="0x864414" fontFamily="Microsoft YaHei" size="18" verticalCenter="0"/>
 	<e:Label id="timeLab" text="Label" x="217" textColor="0x864414" fontFamily="Microsoft YaHei" size="18" verticalCenter="1"/>
-	<e:Label id="thridNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="39" fontFamily="Microsoft YaHei"/>
-	<e:Label id="secondNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="19" fontFamily="Microsoft YaHei"/>
-	<e:Label id="firstNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="0" fontFamily="Microsoft YaHei"/>
-	<e:Label id="fourthNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="58" fontFamily="Microsoft YaHei"/>
+	<e:Label id="thridNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="39" fontFamily="Microsoft YaHei" width="90" height="18"/>
+	<e:Label id="secondNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="19" fontFamily="Microsoft YaHei" width="90" height="18"/>
+	<e:Label id="firstNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="0" fontFamily="Microsoft YaHei" width="90" height="18"/>
+	<e:Label id="fourthNickNameLab" text="Label" x="307" textColor="0x864414" size="18" y="58" fontFamily="Microsoft YaHei" width="90" height="18"/>
 	<e:Label id="firstScoreLab" text="Label" x="416" textColor="0x864414" size="18" y="0" fontFamily="Microsoft YaHei"/>
 	<e:Label id="secondScoreLab" text="Label" x="416" textColor="0x864414" size="18" y="19.666666666666668" fontFamily="Microsoft YaHei"/>
 	<e:Label id="thridScoreLab" text="Label" x="416" textColor="0x864414" size="18" y="38.333333333333336" fontFamily="Microsoft YaHei"/>

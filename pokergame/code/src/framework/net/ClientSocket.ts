@@ -25,9 +25,7 @@ class ClientSocket {
 
     private url:string = "";                 //IP地址
 
-    public serverType:Server_Type;           //服务器类型
-    public gameID:Game_ID;                   //游戏ID
-    public roomLevel:Room_Level;             //金币房间等级
+
   
 
 
@@ -57,10 +55,10 @@ class ClientSocket {
      * @bAllowReconnnect 是否允许断线重连
      * @serverType  服务器类型
      */
-    public startConnect(url: string, bAllowReconnnect:boolean = false,serverType:Server_Type = 1): void {
+    public startConnect(url: string, bAllowReconnnect:boolean = false): void {
         console.log("开始连接" + this.name  + ":" + url);
         this.url = url;
-        this.serverType = serverType;
+ 
         this.bAllowReconnnect = bAllowReconnnect;
         this.createSocket();
         this.socket.connectByUrl(url);        

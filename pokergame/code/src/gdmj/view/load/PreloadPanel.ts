@@ -7,7 +7,7 @@ class PreloadPanel extends BaseScene{
     /**进度文本*/
     private percentLab:eui.Label;
 	/**进度条*/
-//    private loadProgress:eui.ProgressBar;
+   private loadProgress:eui.ProgressBar;
     /*加载动画*/
     private mc:egret.MovieClip;
     
@@ -44,7 +44,7 @@ class PreloadPanel extends BaseScene{
      */
     public setProgress(value:number){
         // this.percentLab.text = value + "%";
-//        this.loadProgress.value = value;
+       this.loadProgress.value = value;
     }
 
 }

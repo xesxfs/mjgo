@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="ScorePanelSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
 	<e:Image source="com_panel_bg2_png"/>
-	<e:Image source="rule_title_png" y="8" horizontalCenter="0"/>
+	<e:Image y="8" horizontalCenter="0" source="score_title_png"/>
 	<e:Button id="closeBtn" label="" y="33.5" right="0">
 		<e:skinName>
 		<e:Skin states="up,down,disabled">
@@ -27,15 +27,40 @@
 		</e:skinName>
 	</e:RadioButton>
 	<e:ViewStack id="vs" width="479" height="357" x="191.76" y="99.12" anchorOffsetX="-1.24" anchorOffsetY="1.12" selectedIndex="1">
-		<e:Group width="100%" height="100%" name="Group" x="10" y="10">
-			<e:Scroller width="100%" height="100%">
-			<e:Group>
-				<e:Image source="score_bg1_png" x="24" y="20"/>
-				<e:Image source="score_bg2_png" x="-3" y="56"/>
-				<e:Image source="score_content_png" x="31" y="74"/>
-			</e:Group>
-			</e:Scroller>
+	
+	<e:Group width="100%" height="100%" name="Group">
+			<e:Image source="score_bg1_png" x="24" y="20"/>
+		<e:Scroller width="100%" height="310" anchorOffsetY="0" x="0" y="47">
+			<e:List id="thridScoreList" width="472" height="298" x="0" y="59" anchorOffsetY="0" anchorOffsetX="0">
+				<e:itemRenderer>
+				<ns1:ScoreItem skinName="ScoreItemSkin"/>
+				</e:itemRenderer>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" gap="16" paddingTop="10"/>
+				</e:layout>
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object/>
+						<e:Object/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+						<e:Object a="null" b="null" c="null" d="null"/>
+					</e:Array>
+				</e:ArrayCollection>
+
+			</e:List>
+
+		</e:Scroller>
+
 		</e:Group>
+
+	
+	
+	
 		<e:Group width="100%" height="100%" name="Group">
 			<e:Image source="score_bg1_png" x="24" y="20"/>
 		<e:Scroller width="100%" height="310" anchorOffsetY="0" x="0" y="47">

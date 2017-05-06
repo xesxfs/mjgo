@@ -22,7 +22,7 @@
 			</e:Skin>
 		</e:skinName>
 	</e:Button>
-	<e:HSlider id="effectSlider" x="128" y="142.33" enabled="true" anchorOffsetX="0" maximum="1" snapInterval="0.1">
+	<e:HSlider id="effectSlider" x="128" y="142.33" enabled="true" anchorOffsetX="0" maximum="1" snapInterval="0.1" slideDuration="500">
 		<e:skinName>
 		  <e:Skin>		  
    		 	<e:Image id="track" source="set_bg2_png" scale9Grid="1,1,4,4" width="100%" verticalCenter="0"/>
@@ -31,7 +31,7 @@
 		</e:skinName>
 
 	</e:HSlider>
-	<e:HSlider id="musicSlider" x="128" y="78.96" enabled="true" anchorOffsetX="0" maximum="1" snapInterval="0.1">
+	<e:HSlider id="musicSlider" x="128" y="78.96" enabled="true" anchorOffsetX="0" maximum="1" snapInterval="0.1" liveDragging="true" slideDuration="500">
 		<e:skinName>
 		<e:Skin>
 			<e:Image id="track" source="set_bg2_png" scale9Grid="1,1,4,4" width="100%" verticalCenter="0"/>
