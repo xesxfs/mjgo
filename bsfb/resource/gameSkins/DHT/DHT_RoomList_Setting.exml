@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_RoomList_Setting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_RoomList_Setting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="450" anchorOffsetY="0" height="260" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-12" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Button id="Btn_CloseSetting" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="202" verticalCenter="-118">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="房间设置" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-117" anchorOffsetX="0" horizontalCenter="0" visible="false"/>
+		<e:Label text="不接受大话骰邀请" size="20" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="34" width="183" verticalAlign="middle" textAlign="left" anchorOffsetX="0" verticalCenter="-29" horizontalCenter="14.5"/>
+		<e:Label text="注意：私密房间只有完整输入房间号才能在列表中显示" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="44" width="374" textAlign="center" anchorOffsetX="0" textColor="0x68ff3d" verticalCenter="57" verticalAlign="top" horizontalCenter="0"/>
+		<e:CheckBox id="CheckBox" label="CheckBox" width="40" height="40" horizontalCenter="-115" x="7" scaleX="1" scaleY="1" verticalCenter="-30">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Image source="GW_label_tex_json.fangjianshezhi" verticalCenter="-118" horizontalCenter="1"/>
+	</e:Group>
+	</e:Skin>

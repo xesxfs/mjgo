@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.ProgressBarSkin" minWidth="30" minHeight="18" xmlns:e="http://ns.egret.com/eui" width="140">
+	<e:Image id="thumb" width="140" scale9Grid="58,0,43,16" anchorOffsetX="0" source="BSFB_Atlas_json.Sprite_Slider" x="0" y="1"/>
+</e:Skin>

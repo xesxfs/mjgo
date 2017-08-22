@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_RoomSetting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_RoomSetting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="501" anchorOffsetY="0" height="389" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-17.5" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Image anchorOffsetX="0" width="497" anchorOffsetY="0" height="282" fillMode="repeat" horizontalCenter="0" verticalCenter="-21.5" source="GW_DHT_Atlas_json.UI_8x8_bg"/>
+		<e:Label text="房间设置" size="26" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-188" anchorOffsetX="0" horizontalCenter="-9" visible="false"/>
+		<e:Label text="公开显示" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="80" textAlign="left" anchorOffsetX="0" textColor="0x68ff3d" verticalAlign="middle" x="268" y="295"/>
+		<e:Label text="每局点数:" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="80" textAlign="left" anchorOffsetX="0" textColor="0x68FF3D" verticalAlign="middle" x="229" y="377"/>
+		<e:Label text="私密房间" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="80" textAlign="left" anchorOffsetX="0" textColor="0x68FF3D" verticalAlign="middle" x="574" y="295"/>
+		<e:Label text="房间名：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xcecece" x="209" y="160"/>
+		<e:Label text="密码：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" textColor="0xCECECE" verticalAlign="middle" x="209" y="203"/>
+		<e:Label text="模式：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" textColor="0xCECECE" verticalAlign="middle" x="209" y="247"/>
+		<e:Label text="仅对公会成员显示" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="158" textAlign="left" anchorOffsetX="0" textColor="0x68FF3D" verticalAlign="middle" x="383" y="295"/>
+		<e:Label text="设置私密房间后，需要搜索完整房间号才能被找到." size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="427" textAlign="left" anchorOffsetX="0" textColor="0x68FF3D" verticalAlign="middle" y="335" horizontalCenter="-8.5"/>
+		<e:Group id="RoomName_input" width="320" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-127" horizontalCenter="32">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:TextInput id="text_RoomName" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" maxChars="10" restrict="A-Za-z0-9\u4E00-\u9FA5"/>
+			<e:Label id="promptDisplay0" verticalCenter="0" left="9" right="11" width="100%" height="24" size="20" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="验证码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" visible="false"/>
+		</e:Group>
+		<e:Group id="PassWord_input" width="240" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-82" horizontalCenter="-9">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="text_pwd" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="密码可修改" restrict="A-Za-z0-9" displayAsPassword="true" maxChars="6"/>
+			<e:Label id="promptDisplay1" verticalCenter="0" left="5" right="9" width="100%" height="24" size="20" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="密码可修改" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" verticalAlign="middle" textAlign="left" visible="false"/>
+		</e:Group>
+		<e:Group id="Pop_ModeList" width="240" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-36" horizontalCenter="-9">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="textDisplay2" verticalCenter="0" left="5" right="4" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" verticalAlign="middle" visible="false"/>
+			<e:Label id="Label_mode" verticalCenter="0" left="6" right="18" width="100%" height="24" size="20" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="传统模式" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+			<e:Image source="GF_commonButton_json.ui_sanjiao_btn" x="205" y="4"/>
+		</e:Group>
+		<e:Group id="InputRoomPoints" width="138" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="91" horizontalCenter="-70">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="textDisplay3" verticalCenter="0" left="7" right="8" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" visible="false"/>
+			<e:Label id="Label_point" verticalCenter="0" left="4" right="3" width="100%" height="24" size="20" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="50000" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:RadioButton id="RB_ShowRoom" label="ShowRoom" width="32" height="32" scaleX="1" scaleY="1" x="227" y="291" selected="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="RB_Club" label="CheckBox" width="32" height="32" scaleX="1" scaleY="1" x="346" y="291">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="RB_PrivateRoom" label="CheckBox" width="32" height="32" scaleX="1" scaleY="1" x="537" y="292">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="228" verticalCenter="-188">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_model" label="" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetX="0" horizontalCenter="146" verticalCenter="-30" anchorOffsetY="0" height="40" x="20" y="20">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.Dices_help_btn"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:CheckBox id="CB_pwd" label="" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetX="0" horizontalCenter="146" verticalCenter="-80" anchorOffsetY="0" height="40" x="30" y="30" selected="true">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.UI_Eye_on" source.down="GW_DHT_Atlas_json.UI_Eye_btn_off"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Button id="Btn_ChangePoint" label="修改" scaleX="1" scaleY="1" enabled="true" width="59" anchorOffsetX="0" horizontalCenter="41.5" verticalCenter="91" anchorOffsetY="0" height="31.81" x="20" y="20">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_NUmB_btn_1" scale9Grid="14,0,32,54" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.xiugai" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Kick" label="踢出对手" scaleX="1" scaleY="1" enabled="true" width="160" anchorOffsetX="0" horizontalCenter="163" verticalCenter="91" x="10" y="10">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.tichuduishou" width="90" height="23" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_OK" label="保存设置" scaleX="1" scaleY="1" enabled="true" width="160" anchorOffsetX="0" horizontalCenter="-1" verticalCenter="146">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.fangjianshezhi" y="96" width="117" height="30" horizontalCenter="0"/>
+	</e:Group>
+	</e:Skin>

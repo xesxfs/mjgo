@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.ButtonSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui">
+    <e:Image width="100%" height="100%" alpha.disabled="0.5"
+            
+             source.down="button_down_png" source="GF_commonButton_json.Input_BG2" scale9Grid="5,5,4,6" alpha="0"/>
+    <e:Label id="labelDisplay"
+             size="17"
+             fontFamily="SimHei" textAlign="center" textColor="0xffee2d" alpha="1" x="0" height="100%" y="0" verticalAlign="middle" width="100%"/>
+</e:Skin>

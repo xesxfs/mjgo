@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="VedioPanelskin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="ArrowAni">
+			<tween:TweenItem target="{arrow}">
+				<tween:Set/>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+		<tween:TweenGroup id="HandAni">
+			<tween:TweenItem target="{hand}">
+				<tween:Set>
+					<tween:props>
+						<e:Object x="{659}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object x="{750}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	
+	<e:Group id="UIPanel" width="900" height="600" y="0" x="0">
+		<e:Image id="BG0" y="0" height="100%" width="100%" x="0" fillMode="scale" scaleX="1" scaleY="1" source="3_BSFB_vedio_png"/>
+		<e:Image source="GF_commonButton_json.slider_bg" x="0" y="-3" anchorOffsetX="0" width="270" anchorOffsetY="0" height="608" scale9Grid="1,1,8,8"/>
+		<e:Image source="GF_commonButton_json.slider_bg" anchorOffsetX="0" width="280" anchorOffsetY="0" height="608" scale9Grid="1,1,8,8" verticalCenter="0" x="622"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_VedioTitle" y="0" fillMode="repeat" height="121" anchorOffsetX="0" width="300" left="-29"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_VedioTitle" y="0" fillMode="repeat" height="121" anchorOffsetX="0" width="286" right="0"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_VedioTitle" y="0" fillMode="scale" height="121" anchorOffsetX="0" width="250" left="19"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_VedioTitle" y="0" fillMode="scale" height="121" anchorOffsetX="0" width="250" right="32"/>
+		<e:Image source="GW_label_tex_json.wodeshipin" x="691" y="86"/>
+		<e:Label text="视频集锦" y="89" size="24" horizontalCenter="-312" fontFamily="SimHei" name="buttonGrayColor" stroke="1" visible="false"/>
+		<e:Image source="GW_label_tex_json.shipinjijin" horizontalCenter="-319" verticalCenter="-202.5"/>
+		<e:Label text="我的视频" y="89" size="24" horizontalCenter="304" fontFamily="SimHei" stroke="1" name="buttonGrayColor" visible="false"/>
+		<e:Button id="Btn_Close" width="42" label="" height="42" enabled="true" right="49" verticalCenter="-234">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_return_btn"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="PublicVedio" width="233" height="395" y="134" horizontalCenter="-321.5">
+			<e:Scroller width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+				<e:List id="PublicVediolist" width="100%" height="100%">
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="left" verticalAlign="top" paddingLeft="25"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="MyVedio" width="233" height="395" y="134" x="626">
+			<e:Scroller width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:List id="MyVedioList" width="100%" height="100%" x="614.5">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" verticalAlign="top" paddingLeft="25"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Image id="LeftHide" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,3" anchorOffsetX="0" verticalCenter="31.5" width="263" anchorOffsetY="0" height="405" horizontalCenter="-324.5"/>
+		<e:Image id="RightHide" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,3" anchorOffsetX="0" verticalCenter="31.5" width="276" anchorOffsetY="0" height="405" horizontalCenter="320"/>
+	</e:Group>
+	<e:Group id="GamePanel" width="334" height="446" x="269" y="81">
+		<e:Image id="BG1" y="0" height="100%" width="100%" x="0" fillMode="scale" scaleX="1" scaleY="1" source="3_BSFB_vedio_Center_png"/>
+		<e:Button id="Btn_Close_GamePanel" y="-19" x="312" width="35" label="账号登录" height="35" enabled="true" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+			<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Group id="wallLeft" width="43" height="390" x="0" y="32">
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" height="25" y="26"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="52"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="78"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="104"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="130"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="156"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="182"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="208"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="234"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="260"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="286"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="312"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="338"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="364"/>
+		</e:Group>
+		<e:Group id="wallRight" width="43" height="390" y="32" right="0">
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" height="25" y="26"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="52"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="78"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="104"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="130"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="156"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="182"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="208"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="234"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="260"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="286"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="312"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="338"/>
+		<e:Image source="BSFB_Atlas_json.Sprite_Wall" scaleX="1" scaleY="1" left="0" y="364"/>
+		</e:Group>
+		<e:Group id="wallBottom" width="333" height="24" bottom="0" left="0">
+		<e:Image x="310" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="288" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="266" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="244" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="222" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="200" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="178" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="156" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="134" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="112" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="90" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="68" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="46" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="24" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		<e:Image x="2" y="0" source="BSFB_Atlas_json.Sprite_Wall_2"/>
+		</e:Group>
+		<e:Group id="DiamondPanel" width="1" height="1" x="0" y="0">
+		</e:Group>
+		<e:Group id="NewBie" width="1" height="1" horizontalCenter="-435.5" verticalCenter="-303.5" visible="false">
+			<e:Group id="newbieGroup" width="270" height="80" x="300" y="95">
+			<e:Image id="Bg_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="1" y="-3" alpha="1" source="GF_commonButton_json.Sprite_NewBie" scale9Grid="24,23,8,8" width="270" height="90"/>
+			<e:Image id="Go_Bricks_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="120" y="30" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.Sprite_Wall" visible="false"/>
+			<e:Image id="Go_Add_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="112" y="23" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.UIBtn_Add" visible="false"/>
+			<e:Image id="Go_Minus_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="57" y="23" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.UIBtn_Minus" visible="false"/>
+			<e:Image id="Go_Drill_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="31" y="14" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.Sprite_Line01" rotation="45" visible="false"/>
+			<e:Image id="Go_Jewel_NewBie" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="130" y="4" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.4" width="32" height="32" visible="false"/>
+			<e:Label id="Label_NewBie" text="    爆完15个     杀入下一关" size="18" fontFamily="SimHei" width="250" textAlign="center" scaleX="1" scaleY="1" y="10" textColor="0xfeffe8" x="8" verticalAlign="middle" height="65"/>
+			</e:Group>
+			<e:Image id="arrow" anchorOffsetX="15" anchorOffsetY="20" scaleX="1" scaleY="1" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" width="30" height="40" x="628" y="122"/>
+			<e:Image id="hand" anchorOffsetX="15" anchorOffsetY="20" scaleX="1" scaleY="1" alpha="1" fillMode="scale" source="BSFB_Atlas_json.Sptite_Newbie_Hand" x="659" y="422"/>
+			<e:Image id="Go_Tips_NewBie" anchorOffsetX="15" anchorOffsetY="20" scaleX="-1" scaleY="1" scale9Grid="6,6,15,16" alpha="1" fillMode="scale" source="BSFB_Atlas_json.Sprite_Newbie_TipsBg" rotation="90" horizontalCenter="404.5" verticalCenter="443.5"/>
+			<e:Button id="Btn_StartGame" label="进入游戏" scaleX="1" scaleY="1" enabled="true" width="130" horizontalCenter="434.5" verticalCenter="211.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_01" scale9Grid="24,15,8,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_NoBinding" label="稍后绑定" scaleX="1" scaleY="1" enabled="true" width="130" horizontalCenter="364.5" verticalCenter="211.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_01" scale9Grid="24,15,8,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_NewBieBinding" label="绑定手机" scaleX="1" scaleY="1" enabled="true" width="130" horizontalCenter="500.5" verticalCenter="211.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_01" scale9Grid="24,15,8,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_NewBieSkip" label="跳过" scaleX="1" scaleY="1" enabled="true" width="120" horizontalCenter="785.5" verticalCenter="120.5" height="46">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_02" scale9Grid="25,11,6,25"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:BitmapLabel id="Label_WinningScore" y="165" font="red_fnt" text="99999999999" scaleX="0.5" scaleY="0.5" textAlign="center" horizontalCenter="-1.5"/>
+		<e:Group id="scoreGroup" width="1" height="1" x="0" y="0">
+		</e:Group>
+		<ns1:MarqueenUI id="louderspeaker" horizontalCenter="10" verticalCenter="-186" skinName="MarqueenBS"/>
+		<e:Group id="ParticleGroup" width="1" height="1" x="1" y="1"/>
+		<e:Group id="winslotGroup" width="1" height="1" x="1" y="1">
+			<e:BitmapLabel id="Label_Go_Slot" y="295" font="red_fnt" text="9999999999" scaleX="0.5" scaleY="0.5" textAlign="center" horizontalCenter="167"/>
+		</e:Group>
+		<e:Label id="nick" text="xau666" y="351" size="24" fontFamily="SimHei" stroke="1" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="bricktipGroup" width="900" height="600" x="0" y="0">
+		<e:Image id="tipBG" width="213" height="144" x="50" y="146" source="BSFB_Atlas_json.UI_CJXZ_2" scale9Grid="13,12,15,16" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Label text="每出一个钻头，可消除一块砖块；\n\n每关有15块砖块，每消除15块砖块进入下一关；\n\n三关结束之后进入龙珠探宝环节。" y="153" size="16" horizontalCenter="-292" width="210" textAlign="left" verticalAlign="middle" fontFamily="SimHei" stroke="1" textColor="0xcdcfae"/>
+	</e:Group>
+	<e:Group id="TrustBG" width="1" height="1" x="0" y="0" visible="false">
+		<e:Image id="tipBG0" x="309" y="458" scale9Grid="13,12,15,16" source="BSFB_Atlas_json.Sprite_zdtz"/>
+		<e:Button id="Btn_CloseTrustBG" width="25" label="账号登录" height="25" enabled="true" y="450" x="537">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_1"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	</e:Skin>

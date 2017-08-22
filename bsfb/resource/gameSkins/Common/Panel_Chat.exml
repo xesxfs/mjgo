@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Chat" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_Chat" width="1" height="1" verticalCenter="3.5" left="0">
+		<e:Group id="ChatCont" width="900" height="600" verticalCenter="-3.5" y="0" scaleX="1" scaleY="1" left="0">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="392" anchorOffsetY="0" height="569.34" scaleX="1" scaleY="1" scale9Grid="42,53,4,9" verticalCenter="42.5" horizontalCenter="-253"/>
+			<e:Image anchorOffsetX="0" width="370" anchorOffsetY="0" height="379.67" scaleX="1" scaleY="1" verticalCenter="3" horizontalCenter="-252" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,3,4"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" horizontalCenter="-252" verticalCenter="281.5" anchorOffsetY="0" height="171" scale9Grid="7,7,2,2" anchorOffsetX="0" width="375.67"/>
+			<e:Group id="textSend" width="1" height="1" x="19.33" y="238.99" scaleX="1" scaleY="1">
+				<e:Group width="248" height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="34" y="267.32">
+					<e:Image width="251.33" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="-1.5" verticalCenter="0" anchorOffsetX="0"/>
+					<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+					<e:EditableText id="InputChar" verticalCenter="0" left="3" right="46" textColor="0x000000" width="100%" height="24" size="15" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="请输入聊天" textAlign="left" verticalAlign="middle" fontFamily="SimHei"/>
+				</e:Group>
+			<e:Button id="Btn_Send_MSN" label="发送" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" anchorOffsetY="0" height="36" horizontalCenter="324.5" verticalCenter="283.5">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*" width="78">
+					<e:Image source="GF_commonButton_json.UI_small_btn_1_2" anchorOffsetX="0" width="76" anchorOffsetY="0" height="36" scale9Grid="8,6,4,22" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay9" horizontalCenter="0" verticalCenter="-1.5" text="发送" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0x702020" visible="false"/>
+	<e:Image source="GW_label_tex_json.fasong" anchorOffsetX="0" width="48" anchorOffsetY="0" height="23" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Send_fast" label="发送" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetX="0" anchorOffsetY="0" height="40" verticalCenter="284.5" x="238">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*" width="78">
+					<e:Image source="GF_commonButton_json.UI_Chat_btn_1" verticalCenter="0" x="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Send_Delete" label="" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetX="0" anchorOffsetY="0" height="24" verticalCenter="284.5" x="238">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_delete_Num"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="BtnSoundSwitch" label="" scaleX="1" scaleY="1" enabled="true" width="35" anchorOffsetX="0" anchorOffsetY="0" height="36" rotation="359.29" y="265.33" x="-7">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_sound_btn"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			</e:Group>
+			<e:RadioButton id="PageWorld" label="世界" x="39.33" y="67.5" width="116" height="42" groupName="clubTg" selected="true">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="13,0,7,38"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" verticalAlign="middle" textColor="0xF1FF02" visible="false"/>
+	<e:Image source="GW_label_tex_json.shijie" horizontalCenter="-2.5" verticalCenter="0.5" width="50" height="23" scaleX="0.9"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="PageClub" label="公会" x="155.33" y="67.5" width="116" height="42" groupName="clubTg">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="13,0,7,38"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" verticalAlign="middle" textColor="0xF1FF02" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui" horizontalCenter="-3" verticalCenter="0.5" width="50" height="23" scaleX="0.9"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:Button id="SwitchHide" label="" scaleX="1" scaleY="1" enabled="true" width="35" anchorOffsetX="0" anchorOffsetY="0" height="85" x="390.33" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+	<e:Image source="GF_commonButton_json.UI_chat_btn" scale9Grid="0,19,32,3" verticalCenter="0" horizontalCenter="0" height="90"/>
+				<e:Image id="SwitchShow0" anchorOffsetX="0" width="24" anchorOffsetY="0" height="50" rotation="360" horizontalCenter="0" verticalCenter="0" source="GF_commonButton_json.UI_chat_menu_btn_1"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Group id="PanelSelect" width="310" height="152" x="4.33" y="345.35" visible="false">
+			<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" left="0" source="GW_DHT_Atlas_json.DialogBoxbg_1" scale9Grid="4,6,8,14" y="0"/>
+			<e:Button id="Btn_Send_Chat_1" label="运气好" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="40" x="9" y="17">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image source="GF_commonButton_json.Input_BG4" x="0" y="0" scale9Grid="7,6,3,4" anchorOffsetX="0" width="140" anchorOffsetY="0" height="40"/>
+					<e:Label id="labelDisplay" text="运气好" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0x020c26" textAlign="center" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Send_Chat_2" label="来一波666" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="40" x="157" y="17">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image source="GF_commonButton_json.Input_BG4" x="0" y="0" scale9Grid="7,6,3,4" anchorOffsetX="0" width="140" anchorOffsetY="0" height="40"/>
+					<e:Label id="labelDisplay" text="" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0x020c26" textAlign="center" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Send_Chat_3" label="求包养" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="40" x="9" y="65">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image source="GF_commonButton_json.Input_BG4" x="0" y="0" scale9Grid="7,6,3,4" anchorOffsetX="0" width="140" anchorOffsetY="0" height="40"/>
+					<e:Label id="labelDisplay" text="运气好" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0x020c26" textAlign="center" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Send_Chat_4" label="求工会收留" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="40" x="157" y="65">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image source="GF_commonButton_json.Input_BG4" x="0" y="0" scale9Grid="7,6,3,4" anchorOffsetX="0" width="140" anchorOffsetY="0" height="40"/>
+					<e:Label id="labelDisplay" text="运气好" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0x020c26" textAlign="center" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			</e:Group>
+			<e:Scroller id="chatClubScroller" width="370" height="374.5" anchorOffsetX="0" anchorOffsetY="0" x="12.33" y="116.49" scaleX="1" scaleY="1" scrollPolicyH="off">
+				<e:List id="chatClubList" width="100%" height="392.67" anchorOffsetY="0">
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="top" paddingTop="2" paddingBottom="2"/>
+				</e:layout>
+				<e:itemRendererSkinName>
+					<e:Skin>
+						<e:Image id="line_0_5" width="364" scaleX="1" scaleY="1" fillMode="scale" height="57" horizontalCenter="4" verticalCenter="16.5" source="GF_commonButton_json.Input_BG2" scale9Grid="8,6,1,4" anchorOffsetX="0"/>
+						<e:Button id="Btn_join" label="加入" scaleX="1" scaleY="1" enabled="true" width="80" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="138" verticalCenter="20">
+						<e:skinName>
+							<e:Skin states="up,down,disabled" xmlns:ns1="*" width="92">
+								<e:Image source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="9,16,2,3" anchorOffsetX="0" width="80" anchorOffsetY="0" height="38" horizontalCenter="0" verticalCenter="0"/>
+								<e:Label id="labelDisplay" text="发送" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xeff3fc" anchorOffsetX="0" width="55" anchorOffsetY="0" height="29" horizontalCenter="5.5" verticalCenter="-2.5"/>
+							</e:Skin>
+							</e:skinName>
+						</e:Button>
+						<e:Image id="vipIcon" source="BSFB_Atlas_json.UI_VIP_icon" x="9.5" y="3.82" anchorOffsetX="0" width="45.93" anchorOffsetY="0" height="22.68" scaleX="1" scaleY="1"/>
+						<e:Label id="nickname" text="风一样的男子..."  size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffdd5b" x="59" y="6" scaleX="1" scaleY="1"/>
+						<e:Label id="time" text="(06-7-21_18:30)" size="14" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="243" y="8" scaleX="1" scaleY="1" textAlign="center"/>
+						<e:Label id="content" text="下沙走一回" size="18" verticalAlign="middle" fontFamily="SimHei" x="12" y="40" scaleX="1" scaleY="1" anchorOffsetY="0" height="48" anchorOffsetX="0" width="263" textAlign="left" textColor="0xfffbef"/>
+				
+					</e:Skin>
+				</e:itemRendererSkinName>
+				</e:List>
+			</e:Scroller>
+			<e:Scroller id="chatWolrdScroller" width="370" height="380" anchorOffsetX="0" anchorOffsetY="0" x="12.33" y="96.99" scaleX="1" scaleY="1" scrollPolicyH="off">
+				<e:List id="chatWorldList" width="100%" height="100%">
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="top" paddingTop="2" paddingBottom="2"/>
+				</e:layout>
+				<e:itemRendererSkinName>
+					<e:Skin>
+						<e:Image id="line_0_5" width="364" scaleX="1" scaleY="1" fillMode="scale" height="57" horizontalCenter="4" verticalCenter="16.5" source="GF_commonButton_json.Input_BG2" scale9Grid="8,6,1,4" anchorOffsetX="0"/>
+						<e:Button id="Btn_join" label="加入" scaleX="1" scaleY="1" enabled="true" width="80" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="138" verticalCenter="20">
+						<e:skinName>
+							<e:Skin states="up,down,disabled" xmlns:ns1="*" width="92">
+								<e:Image source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="9,16,2,3" anchorOffsetX="0" width="80" anchorOffsetY="0" height="38" horizontalCenter="0" verticalCenter="0"/>
+								<e:Label id="labelDisplay" text="发送" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xeff3fc" anchorOffsetX="0" width="55" anchorOffsetY="0" height="29" horizontalCenter="5.5" verticalCenter="-2.5"/>
+							</e:Skin>
+							</e:skinName>
+						</e:Button>
+						<e:Image id="vipIcon" source="BSFB_Atlas_json.UI_VIP_icon" x="9.5" y="3.82" anchorOffsetX="0" width="45.93" anchorOffsetY="0" height="22.68" scaleX="1" scaleY="1"/>
+						<e:Label id="nickname" text="风一样的男子..."  size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffdd5b" x="59" y="6" scaleX="1" scaleY="1"/>
+						<e:Label id="time" text="(06-7-21_18:30)" size="14" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="243" y="8" scaleX="1" scaleY="1" textAlign="center"/>
+						<e:Label id="content" text="下沙走一回" size="18" verticalAlign="middle" fontFamily="SimHei" x="12" y="40" scaleX="1" scaleY="1" anchorOffsetY="0" height="48" anchorOffsetX="0" width="263" textAlign="left" textColor="0xfffbef"/>
+				
+					</e:Skin>
+				</e:itemRendererSkinName>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="Panelshare" width="363" height="100" scaleX="1" scaleY="1" y="103.99" x="15.33" visible="false">
+			<e:Image id="line_0_1" width="364" horizontalCenter="1.5" verticalCenter="13.5" x="189" y="215" scaleX="1" scaleY="1" height="69" scale9Grid="7,7,2,3" anchorOffsetY="0" source="GF_commonButton_json.Input_BG2"/>
+			<e:Image source="BSFB_Atlas_json.UI_VIP_icon" x="9.5" y="2.82" anchorOffsetX="0" width="45.93" anchorOffsetY="0" height="22.68" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay5" text="风一样的男子..." size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="59" y="5" scaleX="1" scaleY="1" width="150"/>
+			<e:Label id="labelDisplay7" text="标题：无" size="20" verticalAlign="middle" fontFamily="SimHei" x="22" y="38" scaleX="1" scaleY="1" textColor="0xcbff3d"/>
+			<e:Label id="labelDisplay8" text="播放次数：0" size="18" verticalAlign="middle" fontFamily="SimHei" x="22" y="74" scaleX="1" scaleY="1" textColor="0xcbff3d"/>
+			<e:Label id="labelDisplay6" text="(06-7-21_18:30)" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="213" y="5" scaleX="1" scaleY="1"/>
+			<e:Button id="vedioPlay" label="加入" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" anchorOffsetY="0" height="60" horizontalCenter="147" verticalCenter="13">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*" width="60">
+					<e:Image source="BSFB_Atlas_json.UIBtn_PlayVedio" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			</e:Group>
+			<e:Group id="PanelCharacter" width="370" height="100" scaleX="1" scaleY="1" x="8.33" y="129.99" visible="false">
+				<e:Image id="line_0_5" width="364" scaleX="1" scaleY="1" fillMode="scale" height="71" horizontalCenter="4" verticalCenter="13.5" source="GF_commonButton_json.Input_BG2" scale9Grid="8,6,1,4" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Button id="Btn_join" label="加入" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="146" verticalCenter="20">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*" width="92">
+						<e:Image source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="9,16,2,3" anchorOffsetX="0" width="70" anchorOffsetY="0" height="38" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" text="发送" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xeff3fc" anchorOffsetX="0" width="55" anchorOffsetY="0" height="29" horizontalCenter="5.5" verticalCenter="-2.5"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image id="vipIcon" source="BSFB_Atlas_json.UI_VIP_icon" x="9.5" y="3.82" anchorOffsetX="0" width="45.93" anchorOffsetY="0" height="22.68" scaleX="1" scaleY="1"/>
+				<e:Label id="nickname" text="风一样的男子..." size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffdd5b" x="59" y="6" scaleX="1" scaleY="1"/>
+				<e:Label id="time" text="(06-7-21_18:30)" size="16" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="243" y="5" scaleX="1" scaleY="1" textAlign="center"/>
+				<e:Label id="content" text="下沙走一回" size="18" verticalAlign="top" fontFamily="SimHei" x="9" y="31" scaleX="1" scaleY="1" anchorOffsetY="0" height="66" anchorOffsetX="0" width="285" textAlign="left" textColor="0xfffbef"/>
+			</e:Group>
+			<e:Group id="PanelSound" width="373" height="100" scaleX="1" scaleY="1" left="8" y="161.99" anchorOffsetX="0" visible="false">
+				<e:Image id="line_0_0" width="364" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" fillMode="repeat" height="71" horizontalCenter="2" verticalCenter="13.5" scale9Grid="7,7,2,3" anchorOffsetY="0"/>
+			<e:Image source="GF_commonButton_json.UI_CJXZ" x="13" y="53" scale9Grid="15,15,11,10" anchorOffsetX="0" width="168" anchorOffsetY="0" height="35" scaleX="1" scaleY="1"/>
+			<e:Image id="SoundPoint" source="GW_HallAtlas_json.Hall_Sprite_Tips" x="136" y="61" anchorOffsetX="0" width="18" anchorOffsetY="0" height="18" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay2" text="5&quot;" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0x010819" x="106" y="59" scaleX="1" scaleY="1"/>
+			<e:Image source="BSFB_Atlas_json.UI_VIP_icon" x="9.5" y="3.82" anchorOffsetX="0" width="45.93" anchorOffsetY="0" height="22.68" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay3" text="风一样的男子..." size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="59" y="6" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay4" text="(06-7-21_18:30)" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xFFDD5B" x="220" y="6" scaleX="1" scaleY="1"/>
+			<e:Button id="SoundIcon" label="发送" scaleX="1" scaleY="1" enabled="true" width="45.2" anchorOffsetX="0" x="26" y="55" anchorOffsetY="0" height="31.17">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*" width="44">
+					<e:Image source="GF_commonButton_json.UI_sound_btn" verticalCenter="0" horizontalCenter="0"/>
+					<e:Image source="GF_commonButton_json.UI_sound_btn" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" left="0" top="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			</e:Group>
+		</e:Group>
+		<e:Button id="SwitchShow" label="" scaleX="1" scaleY="1" enabled="true" width="35" anchorOffsetX="0" anchorOffsetY="0" height="85" left="-3" x="-1" verticalCenter="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+	<e:Image source="GF_commonButton_json.UI_chat_btn" scale9Grid="0,19,32,3" verticalCenter="0" horizontalCenter="0" height="90"/>
+	<e:Image id="SwitchShow" source="GF_commonButton_json.UI_chat_menu_btn_2" anchorOffsetX="0" width="24" anchorOffsetY="0" height="50" rotation="360" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="TipsPanel" width="1" height="1" verticalCenter="0" y="0" scaleX="1" scaleY="1" x="387" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="360" anchorOffsetY="0" height="226" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image source="GW_label_tex_json.tishi" horizontalCenter="0" verticalCenter="-82.5"/>
+			<e:Label text="提示" size="24" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" verticalCenter="-85" horizontalCenter="0" x="384" y="204" scaleX="1" scaleY="1" visible="false"/>
+			<e:Label text="您的喇叭数量不足，是否打开商城进行购买？" size="20" fontFamily="SimHei" anchorOffsetY="0" height="87" width="219" verticalAlign="middle" textAlign="center" anchorOffsetX="0" y="-51" horizontalCenter="-1.5" textColor="0xfff960" x="337" scaleX="1" scaleY="1"/>
+			<e:Button id="Btn_CloseTips" label="取 消" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="-80" verticalCenter="69">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_OpenShop" label="打开商城" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="78" verticalCenter="69">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+					<e:Image source="GW_label_tex_json.quxiao" width="50" height="23" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

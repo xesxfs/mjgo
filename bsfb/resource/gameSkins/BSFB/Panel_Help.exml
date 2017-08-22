@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Help" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	
+	<e:Group id="Panel_SlotHelp" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="640" anchorOffsetY="0" height="416" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="8" scale9Grid="42,53,3,13"/>
+		<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="-2" verticalCenter="16.5" height="219" anchorOffsetX="0" width="616" scale9Grid="7,6,2,5" visible="false"/>
+		<e:Button id="Btn_PageUp" label="" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" x="274" y="460">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" name="YellowWhiteColor" stroke="1" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.shangyiye" horizontalCenter="0" verticalCenter="0" width="70" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_PageDown" label="" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" x="483" y="459.99">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" name="YellowWhiteColor" stroke="1" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.xiayiye" horizontalCenter="0" verticalCenter="0" width="70" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GF_commonButton_json.UI_Title_3" scale9Grid="63,0,2,44" anchorOffsetX="0" width="264" horizontalCenter="0" top="60"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="292" verticalCenter="-171">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="游戏帮助" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" name="titleColor" stroke="1" horizontalCenter="0" top="69" visible="false"/>
+		<e:Label id="page5Tip" text="各区域点数=本场点数/基准点数x区域基准点数" size="17" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" name="WhitepinkColor" stroke="1" y="430" horizontalCenter="0"/>
+		<e:Label id="pages" text="5/5" size="24" fontFamily="方正粗圆简体" name="OrangeColor" stroke="1" textColor="0xFFD816" anchorOffsetY="0" height="30" width="70" verticalAlign="middle" textAlign="center" y="467" x="415"/>
+		<e:Group id="pageGroups" anchorOffsetY="0" height="312" x="135" y="151">
+			<e:Group id="Help_time_4" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-1" visible="false">
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="1.5" verticalCenter="14" height="224" anchorOffsetX="0" width="610" scale9Grid="7,6,2,5"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="-85"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="98"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="136"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="174"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="212"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="105"/>
+				<e:Label id="list_0" text="x0.2           x0.4              x0.5         x0.8              x1              x2          x3             x5             x10         x20       x40" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="-55.5" verticalCenter="9.5" height="207" width="48" textAlign="left" textColor="0xffe68c" bold="true"/>
+				<e:Label id="list_16" text="相连4个     相连5个      相连6个       相连7个      相连8个     相连9个     相连10个   相连11个    相连12个   相连13个  " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-170" verticalCenter="9.5" height="207" width="95" textAlign="left"/>
+				<e:Label id="list_1" text="x0.4            x0.5            x1               x2              x3            x5            x10           x25          x50            x75            x80" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="21.5" verticalCenter="9.5" height="207" width="48" textAlign="left" textColor="0xffe68c" bold="true"/>
+				<e:Label id="list_4" text="x2               x5              x10              x50           x100         x200        x500         x2000       x5000       x6000         x8000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="260.5" height="207" width="59" textAlign="left" rotation="359.74" textColor="0xffe68c" bold="true" y="61"/>
+				<e:Label id="list_2" text="x0.5            x1               x2               x4              x8            x16          x50          x100         x200          x500          x600" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="98.5" height="207" width="48" textAlign="left" textColor="0xffe68c" bold="true" y="61"/>
+				<e:Label id="list_3" text="x1               x3              x5                x6             x10           x75          x100        x1000       x2000        x5000        x6000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="182" height="207" width="67" textAlign="left" textColor="0xffe68c" bold="true" y="61"/>
+				<e:Label id="list_17" text="相连14个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-156.5" verticalCenter="105.5" height="19" width="122" textAlign="left"/>
+			<e:Label id="nane6" text="第一关" size="30" fontFamily="方正粗圆简体" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" name="pinkOrangeColor" stroke="1" horizontalCenter="-280.5" verticalCenter="2.5"/>
+			<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-71.5" verticalCenter="-126.5">
+				<e:Image source="BSFB_Atlas_json.1" scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0"/>
+				<e:Label text="白玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="285" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.2"/>
+				<e:Label text="碧玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="365.66" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.3"/>
+				<e:Label text="墨玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="448" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.4"/>
+				<e:Label text="玛瑙" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="253.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.5"/>
+				<e:Label text="琥珀" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			</e:Group>
+			<e:Group id="Help_time_5" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-1" visible="false">
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="1.5" verticalCenter="14" height="224" anchorOffsetX="0" width="610" scale9Grid="7,6,2,5"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-85" horizontalCenter="42"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-47" horizontalCenter="42"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-9" horizontalCenter="42"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="29" horizontalCenter="42"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="67" horizontalCenter="42"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="105" horizontalCenter="42"/>
+			<e:Label id="nane9" text="第二关" size="30" fontFamily="方正粗圆简体" name="pinkOrangeColor" stroke="1" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-280.5" verticalCenter="2.5"/>
+			<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-71.5" verticalCenter="-126.5">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.6"/>
+				<e:Label text="祖母绿" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="13" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="284.67" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.7"/>
+				<e:Label text="猫眼石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="12" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="365.67" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.8"/>
+				<e:Label text="紫水晶" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="13" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="447.67" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.9"/>
+				<e:Label text="翡翠" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="253.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.10"/>
+				<e:Label text="珍珠" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+				<e:Label id="list_5" text="x0.2            x0.4            x0.5            x0.8            x1            x2            x3            x5            x10            x20            x45" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="-55.5" verticalCenter="14" height="216" width="48" textAlign="left" x="222" y="62" scaleX="1" scaleY="1" textColor="0xffe68c" bold="true"/>
+				<e:Label id="list_6" text="x0.4            x0.5            x1               x2              x3            x5            x10          x25           x50            x75            x100" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="21.5" verticalCenter="14" height="216" width="48" textAlign="left" x="301" y="62" scaleX="1" scaleY="1" textColor="0xffe68c" bold="true"/>
+				<e:Label id="list_7" text="x0.5            x1               x2               x4              x8            x16          x50          x100          x200         x500           x700" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="98.5" verticalCenter="14" height="216" width="48" textAlign="left" x="381" y="62" scaleX="1" scaleY="1" textColor="0xffe68c" bold="true"/>
+				<e:Label id="list_8" text="x1               x3               x5               x6              x10          x75          x100        x1000        x2000       x5000         x7000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" height="216" width="65" textAlign="left" scaleX="1" scaleY="1" textColor="0xffe68c" bold="true" horizontalCenter="181" verticalCenter="14"/>
+				<e:Label id="list_9" text="x2               x5               x10             x50            x100        x200        x500        x2000        x5000       x8000         x10000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" height="216" width="75" textAlign="left" scaleX="1" scaleY="1" textColor="0xffe68c" bold="true" horizontalCenter="269" y="61"/>
+				<e:Label id="list_15" text="相连15个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-156.5" verticalCenter="107" height="22" width="124" textAlign="left" x="94" y="254" scaleX="1" scaleY="1"/>
+				<e:Label id="list_14" text="相连5个     相连6个      相连7个       相连8个      相连9个     相连10个   相连11个   相连12个    相连13个  相连14个   " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-173.5" height="216" width="88" textAlign="left" x="94" scaleX="1" scaleY="1" verticalCenter="14"/>
+			</e:Group>
+			<e:Group id="Help_time_6" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="1" verticalCenter="-1" visible="false">
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="0.5" verticalCenter="14" height="224" anchorOffsetX="0" width="610" scale9Grid="7,6,2,5"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-85" horizontalCenter="41"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-47" horizontalCenter="41" x="10" y="10"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="-9" horizontalCenter="41" x="10" y="10"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="29" horizontalCenter="41" x="10" y="10"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="67" horizontalCenter="41" x="10" y="10"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" verticalCenter="105" horizontalCenter="41" x="10" y="10"/>
+				<e:Label id="nane0" text="第三关" size="30" fontFamily="方正粗圆简体" name="pinkOrangeColor" stroke="1" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-281.5" verticalCenter="2.5"/>
+				<e:Label id="list_18" text="x0.2            x0.4            x0.5            x0.8            x1            x2            x3            x5            x10            x20            x50" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="-56.5" verticalCenter="14" height="216" width="48" textAlign="left" x="222" y="62" scaleX="1" scaleY="1" textColor="0xFFE68C" bold="true"/>
+				<e:Label id="list_19" text="x0.4            x0.5            x1               x2              x3            x5             x10         x25           x50            x75            x120" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="20.5" verticalCenter="14" height="216" width="48" textAlign="left" x="301" y="62" scaleX="1" scaleY="1" textColor="0xFFE68C" bold="true"/>
+				<e:Label id="list_20" text="x0.5              x1                 x2               x4              x8            x16           x50         x100         x200            x500             x800" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="97.5" verticalCenter="14" height="216" width="48" textAlign="left" x="381" y="62" scaleX="1" scaleY="1" textColor="0xFFE68C" bold="true"/>
+				<e:Label id="list_21" text="x1               x3               x5              x6              x10           x75           x100       x1000       x2000         x5000       x8000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" height="216" width="65" textAlign="left" scaleX="1" scaleY="1" textColor="0xFFE68C" bold="true" horizontalCenter="180" y="61"/>
+				<e:Label id="list_22" text="x2               x5               x10            x50            x100          x200         x500       x2000       x5000         x10000     x10000" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" height="216" width="75" textAlign="left" x="542" y="61" scaleX="1" scaleY="1" textColor="0xFFE68C" bold="true"/>
+				<e:Label id="list_23" text="相连16个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-157.5" verticalCenter="107" height="22" width="124" textAlign="left" x="94" y="254" scaleX="1" scaleY="1"/>
+				<e:Label id="list_24" text="相连6个     相连7个      相连8个       相连9个      相连10个     相连11个     相连12个     相连13个      相连14个      相连15个      " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-174.5" height="204.67" width="88" textAlign="left" x="94" scaleX="1" scaleY="1" verticalCenter="8.5"/>
+				<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-72.5" verticalCenter="-126.5">
+					<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.11"/>
+					<e:Label text="红宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+				</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="284" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.12"/>
+				<e:Label text="绿宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="365.33" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.13"/>
+				<e:Label text="黄宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="447.03" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.14"/>
+				<e:Label text="蓝宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="253.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.15"/>
+				<e:Label text="钻石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			</e:Group>
+			<e:Group id="Help_time_7" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-1">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="139"/>
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="1.5" verticalCenter="-12.5" height="277" anchorOffsetX="0" width="620" scale9Grid="7,6,2,5"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="-40"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="175"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="210"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="103"/>
+			<e:Image scale9Grid="7,7,2,3" verticalCenter="-104" horizontalCenter="68.5" anchorOffsetX="0" width="482" anchorOffsetY="0" height="82" source="GF_commonButton_json.Input_BG2"/>
+			<e:Label id="label_109" text="区域1" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="91" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0xFFA614" name="WhitepinkColor" stroke="1" verticalCenter="-40" horizontalCenter="-189"/>
+			<e:Label text="级别" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="129" anchorOffsetX="0" verticalAlign="middle" textAlign="right" textColor="0xFFD491" name="WhitepinkColor" stroke="1" verticalCenter="-134" horizontalCenter="-242"/>
+			<e:Label text="本场点数所属范围" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="129" anchorOffsetX="0" verticalAlign="middle" textAlign="right" textColor="0xFFD491" name="WhitepinkColor" stroke="1" verticalCenter="-111" horizontalCenter="-242"/>
+			<e:Label text="五级" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" horizontalCenter="-129.5" verticalCenter="-133" name="greenYellowColor" stroke="1"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" horizontalCenter="-128.5" name="greenYellowColor" stroke="1" verticalCenter="-92"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" horizontalCenter="-128.5" name="greenYellowColor" stroke="1" verticalCenter="-92"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" name="greenYellowColor" stroke="1" verticalCenter="-92" horizontalCenter="-46.5"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" name="greenYellowColor" stroke="1" verticalCenter="-92" horizontalCenter="40.5"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" name="greenYellowColor" stroke="1" verticalCenter="-92" horizontalCenter="142.5"/>
+				<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" name="greenYellowColor" stroke="1" verticalCenter="-92" horizontalCenter="245.5"/>
+				<e:Label text="四级" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" verticalCenter="-133" name="greenYellowColor" stroke="1" horizontalCenter="-48.5"/>
+				<e:Label text="三级" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" verticalCenter="-133" name="greenYellowColor" stroke="1" horizontalCenter="39.5"/>
+				<e:Label text="二级" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" verticalCenter="-133" name="greenYellowColor" stroke="1" horizontalCenter="138.5"/>
+				<e:Label text="一级" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0x38E800" verticalCenter="-133" name="greenYellowColor" stroke="1" horizontalCenter="245.5"/>
+			<e:Label text="1-99点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xf7c729" verticalCenter="-114" horizontalCenter="-127.5"/>
+				<e:Label text="50点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-72" horizontalCenter="-129.5"/>
+				<e:Label text="90点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-40" horizontalCenter="-129.5" textColor="0xffe68c"/>
+				<e:Label text="180点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-40" horizontalCenter="-46.5" textColor="0xffe68c"/>
+				<e:Label text="3000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-40" horizontalCenter="43.5" textColor="0xffe68c"/>
+				<e:Label text="12000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-40" horizontalCenter="145.5" textColor="0xffe68c"/>
+				<e:Label text="220000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-40" horizontalCenter="249.5" textColor="0xffe68c"/>
+				<e:Label text="70点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-3" horizontalCenter="-129.5" textColor="0xffe68c"/>
+				<e:Label text="140点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-3" horizontalCenter="-46.5" textColor="0xffe68c"/>
+				<e:Label text="2500点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-3" horizontalCenter="43.5" textColor="0xffe68c"/>
+				<e:Label text="11000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-3" horizontalCenter="144" textColor="0xffe68c"/>
+				<e:Label text="210000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="-3" horizontalCenter="248.5" textColor="0xffe68c"/>
+				<e:Label text="50点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="32" horizontalCenter="-129.5" textColor="0xffe68c"/>
+				<e:Label text="100点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="32" horizontalCenter="-46.5" textColor="0xffe68c"/>
+				<e:Label text="2000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="32" horizontalCenter="43.5" textColor="0xffe68c"/>
+				<e:Label text="10000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="33" horizontalCenter="145.5" textColor="0xffe68c"/>
+				<e:Label text="200000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="33" horizontalCenter="249.5" textColor="0xffe68c"/>
+				<e:Label text="30点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="67" horizontalCenter="-129.5" textColor="0xffe68c"/>
+				<e:Label text="60点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="67" horizontalCenter="-49.5" textColor="0xffe68c"/>
+				<e:Label text="1500点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="67" horizontalCenter="42.5" textColor="0xffe68c"/>
+				<e:Label text="9000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="67" horizontalCenter="142.5" textColor="0xffe68c"/>
+				<e:Label text="190000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="67" horizontalCenter="248.5" textColor="0xffe68c"/>
+				<e:Label text="10点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="102" horizontalCenter="-130.5" textColor="0xffe68c"/>
+				<e:Label text="20点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="102" horizontalCenter="-49.5" textColor="0xffe68c"/>
+				<e:Label text="1000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="102" horizontalCenter="42.5" textColor="0xffe68c"/>
+				<e:Label text="8000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="102" horizontalCenter="142.5" textColor="0xffe68c"/>
+				<e:Label text="180000点" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" verticalCenter="102" horizontalCenter="248.5" textColor="0xffe68c"/>
+				<e:Label text="100点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-72" horizontalCenter="-46.5"/>
+				<e:Label text="2000点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-72" horizontalCenter="43.5"/>
+				<e:Label text="10000点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-72" horizontalCenter="145.5"/>
+				<e:Label text="200000点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-72" horizontalCenter="249.5"/>
+				<e:Label text="100-1999点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-114" horizontalCenter="-46"/>
+				<e:Label text="2000-9999点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-114" horizontalCenter="46"/>
+				<e:Label text="10000-199999点" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-114" horizontalCenter="145"/>
+				<e:Label text="200000点以上" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="left" textColor="0xF7C729" verticalCenter="-114" horizontalCenter="250.5"/>
+			<e:Label text="基准点数" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="129" anchorOffsetX="0" verticalAlign="middle" textAlign="right" textColor="0xFFD491" name="WhitepinkColor" stroke="1" verticalCenter="-90" horizontalCenter="-242"/>
+			<e:Label id="label_110" text="区域2" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="91" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0xFFA614" name="WhitepinkColor" stroke="1" verticalCenter="-3" horizontalCenter="-189"/>
+			<e:Label id="label_111" text="区域3" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="91" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0xFFA614" name="WhitepinkColor" stroke="1" verticalCenter="34" horizontalCenter="-189"/>
+			<e:Label id="label_112" text="区域4" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="91" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0xFFA614" name="WhitepinkColor" stroke="1" verticalCenter="68" horizontalCenter="-189"/>
+			<e:Label id="label_113" text="区域5" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="91" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0xFFA614" name="WhitepinkColor" stroke="1" verticalCenter="103" horizontalCenter="-189"/>
+			<e:Label id="nane11" text="龙珠探宝级表" size="28" fontFamily="方正粗圆简体" anchorOffsetY="0" height="170" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" name="pinkOrangeColor" stroke="1" verticalCenter="35.5" horizontalCenter="-279.5"/>
+			</e:Group>
+			<e:Group id="Help_Rate_5" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-1" visible="false">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="-85"/>
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="5" verticalCenter="14" height="224" anchorOffsetX="0" width="617" scale9Grid="7,6,2,5"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="98"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="135"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="173"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="210"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" verticalCenter="103"/>
+			<e:Label id="list_114" text="17.04%\n8.64%\n4.55%\n2.32%\n1.13%\n0.51%\n0.20%\n0.07%\n0.02%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="220" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" bold="true" y="61" x="217"/>
+				<e:Label id="list_10" text="13.27%\n5.90%\n2.66%\n1.14%\n0.45%\n0.16%\n0.05%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="220" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" bold="true" horizontalCenter="16.5" verticalCenter="16"/>
+				<e:Label id="list_11" text="9.14%\n3.50%\n1.34%\n0.47%\n0.15%\n0.04%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="220" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" bold="true" horizontalCenter="97.5" verticalCenter="16"/>
+				<e:Label id="list_12" text="5.42%\n1.78%\n0.58%\n0.17%\n0.05%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="220" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" bold="true" y="61" x="461"/>
+				<e:Label id="list_13" text="2.92%\n0.88%\n0.26%\n0.07%\n0.02%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="220" width="70" anchorOffsetX="0" verticalAlign="justify" horizontalCenter="267.5" textColor="0xffe68c" bold="true" y="61"/>
+			<e:Label id="nane12" text="第一关" size="30" fontFamily="方正粗圆简体" name="pinkOrangeColor" stroke="1" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="2.5" horizontalCenter="-280.5"/>
+			<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-68.5" verticalCenter="-126.5">
+				<e:Image source="BSFB_Atlas_json.1" scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0"/>
+				<e:Label text="白玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="290.99" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.2"/>
+				<e:Label text="碧玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="367.32" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.3"/>
+				<e:Label text="墨玉" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="447.64" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.4"/>
+				<e:Label text="玛瑙" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="256.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.5"/>
+				<e:Label text="琥珀" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+				<e:Label id="list_25" text="相连4个     相连5个      相连6个       相连7个      相连8个     相连9个     相连10个   相连11个    相连12个   相连13个  " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-170" verticalCenter="15" height="218" width="95" textAlign="left" x="95" y="62" scaleX="1" scaleY="1"/>
+				<e:Label id="list_26" text="相连14个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" horizontalCenter="-158" verticalCenter="104.5" height="19" width="121" textAlign="left" x="105" y="72" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="Help_Rate_6" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="-1" visible="false">
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="6" verticalCenter="14" height="224" anchorOffsetX="0" width="617" scale9Grid="7,6,2,5"/>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" y="60" height="20"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="98" height="20"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="135" height="20"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="173" height="20"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91" y="210" height="20"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="42" y="248" height="20"/>
+				<e:Label id="list_27" text="相连5个     相连6个      相连7个       相连8个      相连9个     相连10个   相连11个   相连12个    相连13个  相连14个   " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" height="209" width="88" textAlign="left" y="61.33" scaleX="1" scaleY="1" horizontalCenter="-173.5"/>
+				<e:Label id="list_30" text="10.03%\n4.93%\n2.50%\n1.26%\n0.62%\n0.29%\n0.13%\n0.06%\n0.02%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="-64.5" x="227" y="68" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_29" text="13.72%\n7.64%\n4.41%\n2.57%\n1.48%\n0.84%\n0.46%\n0.24%\n0.12%\n0.06%\n0.02%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" x="293.33" y="61" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_31" text="6.10%\n2.60%\n1.13%\n0.48%\n0.20%\n0.08%\n0.03%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="100.5" x="237" y="78" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_32" text="2.96%\n1.07%\n0.40%\n0.14%\n0.05%\n0.02%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="182.5" x="247" y="88" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_33" text="1.20%\n0.39%\n0.13%\n0.04%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="270.5" x="257" y="98" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_28" text="相连15个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" verticalCenter="107" height="22" width="131" textAlign="left" y="253" scaleX="1" scaleY="1" horizontalCenter="-153"/>
+			<e:Label id="nane13" text="第二关" size="30" name="pinkOrangeColor" stroke="1" fontFamily="方正粗圆简体" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-280.5" verticalCenter="2.5" bold="true"/>
+			<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-68.5" verticalCenter="-126.5">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.6"/>
+				<e:Label text="祖母绿" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="290.67" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.7"/>
+				<e:Label text="猫眼石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="367.34" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.8"/>
+				<e:Label text="紫水晶" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" y="34" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="447.67" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.9"/>
+				<e:Label text="翡翠" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="256.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.10"/>
+				<e:Label text="珍珠" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			</e:Group>
+			<e:Group id="Help_Rate_7" width="625" height="310" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-1" verticalCenter="-1" visible="false">
+				<e:Image source="GF_commonButton_json.UI_line_2" anchorOffsetY="0" horizontalCenter="6" verticalCenter="14" height="224" anchorOffsetX="0" width="617" scale9Grid="7,6,2,5"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="43" verticalCenter="-85"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91.67" y="98"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91.67" y="135"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91.67" y="173"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" x="91.67" y="210"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="43" verticalCenter="103"/>
+				<e:Label id="list_34" text="11.45%\n6.80%\n4.16%\n2.58%\n1.61%\n1.00%\n0.61%\n0.37%\n0.22%\n0.13%\n0.07%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="-63.5" x="217" y="61" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_37" text="7.67%\n4.05%\n2.19%\n1.19%\n0.65%\n0.34%\n0.18%\n0.09%\n0.05%\n0.02%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="23.5" x="227" y="71" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_38" text="4.07%\n1.86%\n0.87%\n0.40%\n0.19%\n0.08%\n0.04%\n0.02%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="101.5" x="237" y="81" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_39" text="1.61%\n0.63%\n0.25%\n0.10%\n0.04%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="182.5" x="247" y="91" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_40" text="0.50%\n0.17%\n0.06%\n0.02%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%\n0.01%" size="19" fontFamily="SimHei" anchorOffsetY="0" height="217" width="70" anchorOffsetX="0" textColor="0xFFE68C" verticalAlign="justify" verticalCenter="14.5" horizontalCenter="265.5" x="257" y="101" scaleX="1" scaleY="1" bold="true"/>
+				<e:Label id="list_35" text="相连6个     相连7个      相连8个       相连9个      相连10个     相连11个     相连12个   相连13个    相连14个   相连15个 " size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" verticalCenter="10.5" height="209" width="100" textAlign="left" y="62" scaleX="1" scaleY="1" horizontalCenter="-166.5"/>
+				<e:Label id="list_36" text="相连16个以上" size="19" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="justify" textColor="0xF7C729" verticalCenter="106" height="22" width="119" textAlign="left" y="250" scaleX="1" scaleY="1" horizontalCenter="-158"/>
+			<e:Label id="nane14" text="第三关" size="30" fontFamily="方正粗圆简体" name="pinkOrangeColor" stroke="1" anchorOffsetY="0" height="189" scaleX="1" scaleY="1" width="38" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-279.5" verticalCenter="2.5"/>
+			<e:Group width="72" height="51" anchorOffsetX="0" horizontalCenter="-67.5" verticalCenter="-126.5">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.11"/>
+				<e:Label text="红宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="13" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="292.33" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.12"/>
+				<e:Label text="绿宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="12" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="368.3" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.13"/>
+				<e:Label text="黄宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="12" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" anchorOffsetX="0" x="448.33" y="3">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.14"/>
+				<e:Label text="蓝宝石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="13" y="34"/>
+			</e:Group>
+			<e:Group width="72" height="51" horizontalCenter="257.5" verticalCenter="-126.5" anchorOffsetX="0">
+				<e:Image scaleX="1" scaleY="1" verticalCenter="-10" horizontalCenter="0" source="BSFB_Atlas_json.15"/>
+				<e:Label text="钻石" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" verticalAlign="middle" textAlign="center" textColor="0x38E800" name="greenYellowColor" stroke="1" x="21" y="34"/>
+			</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Scroller id="textScroller" width="608" height="305" horizontalCenter="1" verticalCenter="8.5" enabled="true" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+			<e:Group anchorOffsetY="0" height="306">
+				<e:Label id="helpContent" text="游戏点数说明\n\n一、每次游戏使用游戏点数最低10点，最高25000点。在游戏过程中，游戏点数不足时，玩家可充值获得相应游戏点数继续游戏，或退出游戏。\n\n二、游戏过程中共分为三关，三关分别在4x4,5x5,6x6的方形区域内随机派发宝石，其中还包括一种特殊的钻头，钻头可消除砖墙上的砖块。\n\n三、系统在每一关随机派发相应数量的宝石，若有符合游戏规则的宝石组合，即可获得相应游戏点数。同时，系统自动填补新的宝石并判断是否有可消除组合，直至不再有符合游戏规则的宝石组合。\n\n四、在每一关中累积获得15个钻头消除15个砖墙上的砖块后，进入下一关，第三关过关后游戏过程结束。\n\n五、游戏过程结束后，根据本场游戏点数的获得情况进入不同级别的“龙珠探宝”环节。  \n\n六、玩家若在一场游戏中途退出，可自主选择放弃点数退出和保留点数退出。玩家若选择放弃点数退出，则视为放弃当前游戏进度及游戏点数退出游戏；若选择保留点数退出，则保存玩家当前的游戏进度及游戏点数30天，30天过后仍未继续游戏则视为放弃点数退出。\n\n游戏说明：  \n\n一、在游戏环节“龙珠探宝”游戏区域内，龙珠自顶部下落，碰到图案后随机向左右继续下落，根据龙珠最终所落区域，中得相应点数。获得点数计入玩家总点数。\n\n二、玩家一次使用100及以上的点数进行游戏，且第一关出现16个及以上相连的同类宝石，或第二关出现20个及以上相连的同类宝石，或第三关出现24个及以上相连的同类宝石时，本次游戏即可中出当前时刻的累积奖。累积奖单线封顶5000000游戏点数。\n\n三、玩家在超级点数下一次使用1000及以上的点数进行游戏，且第一关出现16个及以上相连的同类宝石，或第二关出现20个及以上相连的同类宝石，或第三关出现24个及以上相连的同类宝石时，本次游戏即可中出当前时刻的累积奖。累积奖单线封顶50000000游戏点数。\n\n四、游戏过程中的点数变化，均以服务器存储的数据为准。" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" width="100%" verticalAlign="top" textAlign="left" x="0" y="1" scaleX="1" scaleY="1" textColor="0xd3ac7a"/>
+			</e:Group>
+		</e:Scroller>
+		<e:RadioButton id="Toogle_Introduce" label="" x="178" y="109.35" width="150" height="42" groupName="GAMGHELP" selected="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="9,11,14,23" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xf1ff02" fontFamily="SimHei" name="WhiteYellowColor" stroke="1" visible="false"/>
+	<e:Image source="GW_label_tex_json.youxijieshao" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="Toggle_Explain" label="" x="327.99" y="109.35" width="150" height="42" groupName="GAMGHELP">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="8,11,16,23"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xf1ff02" fontFamily="SimHei" name="WhiteYellowColor" stroke="1" visible="false"/>
+	<e:Image source="GW_label_tex_json.dianshushuoming" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<ns1:BSHelpDropDownBOX id="DropDown" skinName="BSHelpDropDownBOXUI" horizontalCenter="-258.5" verticalCenter="-129.5" anchorOffsetY="0" height="24"/>
+		<e:Image source="GW_label_tex_json.youxibangzhu" horizontalCenter="0" verticalCenter="-217"/>
+	</e:Group>
+	</e:Skin>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_DiceHelp" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_SlotHelp" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="460" anchorOffsetY="0" height="320" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" horizontalCenter="207" verticalCenter="-136">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_Title" text="大话骰游戏说明" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-135" anchorOffsetX="0" horizontalCenter="0" visible="false"/>
+		<e:Scroller width="436" height="220" anchorOffsetX="0" horizontalCenter="0" verticalCenter="0">
+			<e:Group anchorOffsetX="0" width="436">
+				<e:Group id="label_HelpMain" width="435" height="287" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="33.5" x="1" y="-9" scaleX="1" scaleY="1" visible="false">
+				</e:Group>
+				<e:Label id="Label_Desc" text="1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n1.新建房间可点击左上角的创建房间按钮，加入房间可选择列表中的房间加入，或直接搜索房间号加入。\r\n\r\n2.私密房间只有精确完整输入房间号后才会在列表中显示出来。\r\n\r\n3.如果设置了房间密码，请将密码牢记并告之朋友。\r\n" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="-1" width="433" verticalAlign="top" textAlign="left" anchorOffsetX="0" textColor="0xFFE68C" y="5" scaleX="1" scaleY="1" horizontalCenter="0.5" x="2"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Image source="GW_label_tex_json.dahuashaiyouxishuoming" y="149" width="197" height="30" horizontalCenter="0"/>
+	</e:Group>
+	</e:Skin>

@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GamePanelskin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	
+	<e:Group id="GamePanel" width="100%" height="100%" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image id="BG" height="100%" width="100%" fillMode="scale" scaleX="1" scaleY="1" horizontalCenter="-2" verticalCenter="0" source="3_BSFB4_1_png"/>
+		<e:Image id="logo" source="GFLogo_json.BSFB_LHDB" anchorOffsetX="0" width="205.01" anchorOffsetY="0" height="140.18" scaleX="1" scaleY="1" horizontalCenter="-292.5" verticalCenter="-82"/>
+		<e:Image source="BSFB_Atlas_json.UI_LogoBg_1" anchorOffsetX="0" width="217" scale9Grid="41,34,1,4" anchorOffsetY="0" height="71" scaleX="1" scaleY="1" horizontalCenter="-295.5" verticalCenter="4.5"/>
+		<e:Image source="BSFB_Atlas_json.UI_LogoBg_2" anchorOffsetX="0" width="222" scale9Grid="47,30,1,1" anchorOffsetY="0" height="79" scaleX="1" scaleY="1" horizontalCenter="-292" verticalCenter="-171.5"/>
+		<e:Button id="Btn_Lucky" width="72" label="" height="51.3" enabled="true" scaleX="1" scaleY="1" verticalCenter="180.5" horizontalCenter="-249" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Mail_icon_3"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Speed" width="68.74" label="" height="45.03" enabled="true" scaleX="1" scaleY="1" verticalCenter="179.5" horizontalCenter="-333.5" anchorOffsetX="0" anchorOffsetY="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Mail_icon_2"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_SoltHelp" width="23" label="" height="23" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-199.5" verticalCenter="-168.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="WXHH_Atlas_json.game_button_help00"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="Go_Sp_NewBie1" anchorOffsetX="0" width="216" anchorOffsetY="0" height="447" scaleX="1" scaleY="1" x="50" y="82" source="BSFB_Atlas_json.UI_bg2" scale9Grid="6,6,15,16" alpha="1" visible="false"/>
+		<e:Image id="Go_Sp_NewBie2" anchorOffsetX="0" width="296" anchorOffsetY="0" height="447" scaleX="1" scaleY="1" x="601" y="82" source="BSFB_Atlas_json.UI_bg2" scale9Grid="6,6,15,16" alpha="1" visible="false"/>
+		<e:BitmapLabel id="Label_TotalScore" y="371" font="yellow_fnt" text="999" width="240" scaleX="0.6" scaleY="0.6" textAlign="right" right="669" smoothing="true"/>
+		<e:BitmapLabel id="Label_SlotScore" x="116" y="125" font="yellow_fnt" text="9999999999" width="270" scaleX="0.45" scaleY="0.45" textAlign="right"/>
+		<e:BitmapLabel id="Label_TodayScore" y="417" font="yellow_fnt" text="9999" width="240" scaleX="0.6" scaleY="0.6" textAlign="right" right="669" smoothing="false"/>
+		<e:BitmapLabel id="Label_Line" font="green_fnt" text="5" scaleX="0.3" scaleY="0.3" horizontalCenter="273.5" verticalCenter="21" smoothing="true"/>
+		<e:BitmapLabel id="Label_Count" font="green_fnt" text="5000" scaleX="0.25" scaleY="0.25" horizontalCenter="285" verticalCenter="55.5" smoothing="true"/>
+		<e:Button id="Btn_Addcount" width="35" label="" height="35" enabled="true" scaleX="1" scaleY="1" verticalCenter="91.5" horizontalCenter="378.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Add"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Minuscount" width="35" label="" height="35" enabled="true" scaleX="1" scaleY="1" verticalCenter="92.5" horizontalCenter="173.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Minus"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Addline" width="35" label="" height="35" enabled="true" scaleX="1" scaleY="1" x="761" y="305">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Add"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Minusline" width="35" label="" height="35" enabled="true" scaleX="1" scaleY="1" x="652" y="305">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Minus"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_MakeSure" width="101" label="" height="79" enabled="true" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="167.5" horizontalCenter="229.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Bet1" source.down="BSFB_Atlas_json.UIBtn_Bet2"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Trusteeship" width="101" label="" height="80" enabled="true" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="166" horizontalCenter="324.5">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Trusteeship1" source.down="BSFB_Atlas_json.UIBtn_Trusteeship2"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_TrusteeshipCancel" width="197" label="账号登录" height="77" enabled="true" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="276.5" verticalCenter="168.5" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Cancel" source.down="BSFB_Atlas_json.UIBtn_Cancel"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_PropsGame" label="" horizontalCenter="279" scaleX="1" scaleY="1" enabled="true" width="168" verticalCenter="-47">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,0,5,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" name="WhiteYellowColor" stroke="1" textColor="0xf9ff8c" visible="false"/>
+	<e:Image source="GW_label_tex_json.chongzhidianshu" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="BSFB_game_menu" width="225" height="159" scaleX="1" scaleY="1" top="83" x="618">
+			<e:Button id="Btn_ExitGame" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="67.5" top="18">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Back"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_HelpGame" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="-2.5" top="18">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Help"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Setting" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="-72.5" top="18">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Setting"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Ranklist" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="67.5" top="82">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Ranklist"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_VedioGame" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="-2.5" top="82">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIbtn_vedio"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_TaskGame" width="56" label="" height="56" enabled="true" scaleX="1" scaleY="1" horizontalCenter="-72.5" top="82">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Lucky"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Sprite_Line" width="214" height="44" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-292" verticalCenter="21" x="50" y="299" scaleX="1" scaleY="1">
+			<e:Image id="Sprite_Line_1" source="BSFB_Atlas_json.Sprite_Line01" scaleX="1" scaleY="1" verticalCenter="0.5" horizontalCenter="-81.5"/>
+			<e:Image id="Sprite_Line_2" source="BSFB_Atlas_json.Sprite_Line01" scaleX="1" scaleY="1" verticalCenter="0.5" horizontalCenter="-41.5"/>
+			<e:Image id="Sprite_Line_3" source="BSFB_Atlas_json.Sprite_Line01" scaleX="1" scaleY="1" verticalCenter="0.5" x="88"/>
+			<e:Image id="Sprite_Line_4" source="BSFB_Atlas_json.Sprite_Line01" scaleX="1" scaleY="1" verticalCenter="0.5" x="128"/>
+			<e:Image id="Sprite_Line_5" source="BSFB_Atlas_json.Sprite_Line01" scaleX="1" scaleY="1" verticalCenter="0.5" x="168"/>
+		</e:Group>
+		<e:Group id="BSFB_menu_right" width="53" height="245.67" anchorOffsetY="0" anchorOffsetX="0" bottom="282" right="-4" verticalCenter="-105" x="850" y="72" scaleX="1" scaleY="1">
+			<e:Button id="Btn_MyBank" label="" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="110" anchorOffsetX="0" verticalCenter="-42.834999999999994" right="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_1" scale9Grid="0,46,36,28" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="6.5" verticalCenter="5.5" text="" size="20" verticalAlign="middle" fontFamily="SimHei" anchorOffsetY="0" height="121" anchorOffsetX="0" width="31" textColor="0xf9ef79" stroke="1" visible="false"/>
+	<e:Image source="GW_label_tex_json.yinhang2" horizontalCenter="0.5" verticalCenter="12"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_ClubDole" label="" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="110" anchorOffsetX="0" verticalCenter="64.165" right="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_2" scale9Grid="0,10,36,30" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="6" verticalCenter="-12.5" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf9ef79" stroke="1" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui2" horizontalCenter="0.5" verticalCenter="-11"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Image id="Bg_Gauanqia" x="129.5" y="96" source="BSFB_Atlas_json.Sprite_Level1" width="60" height="20"/>
+		<e:Group id="Label_CountGroup" width="200" height="50" x="57" y="291">
+			<e:BitmapLabel id="Label_Count0" text="500" scaleX="0.75" scaleY="0.75" x="-7" font="pupple_fnt" letterSpacing="0" y="2" anchorOffsetX="0" textAlign="center" smoothing="true" width="56"/>
+			<e:BitmapLabel id="Label_Count5" text="500" scaleX="0.75" scaleY="0.75" x="34.5" letterSpacing="0" width="56" y="2" anchorOffsetX="0" textAlign="center" font="line2_fnt"/>
+			<e:BitmapLabel id="Label_Count6" text="500" scaleX="0.75" scaleY="0.75" x="76" letterSpacing="0" width="56" y="2" anchorOffsetX="0" textAlign="center" font="line3_fnt"/>
+			<e:BitmapLabel id="Label_Count7" text="500" scaleX="0.75" scaleY="0.75" x="117.5" letterSpacing="0" width="56" y="2" anchorOffsetX="0" textAlign="center" font="line4_fnt"/>
+			<e:BitmapLabel id="Label_Count8" text="500" scaleX="0.75" scaleY="0.75" x="159" letterSpacing="0" width="56" y="2" anchorOffsetX="0" textAlign="center" font="line5_fnt"/>
+		</e:Group>
+		<e:BitmapLabel id="Label_LuckyAmount" y="505" font="yellow_fnt" text="9999" width="120" scaleX="0.5" scaleY="0.5" textAlign="center" horizontalCenter="-248"/>
+		<e:BitmapLabel id="Label_Speed" y="505" font="yellow_fnt" text="9999" width="120" scaleX="0.5" scaleY="0.5" textAlign="center" horizontalCenter="-335"/>
+		<ns1:GameSlider id="gslider" width="147" height="34" enabled="true" skinName="GameSliderSkin" maximum="100" minimum="5" x="651" y="374"/>
+		<e:Group id="superBetBG" width="100%" height="100%" x="0" y="0"/>
+		<e:Group id="SuperBetGroup" width="177" height="189" y="279" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="856">
+			<e:Button id="Btn_SuperBet" width="40.46" label="" height="125.89" enabled="true" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="-66.5" verticalCenter="7.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="BSFB_Atlas_json.Game_CJXZ_btn_1" source.down="BSFB_Atlas_json.Game_CJXZ_btn_2"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image anchorOffsetX="0" width="133" anchorOffsetY="0" height="175" scaleX="1" scaleY="1" verticalCenter="4" horizontalCenter="18.5" source="GF_commonButton_json.UI_Input_Bg2" scale9Grid="10,10,11,13"/>
+			<e:Label id="label_SuperbetTip" text="玩家现有点数大于等于 50万才能使用。" anchorOffsetX="0" width="119.52" anchorOffsetY="0" height="137" size="19" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xFFF049" horizontalCenter="23" verticalCenter="21"/>
+			<e:Button id="Toggle_Count0" label="  500" scaleX="0.92" scaleY="1" enabled="true" width="112" anchorOffsetX="0" anchorOffsetY="0" height="35" x="60" y="23">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="LoginBut_json.UIBtn_10" scale9Grid="33,6,30,36"/>
+					<e:Label id="labelDisplay"  name="WhiteYellowColor" stroke="1" horizontalCenter="0" size="24" verticalCenter="0" textAlign="center" verticalAlign="middle"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Toggle_Count1" label="  1000" scaleX="0.92" scaleY="1" enabled="true" width="112" anchorOffsetX="0" anchorOffsetY="0" height="35" x="60" y="62">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="LoginBut_json.UIBtn_10" scale9Grid="33,6,30,36"/>
+					<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" size="24" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Toggle_Count2" label="  2000" scaleX="0.92" scaleY="1" enabled="true" width="112" anchorOffsetX="0" anchorOffsetY="0" height="35" x="60" y="101">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="LoginBut_json.UIBtn_10" scale9Grid="33,6,30,36"/>
+					<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" size="24" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Toggle_Count3" label="  5000" scaleX="0.92" scaleY="1" enabled="true" width="112" anchorOffsetX="0" anchorOffsetY="0" height="35" x="60" y="140">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="LoginBut_json.UIBtn_10" scale9Grid="33,6,30,36"/>
+					<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" size="24" verticalCenter="0" verticalAlign="middle"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+	</e:Skin>

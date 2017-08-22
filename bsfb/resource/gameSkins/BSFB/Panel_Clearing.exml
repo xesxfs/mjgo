@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Clearing" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_Clearing" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="420" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label text="结算" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-15" verticalCenter="-96" name="titleColor" stroke="1" visible="false"/>
+		<e:Image width="243" height="33" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" source="GF_commonButton_json.Input_BG" anchorOffsetY="0" anchorOffsetX="0" x="381" y="252"/>
+		<e:Label id="Label_TotalScore" text="99999999" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="228" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="390" y="254" textColor="0x68372c"/>
+		<e:Image width="243" height="33" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" anchorOffsetY="0" anchorOffsetX="0" x="381" y="313"/>
+		<e:Label id="Label_TodayScore" text="9999999" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="229" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="388" y="315" textColor="0x68372c"/>
+		<e:Label text="我的点数：" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="116" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFC149" x="260" y="255" name="WhiteYellowColor" stroke="1"/>
+		<e:Label text="本场点数：" size="22" fontFamily="方正粗圆简体" textColor="0xFFC149" anchorOffsetY="0" height="30" width="121" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="260" y="314" stroke="1" name="WhiteYellowColor"/>
+		<e:Button id="Btn_Close" label="" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="-96" verticalCenter="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="31,7,37,30"/>
+				<e:Label id="labelDisplay" stroke="1" name="WhiteYellowColor" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.fanhuidating" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Continue" label="" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="95" verticalCenter="85" x="10" y="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,0,5,44"/>
+				<e:Label id="labelDisplay" stroke="1" name="WhiteYellowColor" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.jixuyouxi " horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.jiesuan" horizontalCenter="0.5" y="190"/>
+	</e:Group>
+	</e:Skin>

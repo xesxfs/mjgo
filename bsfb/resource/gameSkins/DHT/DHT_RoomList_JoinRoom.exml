@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DHT_RoomList_JoinRoom" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="DHT_RoomList_JoinRoom" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="430" anchorOffsetY="0" height="310" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-12" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Image anchorOffsetX="0" width="419" anchorOffsetY="0" height="203" fillMode="repeat" horizontalCenter="0.5" verticalCenter="-19.5" source="GW_DHT_Atlas_json.UI_8x8_bg"/>
+		<e:Label text="请输入房间密码" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-144" anchorOffsetX="0" horizontalCenter="0" visible="false"/>
+		<e:Label id="Label_Num" text="9999999" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="left" verticalCenter="-90" anchorOffsetX="0" horizontalCenter="13"/>
+		<e:Label id="Label_Name" text="双机模式" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="left" anchorOffsetX="0" y="241" x="378"/>
+		<e:Label id="Label_PlayerName" text="9999999" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="left" verticalCenter="1" anchorOffsetX="0" horizontalCenter="13"/>
+		<e:Label text="密码：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" x="269" y="331" textColor="0xc9c9c9"/>
+		<e:Label text="房间ID号：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xcecece" x="269" y="197"/>
+		<e:Label text="房间名称：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" textColor="0xCECECE" verticalAlign="middle" x="269" y="241.67"/>
+		<e:Label text="房主名字：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" textColor="0xCECECE" verticalAlign="middle" x="269" y="286.33"/>
+		<e:Group id="RoomWP" width="240" height="32" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="44" horizontalCenter="46">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="textDisplay2" verticalCenter="0" left="5" right="4" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" verticalAlign="middle"/>
+			<e:TextInput id="Input_Pwd" verticalCenter="0" left="6" right="18" width="100%" height="24" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" x="22" y="288" scaleX="1" scaleY="1" prompt="验证码"/>
+		</e:Group>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="192" verticalCenter="-143">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Enter" label="进入" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" horizontalCenter="3" verticalCenter="111" height="40">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.jinru" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.qingshurufangjianmima" width="199" height="30" horizontalCenter="0" y="141"/>
+	</e:Group>
+	</e:Skin>

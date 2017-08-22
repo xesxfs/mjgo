@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_InviteSetting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+0<w:Config id="15a6f690dde"/>
+	<e:Group id="Panel_InviteSetting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image anchorOffsetX="0" width="402" anchorOffsetY="0" height="240" scaleX="1" scaleY="1" horizontalCenter="-3.5" verticalCenter="0" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" verticalCenter="-96" x="609">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_Content" text="" y="230.5" anchorOffsetX="0" width="344.33" anchorOffsetY="0" height="127" size="18" fontFamily="SimHei" textAlign="center" textColor="0xC6F71B" horizontalCenter="-1"/>
+		<e:Label id="Label_Title" text="设置" size="26" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-96" anchorOffsetX="0" horizontalCenter="0" bold="true" visible="false"/>
+		<e:CheckBox id="CB_Invite" label="ShowRoom" width="32" height="32" scaleX="1" scaleY="1" x="360" y="279" selected="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Label text="不接受大话骰邀请" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="242" textAlign="left" anchorOffsetX="0" verticalAlign="middle" x="406" y="281" textColor="0xFFD816"/>
+		<e:Label text="注意：私密房间只有完整输入房间号才能在列表中显示" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="417" textAlign="center" anchorOffsetX="0" textColor="0x68FF3D" verticalAlign="middle" y="335" x="240"/>
+		<e:Image source="GW_label_tex_json.shezhi" width="59" height="30" horizontalCenter="0" verticalCenter="-97"/>
+	</e:Group>
+</e:Skin>

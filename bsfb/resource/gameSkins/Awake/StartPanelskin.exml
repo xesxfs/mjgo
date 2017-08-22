@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="StartPanelskin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Image id="BG" y="0" height="100%" source="1_Login_png" width="100%" x="0" fillMode="scale"/>
+	<e:Image id="logo" fillMode="scale" width="221" height="144" verticalCenter="-146" horizontalCenter="0" source="BSFB_BEIAN"/>
+	</e:Skin>

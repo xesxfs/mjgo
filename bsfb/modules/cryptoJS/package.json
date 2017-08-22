@@ -1,0 +1,17 @@
+{
+	"name": "egret",
+	"version": "3.2.0",
+	"modules": [
+		{
+			"name": "cryptoJS",
+			"description": "cryptoJS",
+			"files": [
+			"cryptojs.js",
+			"padzeropadding.js",
+			"aes.js",
+			"tripledes.js",
+			"crytoJS.d.ts"],
+			"root": "src"
+		}
+	]
+}

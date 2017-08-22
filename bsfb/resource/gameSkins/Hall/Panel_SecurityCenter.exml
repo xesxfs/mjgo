@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_SecurityCenter" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_SecurityCenter1" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="SecurityCenter" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="700" anchorOffsetY="0" height="400" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-13" scale9Grid="43,53,3,8"/>
+			<e:Image source="GW_label_tex_json.anquanzhongxin" horizontalCenter="0" y="99"/>
+			<e:Label text="安全中心" size="28" x="386" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="102" stroke="1" name="titleColor" textColor="0xffd47f" visible="false"/>
+			<e:Label text="安全等级：" horizontalCenter="-76" size="20" x="418" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-151" anchorOffsetX="0" width="128" textAlign="center" y="152" textColor="0xfce794" name="WhiteYellowColor" stroke="0"/>
+			<e:Label id="label_depositPoint" text="进行以下操作可以更有效的保护您的账号安全" x="251" y="165" anchorOffsetX="0" width="395" anchorOffsetY="0" height="24" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xa0ff00"/>
+			<e:Image id="Star_1" source="GF_commonButton_json.UI_star_icon" x="433" y="138" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24"/>
+			<e:Image id="Star_2" source="GF_commonButton_json.UI_star_icon" x="486" y="138" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24"/>
+			<e:Image id="Star_3" source="GF_commonButton_json.UI_star_icon" x="539" y="138" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24"/>
+			<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="324" verticalCenter="-184">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Scroller width="670" height="266" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="20" scrollPolicyH="off">
+				<e:Group anchorOffsetX="0" width="660" anchorOffsetY="0" height="264" x="0" y="-6">
+					<e:Group id="IDSecurity" width="671" height="56" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" y="58">
+						<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="671" anchorOffsetY="0" height="56" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label text="身份认证" size="24" x="45" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="20" textColor="0xFCE794" stroke="1" name="WhiteYellowColor"/>
+						<e:Label text="实名认证通过后不再受到防沉迷限制" x="171.5" y="23.39" anchorOffsetX="0" anchorOffsetY="0" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xa56e43"/>
+						<e:Button id="Btn_IDSecurity_Binding" label="立即认证" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0" horizontalCenter="259.5" verticalCenter="0">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="立即认证" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.lijirenzheng" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Image source="GF_commonButton_json.UI_gameID_icon_2" x="7" y="12"/>
+						<e:Image id="IDtishi" source="GF_commonButton_json.Hall_Sprite_Tips" x="644" y="8" anchorOffsetX="0" width="20" anchorOffsetY="0" height="20" scaleX="1" scaleY="1"/>
+					</e:Group>
+					<e:Group id="MobileSecurity" width="671" height="56" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="1" y="0">
+						<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="671" anchorOffsetY="0" height="56" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-1"/>
+						<e:Label text="手机绑定" size="24" x="45" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="18" textColor="0xFCE794" name="WhiteYellowColor" stroke="1"/>
+						<e:Label text="绑定后有助于找回账号密码" x="168" y="21.5" anchorOffsetX="0" anchorOffsetY="0" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xa56e43"/>
+						<e:Image source="GF_commonButton_json.UI_gameID_icon_1" x="5" y="10.01" anchorOffsetX="0" width="48" anchorOffsetY="0" height="45" rotation="360" scaleX="1" scaleY="1"/>
+						<e:Button id="Btn_Mobile_Binding" label="立即绑定" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0" horizontalCenter="258.5" verticalCenter="1">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="立即认证" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.lijibangding"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+						<e:Image id="tishi" source="GF_commonButton_json.Hall_Sprite_Tips" x="644" y="8" anchorOffsetX="0" width="20" anchorOffsetY="0" height="20" scaleX="1" scaleY="1"/>
+					</e:Group>
+					<e:Group id="GameSecurity" width="671" height="56" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" y="117" x="1">
+						<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="671" anchorOffsetY="0" height="56" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label text="游戏保护" size="24" x="45" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="20" textColor="0xFCE794" name="WhiteYellowColor" stroke="1"/>
+						<e:Label text="设置保护后进行游戏前需要输入安全口令" x="166.5" y="23.39" anchorOffsetX="0" anchorOffsetY="0" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xa56e43"/>
+						<e:Image source="GF_commonButton_json.UI_gameID_icon_3" x="5" y="9" anchorOffsetX="0" width="49" anchorOffsetY="0" height="46.77" scaleX="1" scaleY="1"/>
+						<e:Button id="Btn_GameSecurity_Binding" label="开启保护" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0" horizontalCenter="259.5" verticalCenter="0">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="身份确认" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.kaiqibaohu"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+					</e:Group>
+					<e:Group id="PSWSecurity" width="671" height="56" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" y="175" x="1">
+						<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="671" anchorOffsetY="0" height="56" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label text="密码管理" size="24" x="45" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="21" textColor="0xFCE794" name="WhiteYellowColor" stroke="1"/>
+						<e:Label text="请设置复杂密码谨防盗号" x="167" y="23.39" anchorOffsetX="0" anchorOffsetY="0" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xa56e43"/>
+						<e:Image source="GW_HallAtlas_json.Hall_Btn_Binding" x="7" y="9.31" anchorOffsetX="0" width="51" anchorOffsetY="0" height="48.69" scaleX="1" scaleY="1"/>
+						<e:Button id="Btn_Code_Binding" label="前往管理" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0" horizontalCenter="259.5" verticalCenter="-1">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="身份确认" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.qianwangchongzhi"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+					</e:Group>
+					<e:Group id="ChangePhone" width="671" height="56" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="0" y="233">
+						<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="671" anchorOffsetY="0" height="56" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label text="更换手机" size="24" x="45" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="20" textColor="0xFCE794"/>
+						<e:Label id="Label_PhoneNum_ChangePhone" text="当前手机号码：19855238545" x="170" y="23" anchorOffsetX="0" anchorOffsetY="0" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xa56e43"/>
+						<e:Image source="GF_commonButton_json.UI_phone_icon" x="12.5" y="8.78" anchorOffsetX="0" width="34" anchorOffsetY="0" height="46.22" scaleX="1" scaleY="1"/>
+						<e:Button id="Btn_ChangePhone" label="更换手机" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0" verticalCenter="0" x="514">
+						<e:skinName>
+							<e:Skin states="up,down,disabled">
+							<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="身份确认" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.genghuanshouji"/>
+							</e:Skin>
+						</e:skinName>
+						</e:Button>
+					</e:Group>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="Panel_ChangePhone" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="0" y="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="485" anchorOffsetY="0" height="270" scaleX="1" scaleY="1" horizontalCenter="32.5" verticalCenter="-35" scale9Grid="44,53,3,8"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="399" y="208.5" scale9Grid="7,7,2,3" anchorOffsetX="0" width="245" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="399" y="265.19" scale9Grid="7,7,2,3" anchorOffsetX="0" width="184.5" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_Close_ChangePhone" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="246" verticalCenter="-140">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title1" text="更换手机" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" name="titleColor" stroke="1" horizontalCenter="42" verticalCenter="-140" textColor="0xffd47f" visible="false"/>
+			<e:Label id="label1_ChangePhone" text="新手机号码：" x="244.66" y="212.97" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label2_ChangePhone" text="手机验证码" x="235.98" y="270.04" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:EditableText id="Input_NewPhoneNum_ChangePhone" width="231" height="31" text="" x="407.17" y="209" backgroundColor="0xFFFFFF" background="true" prompt="请输入需要绑定的新手机" size="18" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="11" inputType="tel" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_Code_ChangePhone" width="170.5" height="31" text="" x="405.5" y="265.66" backgroundColor="0xFFFFFF" background="true" prompt="请输入新手机验证码" size="18" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="6" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:Button id="Btn_GetCode_ChangePhone" label="获取验证码" y="263" x="590.5" scaleX="1" scaleY="1" enabled="true" width="116" anchorOffsetX="0" anchorOffsetY="0" height="38">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="8,0,5,36"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="获取验证码" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+	<e:Image source="GW_label_tex_json.huoquyanzhengma" anchorOffsetX="0" width="108.13" anchorOffsetY="0" height="22.22" horizontalCenter="-1" verticalCenter="-2" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Sure_ChangePhone" label="确定更换" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" x="418" y="337">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.quedinggenghuan" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_depositPoint3" text="当前手机号码:" x="230.03" y="213.68" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" visible="false"/>
+			<e:Label id="label_depositPoint4" text="手机验证码" x="235.98" y="270.04" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" visible="false"/>
+			<e:Label id="Input_PhoneNum_CodeFind0" text="请输入当前绑定的手机号码" x="398" y="209" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="280" size="18" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" visible="false"/>
+			<e:Label id="Input_CheckCode_CodeFind0" text="请输入验证码" x="399" y="265.17" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="146" size="16" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" visible="false"/>
+			<e:Button id="Btn_Next" label="下一步" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" x="399" y="337" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.genghuanshouji" y="144" x="433"/>
+		</e:Group>
+		<e:Group id="Panel_Code_Find" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="483" anchorOffsetY="0" height="319" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="-33.5" scale9Grid="42,53,4,10"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="174.67" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="227.67" scale9Grid="7,7,2,3" anchorOffsetX="0" width="139.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="279.67" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="331.58" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_GetCode_CodeFind" label="获取验证码" y="225.01" x="516" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" anchorOffsetY="0" height="38">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,8,24"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="获取验证码" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Close_CodeFind" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="215" verticalCenter="-164">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title8" text="找回口令" horizontalCenter="10" textColor="0xFFCE00" size="28" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-165" anchorOffsetX="0" width="128" textAlign="center" y="142" stroke="1" name="titleColor" visible="false"/>
+			<e:Label id="label_depositPoint10" text="绑定手机号：" x="211" y="180.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint11" text="再次确认口令：" x="204" y="337.55" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint14" text="设置安全口令：" x="202" y="286" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint15" text="输入验证码：" x="213" y="233" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:EditableText id="Input_PhoneNum_CodeFind" width="282.67" height="31" text="" x="374" y="174.83" backgroundColor="0xFFFFFF" background="true" prompt="请输入绑定的手机号" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="11" inputType="tel" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_CheckCode_CodeFind" width="131.67" height="31" text="" x="374" y="228" backgroundColor="0xFFFFFF" background="true" prompt="请输入验证码" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="6" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_CodeNewFirst_CodeFind" width="282" height="31" text="" x="374" y="280" backgroundColor="0xFFFFFF" background="true" prompt="设置6—16位新口令" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="16" displayAsPassword="true" inputType="password" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_CodeNewSecond_CodeFind" width="280.67" height="31" text="" x="374" y="332" backgroundColor="0xFFFFFF" background="true" prompt="请再次输入新口令" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" displayAsPassword="true" maxChars="16" inputType="password" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:Button id="Btn_Sure_CodeFind" label="提交" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="92" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay"  name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.tijiao" horizontalCenter="0" verticalCenter="0" width="50" height="23"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.zhaohuikouling" horizontalCenter="0" y="121"/>
+		</e:Group>
+		<e:Group id="Panel_Code_Find0" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="10" y="10" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="500" anchorOffsetY="0" height="320" scaleX="1" scaleY="1" verticalCenter="-29" horizontalCenter="0" scale9Grid="43,53,4,8"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="180" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="232.67" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="284.34" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="370" y="336.09" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_Close_PSWProtect" label="" x="656" y="122" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title11" text="密码保护" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-161.5" anchorOffsetX="0" width="128" textAlign="center" y="142" name="titleColor" stroke="1" textColor="0xffd47f" horizontalCenter="0" visible="false"/>
+			<e:Label id="label_depositPoint21" text="密码保护问题1：" x="174" y="185.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" textAlign="right"/>
+			<e:Label id="label_depositPoint22" text="请输入答案：" x="174" y="342.55" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" textAlign="right"/>
+			<e:Label id="Input_Queastion1_PSWProtect" text="你家在哪个地方？" x="374" y="180" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="282" size="18" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97"/>
+			<e:Label id="label_depositPoint23" text="密码保护问题2：" x="174" y="291" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" textAlign="right"/>
+			<e:Label id="Input_Queastion2_PSWProtect" text="你家在哪个地方？" x="374" y="285" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="283.33" size="18" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97"/>
+			<e:Label id="label_depositPoint24" text="请输入答案：" x="174" y="238" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba" textAlign="right"/>
+			<e:Label id="Input_Answer2_PSWProtect" text="输入文字不能超过10个字" x="374" y="336.57" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="280.67" size="18" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97"/>
+			<e:Label id="Input_Answer1_PSWProtect" text="输入文字不能超过10个字" x="374" y="233" backgroundColor="0xF7EDED" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" width="276.33" size="16" anchorOffsetY="0" height="31" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+			<e:Button id="Btn_Sure_PSWProtect" label="提交" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="98" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.tijiao" horizontalCenter="0" verticalCenter="0" width="50" height="23"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.mimabaohu" horizontalCenter="0" y="126"/>
+		</e:Group>
+		<e:Group id="Panel_PSW_Change" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="10" y="10" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="480" anchorOffsetY="0" height="300" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="-32" scale9Grid="43,53,3,11"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="372" y="191.55" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="372" y="246" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="372" y="300" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_Close_PSWChange" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="213" verticalCenter="-153">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title9" text="密码管理" horizontalCenter="10" size="28" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-151" anchorOffsetX="0" width="128" textAlign="center" y="142" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+			<e:Label id="label_depositPoint12" text="您的旧密码：" x="178" y="197.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffdb7d"/>
+			<e:Label id="label_depositPoint16" text="确认新密码：" x="178" y="305" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffdb7d"/>
+			<e:Label id="label_depositPoint17" text="您的新密码：" x="178" y="249" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffdb7d"/>
+			<e:EditableText id="Input_PSWOld_PSWChange" width="281" height="31" text="" x="379.5" y="192" backgroundColor="0xFFFFFF" background="true" prompt="请输入你的旧密码" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" displayAsPassword="true" maxChars="16" inputType="password" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_PSWNewFirst_PSWChange" width="271.5" height="31" text="" x="385" y="246.5" backgroundColor="0xFFFFFF" background="true" prompt="包含字母数字的6—16位密码" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" inputType="password" displayAsPassword="true" maxChars="16" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_PSWNewSecond_PSWChange" width="269" height="31" text="" x="380.5" y="300" backgroundColor="0xFFFFFF" background="true" prompt="包含字母数字的6—16位密码" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="16" displayAsPassword="true" inputType="password" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:Button id="Btn_Sure_PSWChange" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="77" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.mimaguanli" horizontalCenter="0" y="133"/>
+		</e:Group>
+		<e:Group id="Panel_Code_Change" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="20" y="20" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="460" anchorOffsetY="0" height="300" scaleX="1" scaleY="1" verticalCenter="-32" horizontalCenter="0.5" scale9Grid="43,53,3,8"/>
+			<e:Image source="GF_commonButton_json.Input_BG" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5" horizontalCenter="54" verticalCenter="-92"/>
+			<e:Image source="GF_commonButton_json.Input_BG" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5" horizontalCenter="54" verticalCenter="-36"/>
+			<e:Image source="GF_commonButton_json.Input_BG" scale9Grid="7,7,2,3" anchorOffsetX="0" width="293.67" anchorOffsetY="0" height="31.5" horizontalCenter="54" verticalCenter="16"/>
+			<e:Button id="Btn_Close_CodeChange" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="203" verticalCenter="-152">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title13" text="游戏保护" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-154" anchorOffsetX="0" width="128" textAlign="center" y="142" stroke="1" name="titleColor" textColor="0xffd47f" horizontalCenter="0" visible="false"/>
+			<e:Label id="label_depositPoint29" text="您的旧口令：" x="169" y="194.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint30" text="确认新口令：" x="169" y="307" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint31" text="您的新口令：" x="169" y="253" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:EditableText id="Input_CodeOld_CodeChange" width="260" height="31" text="" x="364" y="192" backgroundColor="0xFFFFFF" background="true" prompt="请点击" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" displayAsPassword="true" inputType="password" maxChars="16" fontFamily="SimHei" anchorOffsetX="0"/>
+			<e:EditableText id="Input_CodeNewFirst_CodeChange" width="260" height="31" text="" x="364" y="248" backgroundColor="0xFFFFFF" background="true" prompt="请点击" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="16" displayAsPassword="true" inputType="password" fontFamily="SimHei"/>
+			<e:EditableText id="Input_CodeNewSecond_CodeChange" width="260" height="31" text="" x="364" y="300" backgroundColor="0xFFFFFF" background="true" prompt="请点击" size="20" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" inputType="password" maxChars="16" displayAsPassword="true" fontFamily="SimHei"/>
+			<e:Button id="Btn_Sure_CodeChange" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="77" horizontalCenter="4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.youxibaohu" horizontalCenter="4.5" y="132"/>
+		</e:Group>
+		<e:Group id="Panel_Code_Setting" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="20" y="20" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="460" anchorOffsetY="0" height="300" scaleX="1" scaleY="1" verticalCenter="-30" horizontalCenter="0" scale9Grid="45,53,3,9"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="377" y="190" scale9Grid="7,7,2,3" anchorOffsetX="0" width="272.67" anchorOffsetY="0" height="31.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="377" y="247" scale9Grid="7,7,2,3" anchorOffsetX="0" width="272.67" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_Close_CodeSetting" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="202" verticalCenter="-150">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title10" text="游戏保护" horizontalCenter="10" size="28" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-151" anchorOffsetX="0" width="128" textAlign="center" y="142" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+			<e:Label id="label_depositPoint13" text="设置安全口令：" x="217" y="195.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:EditableText id="Input_CodeFirst_CodeSetting" width="246" height="31" text="" backgroundColor="0xFFFFFF" background="true" prompt="请点击" size="22" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" displayAsPassword="true" inputType="password" maxChars="16" fontFamily="SimHei" horizontalCenter="59" verticalCenter="-94.5" anchorOffsetX="0"/>
+			<e:EditableText id="Input_CodeSecond_CodeSetting" width="247" height="31" text="" backgroundColor="0xFFFFFF" background="true" prompt="请点击" size="22" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="16" inputType="password" displayAsPassword="true" fontFamily="SimHei" horizontalCenter="59.5" verticalCenter="-37.5" anchorOffsetX="0"/>
+			<e:Label id="label_depositPoint19" text="再次确认口令：" x="217" y="252" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Button id="Btn_Sure_CodeSetting" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="85" horizontalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" name="buttonYellowWhiteColor" stroke="1" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_depositPoint18" text="设置安全口令后才能开启游戏保护" x="253" y="305" anchorOffsetX="0" width="395" anchorOffsetY="0" height="24" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xd1ff00"/>
+			<e:Label id="label_depositPoint20" text="开启保护后进行游戏前需要输入安全口令" x="253" y="333" anchorOffsetX="0" width="395" anchorOffsetY="0" height="24" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xd1ff00"/>
+			<e:Image source="GW_label_tex_json.youxibaohu" horizontalCenter="0" y="135"/>
+		</e:Group>
+		<e:Group id="Panel_Code_Open" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="30" y="30" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="489" anchorOffsetY="0" height="300" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="-34" scale9Grid="44,53,3,7"/>
+			<e:Image source="GF_commonButton_json.Input_BG" x="380.33" y="238" scale9Grid="7,7,2,3" anchorOffsetX="0" width="205.67" anchorOffsetY="0" height="31.5"/>
+			<e:Button id="Btn_Close_CodeOpen" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="218" verticalCenter="-155">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="游戏保护" size="28" x="396" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="132.5" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+			<e:EditableText id="Input_Code_CodeOpen" width="185" height="31" text="" x="387" y="238" backgroundColor="0xffffff" background="true" prompt="口令长度为6-16位" size="22" textAlign="left" verticalAlign="middle" border="false" textColor="0x000000" maxChars="16" inputType="password" displayAsPassword="true" anchorOffsetX="0"/>
+			<e:Label text="请输入安全口令：" x="195" y="243" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="right" scaleX="1" scaleY="1" rotation="359.97" textColor="0xfff2ba"/>
+			<e:Button id="Btn_COdeChange_CodeOpen" label="修改口令" scaleX="1" scaleY="1" enabled="true" width="156" x="263" y="347" anchorOffsetX="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.xiugaikouling" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_CodeFind_CodeOpen" label="找回口令" scaleX="1" scaleY="1" enabled="true" x="584" y="237" anchorOffsetX="0" height="40">
+			</e:Button>
+			<e:Label id="Label_Tips_CodeOpen" text="开启保护后，进行游戏前需要输入安全口令" x="249.5" y="299" anchorOffsetX="0" width="395" anchorOffsetY="0" height="24" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0x6fff00"/>
+			<e:Label id="Label_Notice" text="正在开启游戏保护" x="253" y="188" anchorOffsetX="0" width="395" anchorOffsetY="0" height="24" size="24" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0x6fff00"/>
+			<e:Button id="Btn_Sure_CodeOpen" label="开启保护" y="347" x="478" scaleX="1" scaleY="1" enabled="true" width="162" anchorOffsetX="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" y="0"/>
+					<e:Label id="labelDisplay" name="buttonYellowWhiteColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffc9" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.guanbibaohu"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.youxibaohu" horizontalCenter="0" y="132"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

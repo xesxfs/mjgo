@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_UpLoading" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_UpLoading" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="400" anchorOffsetY="0" height="240" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-16" scale9Grid="42,53,4,9"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="157" verticalCenter="-91">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image anchorOffsetX="0" width="373" anchorOffsetY="0" height="121" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" scale9Grid="5,5,6,5" verticalCenter="0.5" horizontalCenter="-15.5"/>
+		<e:Label text="分享视频" size="24" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-16" verticalCenter="-91" name="titleColor" stroke="1" bold="true" visible="false"/>
+		<e:Button id="Btn_Up" label="" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" verticalCenter="83" horizontalCenter="-16">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="18" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.quedingfenxiang"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:EditableText id="Input_VedioTitle" width="363" height="105" text="" anchorOffsetX="0" anchorOffsetY="0" textAlign="center" verticalAlign="middle" size="22" prompt="请输入视频标题" fontFamily="SimHei" strokeColor="0x000000" horizontalCenter="-16.5" verticalCenter="-0.5" textColor="0x8c8c8c"/>
+		<e:Image source="GW_label_tex_json.fenxiangshipin" horizontalCenter="-18" verticalCenter="-92"/>
+	</e:Group>
+	</e:Skin>

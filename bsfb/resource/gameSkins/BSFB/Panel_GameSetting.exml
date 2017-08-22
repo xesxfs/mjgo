@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_GameSetting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_GameSetting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="373" anchorOffsetY="0" height="230" scaleX="1" scaleY="1" verticalCenter="1" horizontalCenter="-16.5" scale9Grid="42,53,4,10"/>
+		<e:Label id="Label_Title" text="游戏设置" textColor="0xFFCE00" size="25" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="center" name="titleColor" stroke="1" horizontalCenter="-13" verticalCenter="-84.5" visible="false"/>
+		<e:Label id="label_depositPoint2" text="背景音乐" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="24" fontFamily="SimHei" textAlign="center" textColor="0xf4b700" scaleX="1" scaleY="1" name="titleColor" stroke="0" horizontalCenter="-93" verticalCenter="-17.5"/>
+		<e:Label id="label_depositPoint1" text="游戏音效" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="24" fontFamily="SimHei" textColor="0xF4B700" textAlign="center" scaleX="1" scaleY="1" name="titleColor" stroke="0" horizontalCenter="-93" verticalCenter="49.5"/>
+		<e:CheckBox id="Toggle_Music" label="CheckBox" width="40" height="40" selected="true" horizontalCenter="84" verticalCenter="-13">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="Toggle_Sound" label="CheckBox" width="40" height="40" selected="true" horizontalCenter="84" verticalCenter="52">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Button id="Btn_CloseSetting" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="142" verticalCenter="-84">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.youxishezhi" x="377.5" y="200"/>
+	</e:Group>
+</e:Skin>

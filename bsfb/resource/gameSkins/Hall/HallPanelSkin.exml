@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HallPanelSkin3" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group width="1" height="1" horizontalCenter="-449.5" verticalCenter="-299.5">
+		<e:Image id="BG" source="hall_bg_spring_png" y="0"/>
+		<e:Group id="flower" width="1" height="1" x="0" y="0"/>
+		<e:Image id="Pro_LevelExp" height="83.15" width="362" rotation="179.51" source="GW_HallAtlas_json.UI_hall_Panel_bg" scale9Grid="11,7,10,15" anchorOffsetY="0" left="-54" bottom="-534" x="309" y="530" scaleX="1" scaleY="1"/>
+		<e:Image source="GW_HallAtlas_json.UI_hall_lv_bg" scale9Grid="87,10,2,66" anchorOffsetX="0" width="247" left="60" bottom="-531" x="60" y="449" scaleX="1" scaleY="1" visible="false"/>
+		<e:Image source="GW_HallAtlas_json.UI_hall_lv_bg3" x="16.01" y="429"/>
+		<ns1:NewLevelExpComponent id="levelExpInfo" skinName="NewLevelExpCom" scaleX="1" scaleY="1" horizontalCenter="56.5" verticalCenter="469.5"/>
+		<e:Image source="GW_HallAtlas_json.ID_dikuang" x="3" y="488.5" anchorOffsetX="0" width="110" scale9Grid="27,20,6,4" anchorOffsetY="0" height="42"/>
+		<e:Label id="id" text="ID" size="17" textColor="0xF4D96F" textAlign="center" x="6.63" y="507.01" fontFamily="SimHei" scaleX="1" scaleY="1"/>
+		<e:Label id="Label_UserID" text="99999999" fontFamily="SimHei" size="16" textAlign="center" x="26.32" y="507" scaleX="1" scaleY="1" bold="true" anchorOffsetY="0" height="16.67" anchorOffsetX="0" width="80"/>
+		<e:Button id="Btn_ChangeNick" label="" enabled="true" right="-306" bottom="-482" anchorOffsetX="0" anchorOffsetY="0" width="40" height="40">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+	<e:Image scale9Grid="8,7,1,2" horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="GW_HallAtlas_json.changeNickname" alpha="0"/>
+				<e:Image width="25" height="25" source="GW_HallAtlas_json.changeNickname" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="logo" fillMode="scale" width="207" height="186" source="BSFB_LHDB2" top="102" x="371" y="102" scaleX="1" scaleY="1"/>
+		<e:Button id="dice_btn" width="220" label="账号登录" height="60" enabled="true" x="630" y="348" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_Btn_Dice"/>
+				<e:Label id="labelDisplay1" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="bsfb_btn" width="220" label="账号登录" height="60" enabled="true" verticalCenter="140.5" x="630" y="119" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" source="UI_login_BSFB"/>
+				<e:Label id="labelDisplay3" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="JDSTB_btn" width="220" label="账号登录" height="60" enabled="true" x="630" y="190" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_Btn_JDSTB"/>
+				<e:Label id="labelDisplay1" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="WXHH_btn" width="220" label="账号登录" height="60" enabled="true" x="630" y="269" scaleX="1" scaleY="1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_HallAtlas_json.Hall_Btn_WXHH"/>
+				<e:Label id="labelDisplay0" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Share" width="45" label="账号登录" height="66" enabled="true" x="437.53" y="452" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_10_10"/>
+				<e:Label id="labelDisplay5" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Setting" x="375" width="45" label="账号登录" height="66" enabled="true" y="452" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_2"/>
+				<e:Label id="labelDisplay2" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Mail" width="45" label="账号登录" height="66" enabled="true" x="500.08" y="452" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_HallAtlas_json.Hall_btn_11"/>
+				<e:Label id="labelDisplay5" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Security" x="562.61" width="45" label="账号登录" height="66" enabled="true" y="452" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_9"/>
+				<e:Label id="labelDisplay4" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_bank" x="625.14" width="45" label="账号登录" height="66" enabled="true" y="452" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_8"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_VIPHall" width="45" label="账号登录" height="66" enabled="true" scaleX="1.1" scaleY="1.1" y="452" x="751">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_3"/>
+				<e:Label id="labelDisplay6" verticalCenter="0" size="26" x="69"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Exit" x="33.25" width="29" label="账号登录" height="29" enabled="true" y="64" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.1" scaleY="1.1">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_HallAtlas_json.Btn_Exit" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay2" verticalCenter="0" size="26" x="69" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Enter" label="进入" scaleX="1" scaleY="1" enabled="true" width="205" anchorOffsetX="0" horizontalCenter="470" verticalCenter="381" x="349" y="369">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scale9Grid="48,0,4,44" source="GW_HallAtlas_json.UI_hall_MoveGame_btn"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="id1" text="朋际ID：" size="14" textColor="0xF4D96F" x="114" y="512.99" fontFamily="SimHei" scaleX="1" scaleY="1"/>
+		<e:Label id="id0" text="点数：" size="14" textColor="0xF4D96F" x="128" y="483.99" fontFamily="SimHei" scaleX="1" scaleY="1"/>
+		<e:Label id="Label_PengJi_ID" text="99999" fontFamily="黑体" size="18" textAlign="left" y="508.98" anchorOffsetX="0" x="166.33" scaleX="1" scaleY="1" bold="true" width="130" height="20"/>
+		<e:Label id="Label_Nickname" text="Nickn" fontFamily="SimHei" size="16" x="166.33" y="454.33" textAlign="left" anchorOffsetX="0" scaleX="1" scaleY="1" bold="true" width="115" height="20"/>
+		<e:Label id="Label_diamon" text="99999999" fontFamily="SimHei" size="16" name="YellowColor" x="165" y="472" anchorOffsetX="0" width="101" scaleX="1" scaleY="1" bold="true" visible="false"/>
+		<e:Label id="Label_Point" text="99999999" fontFamily="SimHei" size="18" name="YellowColor" x="166.33" y="482" anchorOffsetX="0" width="130" scaleX="1" scaleY="1" bold="true" height="20"/>
+		<e:Label text="" x="396" y="299" anchorOffsetX="0" width="134" anchorOffsetY="0" height="46" scaleX="1" scaleY="1"/>
+		<ns1:NoticeUI id="Go_BulletinTable" skinName="NotesUI" y="107" left="67" x="68" scaleX="1" scaleY="1"/>
+		<e:Image id="Go_Sprite_Binding" width="18" height="18" source="Hall_Sprite_Tips" x="570" y="454.34" scaleX="1" scaleY="1"/>
+		<e:Image id="Image_RedDot" width="18" height="18" source="Hall_Sprite_Tips" x="503" y="454.34" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image id="Sprite_VIP" source="BSFB_Atlas_json.UI_VIP_icon" y="454.66" anchorOffsetX="0" width="34.25" anchorOffsetY="0" height="17.67" horizontalCenter="-313"/>
+	<e:Image source="GW_HallAtlas_json.diamon_icon" y="472.68" width="21.33" height="17.78" horizontalCenter="-313.5" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+	<e:Image source="GW_HallAtlas_json.coin_icon_1" y="479.82" width="24" height="24" horizontalCenter="-313" anchorOffsetX="0" anchorOffsetY="0" visible="false"/>
+	<e:Image source="GW_HallAtlas_json.UI_hall_line2" height="2" width="160" x="140.67" y="469" visible="false"/>
+	<e:Image source="GW_HallAtlas_json.UI_hall_line2" x="140.67" y="475.5" height="2" width="160"/>
+	<e:Image source="GW_HallAtlas_json.UI_hall_line2" x="140.67" y="504" height="2" width="160"/>
+	<e:Button id="Btn_Mall" width="45" label="账号登录" height="66" enabled="true" scaleX="1.1" scaleY="1.1" y="452" x="817">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_7"/>
+			<e:Label id="labelDisplay7" verticalCenter="0" size="26" x="69"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="Btn_Club" width="45" label="账号登录" height="66" enabled="true" x="686" y="452" scaleX="1.1" scaleY="1.1">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image horizontalCenter="0" verticalCenter="0" width="100%" height="100%" source="Hall_btn_6"/>
+			<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	</e:Skin>

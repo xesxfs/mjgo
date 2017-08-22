@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NoticeItem"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="titleBG" width="210" anchorOffsetY="0" height="32" anchorOffsetX="0">
+		<e:Image width="100%" height="100%" source="GW_HallAtlas_json.UI_NoticeItem_bg" scale9Grid="11,9,18,22"/>
+		<e:Label id="titleLab" text="发" anchorOffsetY="0" size="20" scaleX="1" scaleY="1" verticalCenter="0" fontFamily="SimHei" verticalAlign="middle" textAlign="left" anchorOffsetX="0" width="200" horizontalCenter="0" textColor="0xebb932"/>
+	</e:Group>
+	<e:Label id="noticeLab" text="" x="11" y="25" multiline="true" anchorOffsetX="0" width="197" touchEnabled="false" size="16" fontFamily="SimHei" lineSpacing="3" textColor="0xffed25"/>
+</e:Skin>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Personal" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="Panel_ChangeNickName" width="900" height="600" verticalCenter="0" horizontalCenter="1">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="558" anchorOffsetY="0" height="378" scaleX="1" scaleY="1" scale9Grid="42,53,4,8" verticalCenter="-19" horizontalCenter="0"/>
+		<e:Image horizontalCenter="0" y="106" source="GW_label_tex_json.gerenxinxi"/>
+		<e:Image x="363.5" y="226" width="309" height="2" source="GF_commonButton_json.UI_hall_line" scale9Grid="59,0,5,4"/>
+		<e:Image source="GF_commonButton_json.UI_hall_line" x="363.5" y="261.5" width="309" height="2" scale9Grid="59,0,5,4" fillMode="scale"/>
+		<e:Image source="GF_commonButton_json.UI_hall_line" x="363.5" y="191" width="309" height="2" scale9Grid="59,0,5,4"/>
+		<e:Image id="Sprite_VIP" source="BSFB_Atlas_json.UI_VIP_icon" anchorOffsetX="0" width="44" anchorOffsetY="0" height="23" horizontalCenter="-90.5" verticalCenter="-126"/>
+		<e:Image source="GF_commonButton_json.Input_BG2" width="162" scale9Grid="8,7,1,1" height="30" anchorOffsetX="0" horizontalCenter="-187" verticalCenter="-40"/>
+		<e:Label id="Lb_nickName" text="元气满满优酱" y="161" horizontalCenter="69" size="20" x="149" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="left" textColor="0xffeeb3"/>
+		<e:Label id="Lb_ID" text="46546546" horizontalCenter="70" size="20" x="159" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="left" textColor="0xFFEEB3" verticalCenter="-92"/>
+		<e:Label text="昵称：" x="370.5" y="162.5" anchorOffsetX="0" width="80" anchorOffsetY="0" height="27" size="20" fontFamily="SimHei" textAlign="right" textColor="0xffce28"/>
+		<e:Label id="Lb_Club" text="东森电视台" y="230" horizontalCenter="72" size="20" x="159" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="left" textColor="0xFFEEB3"/>
+		<e:Label text="公会：" x="370.5" y="230.5" anchorOffsetX="0" width="80" anchorOffsetY="0" height="27" size="20" fontFamily="SimHei" textAlign="right" textColor="0xffce28"/>
+		<e:Label text="ID：" x="370.5" anchorOffsetX="0" width="80" anchorOffsetY="0" height="27" size="20" fontFamily="SimHei" textAlign="right" textColor="0xffce28" y="197"/>
+		<e:Label id="label_privilege" text="贵族专属特权：在下月充值任意金额将赠送点数" x="191.67" y="376" anchorOffsetX="0" anchorOffsetY="0" size="24" fontFamily="SimHei" textAlign="center" rotation="359.91" textColor="0xffc793"/>
+		<e:Button id="Btn_ClosePersonal" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="252" verticalCenter="-178">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_none" text="无" anchorOffsetX="0" width="60" anchorOffsetY="0" height="30" size="30" fontFamily="SimHei" textAlign="center" verticalAlign="middle" bold="true" x="467" y="310" textColor="0x53ff00"/>
+		<e:Button id="Btn_changeToNobel" label="确定" horizontalCenter="149" x="124" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" verticalCenter="26">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.chengweiguizu" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Roll" label="确定" horizontalCenter="176" x="124" scaleX="1" scaleY="1" enabled="true" width="36" anchorOffsetX="0" verticalCenter="-131" height="36">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_HallAtlas_json.UI_hall_Panel_bg" anchorOffsetX="0" width="36" anchorOffsetY="0" height="35" scale9Grid="9,10,13,13" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image source="GW_HallAtlas_json.changeNickname" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="经验：" anchorOffsetX="0" width="66.33" anchorOffsetY="0" height="24" size="17" fontFamily="SimHei" textAlign="center" textColor="0xFFCE28" verticalAlign="middle" x="182" y="247"/>
+		<e:Label id="label_count" text="20000/50000" y="251" size="17" x="234" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="left" textColor="0xFFEEB3"/>
+		<e:Label id="label_prize" text="当月充值达到5000元即可在下月获得贵族称号 赠送点数通过邮件即时发送" y="405" horizontalCenter="1.5" size="18" x="169" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetY="0" anchorOffsetX="0" width="381" textAlign="center" verticalAlign="middle" textColor="0xfff693"/>
+		<e:Image source="GW_label_tex_json.benyuezunguichenghao" x="288" y="310"/>
+		<e:Group id="NobleGroup" width="100" height="100" horizontalCenter="96" verticalCenter="17">
+			<e:Image id="Sprite_Noble" source="GW_HallAtlas_json.noble_1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-16.5"/>
+			<e:Image id="label_noble" source="GW_label_tex_json.guizuyi" verticalCenter="27.5" width="70" height="23" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="100" height="100" horizontalCenter="-192" verticalCenter="-106">
+			<e:Image source="GW_HallAtlas_json.UI_hall_lv_bg3" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<ns1:NewLevelExpComponent id="levelExpInfo" x="14" y="14" skinName="NewLevelExpCom"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

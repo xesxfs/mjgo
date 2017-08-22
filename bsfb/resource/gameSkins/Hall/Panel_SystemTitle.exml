@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_SystemTitle" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_SystemTitle" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="423" anchorOffsetY="0" height="362.4" scaleX="1.03" scaleY="0.91" verticalCenter="-25" horizontalCenter="2" scale9Grid="43,53,4,11"/>
+		<e:Label id="label_tip" text="请进行身份认证，否则将无法进行游戏！" x="258" y="365.5" anchorOffsetX="0" width="395.33" anchorOffsetY="0" height="23" size="16" fontFamily="SimHei" textAlign="center" textColor="0xc6f71b"/>
+		<e:Label id="label_title" text="" anchorOffsetX="0" width="333.33" anchorOffsetY="0" height="28" size="28" fontFamily="SimHei" textAlign="center" horizontalCenter="0.5" verticalCenter="-161" textColor="0xffd47f"/>
+		<e:Label id="label_content" text="" anchorOffsetX="0" width="399.33" anchorOffsetY="0" height="201" size="20" fontFamily="SimHei" textAlign="left" verticalCenter="-36.5" horizontalCenter="-0.5" lineSpacing="5" textColor="0xfff2ba"/>
+		<e:Button id="Btn_Sure" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="0" verticalCenter="108">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="120" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="-1" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

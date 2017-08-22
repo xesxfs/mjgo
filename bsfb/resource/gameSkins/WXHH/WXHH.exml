@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WXHHPanelskin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	
+	<e:Image id="BG" height="100%" width="100%" fillMode="scale" source="5_WXHH_png" horizontalCenter="0" verticalCenter="-1"/>
+	<e:Group id="FivePanel" width="900" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GW_label_tex_json.wuxinghonghui" verticalCenter="-181" horizontalCenter="-293" anchorOffsetX="0" width="112.15" anchorOffsetY="0" height="20.2"/>
+		<e:Label text="黑桃:" y="134" size="16" fontFamily="方正粗圆简体" x="377.5" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textColor="0x38180a"/>
+		<e:Label text="红桃:" y="134" size="16" fontFamily="方正粗圆简体" x="466.5" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textColor="0x38180a"/>
+		<e:Label text="五星宏辉" size="21" fontFamily="SimHei" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="139.5" textAlign="center" verticalAlign="middle" x="86.07" y="103.75" anchorOffsetX="0" stroke="1" name="OrangeColor" textColor="0xffde4f" bold="true" visible="false"/>
+		<e:Label text="我的点数" size="21" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="139.5" textAlign="center" verticalAlign="middle" x="90.07" y="407.75" anchorOffsetX="0" textColor="0x4F2214"/>
+		<e:Label id="Label_MyCount" text="9999" size="24" fontFamily="SimHei" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="147.5" textAlign="right" verticalAlign="middle" x="80.07" y="474.75" anchorOffsetX="0" textColor="0xffe8c4"/>
+		<e:Label text="梅花:" y="134" size="16" fontFamily="方正粗圆简体" x="554.65" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textColor="0x38180a"/>
+		<e:Label text="方块:" y="134" size="16" fontFamily="方正粗圆简体" x="643.82" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textColor="0x38180a"/>
+		<e:Label text="宝石:" y="134" size="16" fontFamily="方正粗圆简体" x="732.32" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textColor="0x38180a"/>
+		<e:Label text="选择点数" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="75" textColor="0xFFF04C" textAlign="center" verticalAlign="middle" x="283" y="382.01"/>
+		<e:Group id="ResultGroup" width="167" height="227" y="278" x="161" anchorOffsetX="83.5" anchorOffsetY="113.5" skewX="0" skewY="0" scaleX="1">
+			<e:Image id="Sprite_LotteryResult" anchorOffsetX="0" width="167" anchorOffsetY="0" height="227" scaleX="1" scaleY="1" source="WXHH_Atlas_json.Five_girl4" skewX="0" skewY="0" x="0" y="0" includeInLayout="true"/>
+			<e:Image id="Sprite_LotteryColor0" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" skewX="0" skewY="0" x="4" y="39" source="WXHH_Atlas_json.Five_poker_0" includeInLayout="true"/>
+			<e:Image id="Sprite_LotteryColor1" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" source="WXHH_Atlas_json.Five_poker_0" skewX="0" skewY="0" x="163" y="188.5" includeInLayout="true" rotation="180"/>
+			<e:Label id="Label_LotteryNum0" text="5" size="32" fontFamily="FangSong" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" x="5" y="4" textColor="0x0c0c0c" italic="false" bold="true" includeInLayout="true"/>
+			<e:Label id="Label_LotteryNum1" text="5" size="32" fontFamily="FangSong" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" x="160" y="220.5" textColor="0x0C0C0C" italic="false" bold="true" rotation="180" includeInLayout="true"/>
+		</e:Group>
+		<e:Button id="Btn_QuitFive" width="42" label="账号登录" height="42" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="782" y="84">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%"  source="WXHH_Atlas_json.Five_button_back00"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ranking" width="52" label="账号登录" height="52" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-146" right="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="WXHH_Atlas_json.UI_PaiHang_btn"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Help" width="42" label="账号登录" height="42" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="270" y="84">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image  horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%"  width="100%" height="100%" source="WXHH_Atlas_json.game_button_help00"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Pay" width="28" label="账号登录" height="28" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-204" verticalCenter="192">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%"  source="WXHH_Atlas_json.UI_buyit_btn"/>
+				<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_History" label="历史记录" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetY="0" height="32" horizontalCenter="-238" verticalCenter="159" x="162" y="443">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,8,9,20" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="Label_Count0" text="历史记录" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" horizontalCenter="0" verticalCenter="0" textColor="0xf8ffc9" visible="false"/>
+	<e:Image width="79.09" height="20" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-0.5" verticalCenter="-1" source="GW_label_tex_json.lishijilu"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_MyLog" label="我的记录" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetY="0" height="32" horizontalCenter="-340" verticalCenter="159" x="60" y="443">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,21" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="Label_Count0" text="我的记录" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" horizontalCenter="0" verticalCenter="0" textColor="0xf8ffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.wodejiliu" width="79.09" height="20" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-0.5" verticalCenter="-1"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="porkerPanel" width="1" height="1" horizontalCenter="-449.5" verticalCenter="-299.5"/>
+		<e:Group id="Go_AllCountLabel" width="1" height="1" horizontalCenter="-354.5" verticalCenter="-282.5">
+			<e:Label id="Label_AllCount0" text="10000000" y="385" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xfff04c" horizontalCenter="316.5"/>
+			<e:Label id="Label_AllCount1" text="10000000" y="385" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xfff04c" verticalAlign="middle" horizontalCenter="408.5"/>
+			<e:Label id="Label_AllCount2" text="9999" y="385" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xfff04c" horizontalCenter="500.5"/>
+			<e:Label id="Label_AllCount3" text="9999" y="385" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xfff04c" horizontalCenter="592.5"/>
+			<e:Label id="Label_AllCount4" text="999999999" y="385" size="14" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" textColor="0xfff04c" horizontalCenter="683.5"/>
+		</e:Group>
+		<e:Group id="LabelInningGroup" width="1" height="1" horizontalCenter="-329.5" verticalCenter="-550.5">
+			<e:Label id="Label_Inning1" text="21.09%" y="384" size="12" fontFamily="方正粗圆简体" x="293" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="55" textColor="0xffee56"/>
+			<e:Label id="Label_Inning2" text="21.09%" y="384" size="12" fontFamily="方正粗圆简体" x="381" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="55" textColor="0xffee56"/>
+			<e:Label id="Label_Inning3" text="21.09%" y="384" size="12" fontFamily="方正粗圆简体" x="470" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="55" textColor="0xffee56"/>
+			<e:Label id="Label_Inning4" text="21.09%" y="384" size="12" fontFamily="方正粗圆简体" x="558" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="55" textColor="0xffee56"/>
+			<e:Label id="Label_Inning5" text="21.09%" y="384" size="12" fontFamily="方正粗圆简体" x="646" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="55" textColor="0xffee56"/>
+		</e:Group>
+		<e:Group id="BSFB_menu_right" width="1" height="1" anchorOffsetY="0" anchorOffsetX="0" verticalCenter="-3.5" y="72" scaleX="1" scaleY="1" horizontalCenter="424.5">
+			<e:Button id="Btn_MyBank" label="银行" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetY="0" height="110" anchorOffsetX="0" horizontalCenter="5.5" verticalCenter="-62.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="40" height="110" source="GF_commonButton_json.UI_GH_btn_1" horizontalCenter="0" verticalCenter="0" scale9Grid="0,46,36,28"/>
+				<e:Label id="labelDisplay" text="银行" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="70" anchorOffsetX="0" width="40" textAlign="center" horizontalCenter="0" verticalCenter="14" visible="false"/>
+	<e:Image source="GW_label_tex_json.yinhang2" horizontalCenter="0.5" verticalCenter="12"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_ClubDole" label="公会" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetY="0" height="110" anchorOffsetX="0" horizontalCenter="5.5" verticalCenter="44.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="40" height="110" source="GF_commonButton_json.UI_GH_btn_2" scale9Grid="0,10,36,30" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" text="" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="70" anchorOffsetX="0" width="30" horizontalCenter="3" verticalCenter="-15" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui2" horizontalCenter="0.5" verticalCenter="-11"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Go_BetCountLabel" width="1" height="1" horizontalCenter="-450.5" verticalCenter="-299.5">
+			<e:Label id="Label_BetCount0" text="1000000" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" textColor="0xff951c" verticalAlign="middle" horizontalCenter="412.5" verticalCenter="427.5"/>
+			<e:Label id="Label_BetCount1" text="9999" y="418" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" textColor="0xff951c" verticalAlign="middle" horizontalCenter="505.5"/>
+			<e:Label id="Label_BetCount2" text="9999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" textColor="0xff951c" verticalAlign="middle" horizontalCenter="596.5" verticalCenter="427.5"/>
+			<e:Label id="Label_BetCount3" text="9999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" textColor="0xff951c" verticalAlign="middle" horizontalCenter="688.5" verticalCenter="427.5"/>
+			<e:Label id="Label_BetCount4" text="9999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" textAlign="center" textColor="0xff951c" verticalAlign="middle" horizontalCenter="780.5" verticalCenter="427.5"/>
+		</e:Group>
+		<e:Group id="Lb_OddsGroup" width="1" height="1" horizontalCenter="-458.5" verticalCenter="-300.5">
+			<e:Label id="Lb_Odds0" text="x3.8" y="382" size="17" fontFamily="方正粗圆简体" x="398.98" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="45" textAlign="center" textColor="0x3d250b" verticalAlign="middle"/>
+			<e:Label id="Lb_Odds1" text="x4.0" y="382" size="17" fontFamily="方正粗圆简体" x="491" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="45" textAlign="center" textColor="0x3d250b" verticalAlign="middle"/>
+			<e:Label id="Lb_Odds2" text="x3.8" y="382" size="17" fontFamily="方正粗圆简体" x="583" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="45" textAlign="center" textColor="0x3d250b" verticalAlign="middle"/>
+			<e:Label id="Lb_Odds3" text="x4.0" y="382" size="17" fontFamily="方正粗圆简体" x="675" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="45" textAlign="center" textColor="0x3d250b" verticalAlign="middle"/>
+			<e:Label id="Lb_Odds4" text="x20.0" y="382" size="17" fontFamily="方正粗圆简体" x="772.33" anchorOffsetY="0" height="20" scaleX="1" scaleY="1" width="45" textAlign="center" textColor="0x3d250b" verticalAlign="middle"/>
+		</e:Group>
+		<e:Group id="Go_BetButton" width="1" height="1" horizontalCenter="0.5" verticalCenter="0.5">
+			<e:Button id="Btn_bet0" width="76" label="账号登录" height="76" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-38" verticalCenter="178" name="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_ht01" source.down="WXHH_Atlas_json.Five_button_ht03" source.disabled="WXHH_Atlas_json.Five_button_ht04"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_bet1" width="76" label="账号登录" height="76" enabled="true" scaleX="1" scaleY="1" horizontalCenter="54" verticalCenter="178" name="1">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_hongtao01" source.down="WXHH_Atlas_json.Five_button_hongtao03" source.disabled="WXHH_Atlas_json.Five_button_hongtao04"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_bet2" width="76" label="账号登录" height="76" enabled="true" scaleX="1" scaleY="1" horizontalCenter="145" verticalCenter="178" name="2">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_mh01" source.down="WXHH_Atlas_json.Five_button_mh03" source.disabled="WXHH_Atlas_json.Five_button_mh04"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_bet3" width="76" label="账号登录" height="76" enabled="true" scaleX="1" scaleY="1" horizontalCenter="238" verticalCenter="178" name="3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_fk01" source.down="WXHH_Atlas_json.Five_button_fk03" source.disabled="WXHH_Atlas_json.Five_button_fk04"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_bet4" width="76" label="账号登录" height="76" enabled="true" scaleX="1" scaleY="1" horizontalCenter="329" verticalCenter="178" name="4">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_zs01" source.down="WXHH_Atlas_json.Five_button_zs03" source.disabled="WXHH_Atlas_json.Five_button_zs04"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Go_CountToggle" width="1" height="1" verticalCenter="208.5" horizontalCenter="-452.5" name="0">
+			<e:RadioButton id="Toggle_Count0" label="20000" x="284" y="-100" width="80" height="30" enabled="true" groupName="betCount" selected="false">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_1w_1" source.down="WXHH_Atlas_json.Five_button_1w_3" scale9Grid="6,8,20,17"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" fontFamily="SimHei" textColor="0xffdf3f"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Toggle_Count1" label="500000" x="284" y="-65" width="80" height="30" enabled="true" groupName="betCount" name="1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_1w_1" source.down="WXHH_Atlas_json.Five_button_1w_3" scale9Grid="6,8,20,17"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" fontFamily="SimHei" textColor="0xffdf3f"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Toggle_Count2" label="1000000" x="284" y="-31" width="80" height="30" enabled="true" groupName="betCount" name="2">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.Five_button_1w_1" source.down="WXHH_Atlas_json.Five_button_1w_3" scale9Grid="6,8,20,17"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" fontFamily="SimHei" textColor="0xffdf3f"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+		</e:Group>
+		<e:Group id="Go_WinInfo" width="1" height="1" horizontalCenter="0.5" verticalCenter="-9.5">
+			<e:Label id="Label_WinCount" text="10,000,000,000" size="50" fontFamily="SimHei" anchorOffsetY="0" height="46" scaleX="1" scaleY="1" width="320" textAlign="center" verticalAlign="middle" x="-41.93" y="18.75" anchorOffsetX="0" textColor="0xecff00" bold="true"/>
+		</e:Group>
+		<e:Group id="Go_Time" width="1" height="1" horizontalCenter="-537.5" verticalCenter="-301.5">
+			<e:Image source="WXHH_Atlas_json.Five_time_xzsj" x="166" y="317.01" scaleX="1" scaleY="1"/>
+			<e:Label id="Label_time" text="30" size="32" fontFamily="方正粗圆简体" anchorOffsetY="0" height="46" scaleX="1" scaleY="1" width="66.5" textAlign="center" verticalAlign="middle" x="170.07" y="323.75" anchorOffsetX="0" textColor="0xffcf00"/>
+		</e:Group>
+		<ns1:WXDropDownBOX id="LnningControl" width="90" height="30" x="286" y="126" skinName="WXDropDownBOXUI"/>
+		<ns1:MarqueenUI id="louderspeaker" skinName="Marqueen" x="313" y="61" width="470"/>
+	</e:Group>
+	<e:Group id="NetDelayPanel" width="900" height="600" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image source="WXHH_Atlas_json.UI_xinhao_1" y="205" horizontalCenter="53.5" x="403" scaleX="1" scaleY="1"/>
+		<e:Image source="WXHH_Atlas_json.UI_xinhao_2" y="229" x="415" scaleX="1" scaleY="1" horizontalCenter="53.5"/>
+		<e:Image source="WXHH_Atlas_json.UI_xinhao_3" y="253" x="428" scaleX="1" scaleY="1" horizontalCenter="53.5"/>
+		<e:Image source="WXHH_Atlas_json.UI_xinhao_4" y="274" horizontalCenter="53.5" x="443" scaleX="1" scaleY="1"/>
+		<e:Image source="WXHH_Atlas_json.UI_wifi_wenzi" x="403" y="301" anchorOffsetX="0" width="216" anchorOffsetY="0" height="43.04" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="HelpPanel" width="900" height="600" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image height="284" width="470" source="UI_Title_7" scale9Grid="36,52,18,16" scaleX="1" scaleY="1" horizontalCenter="32.5" verticalCenter="-0.5" x="270" y="180" anchorOffsetY="0" anchorOffsetX="0"/>
+		<e:Button id="Btn_closeHelp" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="241" verticalCenter="-113">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_WinCount9" text="游戏帮助" size="26" fontFamily="方正粗圆简体" anchorOffsetY="0" height="46" scaleX="1" scaleY="1" width="108.5" textAlign="center" verticalAlign="middle" x="431.75" y="165" anchorOffsetX="0" textColor="0xFFCF00" stroke="1" name="titleColor" visible="false"/>
+		<e:Image id="HT" y="295" x="292" source="WXHH_Atlas_json.poker_icon_1"/>
+		<e:Image id="HX" y="295" x="427" source="WXHH_Atlas_json.poker_icon_2"/>
+		<e:Image id="mh" y="334" x="367" source="WXHH_Atlas_json.poker_icon_3"/>
+		<e:Image id="FK" y="334" x="498" source="WXHH_Atlas_json.poker_icon_4"/>
+		<e:Image id="ZS" x="563" y="295" source="WXHH_Atlas_json.poker_icon_5"/>
+		<e:Label id="Label_WinCount10" text="x3.8" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="89.5" textAlign="center" verticalAlign="middle" x="310" y="294" anchorOffsetX="0" textColor="0xFFCF00"/>
+		<e:Label id="Label_WinCount11" text="x4.0" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="62.5" textAlign="center" verticalAlign="middle" x="397" y="334" anchorOffsetX="0" textColor="0xFFCF00"/>
+		<e:Label id="Label_WinCount12" text="x3.8" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="86.5" textAlign="center" verticalAlign="middle" x="448" y="294" anchorOffsetX="0" textColor="0xFFCF00"/>
+		<e:Label id="Label_WinCount13" text="x4.0" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" width="68.5" textAlign="center" verticalAlign="middle" x="529" y="334" anchorOffsetX="0" textColor="0xFFCF00"/>
+		<e:Label id="Label_WinCount14" text="x20.0" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" x="609.75" y="294" anchorOffsetX="0" textColor="0xFFCF00"/>
+		<e:Label id="Label_WinCount15" text="注：当系统开牌出现宝石时，其它区域所使用的点数返还." size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="left" verticalAlign="top" x="280" y="387" anchorOffsetX="0" textColor="0x01ff00"/>
+		<e:Label id="Label_WinCount16" text="五星宏辉是一款扑克花色竞猜游戏，游戏 中每局出现一种花色，一轮48局。 选择“黑桃、红桃、梅花、方块、宝石” 每次开出你选中的、将获得点数。" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="78" scaleX="1" scaleY="1" width="445.5" textAlign="left" verticalAlign="top" x="261" y="215" anchorOffsetX="0" textColor="0xffd1a0"/>
+		<e:Image source="GW_label_tex_json.youxibangzhu" verticalCenter="-113" horizontalCenter="29.5"/>
+	</e:Group>
+	<e:Group id="RanklingPanel" width="900" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="553" anchorOffsetY="0" height="409" scaleX="1" scaleY="1" scale9Grid="43,53,3,8" verticalCenter="21.5" horizontalCenter="99.5"/>
+		<e:Image source="GF_commonButton_json.UI_Title_3" scale9Grid="62,0,3,44" anchorOffsetX="0" width="243" scaleX="1" scaleY="1" horizontalCenter="91.5" verticalCenter="-200"/>
+		<e:Image source="GW_label_tex_json.paihangbang" x="495" y="85"/>
+		<e:Label id="Label_WinCount1" text="排行榜" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="46" scaleX="1" scaleY="1" width="100.5" textAlign="center" verticalAlign="middle" x="490.75" y="78" anchorOffsetX="0" textColor="0xFFCF00" visible="false"/>
+		<e:Group id="Label_RanklistPanel0" width="900" height="600" horizontalCenter="0" verticalCenter="0" x="50" y="50">
+		<e:Image source="WXHH_Atlas_json.UI_ChatTitle_btn_1" anchorOffsetX="0" width="537" scale9Grid="10,4,6,28" horizontalCenter="99.5" verticalCenter="-111" x="281" y="171" scaleX="1" scaleY="1"/>
+		<e:Label text="排名" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="33" scaleX="1" scaleY="1" width="517.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="100" verticalCenter="-110.5" textColor="0x51322b" x="291" y="173"/>
+			<e:Label text="昵称" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-110.5" textColor="0x51322B" x="435" y="183"/>
+			<e:Label text="点数" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-110.5" textColor="0x51322B" x="660" y="193"/>
+		<e:Label id="Label_WinCount3" text="注：昨日单局获得最多的玩家排行" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="35" scaleX="1" scaleY="1" width="466.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="99.5" x="291" y="488" textColor="0xf4a70e"/>
+		<e:Label id="Label_MyRanklistInfo0" text="没有单局赢取最多的玩家排行计信息！" size="21" fontFamily="方正粗圆简体" anchorOffsetY="0" height="33" scaleX="1" scaleY="1" width="517.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="100" verticalCenter="28.5" x="301" y="183" textColor="0xd6d6d6" visible="false"/>
+		<e:Scroller width="527" height="270" horizontalCenter="100.5" verticalCenter="50">
+			<e:List id="Ranklist0" width="100%" height="100%">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		</e:Group>
+		<e:Group id="Label_RanklistPanel1" width="900" height="600" horizontalCenter="0" verticalCenter="0" x="60" y="60">
+		<e:Image source="WXHH_Atlas_json.UI_ChatTitle_btn_1" anchorOffsetX="0" width="537" scale9Grid="10,4,6,28" horizontalCenter="99.5" verticalCenter="-111" x="281" y="171" scaleX="1" scaleY="1"/>
+		<e:Label text="排名" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="33" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-110.5" textColor="0x51322B" y="173" horizontalCenter="-98"/>
+			<e:Label text="昵称" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="left" verticalAlign="middle" anchorOffsetX="0" textColor="0x51322B" verticalCenter="-110" x="557"/>
+		<e:Label id="Label_WinCount5" text="注：昨日累计获得最多的玩家排行，前三名可领取奖励" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="35" scaleX="1" scaleY="1" width="466.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="99.5" x="291" textColor="0xF4A70E" y="488"/>
+		<e:Label id="Label_MyRanklistInfo1" text="没有累计赢得最多的玩家排行信息！" size="21" fontFamily="方正粗圆简体" anchorOffsetY="0" height="33" scaleX="1" scaleY="1" width="517.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="100" verticalCenter="28.5" textColor="0xD6D6D6" x="311" y="193" visible="false"/>
+		<e:Scroller width="527" height="270" horizontalCenter="100.5" verticalCenter="49">
+			<e:List width="100%" height="100%" id="Ranklist1">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		</e:Group>
+		<e:RadioButton id="Toggle_Ranklist0" label="一战成名" width="140" horizontalCenter="-86" verticalCenter="-150" groupName="ranklist" selected="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIToggle_MyBg1" source.down="GF_commonButton_json.UIToggle_MyBg2" scale9Grid="16,19,6,15" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xffdc5e" size="20" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.yizhanchengming" anchorOffsetX="0" width="90" anchorOffsetY="0" height="23" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="Toggle_Ranklist1" label="富甲天下" width="140" horizontalCenter="54" verticalCenter="-150" groupName="ranklist">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIToggle_MyBg1" source.down="GF_commonButton_json.UIToggle_MyBg2" scale9Grid="16,19,6,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0xffdc5e" size="20" fontFamily="SimHei" bold="true" visible="false"/>
+	<e:Image source="GW_label_tex_json.fujiatianxia" width="90" height="23" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:Button id="Btn_Receive" label="领取奖励" scaleX="1" scaleY="1" enabled="true" width="100" horizontalCenter="269" verticalCenter="-151" height="38">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,8,23" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="领取奖励" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.lingqujiangli" horizontalCenter="0" width="78.09" height="19.96" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-2"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_closeRank" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="349" verticalCenter="-153">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	</e:Skin>

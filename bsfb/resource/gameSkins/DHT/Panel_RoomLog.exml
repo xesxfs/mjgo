@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_RoomLog" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_RoomLog" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="610" anchorOffsetY="0" height="413" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-6.5" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" horizontalCenter="282" verticalCenter="-191">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="游戏记录" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" anchorOffsetX="0" verticalCenter="-189" horizontalCenter="0" visible="false"/>
+		<e:Label id="Label_Null" text="暂无游戏记录" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="54" width="327" verticalAlign="middle" textAlign="center" anchorOffsetX="0" y="280" textColor="0xcccccc" horizontalCenter="0.5"/>
+		<e:Group id="win_Item" width="588" height="40" y="50" scaleX="1" scaleY="1" anchorOffsetX="0" horizontalCenter="0" visible="false">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="584" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="-0.5" verticalCenter="1"/>
+			<e:Image id="Image_WLBG" scale9Grid="8,7,1,2" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" source="GW_DHT_Atlas_json.skin2_num_btn_1" x="6" y="3"/>
+			<e:Label id="Label_WL" text="胜" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="38.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="5" y="10"/>
+			<e:Label id="Label_Desc" text="您击败了{0},获得{1}点数" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="274.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="48" y="9" textColor="0xffca00"/>
+			<e:Label id="Label_Time" text="5-25  2017/03/03" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="162.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="414" y="9" textColor="0xff6200"/>
+		</e:Group>
+		<e:Group id="lose_Item" width="588" height="40" y="20" scaleX="1" scaleY="1" anchorOffsetX="0" horizontalCenter="0" x="10" visible="false">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="584" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="-0.5" verticalCenter="1"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" x="6" y="3" source="GW_DHT_Atlas_json.skin2_NUmB_btn_1"/>
+			<e:Label text="负" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="38.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="5" y="10"/>
+			<e:Label id="Label_UserID0" text="您击败了xxx,活的5000点数" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="274.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="48" y="9" textColor="0x89e0ff"/>
+			<e:Label text="5-25  2017/03/03" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="162.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="414" y="9" textColor="0x00b6e8"/>
+		</e:Group>
+		<e:Scroller width="588" height="352" anchorOffsetX="0" horizontalCenter="0" verticalCenter="13" anchorOffsetY="0">
+			<e:List id="LogList" anchorOffsetX="0" width="481" anchorOffsetY="0" height="312">
+				<e:itemRendererSkinName >
+				<e:Skin>
+					<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="584" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="-0.5" verticalCenter="1"/>
+					<e:Image id="Image_WLBG" scale9Grid="8,7,1,2" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" source="GW_DHT_Atlas_json.skin2_num_btn_1" x="6" y="3"/>
+					<e:Label id="Label_WL" text="胜" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="38.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="5" y="10"/>
+					<e:Label id="Label_Desc" text="您击败了{0},获得{1}点数" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="274.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="48" y="9" textColor="0xffca00"/>
+					<e:Label id="Label_Time" text="5-25  2017/03/03" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="162.5" textAlign="left" verticalAlign="middle" anchorOffsetX="0" x="414" y="9" textColor="0xff6200"/>
+				</e:Skin>	
+				</e:itemRendererSkinName>
+            <!--<e:ArrayCollection>
+                <e:Array>
+                    <e:Object label="关卡 1-1 初出茅庐"/>
+                    <e:Object label="关卡 1-2 一战成名"/>
+                    <e:Object label="关卡 1-3 历尽艰辛"/>
+                    <e:Object label="关卡 1-4 百年好合"/>
+                    <e:Object label="关卡 1-5 刻苦锻炼"/>
+                    <e:Object label="关卡 1-6 天下第一"/>
+                    <e:Object label="关卡 1-7 蓦然回首"/>
+                    <e:Object label="关卡 1-8 独孤求败"/>
+                    <e:Object label="关卡 1-9 成宗立派"/>
+                    <e:Object label="关卡 1-10 香火绵延"/>
+                </e:Array>
+            </e:ArrayCollection>-->
+			</e:List>
+		</e:Scroller>
+		<e:Image source="GW_label_tex_json.youxijilu" y="96" width="117" height="30" horizontalCenter="0"/>
+	</e:Group>
+	</e:Skin>

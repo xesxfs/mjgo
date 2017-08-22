@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExitSliderSkin" minWidth="20" minHeight="8" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="310" height="44">
+	<e:Image id="track" height="100%" verticalCenter="0" horizontalCenter="0" fillMode="scale" source="BSFB_Atlas_json.UI_huakuai_bg" width="100%" scale9Grid="130,20,6,4"/>
+	<e:Group id="thumb" width="124" height="41" verticalCenter="-1.5" x="0">
+		<e:Image id="thumbBG" width="123.6" height="40.2" fillMode="scale" source="BSFB_Atlas_json.UIBtn_12" scale9Grid="18,16,8,8" x="3" y="1.8" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label text="确定" scaleX="1" stroke="1" name="titleColor" scaleY="1" textColor="0xffe288" horizontalCenter="0" verticalCenter="1.5" size="24" fontFamily="SimHei" visible="false"/>
+		<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="4" verticalCenter="1.5"/>
+	</e:Group>
+</e:Skin>

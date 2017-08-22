@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_BindingPhone" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="Panel_BindingPhone" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="459" anchorOffsetY="0" height="287" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-31" scale9Grid="42,53,5,11"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="203" verticalCenter="-145">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_Title" text="绑定手机" horizontalCenter="4" size="26" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-146" anchorOffsetX="0" width="128" textAlign="center" y="142" name="titleColor" bold="true" textColor="0xffd47f" visible="false"/>
+		<e:Label id="Label_Tips" text="为了您的账号安全请绑定手机，首次绑手机号码后即可获得18000点数。绑定操作不会扣除您任何费用，请您放心。" x="234" y="184.5" anchorOffsetX="0" width="436" anchorOffsetY="0" height="65" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xffdda0"/>
+		<e:Image width="38" height="38" x="238" y="256" source="GF_commonButton_json.UI_gameID_icon_1" scaleX="1" scaleY="1"/>
+		<e:Button id="Btn_GetCode" label="获取语音验证码" scaleX="1" scaleY="1" enabled="true" width="180" anchorOffsetX="0" anchorOffsetY="0" height="40" verticalCenter="24" horizontalCenter="93">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="5,5,9,23" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="获取验证码" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+	<e:Image source="GW_label_tex_json.huoquyuyinyanzhengma" anchorOffsetX="0" width="147" anchorOffsetY="0" height="21.62" verticalCenter="-1" horizontalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Sure" label="立即绑定" scaleX="1" scaleY="1" enabled="true" width="170" name="OrangeColor" horizontalCenter="0" verticalCenter="77">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1"  scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" name="btutonGrayColor" visible="false"/>
+	<e:Image source="GW_label_tex_json.lijibangding" anchorOffsetX="0" width="90" anchorOffsetY="0" height="23" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="347" height="36" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-24" horizontalCenter="8.5">
+			<e:Image width="100%" height="36" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="0" verticalCenter="0"/>
+			<e:Rect height="100%" width="335" fillColor="0xFFFFFF" anchorOffsetX="0" x="6.5" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Input_PhoneNum" verticalCenter="0" left="6" right="11" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="请输入您的手机号码" textAlign="left" verticalAlign="middle" inputType="tel" maxChars="11" restrict="0-9" fontFamily="SimHei" textColor="0x000000" strokeColor="0x000000" promptColor="0x565656"/>
+			<e:Label id="promptDisplay1" verticalCenter="0.5" left="8" right="9" width="100%" height="29" size="20" touchEnabled="false"  textColor="0x000000" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" verticalAlign="middle" inputType="tel" maxChars="11" anchorOffsetY="0"/>
+		</e:Group>
+		<e:Group width="150" height="36" anchorOffsetX="0" anchorOffsetY="0" x="287" y="304.5">
+			<e:Image width="100%" height="36" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="0" verticalCenter="0"/>
+			<e:Rect height="100%" width="135" fillColor="0xFFFFFF" anchorOffsetX="0" x="8" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Input_SecurityCode" verticalCenter="0.5" left="10" right="6" textColor="0x000000" width="100%" height="26.5" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="验证码" maxChars="6" restrict="0-9" fontFamily="SimHei" anchorOffsetY="0" verticalAlign="middle" promptColor="0x565656"/>
+			<e:Label id="promptDisplay0" verticalCenter="0" left="8" right="19" width="100%" height="28" size="20" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" anchorOffsetY="0" textAlign="center"/>
+		</e:Group>
+		<ns1:DropDownBox id="AreaCode" x="286" y="260" skinName="DropDownBoxUI" width="100" visible="false"/>
+		<e:Image source="GW_label_tex_json.bangdingshouji" y="139" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

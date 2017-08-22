@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Exit" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_Exit" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="386" anchorOffsetY="0" height="452" scaleX="1" scaleY="1" horizontalCenter="-18.5" verticalCenter="0" source="GF_commonButton_json.UI_Title_7" scale9Grid="43,56,3,6"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="148" verticalCenter="-197">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="退出游戏" size="24" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" x="377" y="88" name="titleColor" stroke="1" visible="false"/>
+		<e:Label text="我的点数" size="20" fontFamily="SimHei" anchorOffsetY="0" height="30" width="116" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xFFC149" x="383" y="133" name="WhiteYellowColor" stroke="1"/>
+		<e:Image width="243" height="33" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" anchorOffsetY="0" anchorOffsetX="0" x="319" y="168" source="GF_commonButton_json.UI_Input_Bg2"/>
+		<e:BitmapLabel id="Label_TotalScore" font="green_fnt" text="999999999" scaleX="0.3" scaleY="0.3" y="174" horizontalCenter="-9.5"/>
+		<e:Image width="243" height="33" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" anchorOffsetY="0" anchorOffsetX="0" x="319" y="247" source="GF_commonButton_json.UI_Input_Bg2"/>
+		<e:BitmapLabel id="Label_TodayScore" font="green_fnt" text="999999999" scaleX="0.3" scaleY="0.3" y="254" horizontalCenter="-9.5"/>
+		<e:Label text="本场点数" size="20" fontFamily="SimHei" textColor="0xFFC149" anchorOffsetY="0" height="30" width="121" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="380" y="212" stroke="1" name="WhiteYellowColor"/>
+		<e:Label id="tips" text="选择“保留点数退出”后您将离开本游戏，请您在保留期间（30天）内继续本游戏，若您保留期限结束前未继续游戏，将视为您自愿退出本游戏。 选择“放弃点数退出”将视为您自愿放弃游戏当前状态及本场点数。" size="18" fontFamily="SimHei" textColor="0xFFC149" anchorOffsetY="0" height="138" width="334" verticalAlign="top" textAlign="left" anchorOffsetX="0" horizontalCenter="-19" verticalCenter="126"/>
+		<e:Button id="Btn_KeepExit" label="" scaleX="1" scaleY="1" enabled="true" width="180" anchorOffsetX="0" horizontalCenter="-111" verticalCenter="17">
+			<e:skinName>
+			<e:Skin states="up">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.baoliudianshutuichu" width="120" height="23" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_GiveUpExit" label="" scaleX="1" scaleY="1" enabled="true" width="180" anchorOffsetX="0" horizontalCenter="77" verticalCenter="18" x="10" y="10">
+			<e:skinName>
+			<e:Skin states="up">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" scale9Grid="42,0,13,44"/>
+				<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.fangqidianshutuichu" anchorOffsetX="0" width="112" anchorOffsetY="0" height="20" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.tuichuyouxi" horizontalCenter="-11" verticalCenter="-198"/>
+	</e:Group>
+	</e:Skin>

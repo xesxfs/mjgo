@@ -1,0 +1,87 @@
+﻿{
+	"ButtonNum": [
+        {
+			"type": 0,
+			"showBtnNum": 1,
+			"showBtn0": 0
+        },
+        {
+			"type": 1,
+			"showBtnNum": 2,
+			"showBtn0": 1,
+			"showBtn1": 2
+        },
+        {
+			"type": 2,
+			"showBtnNum": 3,
+			"showBtn0": 0,
+			"showBtn1": 1,
+			"showBtn2": 2
+        }
+    ],
+    "ButtonSetting": [
+        {
+			"type": 0,
+			"BtnAction": "OnBtn_AccountLoginClick",
+            "BtnName": "账号登录",
+            "BtnName2": "賬號登錄",
+            "BtnIcom": "IDicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "zhanghaodenglu"
+        },
+        {
+			"type": 1,
+			"BtnAction": "OnBtn_3002LoginClick",
+            "BtnName": "微信登录",
+            "BtnName2": "微信登錄",
+            "BtnIcom": "WeChaticon",
+			"BtnColor": "UIBtn_9",
+            "txtPic": "weixindenglu"
+        },
+        {
+			"type": 2,
+			"BtnAction": "OnBtn_3003LoginClick",
+            "BtnName": "QQ登录",
+            "BtnName2": "QQ登錄",
+            "BtnIcom": "QQicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "QQdenglu"
+        },
+        {
+			"type": 3,
+			"BtnAction": "OnBtn_AnonymousLoginClick",
+            "BtnName": "游客登录",
+            "BtnName2": "遊客登錄",
+            "BtnIcom": "IDicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "youkedenglu"
+        },
+		{
+			"type": 4,
+			"BtnAction": "OnBtn_3001LoginClick",
+            "BtnName": "点击登录",
+ 	        "BtnName2": "點擊登錄",
+            "BtnIcom": "IDicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "UIBtn_10"
+        },
+		{
+			"type": 5,
+			"BtnAction": "OnBtn_3001LoginClick",
+            "BtnName": "360登录",
+            "BtnName2": "360登錄",
+            "BtnIcom": "IDicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "UIBtn_10"
+        },
+		{
+			"type": 6,
+			"BtnAction": "OnBtn_PhoneLoginClick",
+            "BtnName": "手机登录",
+ 	        "BtnName2": "手機登錄",
+            "BtnIcom": "IDicon",
+			"BtnColor": "UIBtn_10",
+            "txtPic": "zhanghaodenglu"
+        }
+    ]
+}

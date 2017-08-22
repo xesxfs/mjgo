@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_IDAuthenticat" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_IDAuthenticat" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="476" anchorOffsetY="0" height="324" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-30" scale9Grid="44,53,2,8"/>
+		<e:Label id="Label_Title13" text="身份认证" size="25" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" stroke="1" name="titleColor" horizontalCenter="0" verticalCenter="-164.5" textColor="0xffd47f" visible="false"/>
+		<e:Label id="label_depositPoint31" text="真实姓名：" x="205" y="218" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint29" text="身份证号：" x="205" y="175.1" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint30" text="※使用本人有效身份证认证。" x="255" y="259.59" anchorOffsetX="0" width="332" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint0" text="※只能认证一次，不能随意修改，请慎重填写。" x="255" y="281.59" anchorOffsetX="0" width="425" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint4" text="※未满18周岁的用户，将受到防沉迷限制。" x="255" y="304.59" anchorOffsetX="0" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint2" text="※身份信息仅作认证，不会公开。" x="255" y="326.59" anchorOffsetX="0" width="425" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint3" text="※身份认证同时有助于客服处找回账号。" x="255" y="348.59" anchorOffsetX="0" width="425" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffcc7a"/>
+		<e:Group width="282" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="55" verticalCenter="-73">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Label_name" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" maxChars="12"/>
+			<e:Label id="promptDisplay1" verticalCenter="1" left="114" right="-3" width="100%" height="24" size="20" touchEnabled="false"   textColor="0x000000" anchorOffsetX="0" text="请点击" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" visible="false"/>
+		</e:Group>
+		<e:Group width="282" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="55" verticalCenter="-113">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Label_number" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" maxChars="18" restrict="0-9xX"/>
+			<e:Label id="promptDisplay2" verticalCenter="1" left="114" right="-3" width="100%" height="24" size="20" touchEnabled="false"   textColor="0x000000" anchorOffsetX="0" text="请点击" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" visible="false"/>
+		</e:Group>
+		<e:Button id="Btn_Sure" label="提 交" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="0" y="376">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" scale9Grid="31,19,36,10"/>
+				<e:Label id="labelDisplay" horizontalCenter="-3" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" stroke="1" name="titleColor" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.tijiao" horizontalCenter="0" verticalCenter="0" width="55" height="26"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" verticalCenter="-163" horizontalCenter="211">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.shenfenrenzheng" horizontalCenter="0" y="122"/>
+	</e:Group>
+</e:Skin>

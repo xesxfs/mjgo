@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ScoreItemSkin" width="158" height="118" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Go_groupBallance" width="158" height="118" x="0" y="0" anchorOffsetY="0">
+			<e:Image id="Sprite_jewel" source="BSFB_Atlas_json.1" x="0" y="41" width="48" height="48"/>
+			<e:Image source="BSFB_Atlas_json.Sprite_hd" x="48" y="49" width="106" height="30"/>
+		<e:BitmapLabel id="Label_groupAmount" x="66" y="55" font="red_fnt" scaleX="0.3" scaleY="0.3" text="123" width="150" textAlign="center"/>
+		<e:BitmapLabel id="Label_groupScore" y="87" font="red_fnt" scaleX="0.4" scaleY="0.4" text="9999999" textAlign="center" horizontalCenter="7"/>
+		</e:Group>
+</e:Skin>

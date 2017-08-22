@@ -1,0 +1,538 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,1_Login_png,GFLogo_json,2_hall_bg_PNG,LoginBut_json,GW_HallAtlas_json,GF_commonButton_json,LocalisedString_json,3_BSFB4_png,5_WXHH_png,BSFB_Atlas_json,3_BSFB_vedio_png,3_BSFB_vedio_Center_png,WXHH_Atlas_json,4_LZTB_PNG,6_DHS_png,4_LZTB1_png,search_bg_png,GW_DHT_Atlas_json,circle_png,payicon_json,BtnPayType_json,green_fnt,pupple_fnt,line5_fnt,line4_fnt,line3_fnt,line2_fnt,red_fnt,red2_fnt,yellow_fnt,yellow2_fnt,BsfbLhdb2_png,ewm_jpg,pupple_png,GW_label_tex_json,hall_bg_spring_png,UI_waitting_png,jingqingqidai_png,loading_watting_png,loading_watting2_png,3_BSFB4_1_png,BtnLoginType_json",
+			"name": "preload"
+		},
+		{
+			"keys": "2_hall_bg_PNG",
+			"name": "hall"
+		},
+		{
+			"keys": "diamondclip5_png,diamondclip5_json,diamondclip4_png,diamondclip4_json,diamondclip3_png,diamondclip3_json,diamondclip2_png,diamondclip2_json,diamondclip1_png,diamondclip1_json,brick_png,brick_json",
+			"name": "DiamondClip"
+		},
+		{
+			"keys": "bsfbClip_json,bsfbClip_png",
+			"name": "bsfbclip"
+		},
+		{
+			"keys": "WXHH2_png,WXHH2_json,WXHH1_png,WXHH1_json",
+			"name": "wxhhclip"
+		},
+		{
+			"keys": "BS_Project_tex_png,BS_Project_tex_json,BS_Project_ske_json",
+			"name": "skeleton"
+		},
+		{
+			"keys": "zhongjiang_json,zhongjiang_png",
+			"name": "particle"
+		},
+		{
+			"keys": "fireball_png,fireball_json",
+			"name": "fireball"
+		},
+		{
+			"keys": "flash_light_tex_png,flash_light_tex_json,flash_light_ske_json",
+			"name": "holeAni"
+		},
+		{
+			"keys": "GemSpreadOutEffect_mp3,lztbBGM_mp3,NewBGM_mp3,OpenEffect_mp3,WinEffect_mp3,BombeEffect_mp3,downEffect_mp3,DragonBallToEffect_mp3,Bet_mp3,Help_mp3,button_mp3,choose_mp3",
+			"name": "sound"
+		},
+		{
+			"keys": "BsfbLhdb_png",
+			"name": "load"
+		},
+		{
+			"keys": "flower_json,flower_png",
+			"name": "flower"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/Scenes/1_Login.png",
+			"type": "image",
+			"name": "1_Login_png"
+		},
+		{
+			"url": "assets/Atlas/GFLogo.json",
+			"type": "sheet",
+			"name": "GFLogo_json",
+			"subkeys": "BSFB_BEIAN,BSFB_BEIAN2,BSFB_LHDB,BSFB_LHDB2"
+		},
+		{
+			"url": "assets/Atlas/GW_HallAtlas.json",
+			"type": "sheet",
+			"name": "GW_HallAtlas_json",
+			"subkeys": "Btn_Exit,Button,Hall_Btn_Binding,Hall_Btn_Dice,Hall_Btn_JDSTB,Hall_Btn_LHDB,Hall_Btn_WXHH,Hall_Level_Bg,Hall_Level_Foreground,Hall_Sprite_Tips,Hall__Bg,Hall_btn_1,Hall_btn_10_10,Hall_btn_11,Hall_btn_2,Hall_btn_3,Hall_btn_4,Hall_btn_5,Hall_btn_6,Hall_btn_7,Hall_btn_8,Hall_btn_9,ID_dikuang,Input_BG,UI_Email_btn,UI_Foreground_bg,UI_NoticeItem_bg,UI_NoticeItem_bg2,UI_Title_6,UI_VIP_icon,UI_hall_MoveGame_btn,UI_hall_Panel_bg,UI_hall_line2,UI_hall_lv_bg,UI_hall_lv_bg2,UI_hall_lv_bg3,UI_kefu_btn,UI_login_BSFB,UI_login_LHDB,changeNickname,coin_icon_1,diamon_icon,noble_1"
+		},
+		{
+			"url": "assets/Atlas/LoginBut.json",
+			"type": "sheet",
+			"name": "LoginBut_json",
+			"subkeys": "IDicon,QQicon,UIBtn_10,UIBtn_9,WeChaticon"
+		},
+		{
+			"url": "assets/Scenes/2_hall_bg.PNG",
+			"type": "image",
+			"name": "2_hall_bg_PNG"
+		},
+		{
+			"url": "assets/Scenes/BSFB_LHDB.png",
+			"type": "image",
+			"name": "BSFB_LHDB_png"
+		},
+		{
+			"url": "assets/Scenes/BSFB_LHDB2.png",
+			"type": "image",
+			"name": "BSFB_LHDB2_png"
+		},
+		{
+			"url": "assets/Atlas/GF_commonButton.json",
+			"type": "sheet",
+			"name": "GF_commonButton_json",
+			"subkeys": "Btn_Thumb,Coin00,Coin01,Coin02,Coin03,Coin04,Coin05,Coin06,Coin07,DialogBoxbg_2,Hall_Sprite_Tips,IDicon,Input_BG,Input_BG2,Input_BG3,Input_BG4,Input_BG5,LoudSpeaker,LuckCard,Props_1btn_1,Props_1btn_2,Props_VIP01,Props_VIP02,Props_VIP03,Props_btn_1,Props_btn_2,Return_btn,SetPointBtn_1,SetPointBtn_1_1,Sprite_NewBie,Sprite_Slider,Task_qiandaokuan01,Task_qiandaokuan02,Task_qiandaokuan03,UIBtn_01,UIBtn_02,UIBtn_1,UIBtn_10,UIBtn_1_1,UIBtn_1_2,UIBtn_1_3,UIBtn_2_1,UIBtn_2_2,UIBtn_2_3,UIBtn_3,UIBtn_9,UIBtn_Add,UIBtn_Close_1,UIBtn_Close_2,UIBtn_Close_3,UIBtn_Minus,UIToggle,UIToggle_Bg1,UIToggle_MyBg1,UIToggle_MyBg2,UI_CJXZ,UI_ChatPanel_bg,UI_ChatPanel_btn,UI_Chat_btn_1,UI_Chat_btn_2,UI_Culb_btn_1,UI_Culb_btn_2,UI_GH_btn_1,UI_GH_btn_2,UI_Input_Bg,UI_Input_Bg2,UI_JD_bg,UI_JD_bg2,UI_Mail_icon_1,UI_Mail_icon_2,UI_Mail_icon_3,UI_Mail_icon_4,UI_PanelBg_4,UI_Search_btn_1,UI_SliderBg,UI_Title_2,UI_Title_3,UI_Title_6,UI_Title_7,UI_btn_bg,UI_chat_btn,UI_chat_menu_btn_1,UI_chat_menu_btn_2,UI_close_btn,UI_delete_Num,UI_fangxiang,UI_fillet_tex,UI_gameID_icon_1,UI_gameID_icon_2,UI_gameID_icon_3,UI_gameID_icon_4,UI_gameLock_icon,UI_hall_line,UI_help_btn,UI_line_1,UI_line_2,UI_line_bg,UI_panel_bg,UI_phone_icon,UI_point_bg,UI_point_bg1,UI_point_bg2,UI_point_tex,UI_present_1,UI_present_2,UI_qipao_bg,UI_read_icon,UI_return_btn,UI_share_icon_1,UI_share_icon_2,UI_share_icon_3,UI_skin4_title,UI_small_btn_1_1,UI_small_btn_1_2,UI_sound_btn,UI_star_icon,UI_title_bg,UI_title_moveGame_bg,UI_toggle_1,UI_toggle_2,UI_wine_bg,UI_wine_loading,VS,b_01,b_02,bg_test_1,coin_icon_1,diamon_icon_1,dices_icon,fanti,game_button_jia01,game_button_jian01,global_toggle_1,global_toggle_2,global_toggle_39,guanyuwomen,jd_01,jd_02,jianti,kuang_3,kuang_bg,letter_weidu,letter_yidu,qipao_mishu,skin2_btn_close,slider_bg,st_01,st_02,stjdb_blchenggong,stzdb_wxz,stzdb_xz,ui_alpha_bg,ui_gonghui_1,ui_gonghui_2,ui_gonghui_4,ui_gonghui_5,ui_sanjiao_btn,xyx0_20,xyx_13,xyxcg_13,xyxcg_33,xyxcg_33_2,xyxtzsb-04,xyxtzsb-04_2,xyxwin_15,xyxwrtz_09,xyxzp_41,yinxiao,yinyue,zhuxiao"
+		},
+		{
+			"url": "config/LocalisedString.json",
+			"type": "json",
+			"name": "LocalisedString_json"
+		},
+		{
+			"url": "assets/Scenes/3_BSFB4.png",
+			"type": "image",
+			"name": "3_BSFB4_png"
+		},
+		{
+			"url": "assets/Scenes/5_WXHH.png",
+			"type": "image",
+			"name": "5_WXHH_png"
+		},
+		{
+			"url": "assets/Atlas/BSFB_Atlas.json",
+			"type": "sheet",
+			"name": "BSFB_Atlas_json",
+			"subkeys": "1,10,11,12,13,14,15,2,3,4,5,6,7,8,9,Btn_Thumb,Coin01,Game_CJXZ_btn_1,Game_CJXZ_btn_2,Game_Level1,Game_Level2,Game_Level3,Hall_Sprite_Tips,LoudSpeaker01,M_UIBtn_Back,Ranklist_button_cai01,Ranklist_button_cai02,Ranklist_button_zan01,Ranklist_button_zan02,Sprite_Congratulate,Sprite_Level1,Sprite_Level2,Sprite_Level3,Sprite_Line01,Sprite_Line02,Sprite_LoudSpeaker,Sprite_NewBie,Sprite_Newbie_Arrow,Sprite_Newbie_TipsBg,Sprite_Slider,Sprite_Slot,Sprite_VedioTitle,Sprite_Wall,Sprite_Wall01,Sprite_Wall02,Sprite_Wall_2,Sprite_hd,Sprite_lztb,Sprite_zdtz,Sptite_Newbie_Hand,UIBtn_12,UIBtn_13,UIBtn_Add,UIBtn_Back,UIBtn_Bet1,UIBtn_Bet2,UIBtn_Blue,UIBtn_Cancel,UIBtn_DelVedio,UIBtn_Help,UIBtn_Lucky,UIBtn_Minus,UIBtn_PlayVedio,UIBtn_Ranklist,UIBtn_Setting,UIBtn_Shop,UIBtn_Speak,UIBtn_Trusteeship1,UIBtn_Trusteeship2,UIBtn_UpLoading,UI_CJXZ_2,UI_LogoBg_1,UI_LogoBg_2,UI_PH_btn_1,UI_PH_btn_2,UI_SliderBg,UI_VIP_icon,UI_bg2,UI_huakuai_bg,UI_logo,UI_logo2,UIbtn_vedio,longzhu"
+		},
+		{
+			"url": "assets/Scenes/3_BSFB_vedio.png",
+			"type": "image",
+			"name": "3_BSFB_vedio_png"
+		},
+		{
+			"url": "assets/Scenes/3_BSFB_vedio_Center.png",
+			"type": "image",
+			"name": "3_BSFB_vedio_Center_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip1.png",
+			"type": "image",
+			"name": "diamondclip1_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip2.png",
+			"type": "image",
+			"name": "diamondclip2_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip3.png",
+			"type": "image",
+			"name": "diamondclip3_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip4.png",
+			"type": "image",
+			"name": "diamondclip4_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip5.png",
+			"type": "image",
+			"name": "diamondclip5_png"
+		},
+		{
+			"url": "MovieCLips/diamondclip1.json",
+			"type": "json",
+			"name": "diamondclip1_json"
+		},
+		{
+			"url": "MovieCLips/diamondclip2.json",
+			"type": "json",
+			"name": "diamondclip2_json"
+		},
+		{
+			"url": "MovieCLips/diamondclip4.json",
+			"type": "json",
+			"name": "diamondclip4_json"
+		},
+		{
+			"url": "MovieCLips/diamondclip5.json",
+			"type": "json",
+			"name": "diamondclip5_json"
+		},
+		{
+			"url": "MovieCLips/diamondclip3.json",
+			"type": "json",
+			"name": "diamondclip3_json"
+		},
+		{
+			"url": "assets/Atlas/WXHH_Atlas.json",
+			"type": "sheet",
+			"name": "WXHH_Atlas_json",
+			"subkeys": "Five_Button_Bg1,Five_Button_Bg2,Five_button_1w_1,Five_button_1w_3,Five_button_1w_4,Five_button_back00,Five_button_fk01,Five_button_fk03,Five_button_fk04,Five_button_hongtao01,Five_button_hongtao03,Five_button_hongtao04,Five_button_ht01,Five_button_ht03,Five_button_ht04,Five_button_mh01,Five_button_mh03,Five_button_mh04,Five_button_zs01,Five_button_zs03,Five_button_zs04,Five_girl0,Five_girl1,Five_girl2,Five_girl3,Five_girl4,Five_girl5,Five_light_small,Five_poker_0,Five_poker_1,Five_poker_2,Five_poker_3,Five_poker_4,Five_poker_5,Five_poker_bg3,Five_time_jssj,Five_time_xzsj,Five_youwin,UI_CJXZ,UI_ChatTitle_btn_1,UI_ChatTitle_btn_2,UI_PaiHang_btn,UI_buyit_btn,UI_line_1,UI_line_2,UI_skin4_btn_3,UI_wifi_wenzi,game_button_help00,jz_1,jz_2,jz_3,poker_icon_1,poker_icon_2,poker_icon_3,poker_icon_4,poker_icon_5"
+		},
+		{
+			"url": "MovieCLips/brick.png",
+			"type": "image",
+			"name": "brick_png"
+		},
+		{
+			"url": "MovieCLips/brick.json",
+			"type": "json",
+			"name": "brick_json"
+		},
+		{
+			"url": "assets/Scenes/4_LZTB.PNG",
+			"type": "bin",
+			"name": "4_LZTB_PNG"
+		},
+		{
+			"url": "assets/Scenes/6_DHS.png",
+			"type": "image",
+			"name": "6_DHS_png"
+		},
+		{
+			"url": "assets/Scenes/4_LZTB1.png",
+			"type": "image",
+			"name": "4_LZTB1_png"
+		},
+		{
+			"url": "assets/Scenes/search_bg.png",
+			"type": "image",
+			"name": "search_bg_png"
+		},
+		{
+			"url": "assets/Atlas/GW_DHT_Atlas.json",
+			"type": "sheet",
+			"name": "GW_DHT_Atlas_json",
+			"subkeys": "DialogBoxbg_1,DialogBoxbg_2,DiceNum_1,DiceNum_2,DiceNum_3,DiceNum_4,DiceNum_5,DiceNum_6,DicesGame_btn_1,DicesGame_btn_2,DicesGame_btn_3,Dices_help_btn,UI_8x8_bg,UI_Eye_btn_off,UI_Eye_on,UI_Search_btn_1,UI_delete_Num,UI_help_btn,UI_refresh_btn,UI_skin3_panel_bg,UI_skin4_panel_1,UI_skin4_panel_2,UI_title_bg,UI_title_bg2,UI_title_btn,bg_test_1,bg_test_2,dices_tex_1,dices_tex_2,dices_tex_3,dices_tex_4,dices_tex_5,dices_tex_6,fangzhu_1,fangzhu_2,game_star_1,game_star_2,lost_bg,number_tex_1,number_tex_2,number_tex_3,number_tex_go,shuaixn,skin2_NUmB_btn_1,skin2_btn_1,skin2_btn_2,skin2_num_btn_1,skin2_panel_1,skin_3_boli,stjdb_rock,timeing_bg,tiume_bg,youwin"
+		},
+		{
+			"url": "assets/Scenes/circle.png",
+			"type": "image",
+			"name": "circle_png"
+		},
+		{
+			"url": "MovieCLips/WXHH1.png",
+			"type": "image",
+			"name": "WXHH1_png"
+		},
+		{
+			"url": "MovieCLips/WXHH2.png",
+			"type": "image",
+			"name": "WXHH2_png"
+		},
+		{
+			"url": "MovieCLips/bsfbClip.png",
+			"type": "image",
+			"name": "bsfbClip_png"
+		},
+		{
+			"url": "MovieCLips/WXHH2.json",
+			"type": "json",
+			"name": "WXHH2_json"
+		},
+		{
+			"url": "MovieCLips/bsfbClip.json",
+			"type": "json",
+			"name": "bsfbClip_json"
+		},
+		{
+			"url": "MovieCLips/WXHH1.json",
+			"type": "json",
+			"name": "WXHH1_json"
+		},
+		{
+			"url": "skeleton/BS_Project_tex.png",
+			"type": "image",
+			"name": "BS_Project_tex_png"
+		},
+		{
+			"url": "skeleton/BS_Project_ske.json",
+			"type": "json",
+			"name": "BS_Project_ske_json"
+		},
+		{
+			"url": "skeleton/BS_Project_tex.json",
+			"type": "json",
+			"name": "BS_Project_tex_json"
+		},
+		{
+			"url": "particle/zhongjiang.png",
+			"type": "image",
+			"name": "zhongjiang_png"
+		},
+		{
+			"url": "particle/zhongjiang.json",
+			"type": "json",
+			"name": "zhongjiang_json"
+		},
+		{
+			"url": "particle/fireball.png",
+			"type": "image",
+			"name": "fireball_png"
+		},
+		{
+			"url": "particle/fireball.json",
+			"type": "json",
+			"name": "fireball_json"
+		},
+		{
+			"url": "skeleton/flash_light_tex.png",
+			"type": "image",
+			"name": "flash_light_tex_png"
+		},
+		{
+			"url": "skeleton/flash_light_ske.json",
+			"type": "json",
+			"name": "flash_light_ske_json"
+		},
+		{
+			"url": "skeleton/flash_light_tex.json",
+			"type": "json",
+			"name": "flash_light_tex_json"
+		},
+		{
+			"url": "assets/Atlas/payicon.json",
+			"type": "sheet",
+			"name": "payicon_json",
+			"subkeys": "AliPay_icon,InAppPay_icon,WeChat_icon"
+		},
+		{
+			"url": "config/BtnPayType.json",
+			"type": "json",
+			"name": "BtnPayType_json"
+		},
+		{
+			"url": "font/green.fnt",
+			"type": "font",
+			"name": "green_fnt"
+		},
+		{
+			"url": "font/line2.fnt",
+			"type": "font",
+			"name": "line2_fnt"
+		},
+		{
+			"url": "font/line3.fnt",
+			"type": "font",
+			"name": "line3_fnt"
+		},
+		{
+			"url": "font/line4.fnt",
+			"type": "font",
+			"name": "line4_fnt"
+		},
+		{
+			"url": "font/line5.fnt",
+			"type": "font",
+			"name": "line5_fnt"
+		},
+		{
+			"url": "font/pupple.fnt",
+			"type": "font",
+			"name": "pupple_fnt"
+		},
+		{
+			"url": "font/red.fnt",
+			"type": "font",
+			"name": "red_fnt"
+		},
+		{
+			"url": "font/red.fnt",
+			"type": "font",
+			"name": "red2_fnt"
+		},
+		{
+			"url": "font/yellow.fnt",
+			"type": "font",
+			"name": "yellow_fnt"
+		},
+		{
+			"url": "font/yellow.fnt",
+			"type": "font",
+			"name": "yellow2_fnt"
+		},
+		{
+			"url": "load/BsfbLhdb.png",
+			"type": "image",
+			"name": "BsfbLhdb_png"
+		},
+		{
+			"url": "load/BsfbLhdb.png",
+			"type": "image",
+			"name": "BsfbLhdb2_png"
+		},
+		{
+			"url": "sound/GemSpreadOutEffect.mp3",
+			"type": "sound",
+			"name": "GemSpreadOutEffect_mp3"
+		},
+		{
+			"url": "sound/lztbBGM.mp3",
+			"type": "sound",
+			"name": "lztbBGM_mp3"
+		},
+		{
+			"url": "sound/NewBGM.mp3",
+			"type": "sound",
+			"name": "NewBGM_mp3"
+		},
+		{
+			"url": "sound/OpenEffect.mp3",
+			"type": "sound",
+			"name": "OpenEffect_mp3"
+		},
+		{
+			"url": "sound/WinEffect.mp3",
+			"type": "sound",
+			"name": "WinEffect_mp3"
+		},
+		{
+			"url": "sound/BombeEffect.mp3",
+			"type": "sound",
+			"name": "BombeEffect_mp3"
+		},
+		{
+			"url": "sound/downEffect.mp3",
+			"type": "sound",
+			"name": "downEffect_mp3"
+		},
+		{
+			"url": "sound/DragonBallToEffect.mp3",
+			"type": "sound",
+			"name": "DragonBallToEffect_mp3"
+		},
+		{
+			"url": "sound/Bet.mp3",
+			"type": "sound",
+			"name": "Bet_mp3"
+		},
+		{
+			"url": "sound/Help.mp3",
+			"type": "sound",
+			"name": "Help_mp3"
+		},
+		{
+			"url": "sound/button.mp3",
+			"type": "sound",
+			"name": "button_mp3"
+		},
+		{
+			"url": "sound/choose.mp3",
+			"type": "sound",
+			"name": "choose_mp3"
+		},
+		{
+			"url": "assets/Scenes/hall_bg_spring.png",
+			"type": "image",
+			"name": "hall_bg_spring_png"
+		},
+		{
+			"url": "assets/Scenes/ewm.jpg",
+			"type": "image",
+			"name": "ewm_jpg"
+		},
+		{
+			"url": "font/green.png",
+			"type": "image",
+			"name": "green_png"
+		},
+		{
+			"url": "font/line2.png",
+			"type": "image",
+			"name": "line2_png"
+		},
+		{
+			"url": "font/line3.png",
+			"type": "image",
+			"name": "line3_png"
+		},
+		{
+			"url": "font/line4.png",
+			"type": "image",
+			"name": "line4_png"
+		},
+		{
+			"url": "font/line5.png",
+			"type": "image",
+			"name": "line5_png"
+		},
+		{
+			"url": "font/pupple.png",
+			"type": "image",
+			"name": "pupple_png"
+		},
+		{
+			"url": "font/red.png",
+			"type": "image",
+			"name": "red_png"
+		},
+		{
+			"url": "font/yellow.png",
+			"type": "image",
+			"name": "yellow_png"
+		},
+		{
+			"url": "assets/Atlas/GW_label_tex.json",
+			"type": "sheet",
+			"name": "GW_label_tex_json",
+			"subkeys": "360denglu,QQdenglu,QQhaoyou,anquanzhongxin,bangdingshouji,bangdingshoujiyanzheng,baocun,baocunshezhi,baoliudianshutuichu,baoshimingxing,benyuezunguichenghao,chakanwodeleitai,chengweiguizu,chengyuan,chengyuan2,chongzhi,chongzhidianshu,chuanjian,chuanjianfangjian,chuanjiangonghui,cunru,dahuashaiyouxishuoming,dalaba,daojushangcheng,daojushangcheng (2),denglu,dianjidenglu,dianshubuzu,dianshushangcheng,dianshushuoming,fangjianshezhi,fangqidianshutuichu,fanhuidating,fasong,fenxiangshipin,fujiatianxia,fuzhi,fuzhixiazaidizhi,genghuanshouji,gerenxinxi,gonggao,gonghui,gonghui2,gonghuijiujijin,gonghuipindaoyaoqing,gonghuirenwu,gonghuishengji,gonghuishuoming,goumai,goumaihuiyuan,goumaihuiyuan (2),guanbibaohu,guanyuwomen,guizuer,guizusan,guizuyi,huanyipi,huiyuan,huiyuanqiandao,huiyuanxinxi,huoquyanzhengma,huoquyuyinyanzhengma,jiaru,jiechubangding,jiesuan,jilu,jingqingqidai,jinlingyici,jinru,jinruyouxi,jiujijin,jiujijinlingqucishushezhi,jiujijinshuoming,jixuyouxi ,juanru,jujue,kaiqibaohu,kaishai,kaishitanbao,laba,leijijiang,leijijiangshuoming,lianxudenglujiangli,lijibangding,lijirenzheng,lingqu,lingqucishushezhi,lingqujiangli,lingqujiujijinjilu,lingququanbu,lishijilu,meijudianshushezhi,mianfeifenxiang,mianfeilingqudianshu,mimabaohu,mimaguanli,moshishuoming,paihangbang,pengyouquan,qianwang,qianwangchongzhi,qianwangguanli,qianwanglingqu,qingchugonghui,qingkong,qingshurufangjianmima,qingxuanzezhifufangshi,quanbu,quchu,queding,quedingbailei,quedingfenxiang,quedinggenghuan,quedingquchu,querenjuanru,quxiao,quxiaozhunbei,ruhuishenhe,ruhuishenhe2,shanchu,shangyiye,shenfenqueren,shenfenrenzheng,shengji,shezhi,shijie,shipinjijin,shoucijiaoshai,shoujidenglu,shouqu,shouye,shuaxinliebiao,shurudianshu,sousuo,sousuogonghui,tiaoguo,tiaozhan,tichuduishou,tijiao,tishi,tuichu,tuichugonghui,tuichuyouxi,tuijian1,tuijian2,tuoguan,weixindenglu,weixinhaoyou,weiye,wodedaoju,wodedaoju (2),wodejiliu,wodeleitai,wodeshipin,wodeyinhang,woyaobailei,woyaotiaozhan,wuxinghonghui,xiayiye,xingyunjiang,xiugai,xiugaikouling,xiugaimima,xiugainicheng,xuanzeyaoqingmubiao,xuyaoleitaimima,yanzheng,yaoqinghaoyou,yaoqinghaoyousaoerweima,yaoqingjiaru,yimanren,yinhang,yinhang2,yinsizhengce,yirenzheng,yizhanchengming,youjian,youjianxiaomishu,youkedenglu,youqingtishi,youxibangzhu,youxibaohu,youxidianshu,youxijieshao,youxijilu,youxishezhi,zhanghaodenglu,zhaohuikouling,zhaohuimima,zhifubao,zhiweishezhi,zhuce,zhunbei,zhuxiaozhanghao,zuanshishangcheng"
+		},
+		{
+			"url": "assets/Scenes/UI_waitting.png",
+			"type": "image",
+			"name": "UI_waitting_png"
+		},
+		{
+			"url": "assets/Scenes/jingqingqidai.png",
+			"type": "image",
+			"name": "jingqingqidai_png"
+		},
+		{
+			"url": "assets/Scenes/loading_watting.png",
+			"type": "image",
+			"name": "loading_watting_png"
+		},
+		{
+			"url": "assets/Scenes/loading_watting.png",
+			"type": "image",
+			"name": "loading_watting2_png"
+		},
+		{
+			"url": "particle/flower.png",
+			"type": "image",
+			"name": "flower_png"
+		},
+		{
+			"url": "particle/flower.json",
+			"type": "json",
+			"name": "flower_json"
+		},
+		{
+			"url": "assets/Scenes/3_BSFB4_1.png",
+			"type": "image",
+			"name": "3_BSFB4_1_png"
+		},
+		{
+			"url": "config/BtnLoginType.json",
+			"type": "json",
+			"name": "BtnLoginType_json"
+		}
+	]
+}

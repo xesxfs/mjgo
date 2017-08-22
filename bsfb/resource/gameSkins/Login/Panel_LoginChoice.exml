@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LoginChoicePanelskin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Image id="BG" y="0" height="100%" source="1_Login_png" width="100%" x="0" fillMode="scale"/>
+	<e:Image source="BSFB_Atlas_json.UI_LogoBg_2" scale9Grid="47,30,2,1" anchorOffsetY="0" height="656" anchorOffsetX="0" width="500" horizontalCenter="0" verticalCenter="-3.5"/>
+	<e:Image id="logo" fillMode="scale" width="299.27" height="195" verticalCenter="-152.5" horizontalCenter="11.5" source="BSFB_BEIAN" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Button id="Btn_Click0" label="" scaleX="1" scaleY="1" enabled="true" width="223" anchorOffsetX="0" name="OrangeColor" height="52" anchorOffsetY="0" x="340" y="311">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_9" horizontalCenter="0" verticalCenter="0" scale9Grid="46,0,41,40"/>
+			<e:Label id="labelDisplay" text="" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" xmlns:ns1="*" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image width="117.22" height="29.96" rotation="360" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="21" verticalCenter="1" source="GW_label_tex_json.youkedenglu"/>
+	<e:Image source="LoginBut_json.QQicon" x="14" y="5"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="Btn_Click1" label="" scaleX="1" scaleY="1" enabled="true" width="223" anchorOffsetX="0" name="OrangeColor" height="52" anchorOffsetY="0" x="340" y="370">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_9" horizontalCenter="0" verticalCenter="0" scale9Grid="46,0,41,40"/>
+			<e:Label id="labelDisplay" text="" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" xmlns:ns1="*" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image width="117.22" height="29.96" source="GW_label_tex_json.zhanghaodenglu" rotation="360" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="21" verticalCenter="1"/>
+			<e:Image x="14" y="5" source="LoginBut_json.WeChaticon"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="Btn_Click2" label="" scaleX="1" scaleY="1" enabled="true" width="223" anchorOffsetX="0" name="OrangeColor" height="52" anchorOffsetY="0" x="340" y="430">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" scale9Grid="46,0,41,40" source="GF_commonButton_json.UIBtn_10"/>
+			<e:Label id="labelDisplay" text="" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" xmlns:ns1="*" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image width="117.22" height="29.96" source="GW_label_tex_json.zhanghaodenglu" rotation="360" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="21" verticalCenter="1" visible="false"/>
+			<e:Image source="LoginBut_json.QQicon" x="14" y="5"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="深圳市正易龙科技有限公司享有《宝石风暴》著作权" size="18" fontFamily="SimHei" anchorOffsetY="0" height="31" width="591" textAlign="center" name="titleColor" stroke="1" anchorOffsetX="0" verticalAlign="middle" x="155" y="508" textColor="0x7a7a7a" bold="true"/>
+	<e:Label text="出版服务单位： 金报电子影像出版中心" size="18" fontFamily="SimHei" anchorOffsetY="0" height="31" width="591" textAlign="center" name="titleColor" stroke="1" anchorOffsetX="0" verticalAlign="middle" x="155" y="533" textColor="0x7a7a7a" bold="true"/>
+	<e:Label text="审批文号：新广出审[2016]2420号    出版物号：ISBN 978-7-7979-1026-2" size="18" fontFamily="SimHei" anchorOffsetY="0" height="31" width="659" textAlign="center" name="titleColor" stroke="1" anchorOffsetX="0" verticalAlign="middle" x="121" y="557" textColor="0x7a7a7a" bold="true"/>
+	</e:Skin>

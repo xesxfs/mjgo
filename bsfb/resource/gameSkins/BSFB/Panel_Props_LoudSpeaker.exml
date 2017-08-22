@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Props_LoudSpeaker" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Props_LoudSpeaker" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="420" anchorOffsetY="0" height="240" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-18" scale9Grid="42,53,5,9"/>
+		<e:Image anchorOffsetX="0" width="384" anchorOffsetY="0" height="100" scaleX="1" scaleY="1" verticalCenter="-11" horizontalCenter="-19" source="GF_commonButton_json.Input_BG2" scale9Grid="5,5,6,5"/>
+		<e:Label text="大喇叭" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-18" verticalCenter="-91" name="titleColor" stroke="1" visible="false"/>
+		<e:Label text="(每条消息内容限40个汉字，需要消耗1个喇叭道具)" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="22" width="376" verticalAlign="middle" textAlign="center" horizontalCenter="-15" verticalCenter="52" anchorOffsetX="0" textColor="0x43ff07"/>
+		<e:Label id="Input_LoudSpeaker" text="加载中...Input_LoudSpeaker" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="89" width="369" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xFFE68C" horizontalCenter="-20.5" verticalCenter="-11.5"/>
+		<e:Button id="Btn_CloseTask" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="165" verticalCenter="-91">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_LoudSpeakerSure" label="" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="82" verticalCenter="85" x="10" y="10">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.quxiao" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_LoudSpeakerCancel" label="" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="-109" verticalCenter="85">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.dalaba" verticalCenter="-90" horizontalCenter="-21"/>
+	</e:Group>
+	</e:Skin>

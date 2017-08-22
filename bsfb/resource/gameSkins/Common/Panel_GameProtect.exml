@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_GameProtect" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="417" anchorOffsetY="0" height="239" scaleX="1" scaleY="1" horizontalCenter="-0.5" verticalCenter="-26.5" scale9Grid="43,53,3,9"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42" scaleX="1" scaleY="1" horizontalCenter="181" verticalCenter="-116">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_Title" text="游戏保护" horizontalCenter="2" size="26" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-116" anchorOffsetX="0" width="128" textAlign="center" y="142" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+		<e:Label id="Label_Title0" text="安全口令:" size="24" x="267" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="259" textColor="0xffdb7d"/>
+		<e:Button id="Btn_Sure" label="进入游戏" scaleX="1" scaleY="1" enabled="true" width="170" horizontalCenter="3" verticalCenter="47">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+				<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.jinruyouxi" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="224" height="32" anchorOffsetX="0" anchorOffsetY="0" x="403" y="256">
+			<e:Image width="232" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="-4" verticalCenter="0" anchorOffsetX="0"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Input_PhoneNum" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="请输入您的口令" maxChars="16" displayAsPassword="true" inputType="password" fontFamily="SimHei" bold="true"/>
+			<e:Label id="promptDisplay" verticalCenter="0" left="13" right="20" width="100%" height="24" size="20" touchEnabled="false"  textColor="0x000000" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Image source="GW_label_tex_json.youxibaohu" horizontalCenter="0.5" verticalCenter="-118"/>
+	</e:Group>
+</e:Skin>

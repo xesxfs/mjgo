@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="100%" height="100%" source="BsfbLhdb2_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="textField" text="" y="356" horizontalCenter="0"/>
+</e:Skin>

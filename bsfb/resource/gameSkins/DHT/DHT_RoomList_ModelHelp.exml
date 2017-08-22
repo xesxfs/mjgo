@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ModelHelp" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="ModelHelp" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image anchorOffsetX="0" width="388" anchorOffsetY="0" height="243" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-12" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Image anchorOffsetX="0" width="380" anchorOffsetY="0" height="132" fillMode="repeat" horizontalCenter="1" verticalCenter="-21" source="GW_DHT_Atlas_json.UI_8x8_bg"/>
+		<e:Label text="模式说明" size="26" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-109" anchorOffsetX="0" horizontalCenter="0" visible="false"/>
+		<e:Label text="传统模式：每局由房主决定底注多少，不能加注，1不可当其它骰子使用。" size="23" fontFamily="方正粗圆简体" anchorOffsetY="0" height="102" width="361" textAlign="left" anchorOffsetX="0" verticalAlign="middle" x="271" y="226" textColor="0xffdb87"/>
+		<e:Button id="Btn_CloseModelHelp" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="171" verticalCenter="-109">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="1" verticalCenter="75">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" stroke="1" name="WhiteYellowColor" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.moshishuoming" horizontalCenter="0" width="117" height="31" verticalCenter="-109.5"/>
+	</e:Group>
+	</e:Skin>

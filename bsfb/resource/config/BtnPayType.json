@@ -1,0 +1,84 @@
+﻿{
+	"ButtonNum": [
+		{
+			"type": 0,
+			"showBtnNum": 0,
+			"showBtn0": 0
+        },
+        {
+			"type": 1,
+			"showBtnNum": 1,
+			"showBtn0": 0
+        },
+        {
+			"type": 2,
+			"showBtnNum": 2,
+			"showBtn0": 0,
+			"showBtn1": 1
+        },
+        {
+			"type": 3,
+			"showBtnNum": 3,
+			"showBtn0": 0,
+			"showBtn1": 1,
+			"showBtn2": 2
+        },
+        {
+            "type": 4,
+            "showBtnNum": 2,
+            "showBtn0": 0,
+            "showBtn1": 2
+        }
+    ],
+    "ButtonSetting": [
+        {
+			"type": 0,
+			"BtnAction": "OnBtn_AliPayClick",
+            "BtnName": "支付宝",
+            "BtnIcom": "AliPay_icon"
+        },
+        {
+			"type": 1,
+			"BtnAction": "OnBtn_WeChatLoginClick",
+            "BtnName": "微信支付",
+            "BtnIcom": "WeChat_icon"
+        },
+        {
+			"type": 2,
+			"BtnAction": "OnBtn_IAPClick",
+            "BtnName": "苹果支付",
+            "BtnIcom": "InAppPay_icon"
+        },
+        {
+			"type": 3,
+			"BtnAction": "OnBtn_IappyClick",
+            "BtnName": "爱贝支付",
+            "BtnIcom": "IappPay_icon"
+        },
+		{
+			"type": 4,
+			"BtnAction": "OnBtn_PayByAnySDKClick",
+            "BtnName": "点击支付",
+            "BtnIcom": "None"
+        },
+		{
+			"type": 5,
+			"BtnAction": "OnBtn_PayByKuaiQianClick",
+            "BtnName": "网银支付",
+            "BtnIcom": "BillPay_icon"
+        },
+		{
+			"type": 6,
+			"BtnPayType": "1",
+			"BtnAction": "OnBtn_IappyClick",
+            "BtnName": "爱贝支付",
+            "BtnIcom": "IappPay_icon"
+        },
+		{
+			"type": 7,
+			"BtnAction": "OnBtn_BaiduClick",
+            "BtnName": "百度支付",
+            "BtnIcom": "BaiDuPay_icon"
+        }
+    ]
+}

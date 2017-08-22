@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NewLevelExpCom" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="72" height="72">
+	<e:Image id="showMask" anchorOffsetX="0" width="67" anchorOffsetY="0" height="67" source="GW_HallAtlas_json.UI_Foreground_bg" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="frontBg" source="GW_HallAtlas_json.UI_hall_lv_bg2" width="41" height="41" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" verticalCenter="1.5"/>
+	<e:Label id="levelLab" size="26" text="99" textColor="0xFFE019" horizontalCenter="-0.5" verticalCenter="0.5" name="LevelColor" textAlign="center" anchorOffsetX="0" anchorOffsetY="0" verticalAlign="middle"/>
+</e:Skin>

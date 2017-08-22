@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_TaskTip" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_TaskTip" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="360" anchorOffsetY="0" height="226" scaleX="1" scaleY="1" horizontalCenter="-12" verticalCenter="0" scale9Grid="43,53,3,9"/>
+		<e:Label text="点数不足" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" verticalCenter="-84" horizontalCenter="-12" name="titleColor" stroke="1" visible="false"/>
+		<e:Label text="每日有1次免费领取5000点数的机会，请不要错过哦。" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="104" width="327" verticalAlign="middle" textAlign="center" anchorOffsetX="0" y="246" horizontalCenter="-11.5" textColor="0xffd387"/>
+		<e:Button id="Btn_Charge" label="" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="-90" verticalCenter="79">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.qianwangchongzhi"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ReceiveDole" label="" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="68" verticalCenter="79">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" name="WhiteYellowColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.qianwanglingqu" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.dianshubuzu" verticalCenter="-82.5" horizontalCenter="-11"/>
+	</e:Group>
+	</e:Skin>

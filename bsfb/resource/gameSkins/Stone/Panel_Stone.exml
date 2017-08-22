@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Stone" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15b1db652f3"/>
+	<e:Group id="Anchor" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="30" y="30">
+		<e:Image id="BG" y="0" height="100%" source="1_Login_png" width="100%" x="0" fillMode="scale" locked="true"/>
+		<e:Image source="GF_commonButton_json.slider_bg" anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" fillMode="scale" scale9Grid="1,1,8,8" x="0" y="0"/>
+		<e:RadioButton id="Toggle_Challenge" label="我要挑战" x="26" y="59" width="152" height="42" groupName="stoneTg" selected="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="8,11,15,23" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="24" textColor="0xfff575" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.woyaotiaozhan" horizontalCenter="0" verticalCenter="0" width="92" height="26"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="Toggle_Arena" label="我要摆擂" x="181" y="59" width="152" height="42" groupName="stoneTg">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="8,12,16,22" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="24" textColor="0xfff575" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.woyaobailei" horizontalCenter="0" verticalCenter="0" width="92" height="26"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="Toggle_MyArena" label="我的擂台" x="336.5" y="59" width="152" height="42" groupName="stoneTg">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_btn_1" source.down="GF_commonButton_json.Props_btn_2" scale9Grid="8,12,16,22" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="24" textColor="0xfff575" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.wodeleitai" horizontalCenter="0" verticalCenter="0" width="92" height="24"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:Button id="Btn_CloseStone" label="下一页" scaleX="1" scaleY="1" enabled="true" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="368" verticalCenter="-228" width="50" height="50">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.skin2_btn_close" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="Panel_Challenge" width="1" height="1" horizontalCenter="0" verticalCenter="0">
+			<e:Group id="Arena_Challenge2" width="1" height="1" x="-450" y="-300" visible="false">
+				<e:Image id="line_bg" x="27" y="100" scale9Grid="6,5,4,6" anchorOffsetX="0" width="820" anchorOffsetY="0" height="40" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="28" y="101" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="193" y="101" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="323" y="101" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="492" y="100" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="668" y="100" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="847" y="100" fillMode="repeat" width="362" height="2" rotation="90.06" scaleX="1" scaleY="1"/>
+				<e:Label text="擂台名称" size="22" verticalAlign="middle" fontFamily="SimHei" x="66" y="108" textColor="0xfcd774" scaleX="1" scaleY="1"/>
+				<e:Label text="点数" size="22" verticalAlign="middle" fontFamily="SimHei" x="233" y="108" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+				<e:Label id="Label_CurrentPage" text="0" size="26" verticalAlign="middle" fontFamily="SimHei" x="417" y="487" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center"/>
+				<e:Label text="/" size="26" verticalAlign="middle" fontFamily="SimHei" x="447" y="487" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+				<e:Label id="Label_Pages" text="0" size="26" verticalAlign="middle" fontFamily="SimHei" x="463" y="487" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="left"/>
+				<e:Label text="摆擂人" size="22" verticalAlign="middle" fontFamily="SimHei" x="370" y="108" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+				<e:Label text="挑战结果" size="22" verticalAlign="middle" fontFamily="SimHei" x="530" y="108" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+				<e:Label text="挑战人" size="22" verticalAlign="middle" fontFamily="SimHei" x="722" y="108" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="100" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="141" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="180.625" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="221.25" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="260.875" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="301.5" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="341.125" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="381.75" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="421.375" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" x="27" y="462" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" scale9Grid="0,0,1,1"/>
+				<e:Button id="Btn_PageDown" label="下一页" scaleX="1" scaleY="1" enabled="true" width="134" anchorOffsetX="0" horizontalCenter="576.5" verticalCenter="498.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay4" horizontalCenter="0" verticalCenter="0" text="下一页" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="70" height="23" source="GW_label_tex_json.xiayiye"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_PageUp" label="上一页" scaleX="1" scaleY="1" enabled="true" width="134" anchorOffsetX="0" horizontalCenter="325.5" verticalCenter="498.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay4" horizontalCenter="0" verticalCenter="0" text="上一页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.shangyiye" horizontalCenter="0" verticalCenter="0" width="70" height="23"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_FirstPage" label="确定" scaleX="1" scaleY="1" enabled="true" width="122" anchorOffsetX="0" horizontalCenter="178.5" verticalCenter="499.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="130" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay4" horizontalCenter="6.5" verticalCenter="0" text="首页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.shouye" verticalCenter="0" width="50" height="26" horizontalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_EndPage" label="尾页" scaleX="1" scaleY="1" enabled="true" width="122" anchorOffsetX="0" horizontalCenter="714.5" verticalCenter="498.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="GF_commonButton_json.UIBtn_1_1" x="1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="130" y="0"/>
+	<e:Image verticalCenter="0" width="50" height="26" source="GW_label_tex_json.weiye" horizontalCenter="5.5"/>
+						<e:Label id="labelDisplay4" horizontalCenter="6.5" verticalCenter="0" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_RefreshList" label="刷新列表" y="54" x="665.08" scaleX="1" scaleY="1" enabled="true" width="122" anchorOffsetX="0" anchorOffsetY="0" height="43">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="LoginBut_json.UIBtn_9" scale9Grid="45,6,6,36" anchorOffsetX="0" width="126" left="0" top="0" anchorOffsetY="0" height="43"/>
+						<e:Label id="labelDisplay" name="YellowColor" horizontalCenter="6.5" verticalCenter="0" text="刷新列表" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.shuaxinliebiao" anchorOffsetX="0" horizontalCenter="18" verticalCenter="-1" width="90" anchorOffsetY="0" height="23"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Scroller width="817" height="320" anchorOffsetX="0" anchorOffsetY="0" x="27" y="142" scrollPolicyH="off">
+					<e:List id="Arena1List" y="1" height="100%" width="100%">
+						<e:layout>
+							<e:VerticalLayout gap="0" horizontalAlign="center" verticalAlign="top" paddingTop="0" paddingBottom="5"/>
+						</e:layout>
+						<e:itemRendererSkinName >
+						<e:Skin width="817" height="40">
+							<e:Label id="Label_ArenaName_Item" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="7" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="150"/>
+							<e:Label id="Label_ArenaCount_Item" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="173" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="120"/>
+							<e:Label id="Label_ArenaUserItem" text="aaaaaaa" size="20" verticalAlign="middle" fontFamily="SimHei" x="301" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="160" height="20"/>
+							<e:Label id="labelDisplay8" text="" size="20" verticalAlign="middle" fontFamily="SimHei" x="506" y="9" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+							<e:Label id="Label_ChallengeUserItem" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="679" y="9" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+							<e:Image id="Sprite_IsHavePassword" source="GW_DHT_Atlas_json.stjdb_rock" x="150.58" y="2" height="40"/>
+							<e:Button id="Btn_Challenge" label="挑战" scaleX="1" scaleY="1" enabled="true" width="122" anchorOffsetX="0" horizontalCenter="319.5" verticalCenter="-2.5" height="35">
+							<e:skinName>
+								<e:Skin states="up,down,disabled">
+								<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="130" x="0" y="0" fillMode="scale" height="40"/>
+								<e:Label id="labelDisplay4" text="挑战" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center" x="45" y="10"/>
+								</e:Skin>
+							</e:skinName>
+							</e:Button>
+						</e:Skin>
+						</e:itemRendererSkinName>
+						<!--<e:ArrayCollection>
+							<e:Array>
+							<e:Object/><e:Object/><e:Object/><e:Object/><e:Object/><e:Object/><e:Object/><e:Object/>
+							</e:Array>
+						</e:ArrayCollection>-->
+					</e:List>
+				</e:Scroller>
+				<e:Group anchorOffsetX="0" width="817" height="40" scaleX="1" scaleY="1" y="140" x="26" visible="false">
+					<e:Label id="Label_ArenaName_Item" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="7" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="150"/>
+					<e:Label id="Label_ArenaCount_Item" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="173" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="120"/>
+					<e:Label id="Label_ArenaUserItem" text="aaaaaaa" size="20" verticalAlign="middle" fontFamily="SimHei" x="301" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" width="160" height="20"/>
+					<e:Label id="labelDisplay8" text="" size="20" verticalAlign="middle" fontFamily="SimHei" x="506" y="9" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+					<e:Label id="Label_ChallengeUserItem" text="擂台名称" size="20" verticalAlign="middle" fontFamily="SimHei" x="679" y="9" textColor="0xFCD774" scaleX="1" scaleY="1"/>
+					<e:Image id="Sprite_IsHavePassword" source="GW_DHT_Atlas_json.stjdb_rock" x="150.58" y="2" height="40"/>
+					<e:Button id="Btn_Challenge" label="挑战" scaleX="1" scaleY="1" enabled="true" width="122" anchorOffsetX="0" horizontalCenter="319.5" verticalCenter="-2.5" height="35">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="130" x="0" y="0" fillMode="scale" height="40"/>
+						<e:Label id="labelDisplay4" text="挑战" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center" x="45" y="10"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+				</e:Group>
+			</e:Group>
+			<e:Group id="Arena_Challenge3" width="1" height="1" horizontalCenter="0" verticalCenter="-1" x="10" y="10" visible="false">
+				<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="420" anchorOffsetY="0" height="235" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1.5"/>
+				<e:Image source="GW_label_tex_json.xuyaoleitaimima" horizontalCenter="7" verticalCenter="-88"/>
+				<e:Label id="Label_Title0" text="需要擂台密码" textColor="0xFFCE00" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="220" textAlign="center" y="-103" horizontalCenter="0.5" visible="false"/>
+				<e:Label id="label_depositPoint0" text="擂台密码" x="-192.51" y="-21" anchorOffsetX="0" width="128" anchorOffsetY="0" height="21" size="22" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffdc66"/>
+				<e:Button id="Btn_Sure_ArenaPassword" label="确定" y="59" x="-144" scaleX="1" scaleY="1" enabled="true" width="134" anchorOffsetX="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="124" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay10" horizontalCenter="-2.5" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf9e33e" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Group width="232" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="61" verticalCenter="-9" x="496" y="209" scaleX="1" scaleY="1">
+				<e:Image width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" source="GF_commonButton_json.UI_Input_Bg2"/>
+				<e:Rect height="20" width="186" fillColor="0x572d16" anchorOffsetX="0" x="17" y="6" scaleX="1" scaleY="1" anchorOffsetY="0"/>
+				<e:EditableText id="Input_Challenge_ArenaPassword" verticalCenter="0" left="18" right="28" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" displayAsPassword="true" inputType="PASSWORD" maxChars="12" prompt="密码" fontFamily="SimHei" bold="true" textColor="0xffffff" promptColor="0xffb728"/>
+				<e:Label id="promptDisplay0" verticalCenter="3" left="12" right="12" width="100%" height="24" size="18" touchEnabled="false" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" bold="true" textColor="0xffffff"/>
+				</e:Group>
+				<e:Button id="Btn_Cancel_ArenaPassword" label="取 消" scaleX="1" scaleY="1" enabled="true" width="127" anchorOffsetX="0" x="26.5" y="59">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0" text="取消" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.quxiao" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Group id="Arena_Challenge4" width="1" height="1" horizontalCenter="0.5" verticalCenter="0" x="20" y="20" visible="false">
+				<e:Image source="GF_commonButton_json.slider_bg" anchorOffsetX="0" width="900" anchorOffsetY="0" height="360" fillMode="scale" scale9Grid="1,1,8,8" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image source="GF_commonButton_json.st_01" verticalCenter="43" x="-175"/>
+				<e:Image source="GF_commonButton_json.jd_01" verticalCenter="43" x="-27"/>
+				<e:Image source="GF_commonButton_json.b_01" horizontalCenter="149" verticalCenter="43"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" width="600" height="1" fillMode="repeat" horizontalCenter="0" verticalCenter="-22.5"/>
+				<e:Label text="擂台名称：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xffad47" x="-141" y="-165"/>
+				<e:Label id="Label_ArenaName4" text="高波涛汹涌" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0xffd89e" horizontalCenter="95.5" verticalCenter="-152.5"/>
+				<e:Label id="Label_ArenaTime4" text="2017/03/06  18:30" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0xffd89e" horizontalCenter="95.5" verticalCenter="-117.5"/>
+				<e:Label id="Label_ArenaUser4" text="风一样的男子" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0xffd89e" horizontalCenter="95.5" verticalCenter="-80.5"/>
+				<e:Label id="Label_ArenaCount4" text="59454565656" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0xffd89e" horizontalCenter="95.5" verticalCenter="-43.5"/>
+				<e:Label text="结束时间：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" x="-141" y="-130"/>
+				<e:Label text="擂台人：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" x="-121" y="-93"/>
+				<e:Label text="擂台点数：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" x="-141" y="-56"/>
+				<e:Label text="选择手势：" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="120" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" horizontalCenter="-214" verticalCenter="-1"/>
+				<e:Button id="Btn_CancelChallenge" label="取消" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="97" verticalCenter="146">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.quxiao" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ChallengeSure" label="挑战" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="-81" verticalCenter="147">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.tiaozhan" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:RadioButton id="Toggle_Challenge_Scissor" label="" groupName="Arena4" verticalCenter="92.5" x="-19">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="Toggle_Challenge_Paper" label="" groupName="Arena4" horizontalCenter="144.5" verticalCenter="92.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="Toggle_Challenge_Stone" label="" groupName="Arena4" verticalCenter="92.5" x="-161" selected="true">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			</e:Group>
+			<e:Group id="Arena_Challenge5" width="1" height="1" horizontalCenter="0.5" verticalCenter="0" x="20" y="20" visible="false">
+		<e:Image source="GF_commonButton_json.slider_bg" anchorOffsetX="0" width="900" anchorOffsetY="0" height="360" fillMode="scale" scale9Grid="1,1,8,8" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="Label_Fee5" text="系统收取5000点数手续费" size="18" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="200" y="125"/>
+		<e:Label text="擂台名称：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xffad47" horizontalCenter="-88.5" verticalCenter="-156.5"/>
+		<e:Label id="Label_ArenaName5" text="高波涛汹涌" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00ff14" horizontalCenter="87.5" verticalCenter="-156.5"/>
+		<e:Label id="Label_ArenaTime5" text="2017/03/06  18:30" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00ff14" horizontalCenter="87.5" verticalCenter="-120.5"/>
+		<e:Label id="Label_ArenaCount5" text="29000000" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="256" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00ff14" horizontalCenter="87.5" verticalCenter="-83.5"/>
+		<e:Label text="结束时间：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" horizontalCenter="-88.5" verticalCenter="-120.5"/>
+		<e:Label text="摆擂点数：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" horizontalCenter="-88.5" verticalCenter="-83.5"/>
+				<e:Button id="Btn_Back5" label="返回" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" verticalCenter="154.5" y="432" horizontalCenter="0">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0" text="确定" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+		<e:Image id="Sprite_ChallengeResult5_Draw" source="GF_commonButton_json.xyxzp_41" verticalCenter="85" horizontalCenter="1"/>
+		<e:Image id="Sprite_ChallengeResult5_Timeout" source="GF_commonButton_json.xyxwrtz_09" verticalCenter="84.5" horizontalCenter="0.5"/>
+				<e:Label id="Label_ChallengeResult5" text="99999999" size="26" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="175" verticalAlign="middle" textAlign="center" verticalCenter="99.5" anchorOffsetX="0" horizontalCenter="-48" textColor="0xD5FF16" x="17" y="49" scaleX="1" scaleY="1"/>
+		<e:Group id="lost5" width="305" height="89" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="77.5">
+			<e:Image id="Sprite_ChallengeResult5_Lost" source="GF_commonButton_json.xyxtzsb-04" x="4" y="4" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="win5" width="305" height="89" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="77.5">
+			<e:Image id="Sprite_ChallengeResult5_Win" source="GF_commonButton_json.xyxcg_33" x="4" y="4" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group width="464" height="149" horizontalCenter="0.5" verticalCenter="-29">
+			<e:Image source="GF_commonButton_json.xyx0_20" horizontalCenter="0" verticalCenter="0" x="280" y="261" scaleX="1" scaleY="1"/>
+			<e:Image id="Sprite_ArenaGesture5" source="GF_commonButton_json.jd_01" scaleX="1" scaleY="1" horizontalCenter="-123" verticalCenter="-15"/>
+			<e:Image id="Sprite_ChallengeGesture5" source="GF_commonButton_json.b_01" scaleX="1" scaleY="1" horizontalCenter="125" verticalCenter="-15"/>
+			<e:Label id="Label_ArenaUser5" text="29000000" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="170" textAlign="center" anchorOffsetX="0" verticalAlign="middle" scaleX="1" scaleY="1" textColor="0xffed51" verticalCenter="53.5" horizontalCenter="-118"/>
+			<e:Label id="Label_ChallengeUser5" text="29000000" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="170" textAlign="center" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFED51" scaleX="1" scaleY="1" verticalCenter="53.5" horizontalCenter="117"/>
+		</e:Group>
+	</e:Group>
+			<e:Group id="Arena_Challenge6" width="1" height="1" horizontalCenter="0.5" verticalCenter="0" x="30" y="30" visible="false">
+				<e:Image source="GF_commonButton_json.slider_bg" anchorOffsetX="0" width="900" anchorOffsetY="0" height="360" fillMode="scale" scale9Grid="1,1,8,8" horizontalCenter="0" verticalCenter="0" x="-1" y="120" scaleX="1" scaleY="1"/>
+				<e:Label text="擂台名称：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" scaleX="1" scaleY="1" horizontalCenter="-340" verticalCenter="-118"/>
+				<e:Label id="Label_ArenaName6" text="高波涛汹涌" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="137" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00FF14" scaleX="1" scaleY="1" horizontalCenter="-223.5" verticalCenter="-118"/>
+				<e:Label id="Label_ArenaTime6" text="2017/03/06  18:30" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="176" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00FF14" scaleX="1" scaleY="1" horizontalCenter="248" verticalCenter="-118"/>
+				<e:Label id="Label_ArenaCount6" text="29000000" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="161" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x00FF14" scaleX="1" scaleY="1" horizontalCenter="25.5" verticalCenter="-118"/>
+				<e:Label id="Label_Fee6" text="系统收取5000点数手续费" size="18" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="200" y="125"/>
+				<e:Label text="结束时间：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" scaleX="1" scaleY="1" horizontalCenter="112" verticalCenter="-118"/>
+				<e:Label text="摆擂点数：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="100" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFAD47" scaleX="1" scaleY="1" horizontalCenter="-103" verticalCenter="-118"/>
+				<e:Button id="Btn_Back6" label="" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" horizontalCenter="-2" verticalCenter="154" x="377" y="432">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0" text="确定" size="24" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="Label_ChallengeResult6" text="99999999" size="26" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="175" verticalAlign="middle" textAlign="center" verticalCenter="100.5" anchorOffsetX="0" horizontalCenter="-48" textColor="0xD5FF16" x="17" y="49" scaleX="1" scaleY="1"/>
+				<e:Image id="Sprite_ChallengeResult6_Draw" source="GF_commonButton_json.xyxzp_41" scaleX="1" scaleY="1" horizontalCenter="-8" verticalCenter="86"/>
+				<e:Image id="Sprite_ChallengeResult6_Timeout" source="GF_commonButton_json.xyxwrtz_09" scaleX="1" scaleY="1" horizontalCenter="-8.5" verticalCenter="85.5"/>
+				<e:Group id="lost6" width="305" height="89" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="-7.5" verticalCenter="78.5" x="289" y="334" scaleX="1" scaleY="1">
+					<e:Image id="Sprite_ChallengeResult5_Lost0" source="GF_commonButton_json.xyxtzsb-04" x="4" y="4" scaleX="1" scaleY="1"/>
+				</e:Group>
+				<e:Group id="win6" width="305" height="89" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="-7.5" verticalCenter="78.5" x="289" y="334" scaleX="1" scaleY="1">
+					<e:Image id="Sprite_ChallengeResult5_Win0" source="GF_commonButton_json.xyxcg_33" x="4" y="4" scaleX="1" scaleY="1"/>
+				</e:Group>
+				<e:Group width="464" height="149" horizontalCenter="-20.5" verticalCenter="-45" x="196" y="219" scaleX="1" scaleY="1">
+					<e:Image source="GF_commonButton_json.xyx0_20" horizontalCenter="0" verticalCenter="0" x="280" y="261" scaleX="1" scaleY="1"/>
+					<e:Image id="Sprite_ArenaGesture6" source="GF_commonButton_json.jd_01" scaleX="1" scaleY="1" horizontalCenter="-123" verticalCenter="-15"/>
+					<e:Image id="Sprite_ChallengeGesture6" source="GF_commonButton_json.b_01" scaleX="1" scaleY="1" horizontalCenter="125" verticalCenter="-15"/>
+					<e:Label id="Label_ArenaUser6" text="29000000" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="170" textAlign="center" anchorOffsetX="0" verticalAlign="middle" scaleX="1" scaleY="1" textColor="0xFFED51" verticalCenter="62" horizontalCenter="-118"/>
+					<e:Label id="Label_ChallengeUser6" text="29000000" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="170" textAlign="center" anchorOffsetX="0" verticalAlign="middle" textColor="0xFFED51" scaleX="1" scaleY="1" verticalCenter="62" horizontalCenter="117"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="Arena_Challenge7" width="1" height="1" verticalCenter="-1" horizontalCenter="-1" x="10" y="10" visible="false">
+				<e:Image id="line_bg0" scale9Grid="6,5,4,6" anchorOffsetX="0" width="820" anchorOffsetY="0" height="40" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" horizontalCenter="-14.5" verticalCenter="-179.5"/>
+				<e:Label text="擂台名称" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xFCD774" scaleX="1" scaleY="1" horizontalCenter="-353.5" verticalCenter="-180.5"/>
+				<e:Label text="点数" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xFCD774" scaleX="1" scaleY="1" horizontalCenter="-209.5" verticalCenter="-180.5"/>
+				<e:Label text="挑战结果" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xFCD774" scaleX="1" scaleY="1" horizontalCenter="-44.5" verticalCenter="-180.5"/>
+				<e:Label text="挑战人" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xFCD774" scaleX="1" scaleY="1" horizontalCenter="112.5" verticalCenter="-180.5"/>
+				<e:Label text="结束时间" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" horizontalCenter="289.5" verticalCenter="-180.5"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" horizontalCenter="-13" verticalCenter="-199"/>
+				<e:Image source="GF_commonButton_json.UI_point_bg" fillMode="repeat" width="820" height="2" scaleX="1" scaleY="1" horizontalCenter="-13" verticalCenter="-161"/>
+				<e:Scroller width="817" height="360" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-15.5" verticalCenter="20" scrollPolicyH="off">
+					<e:List id="Arena2List">
+					<e:layout>
+						<e:VerticalLayout gap="2" horizontalAlign="center" verticalAlign="top" paddingTop="5" paddingBottom="5"/>
+					</e:layout>
+					<e:itemRendererSkinName >
+						<e:Skin>
+							<e:Group anchorOffsetX="0" width="817" height="44" scaleX="1" scaleY="1" horizontalCenter="1" verticalCenter="0">
+								<e:Image x="0" y="0" fillMode="scale" width="820" height="44" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG3" scale9Grid="5,5,6,6"/>
+								<e:Label id="Label_ArenaName_Item2" text="擂台名称" size="18" verticalAlign="middle" fontFamily="SimHei" x="6" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" width="120" textAlign="center"/>
+								<e:Label id="Label_ArenaCountItem2" text="擂台名称" size="18" verticalAlign="middle" fontFamily="SimHei" x="172.58" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" width="99" textAlign="center"/>
+								<e:Label id="Label_ChallengeUserItem2" text="无人挑战，擂台超时" size="18" verticalAlign="middle" fontFamily="SimHei" x="461" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" anchorOffsetY="0" height="22"/>
+								<e:Label id="Label_ArenaTimeItem2" text="2017-04-06 09:56:55" size="18" verticalAlign="middle" fontFamily="SimHei" x="633.5" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" anchorOffsetY="0" height="21" textAlign="center"/>
+								<e:Image id="Sprite_IsHavePassword2" source="GW_DHT_Atlas_json.stjdb_rock" x="135.58" y="-1"/>
+								<e:Image id="Sprite_Challenge2" x="401.58" y="0" source="GW_DHT_Atlas_json.stjdb_rock" width="40" height="40"/>
+								<e:Image x="347.58" y="8" source="GF_commonButton_json.VS"/>
+								<e:Image id="Sprite_Challenge1" x="309.58" y="0" source="GW_DHT_Atlas_json.stjdb_rock" width="40" height="40"/>
+							</e:Group>
+					</e:Skin>
+					</e:itemRendererSkinName>
+					<!--<e:ArrayCollection>
+							<e:Array>
+							<e:Object/><e:Object/><e:Object/>
+							</e:Array>
+						</e:ArrayCollection>-->
+					</e:List>
+				</e:Scroller>
+				<e:Group anchorOffsetX="0" width="817" height="44" scaleX="1" scaleY="1" verticalCenter="0" x="-420" visible="false">
+								<e:Image x="0" y="0" fillMode="scale" width="820" height="44" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG3" scale9Grid="5,5,6,6"/>
+								<e:Label id="Label_ArenaName_Item2" text="擂台名称" size="18" verticalAlign="middle" fontFamily="SimHei" x="6" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" width="120" textAlign="center"/>
+								<e:Label id="Label_ArenaCountItem2" text="擂台名称" size="18" verticalAlign="middle" fontFamily="SimHei" x="172.58" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" width="99" textAlign="center"/>
+								<e:Label id="Label_ChallengeUserItem2" text="无人挑战，擂台超时" size="18" verticalAlign="middle" fontFamily="SimHei" x="461" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" textAlign="center" anchorOffsetY="0" height="22"/>
+								<e:Label id="Label_ArenaTimeItem2" text="2017-04-06 09:56:55" size="18" verticalAlign="middle" fontFamily="SimHei" x="632.5" y="12" textColor="0xFCD774" scaleX="1" scaleY="1" anchorOffsetY="0" height="21" textAlign="center"/>
+								<e:Image id="Sprite_IsHavePassword2" source="GW_DHT_Atlas_json.stjdb_rock" x="135.58" y="-1"/>
+								<e:Image id="Sprite_Challenge2" x="401.58" y="0" source="GW_DHT_Atlas_json.stjdb_rock" width="40" height="40"/>
+								<e:Image x="347.58" y="8" source="GF_commonButton_json.VS"/>
+								<e:Image id="Sprite_Challenge1" x="309.58" y="0" source="GW_DHT_Atlas_json.stjdb_rock" width="40" height="40"/>
+							</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="Panel_Arena" width="1" height="1" x="449" y="300">
+			<e:Group id="Arena_Challenge0" width="1" height="1" verticalCenter="0" x="6" y="-237" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.st_01" verticalCenter="-95" x="-189"/>
+				<e:Image source="GF_commonButton_json.jd_01" verticalCenter="-95" x="-41"/>
+				<e:Image source="GF_commonButton_json.b_01" verticalCenter="-95" horizontalCenter="135"/>
+				<e:Label text="擂台名称：" size="22" fontFamily="SimHei" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" anchorOffsetX="0" horizontalCenter="-145" verticalCenter="-169" textColor="0xffd816"/>
+				<e:Label text="点" size="22" fontFamily="SimHei" anchorOffsetY="0" height="26" width="18" textAlign="right" anchorOffsetX="0" verticalAlign="middle" horizontalCenter="98" verticalCenter="39" textColor="0xffd816"/>
+				<e:Label id="Label_PasswordTips" text="需加密请填写密码" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" textAlign="right" anchorOffsetX="0" verticalAlign="middle" horizontalCenter="153" verticalCenter="95" textColor="0xffd816"/>
+				<e:Label text="摆擂台点数最少为" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" width="150" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xfcc9a9" horizontalCenter="160" verticalCenter="149"/>
+				<e:Label id="Label_ArenaCount1" text="50000" size="20" fontFamily="SimHei" anchorOffsetY="0" height="26" textAlign="center" anchorOffsetX="0" verticalAlign="middle" textColor="0x84ff00" horizontalCenter="271" verticalCenter="149.5" bold="true"/>
+				<e:Label id="Label_ArenaCount2" text="50000" size="20" fontFamily="SimHei" anchorOffsetY="0" height="26" textAlign="center" anchorOffsetX="0" verticalAlign="middle" textColor="0x84FF00" horizontalCenter="262.5" verticalCenter="175" bold="true"/>
+				<e:Label id="Label_ArenaCount3" text="" size="14" fontFamily="SimHei" anchorOffsetY="0" height="26" width="220" textAlign="left" anchorOffsetX="0" verticalAlign="middle" textColor="0x84FF00" horizontalCenter="-303.5" verticalCenter="180.5"/>
+				<e:Label text="点" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" width="28" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xfcc9a9" horizontalCenter="316" verticalCenter="149"/>
+				<e:Label text="个人资产须保留" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" width="150" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xfcc9a9" horizontalCenter="144" verticalCenter="174"/>
+				<e:Label text="保障点数" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" width="89" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xfcc9a9" horizontalCenter="339.5" verticalCenter="174"/>
+				<e:Label text="对获胜一方收手续费比例：" size="18" fontFamily="SimHei" anchorOffsetY="0" height="26" width="237" textAlign="right" anchorOffsetX="0" verticalAlign="middle" textColor="0xFCC9A9" horizontalCenter="-318.5" verticalCenter="151"/>
+				<e:Label text="擂台点数：" size="22" fontFamily="SimHei" anchorOffsetY="0" height="26" width="125" textAlign="right" anchorOffsetX="0" verticalAlign="middle" horizontalCenter="-155.5" verticalCenter="36" textColor="0xffd816"/>
+				<e:Label text="擂台密码：" size="22" fontFamily="SimHei" anchorOffsetY="0" height="26" width="115" textAlign="right" anchorOffsetX="0" verticalAlign="middle" horizontalCenter="-150.5" verticalCenter="94" textColor="0xffd816"/>
+				<e:Button id="Btn_ArenaSure" label="取消" scaleX="1" scaleY="1" enabled="true" width="158" anchorOffsetX="0" verticalCenter="158" horizontalCenter="-13">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0" text="确定摆擂" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" visible="false"/>
+	<e:Image source="GW_label_tex_json.quedingbailei" horizontalCenter="0" verticalCenter="0" width="90" height="24"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:RadioButton id="Toggle_Arena_Scissor" label="" groupName="Arena1Tg" verticalCenter="-45.5" x="-33">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="Toggle_Arena_Stone" label="" groupName="Arena1Tg" verticalCenter="-45.5" x="-175" selected="true">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:RadioButton id="Toggle_Arena_Paper" label="" groupName="Arena1Tg" horizontalCenter="130.5" verticalCenter="-45.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.stzdb_wxz" source.down="GF_commonButton_json.stzdb_xz"/>
+						<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:Group width="177" height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="-170.5" horizontalCenter="-11">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+				<e:EditableText id="Input_ArenaName" textColor="0x000000" width="131" height="24" size="20" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-5" maxChars="10" textAlign="left" verticalAlign="middle"/>
+				<e:Label id="promptDisplay3" verticalCenter="3" left="12" right="12" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="密码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" visible="false"/>
+				</e:Group>
+				<e:Group width="177" height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="92.5" horizontalCenter="-11">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+				<e:EditableText id="Input_Arena_ArenaPassword" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" maxChars="12" textAlign="left" verticalAlign="middle" inputType="PASSWORD" displayAsPassword="true"/>
+				<e:Label id="promptDisplay2" verticalCenter="3" left="12" right="12" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="密码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" visible="false"/>
+				</e:Group>
+				<e:Group width="177" height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="35.5" horizontalCenter="-11">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+				<e:EditableText id="Input_Count" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" verticalAlign="middle" textAlign="left" maxChars="16" restrict="0-9"/>
+				<e:Label id="promptDisplay1" verticalCenter="3" left="12" right="12" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" maxChars="16" visible="false"/>
+				</e:Group>
+				<e:Group id="Btn_Count" width="1" height="1" verticalCenter="-25" horizontalCenter="-32">
+					<e:Button label="挑战" scaleX="1" scaleY="1" enabled="true" width="129" anchorOffsetX="0" horizontalCenter="327.5" verticalCenter="-128" x="544" y="19">
+						<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:ns1="*">
+							<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+							<e:Label id="labelDisplay10" horizontalCenter="0" verticalCenter="0" text="10000" size="22" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" bold="true"/>
+						</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Button label="100000" scaleX="1" scaleY="1" enabled="true" width="127" anchorOffsetX="0" horizontalCenter="327.5" verticalCenter="-31" x="545" y="116">
+						<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:ns1="*">
+							<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="50000" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" bold="true"/>
+						</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Button label="1000000" scaleX="1" scaleY="1" enabled="true" width="129" anchorOffsetX="0" horizontalCenter="329.5" verticalCenter="65" x="546" y="212">
+						<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:ns1="*">
+							<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="200000" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffe650" bold="true" textAlign="center"/>
+						</e:Skin>
+						</e:skinName>
+					</e:Button>
+				</e:Group>
+			</e:Group>
+			<e:Group id="Arena_Challenge1" width="1" height="1" horizontalCenter="0.5" verticalCenter="0" x="20" y="20" visible="false">
+				<e:Label text="需要擂台密码" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-110" anchorOffsetX="0" horizontalCenter="0"/>
+				<e:Label text="提示：若在1小时内无人挑战，系统将归还您的摆擂点数。" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="26" width="528" textAlign="center" anchorOffsetX="0" verticalAlign="middle" textColor="0xffad47" verticalCenter="14" horizontalCenter="0"/>
+				<e:Button id="Btn_MyArena" label="查看我的擂台" scaleX="1" scaleY="1" enabled="true" width="200" anchorOffsetX="0" verticalCenter="112" y="10" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xe5e5e5" visible="false"/>
+	<e:Image source="GW_label_tex_json.chakanwodeleitai" anchorOffsetX="0" width="129.7" anchorOffsetY="0" height="22.37" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Image source="GF_commonButton_json.xyxcg_13" horizontalCenter="0.5" verticalCenter="-38.5"/>
+			</e:Group>
+		</e:Group>
+		<e:Button id="Btn_MyBank" label="" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="120" anchorOffsetX="0" verticalCenter="-89" right="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_1" scale9Grid="0,46,36,28" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay10" horizontalCenter="6.5" verticalCenter="5.5" text="银行" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="121" anchorOffsetX="0" width="31" visible="false"/>
+	<e:Image source="GW_label_tex_json.yinhang2" horizontalCenter="0.5" verticalCenter="12"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Club" label="" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="120" anchorOffsetX="0" verticalCenter="31" right="0">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_2" scale9Grid="0,10,36,30" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay10" horizontalCenter="6" verticalCenter="-12.5" text="公会" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui2" horizontalCenter="0.5" verticalCenter="-11"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<ns1:MarqueenUI id="louderspeaker" x="209" y="92" skinName="Marqueen" visible="false"/>
+	</e:Group>
+</e:Skin>

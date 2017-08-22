@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Task" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_Task" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="420" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" verticalCenter="-16" horizontalCenter="-3" scale9Grid="42,53,4,12"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="180" verticalCenter="-111">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="免费领取点数" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" horizontalCenter="-3" verticalCenter="-111" name="titleColor" style="1" stroke="1" visible="false"/>
+		<e:Image width="96" height="55" scaleX="1" scaleY="1" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="-111" verticalCenter="21.5" source="GF_commonButton_json.Coin01"/>
+		<e:Label id="Label_ReceiveConditions" text="今天还剩余1次免费领\n取点数机会今天还剩余1次免费领取点数机会" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="top" textAlign="center" anchorOffsetX="0" horizontalCenter="-2.5" lineSpacing="2" verticalCenter="-29.5" height="39" width="375" textColor="0xffcd77"/>
+		<e:Label id="Label_ReceiveTimes" text="今天还剩今天还" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" anchorOffsetX="0" textAlign="center" verticalAlign="middle" verticalCenter="-67" horizontalCenter="-3" textColor="0xffa400"/>
+		<e:Label id="Label_ReceiveScore" text="Label_ReceiveScore" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="229" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="401" y="304" textColor="0xffaf38"/>
+		<e:Button id="Btn_Sure" label="" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="-2" verticalCenter="74">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="WhiteYellowColor" stroke="1" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="50" height="26" source="GW_label_tex_json.queding"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.mianfeilingqudianshu" verticalCenter="-111" x="359"/>
+	</e:Group>
+	</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WXRankAllItemSkin" width="527" height="33" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group width="527" height="33" x="0" y="0">
+			<e:Image id="bg" x="0" y="0" scale9Grid="8,7,1,2" anchorOffsetX="0" width="527" anchorOffsetY="0" height="33" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG3"/>
+			<e:Image id="medal" scale9Grid="8,7,1,2" anchorOffsetX="0" width="18" anchorOffsetY="0" height="26" scaleX="1" scaleY="1" source="WXHH_Atlas_json.jz_1" verticalCenter="0" horizontalCenter="-175.5"/>
+			<e:Label id="Label_Rank" text="1" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="29.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF00" horizontalCenter="-197.5" verticalCenter="-1"/>
+			<e:Label id="Label_NickName" text="玩家" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="253.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xE0B086" horizontalCenter="28.5" verticalCenter="-1"/>
+			</e:Group>
+</e:Skin>

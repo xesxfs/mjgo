@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_PointSetting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_PointSetting" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="72,49,3,2" horizontalCenter="0" verticalCenter="-3" width="360" height="426" anchorOffsetY="0"/>
+		<e:Label id="label_Title" text="每局点数设置" textColor="0xFFCE00" size="25" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-192.5" width="180" verticalAlign="middle" textAlign="center" horizontalCenter="0" visible="false"/>
+		<e:Group id="PointSetting_input" width="244" height="40" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-34" verticalCenter="-149">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:Label id="Label_Num" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1"/>
+			<e:Label id="promptDisplay0" verticalCenter="1" left="7" right="4" width="100%" height="32" size="24" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="点击输入" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1" anchorOffsetY="0" verticalAlign="middle" visible="false"/>
+		</e:Group>
+		<e:Button id="PointSetting_1" label="1" y="180" x="305" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="1" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_2" label="2" y="180" x="415" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="2">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="2" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_3" label="3" y="180" x="526" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="20,18,5,24"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="1" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_4" label="4" y="261" x="305" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="1" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_5" label="5" y="261" x="415" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="2" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_6" label="6" y="261" x="526" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="1" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_7" label="7" y="340" x="305" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="7">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="1" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_8" label="8" y="340" x="415" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="8">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,16,5,29" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="2" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_9" label="9" y="340" x="525" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="9">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,15,6,32" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="9" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="PointSetting_0" label="0" y="419" x="414" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1" scale9Grid="19,15,6,32" horizontalCenter="0" verticalCenter="0" x="10" y="10"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="0" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Wan" label="万" y="419" x="306" scaleX="1" scaleY="1" enabled="true" width="75" height="75" name="0000">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1_1" scale9Grid="18,18,8,27"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="2" size="39" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_OK" label="确定" y="420" x="526" scaleX="1" scaleY="1" enabled="true" width="75" height="75">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+	<e:Image width="100%" height="100%" source="GF_commonButton_json.SetPointBtn_1_1" scale9Grid="18,18,8,27" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="27" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="全部" y="90" x="590" scaleX="1" scaleY="1" enabled="true" width="36" height="36">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close" source.down="GF_commonButton_json.skin2_btn_close" source.disabled="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="全部" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_BS" label="全部" y="136" x="545" scaleX="1" scaleY="1" enabled="true" width="58.67" anchorOffsetX="0" anchorOffsetY="0" height="33">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_delete_Num"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="全部" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.meijudianshushezhi" y="93" height="30" width="169" horizontalCenter="0"/>
+	</e:Group>
+	</e:Skin>

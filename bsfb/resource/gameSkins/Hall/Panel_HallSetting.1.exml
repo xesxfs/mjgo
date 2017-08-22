@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_HallSetting2" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_HallSetting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="410" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" verticalCenter="-28.5" horizontalCenter="0.5" scale9Grid="44,53,2,7"/>
+		<e:Label text="背景音乐" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="80" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xfff2ba" x="291" y="325"/>
+		<e:Label text="游戏音效" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="80" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xfff2ba" x="417" y="325"/>
+		<e:Label text="关于我们" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="80" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xfff2ba" x="537" y="325"/>
+		<e:Label text="注销游戏" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="80" verticalAlign="middle" textAlign="center" verticalCenter="83" anchorOffsetX="0" horizontalCenter="-66" visible="false"/>
+		<e:Label text="返回IM" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="80" verticalAlign="middle" textAlign="center" verticalCenter="83" anchorOffsetX="0" horizontalCenter="70" visible="false"/>
+		<e:Label id="Label_Title" text="游戏设置" horizontalCenter="2" size="28" x="403" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="center" verticalCenter="-123" y="162" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+		<e:Button id="Toggle_Music" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="75" anchorOffsetX="0" height="75" x="294" y="235">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%"  source="GF_commonButton_json.yinyue"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="titleColor" stroke="1" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Toggle_Sound" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="75" anchorOffsetX="0" x="416" y="231">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.yinxiao"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="titleColor" stroke="1" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_AboutUs" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="75" anchorOffsetX="0" x="538" y="233">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.guanyuwomen"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="titleColor" stroke="1" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_LogOut" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="75" anchorOffsetX="0" horizontalCenter="-67.5" verticalCenter="33" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.zhuxiao"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="titleColor" stroke="1" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_CloseGame" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="75" anchorOffsetX="0" horizontalCenter="67.5" verticalCenter="33" x="10" y="10" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Return_btn"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-1" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" name="titleColor" stroke="1" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_CloseSetting" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="179" verticalCenter="-124">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="musicTg" source="GF_commonButton_json.global_toggle_39" width="30" height="30" horizontalCenter="-106" verticalCenter="0"/>
+		<e:Image id="soundTg" source="GF_commonButton_json.global_toggle_39" width="30" height="30" horizontalCenter="39" verticalCenter="0"/>
+		<e:Image source="GW_label_tex_json.youxishezhi" horizontalCenter="0" y="162"/>
+	</e:Group>
+</e:Skin>

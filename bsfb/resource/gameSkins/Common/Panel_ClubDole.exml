@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Panel_ClubDole" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_ClubDole" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="40" y="40">
+		<e:Group id="ClubDole" width="560" height="216" scaleX="1" scaleY="1" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="559" anchorOffsetY="0" height="389" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-5.5" scale9Grid="42,53,4,10"/>
+		<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="540" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="-61"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="540" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="11"/>
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="540" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="83"/>
+			<e:Image source="GW_label_tex_json.gonghuijiujijin" horizontalCenter="0" y="-79"/>
+		<e:Label id="Lb_ClubDole" text="400000/50000000" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="203" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="38.5" verticalCenter="-27"/>
+			<e:Label id="Lb_Contribution" text="99999999" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="203" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="38.5" verticalCenter="11"/>
+			<e:Label id="Lb_ReceiveDole" text="55555" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="203" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="38.5" verticalCenter="46"/>
+			<e:Label id="Lb_ReceiveDoleTimes" text="3333" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="203" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="38.5" verticalCenter="84"/>
+			<e:Label id="Lb_MyPoint" text="999999999999999" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="203" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="38.5" verticalCenter="116"/>
+			<e:Label text="注意：救济金捐入后无法立马全部取出。" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="367" textAlign="left" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="-78.5" verticalCenter="-61.5" textColor="0xff3322"/>
+			<e:Label text="救济金点数" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="117" textAlign="right" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="71" y="71"/>
+			<e:Label text="捐入救济金" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="117" textAlign="right" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="71" y="108"/>
+			<e:Label text="每次可领取" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="117" textAlign="right" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="71" y="144"/>
+			<e:Label text="本月可领取次数" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="159" textAlign="right" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="29" y="181"/>
+			<e:Label text="我的点数" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="117" textAlign="right" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="71" y="214"/>
+			<e:Label text="公会救济金" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-173" name="titleColor" stroke="1" visible="false"/>
+			<e:Label text="救济金需要公会成员们自觉捐献，必须有职位的公会成员才能领取救济金哦，没有的赶紧去找会长要职位吧。不同的职位每月领取的次数有所区别。" size="19" fontFamily="方正粗圆简体" anchorOffsetY="0" height="67" width="494" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="-2" verticalCenter="-113.5"/>
+			<e:Button id="Btn_Receive" label="领取" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" x="320" y="239">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image width="50" height="26" horizontalCenter="0" verticalCenter="0" source="GW_label_tex_json.lingqu"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Contribution" label="捐入" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" x="111" y="239">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+					<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image width="50" height="26" horizontalCenter="0" verticalCenter="0" source="GW_label_tex_json.juanru"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Jurisdiction" label="领取次数设置" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="36" horizontalCenter="197" verticalCenter="-60">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36" verticalCenter="0" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" stroke="1" horizontalCenter="0" verticalCenter="-2" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.lingqucishushezhi" anchorOffsetX="0" width="130" anchorOffsetY="0" height="22.41" horizontalCenter="0" verticalCenter="-2"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Log" label="记录" scaleX="1" scaleY="1" enabled="true" width="80" anchorOffsetX="0" anchorOffsetY="0" height="36" horizontalCenter="197" verticalCenter="12">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" stroke="1" horizontalCenter="0" verticalCenter="-2" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.jilu" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_CloseClubDole" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="255" verticalCenter="-170">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Help" width="36" label="账号登录" height="36" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="199" verticalCenter="83">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" width="100%" height="100%" source="WXHH_Atlas_json.game_button_help00"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Panel_ClubDoleInfo" width="900" height="600" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="580" anchorOffsetY="0" height="331" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-25.5"/>
+			<e:Button id="Btn_CloseClubDoleInfo" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="261" verticalCenter="-161">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="救济金说明" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="200" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-161" name="titleColor" stroke="1" visible="false"/>
+			<e:Scroller width="559" height="248" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="-13" anchorOffsetY="0">
+				<e:List id="ClubDoleList">
+					<e:layout>
+						<e:VerticalLayout gap="2" horizontalAlign="center" verticalAlign="top" paddingTop="5" paddingBottom="5"/>
+					</e:layout>
+					<e:itemRendererSkinName >
+				<e:Skin>
+					<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label text="每次领取额度:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="131" y="9"/>
+					<e:Label text="每月领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="383" y="9"/>
+					<e:Label id="Lb_Name" text="Lb_Name" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="117" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="4" y="8"/>
+					<e:Label id="Lb_Times1" text="999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="35" textAlign="center" verticalAlign="bottom" anchorOffsetX="0" textColor="0xFFF5D1" x="505" y="8"/>
+					<e:Label id="Lb_EachGetPoint" text="999999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="126" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="253" y="8"/>
+				</e:Skin>
+				</e:itemRendererSkinName>
+				<!--<e:ArrayCollection>
+                <e:Array>
+				<e:Object/><e:Object/><e:Object/>
+				</e:Array>
+            </e:ArrayCollection>-->
+				</e:List>
+			</e:Scroller>
+			<e:Group id="Go_ClubDoleInfo" width="560" height="40" horizontalCenter="1" verticalCenter="-113" x="-1" y="8" scaleX="1" scaleY="1" visible="false">
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label text="每次领取额度:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="131" y="9"/>
+				<e:Label text="每月领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="383" y="9"/>
+				<e:Label id="Lb_Name" text="Lb_Name" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="117" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="4" y="8"/>
+				<e:Label id="Lb_Times1" text="999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="35" textAlign="center" verticalAlign="bottom" anchorOffsetX="0" textColor="0xFFF5D1" x="505" y="8"/>
+				<e:Label id="Lb_EachGetPoint" text="999999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="126" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="253" y="8"/>
+			</e:Group>
+			<e:Image source="GW_label_tex_json.jiujijinshuoming" horizontalCenter="0" y="126"/>
+		</e:Group>
+		<e:Group id="Panel_Jurisdiction" width="900" height="600" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="10" y="10" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="640" anchorOffsetY="0" height="394" scaleX="1" scaleY="1" scale9Grid="36,55,19,10" horizontalCenter="0" verticalCenter="-4"/>
+			<e:Image source="GW_label_tex_json.jiujijinlingqucishushezhi" horizontalCenter="0" verticalCenter="-172"/>
+			<e:Button id="Btn_CloseJurisdictionPanel" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="294" verticalCenter="-171">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="救济金领取次数设置" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="200" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-170" name="titleColor" stroke="1" visible="false"/>
+			<e:Label text="公会6级后您可设置各职位每月领取救济金次数。\n 注意：调整设置后的次数只会对新成为该职位的成员生效。" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="49" width="612" verticalAlign="justify" textAlign="center" horizontalCenter="-2" verticalCenter="-122.5" anchorOffsetX="0" stroke="1" textColor="0xffd28e"/>
+			<e:Button id="Btn_Setting" label="保存" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" verticalCenter="163" horizontalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image width="50" height="26" horizontalCenter="0" verticalCenter="0" source="GW_label_tex_json.baocun"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Scroller width="621" height="246" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-0.5" verticalCenter="18">
+				<e:List id="JurisdictionInfoList" width="100%" height="246" y="2" anchorOffsetY="0">
+				<e:itemRendererSkinName >
+				<e:Skin>
+					<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="610" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0.5" verticalCenter="0"/>
+					<e:Label text="每次领取救济金点数：" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="163" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="6" y="9"/>
+					<e:Label id="Lb_Position" text="副会长每月领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="172" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="314" y="9"/>
+					<e:Label id="Lb_Times" text="999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="35" textAlign="center" verticalAlign="bottom" anchorOffsetX="0" textColor="0xFFF5D1" x="528" y="8"/>
+					<e:Label id="Lb_EachGet" text="999999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="150" textAlign="left" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="165" y="8"/>
+					<e:Button id="Btn_Add" width="35" label="账号登录" height="35" enabled="true" scaleX="1" scaleY="1" x="570" y="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Add"/>
+						<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+					<e:Button id="Btn_Minus" width="35" label="账号登录" height="35" enabled="true" scaleX="1" scaleY="1" x="487" y="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled" xmlns:ns1="*">
+						<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Minus"/>
+						<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+						</e:Skin>
+					</e:skinName>
+					</e:Button>
+				</e:Skin>	
+				</e:itemRendererSkinName>
+				<!--<e:ArrayCollection>
+                <e:Array>
+				<e:Object/><e:Object/><e:Object/>
+				</e:Array>
+            </e:ArrayCollection>-->
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" verticalAlign="top" paddingTop="5" paddingBottom="5" gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="PostionSettingInfo" width="617" height="40" horizontalCenter="1.5" verticalCenter="-82" x="-1" y="8" scaleX="1" scaleY="1" anchorOffsetX="0" visible="false">
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="610" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0.5" verticalCenter="0"/>
+				<e:Label text="每次领取救济金点数：" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="163" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="6" y="9"/>
+				<e:Label id="Lb_Position" text="副会长每月领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="172" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="314" y="9"/>
+				<e:Label id="Lb_Times" text="999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="35" textAlign="center" verticalAlign="bottom" anchorOffsetX="0" textColor="0xFFF5D1" x="528" y="8"/>
+				<e:Label id="Lb_EachGet" text="999999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="150" textAlign="left" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="165" y="8"/>
+				<e:Button id="Btn_Add" width="35" label="账号登录" height="35" enabled="true" scaleX="1" scaleY="1" x="570" y="2">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Add"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Minus" width="35" label="账号登录" height="35" enabled="true" scaleX="1" scaleY="1" x="487" y="2">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:ns1="*">
+					<e:Image width="100%" height="100%" source="BSFB_Atlas_json.UIBtn_Minus"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+		</e:Group>
+		<e:Group id="Panel_ReceiveClub_Num" width="900" height="600" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="420" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" horizontalCenter="8" verticalCenter="-39"/>
+			<e:Image source="GF_commonButton_json.coin_icon_1" x="285" y="275"/>
+			<e:Image source="GF_commonButton_json.coin_icon_1" x="472" y="275"/>
+			<e:Label text="领取" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="8" verticalCenter="-136" name="titleColor" stroke="1" visible="false"/>
+			<e:Label text="剩余" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="369" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="287" y="204" textColor="0xffffff"/>
+			<e:Label text="次数未领取,请选择领取方式。" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="369" y="205" textColor="0xFFFFFF"/>
+			<e:Label id="Lb_times_Contribution" text="999" size="22" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="center" anchorOffsetX="0" x="332" y="205" textColor="0xffffff" name="titleColor"/>
+			<e:Label id="Lb_OnceNum_Contribution" text="99999999" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="121" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="320" y="275" textColor="0xd1ff00"/>
+			<e:Label id="Lb_TotalNum_Contribution" text="99999999" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="121" verticalAlign="middle" textAlign="left" anchorOffsetX="0" x="510" y="275" textColor="0xd1ff00"/>
+			<e:Button id="Btn_Receive_Contribution" label="仅领一次" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="-91" verticalCenter="50">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.jinlingyici" width="90" height="23" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_ClosePanel" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="192" verticalCenter="-135">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_ReceiveAll_Contribution" label="领取全部" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="103" verticalCenter="50" x="10" y="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" name="OrangeColor" stroke="1" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xeeff6b" visible="false"/>
+	<e:Image source="GW_label_tex_json.lingququanbu" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.lingqu" y="149" x="435"/>
+		</e:Group>
+		<e:Group id="Panel_DoleLog" width="900" height="600" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="-1" y="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="580" anchorOffsetY="0" height="380" scaleX="1" scaleY="1" scale9Grid="43,53,3,11" horizontalCenter="0" verticalCenter="0"/>
+			<e:Button id="Btn_CloseDolelog" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="261" verticalCenter="-161">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="救济金记录" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="200" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-159" name="titleColor" stroke="1" visible="false"/>
+			<e:Label id="Label_TitleInfo" text="暂无记录" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="200" verticalAlign="middle" textAlign="center" horizontalCenter="0" y="291" stroke="1" textColor="0xE2E2E2"/>
+			<e:Scroller width="559" height="293" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="11.5" anchorOffsetY="0" scrollPolicyH="off">
+			<e:List id="DoleLogList" width="100%" height="100%">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="top" gap="2" paddingTop="5" paddingBottom="5"/>
+				</e:layout>
+				<e:itemRendererSkinName >
+					<e:Skin>
+					<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="GF_commonButton_json.Input_BG2"/>
+					<e:Image id="resultImg" width="34" height="34" horizontalCenter="-259" verticalCenter="0" source="GF_commonButton_json.Input_BG3" scale9Grid="7,5,2,4"/>
+					<e:Label id="resultTxt" text="胜" size="24" fontFamily="SimHei" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="0.5" horizontalCenter="-259" bold="true" textColor="0xffdda5"/>
+					<e:Label id="log_times" text="2017/03/24  18:30" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="151" textAlign="left" verticalAlign="middle" anchorOffsetX="0" y="9" horizontalCenter="193.5" textColor="0xFF7026"/>
+					<e:Label id="Label_LogResult" text="您击败了XOXOX,活的5000000000点数" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="315" textAlign="left" anchorOffsetX="0" y="8" verticalAlign="middle" horizontalCenter="-74.5" textColor="0xFFE026"/>
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<!--<e:ArrayCollection>
+                <e:Array>
+				<e:Object/><e:Object/><e:Object/>
+				</e:Array>
+            	</e:ArrayCollection>-->
+			</e:List>
+			</e:Scroller>
+			<e:Group id="Item_win" width="560" height="40" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-110" visible="false">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="GF_commonButton_json.Input_BG2"/>
+			<e:Image id="resultImg" width="34" height="34" horizontalCenter="-259" verticalCenter="0" source="GF_commonButton_json.Input_BG3" scale9Grid="7,5,2,4"/>
+			<e:Label id="resultTxt" text="胜" size="24" fontFamily="SimHei" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="0.5" horizontalCenter="-259" bold="true" textColor="0xffdda5"/>
+			<e:Label id="log_times" text="2017/03/24  18:30" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="151" textAlign="left" verticalAlign="middle" anchorOffsetX="0" y="9" horizontalCenter="193.5" textColor="0xFF7026"/>
+			<e:Label id="Label_LogResult" text="您击败了XOXOX,活的5000000000点数" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="315" textAlign="left" anchorOffsetX="0" y="8" verticalAlign="middle" horizontalCenter="-74.5" textColor="0xFFE026"/>
+			</e:Group>
+			<e:Image source="GW_label_tex_json.lingqujiujijinjilu" horizontalCenter="0" y="124"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

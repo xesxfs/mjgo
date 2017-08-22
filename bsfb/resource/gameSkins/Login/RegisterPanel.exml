@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RegisterPanel" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_SecurityCenter_Code_Change" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="492" anchorOffsetY="0" height="340" scaleX="1" scaleY="1" verticalCenter="1" horizontalCenter="-7"/>
+		<e:Label id="Label_Title1" text="注册" textColor="0xFFCE00" size="25" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" horizontalCenter="0" verticalCenter="-141.5" visible="false"/>
+		<e:Label text="输入手机号:" x="215" y="195.1" anchorOffsetX="0" width="114" anchorOffsetY="0" height="24" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xF9BA18" rotation="359.97"/>
+		<e:Label text="输入验证码:" x="215" y="241" anchorOffsetX="0" width="114" anchorOffsetY="0" height="24" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xF9BA18" rotation="359.97"/>
+		<e:Label text="请设置密码:" x="215" y="288" anchorOffsetX="0" width="114" anchorOffsetY="0" height="24" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xF9BA18" rotation="359.97"/>
+		<e:Label text="确认新密码:" x="215" y="334.1" anchorOffsetX="0" width="114" anchorOffsetY="0" height="24" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xF9BA18" rotation="359.97"/>
+		<e:Group id="Pop_CountryCode" width="150" height="32" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="331" y="190">
+		<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="0" verticalCenter="0"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="-8" verticalCenter="0"/>
+		<e:EditableText id="textDisplay0" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" y="288" scaleX="1" scaleY="1" horizontalCenter="-5"/>
+		<e:Label id="promptDisplay0" verticalCenter="3" left="12" right="12" width="100%" height="24" size="18" touchEnabled="false" anchorOffsetX="0" text="+86" fontFamily="SimHei" y="288" scaleX="1" scaleY="1" horizontalCenter="0" bold="true" textColor="0x636363"/>
+		<e:Image source="GF_commonButton_json.ui_sanjiao_btn" width="28" height="22" horizontalCenter="56" verticalCenter="-1"/>
+		</e:Group>
+		<e:Group id="Input_PhoneNum_Register" width="202.66" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="141.5" verticalCenter="-94">
+		<e:Image width="181.33" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" scale9Grid="7,6,2,5"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+		<e:EditableText id="textDisplay1" verticalCenter="0" left="18" right="38" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1"/>
+		<e:Label id="promptDisplay1" verticalCenter="1" left="6" right="26.659999999999997" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="请输入11位手机号码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="Input_RegCode_Register" width="150" height="32" anchorOffsetX="0" anchorOffsetY="0" x="331" y="238">
+		<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+		<e:EditableText id="textDisplay2" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1"/>
+		<e:Label id="promptDisplay2" verticalCenter="1" left="2" right="3" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="Input_PSW_Register" width="275" height="32" anchorOffsetX="0" anchorOffsetY="0" x="331" y="285">
+		<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+		<e:EditableText id="textDisplay3" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1"/>
+		<e:Label id="promptDisplay3" verticalCenter="1" left="8" right="6" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="包含字母数字的6-16位密码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="Input_PSWSure_Register" width="275" height="32" anchorOffsetX="0" anchorOffsetY="0" x="331" y="333">
+		<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+		<e:EditableText id="textDisplay4" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1"/>
+		<e:Label id="promptDisplay4" verticalCenter="1" left="9" right="8" width="100%" height="24" size="18" touchEnabled="false" textColor="0x000000" anchorOffsetX="0" text="请再次输入新密码" fontFamily="SimHei" x="22" y="288" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Button id="Btn_Close_Register0" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="211" verticalCenter="-140">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_GetCode_Register" label="获取验证码" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="100" verticalCenter="-49">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="尾页" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Sure_Register" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" x="390" y="415">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,5,5,34"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="立即绑定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_CodeFind_Phone" label="同意《宝石风暴使用条款及隐私政策》" scaleX="1" scaleY="1" enabled="true" width="270" anchorOffsetX="0" height="32" horizontalCenter="20" verticalCenter="86">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="2" source="GF_commonButton_json.UI_btn_bg" source.down="GF_commonButton_json.UI_btn_bg" fillMode="repeat" y="30"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="2" text="确定" size="16" verticalAlign="middle" fontFamily="SimHei" xmlns:ns1="*" textColor="0xffed00"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:CheckBox id="Toggle_PrivacyPolicy" label="CheckBox" width="30" height="30" selected="true" horizontalCenter="-149" verticalCenter="86">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.global_toggle_1" source.down="GF_commonButton_json.global_toggle_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+		</e:skinName>
+		</e:CheckBox>
+		<e:Image source="GW_label_tex_json.zhuce" x="421" y="147"/>
+	</e:Group>
+</e:Skin>

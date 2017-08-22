@@ -1,0 +1,923 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_ClubSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="arrowAni">
+			<tween:TweenItem target="{arrow1}">
+				<tween:Set>
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+					<tween:props>
+						<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+					<tween:props>
+						<e:Object scaleX="{1}" scaleY="{1}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow2}">
+				<tween:Set>
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow3}">
+				<tween:Set>
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow4}">
+				<tween:Set>
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+			<tween:TweenItem target="{arrow5}">
+				<tween:Set>
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:Set>
+				<tween:To duration="300">
+				<tween:props>
+					<e:Object scaleX="{1.2}" scaleY="{1.2}"/>
+				</tween:props>
+				</tween:To>
+				<tween:To duration="700">
+				<tween:props>
+					<e:Object scaleX="{1}" scaleY="{1}"/>
+				</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Group id="Panel_Club" width="900" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="ClubInfoPanel" width="900" height="600" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:Image width="900" height="600" fillMode="repeat" horizontalCenter="0" verticalCenter="0" source="GF_commonButton_json.UI_JD_bg2"/>
+			<e:Image anchorOffsetX="0" width="900" anchorOffsetY="0" height="600" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" source="GF_commonButton_json.Input_BG2" scale9Grid="5,6,5,3" x="10" y="10"/>
+			<e:Image source="GF_commonButton_json.UI_JD_bg" anchorOffsetX="0" width="820" fillMode="repeat" horizontalCenter="-41" verticalCenter="34.5" anchorOffsetY="0" height="537" visible="false"/>
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="819" anchorOffsetY="0" height="423" scaleX="1" scaleY="1" verticalCenter="89.5" horizontalCenter="-41.5" scale9Grid="36,53,19,12"/>
+			<e:Image source="GF_commonButton_json.bg_test_1" width="818" height="132" fillMode="repeat" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-41" verticalCenter="-172"/>
+			<e:Image source="GF_commonButton_json.Sprite_NewBie" x="1" y="58" scale9Grid="26,26,2,3" anchorOffsetX="0" width="308" anchorOffsetY="0" height="149"/>
+			<e:Image source="GF_commonButton_json.UI_line_bg" anchorOffsetX="0" width="821" scale9Grid="48,49,3,26" anchorOffsetY="0" height="137" horizontalCenter="-39.5" verticalCenter="-172.5"/>
+			<e:Image source="GF_commonButton_json.UI_line_2" scale9Grid="6,6,4,3" anchorOffsetX="0" width="782.34" anchorOffsetY="0" height="244" horizontalCenter="-39" verticalCenter="63"/>
+			<e:Button id="Btn_CloseClubInfo" label="" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42" scaleX="1" scaleY="1" verticalCenter="-217" x="823">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_return_btn"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="GF_commonButton_json.UI_title_bg" scale9Grid="52,0,91,40" anchorOffsetX="0" width="816" horizontalCenter="-43" verticalCenter="-87"/>
+			<e:Image source="GF_commonButton_json.UI_skin4_title" scale9Grid="73,0,2,52" anchorOffsetX="0" width="292" horizontalCenter="-6" verticalCenter="-208"/>
+			<e:Image source="GW_label_tex_json.gonghui" horizontalCenter="-6" verticalCenter="-209"/>
+			<e:Button id="Btn_ClubHelp" width="40" label="账号登录" height="40" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="163" verticalCenter="-210">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="WXHH_Atlas_json.game_button_help00"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="Label_club_nane" text="公会" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-13" verticalCenter="-208" visible="false"/>
+			<e:Label id="Label_Count1" text="公会名称:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-364.5" verticalCenter="-217"/>
+			<e:Label id="Label_Count2" text="公会ID:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-364.5" verticalCenter="-194"/>
+			<e:Label id="Label_Count3" text="公会等级:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-364.5" verticalCenter="-172"/>
+			<e:Label id="Label_Count4" text="公会成员:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-364.5" verticalCenter="-149"/>
+			<e:Label id="Lb_MyClubName" text="宝石挂机组" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xfffbef" verticalCenter="-216" x="156"/>
+			<e:Label id="Lb_MyClubID" text="333" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="middle" anchorOffsetX="0" textColor="0xfffbef" verticalCenter="-194" textAlign="left" x="158"/>
+			<e:Label id="Lb_MyClubMemberCount" text="8/30" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFFBEF" verticalCenter="-152" textAlign="left" x="156"/>
+			<e:Label id="Lb_MyClubLevel" text="11111" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xfffbef" verticalCenter="-173" x="156"/>
+			<e:Group id="ButtonItem" width="1" height="1" horizontalCenter="-10.5" verticalCenter="0.5" x="50" y="50">
+				<e:Image source="GF_commonButton_json.bg_test_1" fillMode="repeat" anchorOffsetX="0" width="780" anchorOffsetY="0" height="202" horizontalCenter="-28.5" verticalCenter="60.5" x="-418" y="-38" scaleX="1" scaleY="1"/>
+				<e:Button id="Btn_ClubDole" label="" anchorOffsetX="0" width="120" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" horizontalCenter="-293.5" verticalCenter="33.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.ui_gonghui_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubTask" label="" anchorOffsetX="0" width="120" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" x="-177" y="-26">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.ui_gonghui_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubSignOut" label="" anchorOffsetX="0" width="120" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" x="-2" y="-26">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.ui_gonghui_5"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_watting" label="" anchorOffsetX="0" width="120" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" verticalCenter="33.5" x="174">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.ui_gonghui_4"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubDole0" label="救济金" anchorOffsetX="0" width="120" anchorOffsetY="0" height="44" scaleX="1" scaleY="1" horizontalCenter="-294.5" verticalCenter="134.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center" visible="false"/>
+	<e:Image source="GW_label_tex_json.jiujijin" width="70" height="23" horizontalCenter="0" verticalCenter="-2.5"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubTask0" label="公会任务" anchorOffsetX="0" width="120" anchorOffsetY="0" height="44" scaleX="1" scaleY="1" x="-177" y="113">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghuirenwu" width="90" height="23" horizontalCenter="0" verticalCenter="-1.5"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubSignOut0" label="退出公会" anchorOffsetX="0" width="120" anchorOffsetY="0" height="44" scaleX="1" scaleY="1" x="-1" y="113">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center" visible="false"/>
+	<e:Image source="GW_label_tex_json.tuichugonghui" width="90" height="23" horizontalCenter="0" verticalCenter="-1.5"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_watting0" label="敬请期待" anchorOffsetX="0" width="120" anchorOffsetY="0" height="44" scaleX="1" scaleY="1" verticalCenter="134.5" x="176">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center" visible="false"/>
+	<e:Image width="90" height="23" horizontalCenter="0" verticalCenter="-1.5" source="GW_label_tex_json.jingqingqidai"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:RadioButton id="Tg_ClubInfo" label="公会" width="50" height="130" horizontalCenter="392" verticalCenter="-90" groupName="clubTg" selected="true">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Culb_btn_2" source.down="GF_commonButton_json.UI_Culb_btn_1" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xf1ff02" width="30" height="89" textAlign="center" verticalAlign="middle" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui2" horizontalCenter="-3.5" verticalCenter="-1"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Tg_ClubMember" label="成员" width="50" height="130" groupName="clubTg" horizontalCenter="392" verticalCenter="34">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Culb_btn_2" source.down="GF_commonButton_json.UI_Culb_btn_1" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xf1ff02" width="30" height="89" textAlign="center" verticalAlign="middle" visible="false"/>
+	<e:Image horizontalCenter="-3.5" verticalCenter="-1" source="GW_label_tex_json.chengyuan2"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Tg_ApplicantionInfo" label="入会审核" width="50" height="130" groupName="clubTg" horizontalCenter="392" verticalCenter="158">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Culb_btn_2" source.down="GF_commonButton_json.UI_Culb_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xf1ff02" width="30" height="89" textAlign="left" verticalAlign="middle" visible="false"/>
+	<e:Image horizontalCenter="-3.5" verticalCenter="-1" source="GW_label_tex_json.ruhuishenhe2"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:Group id="Go_ApplyNum" width="1" height="1" horizontalCenter="343.5" verticalCenter="108.5">
+				<e:Image source="GF_commonButton_json.Hall_Sprite_Tips" anchorOffsetX="0" width="24" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" horizontalCenter="69.5" verticalCenter="2.5"/>
+				<e:Label text="11" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="40" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFFBEF" horizontalCenter="82.5" verticalCenter="1.5"/>
+			</e:Group>
+			<e:Group id="Go_ClubListInfo" width="1" height="1" horizontalCenter="2" verticalCenter="0" x="40" y="40">
+				<e:Button id="Btn_MemberID" label="成员ID" anchorOffsetY="0" height="40" width="80" scaleX="1" scaleY="1" x="-414.34" y="-108"/>
+				<e:Button id="Btn_MemberNickName" label="成员昵称" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" x="-330.04" y="-108"/>
+				<e:Button id="Btn_Posts" label="职位" anchorOffsetY="0" height="40" width="80" scaleX="1" scaleY="1" x="-225.99" y="-108"/>
+				<e:Button id="Btn_InCoin" label="捐入救济金" anchorOffsetY="0" height="40" anchorOffsetX="0" scaleX="1" scaleY="1" x="-137.69" y="-108"/>
+				<e:Button id="Btn_OutCoin" label="领取救济金" anchorOffsetY="0" height="40" anchorOffsetX="0" scaleX="1" scaleY="1" x="-24.33" y="-108"/>
+				<e:Button id="Btn_LastOnTime" label="最后上线时间" anchorOffsetY="0" height="40" anchorOffsetX="0" scaleX="1" scaleY="1" x="91.33" y="-108"/>
+				<e:Button id="Btn_MemberSetting" label="成员设置" anchorOffsetY="0" height="40" anchorOffsetX="0" scaleX="1" scaleY="1" x="225" y="-108"/>
+			</e:Group>
+			<e:Group id="Go_ClubJoinMsg" width="1" height="1" horizontalCenter="2" verticalCenter="0" x="50" y="50" visible="false">
+				<e:Button id="Btn_ApplicantID" label="申请人ID" anchorOffsetY="0" height="40" width="114.67" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="-86.5" horizontalCenter="-290"/>
+				<e:Button id="Btn_ApplicantNickName" label="申请人昵称" anchorOffsetY="0" height="40" width="114.67" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="-86.5" horizontalCenter="-140"/>
+				<e:Button id="Btn_ApplicationDate" label="申请时间" anchorOffsetY="0" height="40" width="146.67" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="-86.5" horizontalCenter="22"/>
+				<e:Button id="Btn_Audit" label="入会审核" anchorOffsetY="0" height="40" width="114.67" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="-86.5" horizontalCenter="226"/>
+			</e:Group>
+			<e:Group id="Page" width="1" height="1" x="253" y="507.65">
+				<e:Button id="Btn_FirstPage" label="首页" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="-31.5" verticalCenter="2.5" x="-101" y="10">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,9,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="首页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_PageUp" label="上一页" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="69.5" verticalCenter="2.5" x="0" y="10">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="上一页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="Label_Pages" text="1/1" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="72.33" verticalAlign="middle" textAlign="center" anchorOffsetX="0" horizontalCenter="159.5" verticalCenter="2.5" x="105" y="14" scaleX="1" scaleY="1" textColor="0xffe8e2"/>
+				<e:Button id="Btn_PageDown" label="下一页" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="256.5" verticalCenter="2.5" x="187" y="10">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="下一页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_EndPage" label="尾页" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="356.5" verticalCenter="2.5" x="287" y="10">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,9,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Scroller width="782" height="242" horizontalCenter="-39" verticalCenter="63" anchorOffsetY="0" anchorOffsetX="0">
+				<e:List id="MyClubList" width="100%" height="247" anchorOffsetY="0">
+					<e:itemRendererSkinName >
+						<e:Skin>
+							<e:Image id="memberInfoBG" scale9Grid="8,7,1,2" anchorOffsetX="0" width="774" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="0" source="GF_commonButton_json.Input_BG3"/>
+							<e:Label id="Lb_ID" text="3325994" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="20" y="9"/>
+							<e:Label id="Lb_NickName" text="方正字体" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="115" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="99" y="9"/>
+							<e:Label id="Lb_Position" text="普通成员" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="208.67" y="9" width="80"/>
+							<e:Label id="Lb_Donated" text="5000" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="100" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="294" y="9"/>
+							<e:Label id="Lb_Received" text="5000" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="100" textAlign="center" verticalAlign="middle" anchorOffsetX="0" x="407" y="9" textColor="0xfff4ce"/>
+							<e:Label id="Lb_LastOnTime" text="三天前" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="110" textAlign="center" verticalAlign="middle" anchorOffsetX="0" x="524.99" y="9" textColor="0xffde68"/>
+							<e:Label id="Lb_Modify" text="你没有此权限" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="669" y="9"/>
+							<e:Button id="Btn_Modify" label="修改" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="36" verticalCenter="1" horizontalCenter="316.5">
+							<e:skinName>
+								<e:Skin states="up,down,disabled">
+								<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36" horizontalCenter="0" verticalCenter="0"/>
+								<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+								</e:Skin>
+							</e:skinName>
+							</e:Button>
+						</e:Skin>	
+					</e:itemRendererSkinName>
+					<!--<e:ArrayCollection>
+						<e:Array>
+						<e:Object/><e:Object/><e:Object/>
+						</e:Array>
+					</e:ArrayCollection>-->
+					<e:layout>
+						<e:VerticalLayout paddingTop="5" paddingBottom="5" horizontalAlign="center" verticalAlign="top" gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="ClubMemberInfo" width="783" height="40" verticalCenter="-35" y="0" scaleX="1" scaleY="1" horizontalCenter="-39.5" visible="false">
+				<e:Image id="memberInfoBG" scale9Grid="8,7,1,2" anchorOffsetX="0" width="774" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="0" source="GF_commonButton_json.Input_BG3"/>
+				<e:Label id="Lb_ID" text="3325994" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="20" y="9"/>
+				<e:Label id="Lb_NickName" text="方正字体" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="115" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="99" y="9"/>
+				<e:Label id="Lb_Position" text="普通成员" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="208.67" y="9" width="80"/>
+				<e:Label id="Lb_Donated" text="5000" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="100" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="294" y="9"/>
+				<e:Label id="Lb_Received" text="5000" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="100" textAlign="center" verticalAlign="middle" anchorOffsetX="0" x="407" y="9" textColor="0xfff4ce"/>
+				<e:Label id="Lb_LastOnTime" text="三天前" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" width="110" textAlign="center" verticalAlign="middle" anchorOffsetX="0" x="524.99" y="9" textColor="0xffde68"/>
+				<e:Label id="Lb_Modify" text="你没有此权限" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" x="669" y="9"/>
+				<e:Button id="Btn_Modify" label="修改" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="36" verticalCenter="1" horizontalCenter="316.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Scroller width="781" height="244" horizontalCenter="-39.5" verticalCenter="63" anchorOffsetX="0" anchorOffsetY="0">
+				<e:List id="ClubJoinList" width="781" height="242" anchorOffsetX="0" x="1" y="0" anchorOffsetY="0">
+				<e:itemRendererSkinName >
+				<e:Skin>
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="727" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="1" source="GF_commonButton_json.Input_BG3"/>
+				<e:CheckBox id="Tg_Join" label="CheckBox" width="32" height="32" horizontalCenter="-333.5" x="7" scaleX="1" scaleY="1" verticalCenter="0">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+					</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:Label id="Lb_ID2" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="1" horizontalCenter="-266.5"/>
+				<e:Label id="Lb_NickName2" text="大将军" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="149.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="0.5" horizontalCenter="-112.5"/>
+				<e:Label id="Lb_Time" text="2017/2/2718:30" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="148.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="0.5" horizontalCenter="49"/>
+				<e:Label id="Lb_Tips" text="你没有此权限" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="181.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="0.5" horizontalCenter="265.5"/>
+				<e:Button id="Btn_Yes" label="通过" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="307.5" verticalCenter="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_No" label="拒绝" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="204.5" verticalCenter="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,9,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				</e:Skin>	
+				</e:itemRendererSkinName>
+				<!--<e:ArrayCollection>
+							<e:Array>
+							<e:Object/><e:Object/><e:Object/>
+							</e:Array>
+						</e:ArrayCollection>-->
+				<e:layout>
+					<e:VerticalLayout paddingTop="5" paddingBottom="5" horizontalAlign="center" verticalAlign="top" gap="2"/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="ClubJoinInfo" width="774" height="40" horizontalCenter="-40" verticalCenter="-36" x="10" y="10" scaleX="1" scaleY="1" visible="false">
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="774" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="1" verticalCenter="0" source="GF_commonButton_json.Input_BG3"/>
+				<e:CheckBox id="Tg_Join" label="CheckBox" width="32" height="32" horizontalCenter="-349" x="7" scaleX="1" scaleY="1" verticalCenter="-1">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+					</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:Label id="Lb_ID2" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="124" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="-1" horizontalCenter="-254"/>
+				<e:Label id="Lb_NickName2" text="大将军" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="149.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="-1.5" horizontalCenter="-100"/>
+				<e:Label id="Lb_Time" text="2017/2/2718:30" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="148.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-1.5" horizontalCenter="61.5" textColor="0xfff5d3"/>
+				<e:Label id="Lb_Tips" text="你没有此权限" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="181.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-1.5" horizontalCenter="273" textColor="0x7bef1a"/>
+				<e:Button id="Btn_Yes" label="通过" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="329" verticalCenter="1">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_No" label="拒绝" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="226" verticalCenter="1">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,9,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Group id="Go_Bulletin" width="1" height="1" horizontalCenter="2" verticalCenter="0" x="30" y="30">
+				<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,2,3" anchorOffsetX="0" width="354" anchorOffsetY="0" height="73" scaleX="1" scaleY="1" verticalCenter="-143" horizontalCenter="185.5"/>
+				<e:Label id="Lb_ClubBulletin" text="会长很懒，什么都没有留下!" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="64" width="344" verticalAlign="middle" textAlign="center" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="-142.5" horizontalCenter="185.5" textColor="0xffcf96"/>
+				<e:Button id="Btn_ClubBulletin" label="修改" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" anchorOffsetY="0" height="32" verticalCenter="-120.5" horizontalCenter="325.5">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,7,23" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-0.5" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Button id="Btn_OpenSearchMember" label="搜索成员" anchorOffsetX="0" width="130" anchorOffsetY="0" height="35" scaleX="1" scaleY="1" horizontalCenter="275" verticalCenter="-154.5" visible="false">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="Go_JurisdictionControl" width="122" height="28" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-234" verticalCenter="-122">
+				<e:Label id="Label_Count5" text="入会条件:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" x="-110" y="-3"/>
+				<ns1:DropDownBox id="UIP_JurisdictionControl" skinName="DropDownBoxUI" width="130" height="26" anchorOffsetX="0" y="-4"/>
+			</e:Group>
+			<e:Button id="Btn_Upgrade" label="升级" y="115" x="207" scaleX="1" scaleY="1" enabled="true" width="65" anchorOffsetX="0" anchorOffsetY="0" height="28">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,5,9,25"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="上" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group id="Go_SearchMember" width="1" height="1" horizontalCenter="-24.5" verticalCenter="-137.5" visible="false">
+				<e:Image width="819" height="132" fillMode="scale" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" source="GF_commonButton_json.UI_Title_7" scale9Grid="38,50,16,18" verticalCenter="-34" horizontalCenter="-16.5"/>
+				<e:Label text="成员ID:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-354" verticalCenter="-26"/>
+				<e:Group width="113" height="25" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-263.5" verticalCenter="-26.5">
+					<e:Image width="119.5" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" verticalCenter="0" horizontalCenter="3.5" anchorOffsetX="0"/>
+					<e:Rect height="100%" width="100%" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" x="7"/>
+					<e:EditableText id="Input_ID_Search" textColor="0x000000" width="100%" height="100%" size="18" anchorOffsetX="0" x="7" y="0" scaleX="1" scaleY="1" prompt="请输入ID" textAlign="left" verticalAlign="middle" fontFamily="SimHei"/>
+				</e:Group>
+				<e:Label text="昵称:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="-166" verticalCenter="-26"/>
+				<e:Label text="职位:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" verticalAlign="middle" textAlign="right" anchorOffsetX="0" horizontalCenter="42" verticalCenter="-26"/>
+				<e:Group width="120" height="25" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-81" verticalCenter="-26.5">
+					<e:Image width="125.5" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" verticalCenter="0" horizontalCenter="3" anchorOffsetX="0"/>
+					<e:Rect height="100%" width="100%" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="4"/>
+					<e:EditableText id="Input_NickName_Search" textColor="0x000000" width="100%" height="100%" size="18" anchorOffsetX="0" scaleX="1" scaleY="1" prompt="请输入昵称" textAlign="left" verticalAlign="middle" horizontalCenter="4" verticalCenter="0" fontFamily="SimHei"/>
+				</e:Group>
+				<e:Button id="Btn_ClearSearchMember" label="清空搜索设置" anchorOffsetX="0" width="130" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" horizontalCenter="289" verticalCenter="-25">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="18" textAlign="center" fontFamily="SimHei"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_CloseMemberSearch" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="367" verticalCenter="-69">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_SearchMember" label="搜索" anchorOffsetX="0" width="75" anchorOffsetY="0" height="30" scaleX="1" scaleY="1" horizontalCenter="284.5" verticalCenter="-26" visible="false">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<ns1:DropDownBox id="UIP_SearchMemberControl" skinName="DropDownBoxUI" height="25" width="130" horizontalCenter="134" verticalCenter="-26.5"/>
+			</e:Group>
+			<e:Group id="Go_ClubJoinAll" width="1" height="1" horizontalCenter="-72.5" verticalCenter="-150.5" visible="false">
+				<e:Button id="Btn_NoAll" label="拒绝" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="240.5" verticalCenter="23.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="下一页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_YesAll" label="通过" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="362.5" verticalCenter="23.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,9,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="尾页" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:CheckBox id="Tg_JoinAll" label="" x="92" y="2">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:CheckBox>
+				<e:Label id="Lb_MyClubName0" text="全选" size="24" fontFamily="方正粗圆简体" anchorOffsetY="0" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFFBEF" horizontalCenter="156.5" verticalCenter="21.5"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="ClubChoicePanel" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="10" y="10" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="420" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-31" scale9Grid="42,53,4,11"/>
+			<e:Button id="Btn_CloseClubChoice" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="150" verticalCenter="-95">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label text="公会" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-96" visible="false"/>
+			<e:Label id="label_depositPoint5" text="公会是大团队，在这里你可以收获很多欢乐、友善，最重要的是互相提供救济金帮助，让有需要的人能走的更顺更远。" anchorOffsetX="0" width="398.52" anchorOffsetY="0" height="116" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xFFF049" horizontalCenter="-28.5" verticalCenter="-9"/>
+			<e:Button id="Btn_CreatClub" label="创建公会" scaleX="1" scaleY="1" enabled="true" width="167" anchorOffsetX="0" horizontalCenter="-124.5" verticalCenter="82">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.chuanjiangonghui"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_SearchClub" label="搜索公会" scaleX="1" scaleY="1" enabled="true" width="167" anchorOffsetX="0" horizontalCenter="67.5" verticalCenter="82">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="90" height="23" source="GW_label_tex_json.sousuogonghui"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.gonghui" horizontalCenter="-30" verticalCenter="-95"/>
+		</e:Group>
+		<e:Group id="ClubUpgradePanel" width="900" height="600" horizontalCenter="0" verticalCenter="0" x="40" y="40" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="580" anchorOffsetY="0" height="400" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-18"/>
+			<e:Image anchorOffsetX="0" width="565" anchorOffsetY="0" height="73" scaleX="1" scaleY="1" verticalCenter="-109.5" horizontalCenter="-16.5" source="GF_commonButton_json.bg_test_1" fillMode="repeat"/>
+			<e:Scroller width="560" height="210" horizontalCenter="-16" verticalCenter="37">
+				<e:List id="upgradeList" width="100%" height="100%">
+					<e:itemRendererSkinName >
+						<e:Skin>
+							<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+							<e:Label text="每次领取额度:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-46" verticalCenter="-0.5"/>
+							<e:Label text="每次领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="136" verticalCenter="-0.5"/>
+							<e:Label id="Item_Upgrade_UpgradeNum" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="-137" verticalCenter="-1"/>
+							<e:Label id="Item_Upgrade_EachGetPoint" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="45" verticalCenter="-1"/>
+							<e:Label id="Item_Upgrade_Name" text="大将军" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="110" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-223" verticalCenter="-0.5"/>
+							<e:Label id="Item_Upgrade_Times" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="227" verticalCenter="-1"/>
+						</e:Skin>
+					</e:itemRendererSkinName>
+					<!--<e:ArrayCollection>
+							<e:Array>
+							<e:Object/><e:Object/><e:Object/>
+							</e:Array>
+						</e:ArrayCollection>-->
+					<e:layout>
+						<e:VerticalLayout gap="2" paddingTop="5" paddingBottom="5" horizontalAlign="center" verticalAlign="top"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="Go_UpgradeInfo" width="560" height="40" horizontalCenter="-16" verticalCenter="-47" x="10" y="10" scaleX="1" scaleY="1" visible="false">
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label text="每次领取额度:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-46" verticalCenter="-0.5"/>
+				<e:Label text="每次领取次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="136" verticalCenter="-0.5"/>
+				<e:Label id="Item_Upgrade_UpgradeNum" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="-137" verticalCenter="-1"/>
+				<e:Label id="Item_Upgrade_EachGetPoint" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="45" verticalCenter="-1"/>
+				<e:Label id="Item_Upgrade_Name" text="大将军" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="110" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-223" verticalCenter="-0.5"/>
+				<e:Label id="Item_Upgrade_Times" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="227" verticalCenter="-1"/>
+			</e:Group>
+			<e:Button id="Btn_CloseClubUpgrade" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="242" verticalCenter="-170">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="公会升级" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-173" visible="false"/>
+			<e:Label text="下一级公会：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xfff9ef" horizontalCenter="-223.5" verticalCenter="-125"/>
+			<e:Label id="Lb_NextLevel" text="555" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="-100.5" verticalCenter="-125"/>
+			<e:Label text="成员人数：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="-223.5" verticalCenter="-91"/>
+			<e:Label id="Lb_ClubNum" text="555" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="-103.5" verticalCenter="-91"/>
+			<e:Label text="升级费用：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="59.5" verticalCenter="-125"/>
+			<e:Label id="Lb_UpgradeCost" text="555" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="174.5" verticalCenter="-125"/>
+			<e:Label text="我的点数：" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="59.5" verticalCenter="-91"/>
+			<e:Label id="Lb_MyScore" text="555" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="30" width="125" verticalAlign="middle" textAlign="left" anchorOffsetX="0" textColor="0xFFF9EF" horizontalCenter="177.5" verticalCenter="-91"/>
+			<e:Button id="Btn_UpgradeClub" label="升级" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" horizontalCenter="-18" verticalCenter="166">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.shengji" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.gonghuishengji" horizontalCenter="-18" y="115"/>
+		</e:Group>
+		<e:Group id="ClubHelpPanel" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="522" anchorOffsetY="0" height="286" scaleX="1" scaleY="1" verticalCenter="1" horizontalCenter="-21"/>
+			<e:Button id="Btn_CloseClubHelp" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="214" verticalCenter="-112">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="公会说明" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="1" verticalCenter="-111" visible="false"/>
+			<e:Label text="1、只有会长和副会长才能将公会成员请出公会。\n2、公会救济金需成员自愿捐献，拥有职位的公会成员才能领取，职位不同领取次数也各不相同，领取次数每月重置\n3、越高等级的公会容纳人数越多，升级需消耗点数。" anchorOffsetX="0" width="496.52" anchorOffsetY="0" height="205" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" textColor="0xFFF049" horizontalCenter="-21.5" verticalCenter="15.5" lineSpacing="15" verticalAlign="top"/>
+			<e:Image source="GW_label_tex_json.gonghuishuoming" horizontalCenter="-22.5" verticalCenter="-112"/>
+		</e:Group>
+		<e:Group id="PostionSettingPanel" width="900" height="600" horizontalCenter="0" verticalCenter="0" x="50" y="50" anchorOffsetX="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="580" anchorOffsetY="0" height="400" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-21"/>
+			<e:Scroller width="560" height="253" x="147" y="158">
+				<e:List id="MemberList" width="100%" height="100%">
+					<e:itemRendererSkinName >
+						<e:Skin>
+							<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+							<e:Label id="Item_Position_Num" text="9999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-77" verticalCenter="-0.5"/>
+							<e:Label id="Item_Position_pos" text="普通会员" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="-187" verticalCenter="-1"/>
+							<e:Label text="每月可领救济金次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="184" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="85" verticalCenter="-1"/>
+							<e:Label id="Item_Position_Times" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="227" verticalCenter="-1"/>
+							<e:RadioButton id="Item_Position_Chosse" label="" x="7" y="4" width="32" height="32">
+								<e:skinName>
+									<e:Skin states="up,down,disabled">
+									<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+									<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+									</e:Skin>
+								</e:skinName>
+							</e:RadioButton>
+						</e:Skin>
+					</e:itemRendererSkinName>
+
+					<!--<e:ArrayCollection>
+							<e:Array>
+							<e:Object/><e:Object/><e:Object/>
+							</e:Array>
+						</e:ArrayCollection>-->
+					<e:layout>
+						<e:VerticalLayout paddingTop="5" paddingBottom="5" horizontalAlign="center" verticalAlign="top" gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="PostionSettingInfo" width="560" height="40" horizontalCenter="0" verticalCenter="-120" x="10" y="10" scaleX="1" scaleY="1" visible="false">
+				<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="560" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="Item_Position_Num" text="9999999" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="120" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-77" verticalCenter="-0.5"/>
+				<e:Label id="Item_Position_pos" text="普通会员" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="-187" verticalCenter="-1"/>
+				<e:Label text="每月可领救济金次数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="184" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="85" verticalCenter="-1"/>
+				<e:Label id="Item_Position_Times" text="5555" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" horizontalCenter="227" verticalCenter="-1"/>
+				<e:RadioButton id="Item_Position_Chosse" label="" x="7" y="4" width="32" height="32">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+			</e:Group>
+			<e:Button id="Btn_ClosePostionSetting" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="242" verticalCenter="-171">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="职位设置" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-170" visible="false"/>
+			<e:Label text="提示：修改职位后该成员领取和捐入数据重置" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="25" width="541" verticalAlign="middle" textAlign="center" horizontalCenter="-21.5" textColor="0xfff616" verticalCenter="124.5"/>
+			<e:Button id="Btn_MemberSignOut" label="请出公会" scaleX="1" scaleY="1" enabled="true" width="167" anchorOffsetX="0" horizontalCenter="-115.5" verticalCenter="164">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.qingchugonghui" width="90" height="23" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_PostionSetting" label="确定" scaleX="1" scaleY="1" enabled="true" width="167" anchorOffsetX="0" horizontalCenter="74.5" verticalCenter="164">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.zhiweishezhi" y="113" x="379"/>
+		</e:Group>
+		<e:Group id="ClubBulletinPanel" width="900" height="600" verticalCenter="0" y="60" anchorOffsetX="0" horizontalCenter="0" visible="false">
+			<e:Image source="GF_commonButton_json.UI_Title_7" scale9Grid="36,53,19,17" anchorOffsetX="0" width="500" anchorOffsetY="0" height="300" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1"/>
+			<e:Image anchorOffsetX="0" width="476" anchorOffsetY="0" height="148" scaleX="1" scaleY="1" horizontalCenter="2" source="GF_commonButton_json.Input_BG" scale9Grid="5,7,4,2" verticalCenter="-19"/>
+			<e:Button id="Btn_CloseClubBulletin" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="225" verticalCenter="-121">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="公告" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-123" visible="false"/>
+			<e:Group width="470" height="145" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="2" verticalCenter="-19.5">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" verticalCenter="0" horizontalCenter="0"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-22"/>
+				<e:EditableText id="Input_ClubBulletin" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="点击输入公会内容" textAlign="center" maxChars="50" multiline="true" height="60" verticalAlign="middle"/>
+			</e:Group>
+			<e:Label text="点击输入框编辑公告内容                                字数上限50" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="25" width="468" verticalAlign="middle" textAlign="left" horizontalCenter="5" anchorOffsetX="0" textColor="0x69ce33" verticalCenter="70.5"/>
+			<e:Button id="Btn_ClearClubBulletin" label="清空" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" horizontalCenter="-107" verticalCenter="112">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.qingkong" horizontalCenter="0" verticalCenter="0" width="48" height="26"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_UpdateClubBulletin" label="保存" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" horizontalCenter="95" verticalCenter="112">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="48" height="26" source="GW_label_tex_json.baocun"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="GW_label_tex_json.gonggao" horizontalCenter="0" verticalCenter="-120.5"/>
+		</e:Group>
+		<e:Group id="SearchClubPanel" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20" visible="false">
+			<e:Image anchorOffsetX="0" width="900" anchorOffsetY="0" height="600" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" source="GF_commonButton_json.Input_BG2" scale9Grid="5,6,5,3"/>
+			<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="311" anchorOffsetY="0" height="565" scaleX="1" scaleY="1" verticalCenter="47.5" horizontalCenter="-344.5" scale9Grid="36,53,19,12"/>
+			<e:Image source="GF_commonButton_json.UI_title_bg" anchorOffsetX="0" width="900" horizontalCenter="1" verticalCenter="-210" anchorOffsetY="0" height="52" scale9Grid="52,0,91,40"/>
+			<e:Image source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,4" anchorOffsetX="0" width="625" anchorOffsetY="0" height="403" horizontalCenter="128.5" verticalCenter="59.5"/>
+			<e:Group id="Input_ClubID1" width="288" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-27" verticalCenter="-164">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" horizontalCenter="0" verticalCenter="0"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-77"/>
+				<e:EditableText id="Input_ClubID" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="输入公会ID或名称搜索" fontFamily="SimHei"/>
+			</e:Group>
+			<e:Group id="Input_ClubNane" width="178" height="32" anchorOffsetX="0" anchorOffsetY="0" x="42" y="307">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" verticalCenter="0" horizontalCenter="0"/>
+				<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-22"/>
+				<e:EditableText id="Input_ClubName" verticalCenter="0" left="5" right="7" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="输入公会名" fontFamily="SimHei" bold="true" textAlign="center"/>
+			</e:Group>
+			<e:Label text="公会" size="24" fontFamily="SimHei" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="-208" bold="true"/>
+			<e:Label text="注意：创建公会后目前无法解散公会。" anchorOffsetX="0" width="205.52" anchorOffsetY="0" height="51" size="16" fontFamily="SimHei" scaleX="1" scaleY="1" verticalAlign="top" textAlign="left" textColor="0xffe000" x="38" y="456"/>
+			<e:Label id="GenerateNum_Label" text="323333" anchorOffsetX="0" width="99.52" anchorOffsetY="0" height="22" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" verticalAlign="justify" textAlign="center" textColor="0xFFE000" x="124" y="360"/>
+			<e:Label id="Lb_EachGetPoint2" text="创建费用:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" x="44" y="359"/>
+			<e:Button id="Btn_CloseSearchClub3" label="" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" right="41" top="68" height="42" width="42">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Search2" label="搜索" scaleX="1" scaleY="1" enabled="true" width="70" horizontalCenter="156" verticalCenter="-162">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36"/>
+					<e:Label id="labelDisplay" horizontalCenter="1.5" verticalCenter="-0.5" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="48" height="26" source="GW_label_tex_json.sousuo"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_ChangeClubPanel" label="换一批" scaleX="1" scaleY="1" enabled="true" width="100" verticalCenter="-162" horizontalCenter="313">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="1.5" verticalCenter="-0.5" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.huanyipi" width="70" height="23" horizontalCenter="0" verticalCenter="-1.5"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_GenerateClub" label="创建" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="36" verticalCenter="113" horizontalCenter="-316">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image source="GF_commonButton_json.ui_gonghui_2" height="120" x="75" y="161"/>
+			<e:Scroller width="610" height="395" x="273" y="162" anchorOffsetX="0" scrollPolicyH="off" anchorOffsetY="0">
+				<e:List id="ClubList" width="100%" height="100%" y="1">
+				<e:itemRendererSkinName>
+					<e:Skin>
+					<e:Image anchorOffsetX="0" width="578" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="-2.5" verticalCenter="0" source="GF_commonButton_json.Input_BG3" fillMode="repeat" scale9Grid="6,7,2,2"/>
+					<e:Button id="Btn_JoinClub" label="申请加入" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="36" verticalCenter="0.5" horizontalCenter="216">
+						<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+						</e:Skin>
+						</e:skinName>
+					</e:Button>
+					<e:Label id="ClubName" text="世界萨之怒世界萨" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="170" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-134" verticalCenter="-3"/>
+					<e:Label id="ClubID" text="(1001)" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-30" verticalCenter="-3"/>
+					<e:Label id="refuse_label" text="禁止申请" size="20" fontFamily="SimHei" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-1" x="468" textColor="0x421e06"/>
+					<e:Label id="MemberNum" text="10/100" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="79" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="114.5" verticalCenter="-3"/>
+					<e:Label id="ClubLevel" text="12" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="-3.5" horizontalCenter="-239"/>
+					<e:Label id="Lb_EachGetPoint1" text="公会人数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="-3.5" horizontalCenter="44"/>
+					<e:Label id="Lb_UpgradeName0" text="LV:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="-3" horizontalCenter="-263"/>
+				
+					</e:Skin>
+				</e:itemRendererSkinName>
+					<!--<e:ArrayCollection>
+						<e:Array>
+						<e:Object/><e:Object/><e:Object/>
+						</e:Array>
+					</e:ArrayCollection>-->
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" paddingTop="5" paddingBottom="15"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Group id="Item" width="581" height="45" horizontalCenter="115.5" verticalCenter="-115.5" x="10" y="10" scaleX="1" scaleY="1" anchorOffsetX="0" visible="false">
+				<e:Image anchorOffsetX="0" width="578" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" horizontalCenter="-2.5" verticalCenter="0" source="GF_commonButton_json.Input_BG3" fillMode="repeat" scale9Grid="6,7,2,2"/>
+				<e:Button id="Btn_JoinClub" label="申请加入" scaleX="1" scaleY="1" enabled="true" width="100" anchorOffsetX="0" anchorOffsetY="0" height="36" verticalCenter="0.5" horizontalCenter="216">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,23"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="ClubName" text="世界萨之怒世界萨" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="170" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-134" verticalCenter="-3"/>
+				<e:Label id="ClubID" text="(1001)" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-30" verticalCenter="-3"/>
+				<e:Label id="refuse_label" text="禁止申请" size="20" fontFamily="SimHei" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="-1" x="468" textColor="0x421e06"/>
+				<e:Label id="MemberNum" text="10/100" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="79" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="114.5" verticalCenter="-3"/>
+				<e:Label id="ClubLevel" text="12" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="-3.5" horizontalCenter="-239"/>
+				<e:Label id="Lb_EachGetPoint1" text="公会人数:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFF5D1" verticalCenter="-3.5" horizontalCenter="44"/>
+				<e:Label id="Lb_UpgradeName0" text="LV:" size="17" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="30" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="-3" horizontalCenter="-263"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="Go_Guide" width="900" height="600" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Image anchorOffsetX="0" width="900" anchorOffsetY="0" height="600" scaleX="1" scaleY="1" verticalCenter="-1" horizontalCenter="1" source="GF_commonButton_json.slider_bg" fillMode="scale" scale9Grid="4,4,2,3"/>
+			<e:Group width="276" height="59" x="521" y="486">
+				<e:Image anchorOffsetX="0" width="276" anchorOffsetY="0" height="59" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+				<e:Label id="Lb_GuideTips" text="点击任意位置结束指引。" x="20" y="18" fontFamily="SimHei" size="24" textColor="0xffff00"/>
+			</e:Group>
+			<e:Group id="GuideOne" width="1" height="1" x="0" y="0">
+				<e:Button id="Btn_ClubDole1" label="" anchorOffsetX="0" width="120" anchorOffsetY="0" height="120" scaleX="1" scaleY="1" verticalCenter="334.5" x="85" y="66">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.ui_gonghui_1"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_ClubDole2" label="救济金" anchorOffsetX="0" width="120" anchorOffsetY="0" height="44" scaleX="1" scaleY="1" verticalCenter="434.5" x="85" y="204">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,7,8,22"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="20" textAlign="center" visible="false"/>
+	<e:Image source="GW_label_tex_json.jiujijin" width="70" height="23" horizontalCenter="0" verticalCenter="-2.5"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:RadioButton id="Tg_ApplicantionInfo0" label="成员" width="50" height="130" groupName="clubGuide" selected="true" horizontalCenter="839.5" verticalCenter="334.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Culb_btn_2" source.down="GF_commonButton_json.UI_Culb_btn_1" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xf1ff02" width="30" height="89" textAlign="left" verticalAlign="middle" visible="false"/>
+	<e:Image horizontalCenter="-3.5" verticalCenter="-1" source="GW_label_tex_json.chengyuan2"/>
+					</e:Skin>
+					</e:skinName>
+				</e:RadioButton>
+				<e:Group width="219" height="90" x="218" y="185">
+					<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+					<e:Label text="可在此捐献和领取公会救济金" x="4" y="25" fontFamily="SimHei" size="24" textColor="0xFFFF00" width="210" textAlign="center"/>
+				</e:Group>
+				<e:Group width="219" height="90" x="490" y="292">
+					<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+					<e:Label text="可在此捐献和领取公会救济金" x="4" y="25" fontFamily="SimHei" size="24" textColor="0xFFFF00" width="210" textAlign="center"/>
+				</e:Group>
+				<e:Image id="arrow1" anchorOffsetX="26" anchorOffsetY="33.5" scaleX="1" scaleY="1" x="184" y="232" scale9Grid="25,23,6,9" source="BSFB_Atlas_json.Sprite_Newbie_Arrow"/>
+				<e:Image id="arrow2" anchorOffsetX="26" anchorOffsetY="33.5" scaleX="1" scaleY="1" x="751" y="335" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" scale9Grid="25,23,6,9" rotation="-90"/>
+			</e:Group>
+			<e:Group id="GuideTwo" width="1" height="1" x="0" y="0" visible="false">
+				<e:RadioButton id="Tg_ApplicantionInfo1" label="入会审核" width="50" height="130" groupName="clubGuide2" selected="true" verticalCenter="458.5" horizontalCenter="839.5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_Culb_btn_2" source.down="GF_commonButton_json.UI_Culb_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="22" textColor="0xf1ff02" width="30" height="89" textAlign="left" verticalAlign="middle" visible="false"/>
+	<e:Image horizontalCenter="-3.5" verticalCenter="-1" source="GW_label_tex_json.ruhuishenhe2"/>
+					</e:Skin>
+				</e:skinName>
+				</e:RadioButton>
+				<e:Group id="Go_JurisdictionControl0" width="110" height="28" anchorOffsetX="0" anchorOffsetY="0" x="154" y="164" visible="false">
+					<e:Label id="Label_Count0" text="入会条件:" size="18" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="83.33" verticalAlign="middle" textAlign="right" anchorOffsetX="0" x="-109" y="-3"/>
+					<ns1:DropDownBox id="UIP_JurisdictionControl0" skinName="DropDownBoxUI" width="130" height="26" x="1" y="-5"/>
+				</e:Group>
+				<e:Button label="修改" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" anchorOffsetY="0" height="32" verticalCenter="180.5" horizontalCenter="776.5">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="6,6,7,23" horizontalCenter="0" verticalCenter="0"/>
+						<e:Label id="labelDisplay" text="尾页" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Group width="240" height="90" x="213" y="196">
+					<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+					<e:Label text="可在此修改入会权限" x="3" y="33" fontFamily="SimHei" size="24" textColor="0xFFFF00" width="240" textAlign="center"/>
+				</e:Group>
+				<e:Image id="arrow3" anchorOffsetX="26" anchorOffsetY="33.5" scaleX="1" scaleY="1" x="184" y="232" scale9Grid="25,23,6,9" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" rotation="180"/>
+				<e:Group width="216" height="90" x="516" y="196">
+					<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+					<e:Label text="可点此编写公告通知成员重要信息" x="2" y="24" fontFamily="SimHei" size="24" textColor="0xFFFF00" width="210" textAlign="center"/>
+				</e:Group>
+				<e:Image id="arrow4" anchorOffsetX="26" anchorOffsetY="33.5" scaleX="1" scaleY="1" x="758" y="232" scale9Grid="25,23,6,9" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" rotation="180"/>
+				<e:Group width="221" height="90" x="496" y="391">
+					<e:Image anchorOffsetX="0" width="100%" anchorOffsetY="0" height="100%" scaleX="1" scaleY="1" x="0" y="0" source="BSFB_Atlas_json.Sprite_NewBie" scale9Grid="25,23,6,9"/>
+					<e:Label text="查看入会申请信息可切换此页签" x="3" y="25" fontFamily="SimHei" size="24" textColor="0xFFFF00" width="210" textAlign="center"/>
+				</e:Group>
+				<e:Image id="arrow5" anchorOffsetX="26" anchorOffsetY="33.5" scaleX="1" scaleY="1" x="754" y="441" scale9Grid="25,23,6,9" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" rotation="-90"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

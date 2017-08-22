@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_ChangeNickName" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_ChangeNickName" width="900" height="600" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="400" anchorOffsetY="0" height="280" scaleX="1" scaleY="1" verticalCenter="-33" horizontalCenter="0" scale9Grid="42,53,4,8"/>
+		<e:Group id="Lb_showName" width="213" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="16.5" verticalCenter="-68">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+			<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+			<e:EditableText id="Lb_showNameLabel" verticalCenter="0" left="18" right="28" textColor="0x000000" width="100%" height="24" size="20" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" maxChars="12"/>
+		</e:Group>
+		<e:Label id="LB_title" text="修改昵称" y="143" horizontalCenter="4" size="25" x="139" scaleX="1" scaleY="1" fontFamily="SimHei" stroke="1" name="titleColor" textColor="0xffd47f" visible="false"/>
+		<e:Label id="Lb_oldName" text="afsfasfsaf" y="186" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="left" textColor="0xffeeb3" x="361"/>
+		<e:Label id="recommend" text="该昵称已被使用，推荐您使用：" x="264" y="257.5" anchorOffsetX="0" width="395.33" anchorOffsetY="0" height="23" size="18" fontFamily="SimHei" textColor="0xffffff" textAlign="center"/>
+		<e:Label id="oldName" text="旧昵称：" x="266" y="187.5" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="20" fontFamily="SimHei" textAlign="center" textColor="0xffdf79"/>
+		<e:Label id="newNameLabel" text="新昵称：" x="266" y="221.5" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="20" fontFamily="SimHei" textAlign="center" textColor="0xffdf79"/>
+		<e:Label id="needPoint" text="消耗点数：" x="260" y="327.5" anchorOffsetX="0" width="395.33" anchorOffsetY="0" height="23" size="20" fontFamily="SimHei" textAlign="center" textColor="0xe4c763"/>
+		<e:Button id="Btn_Roll" label="" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42" scaleX="1" scaleY="1" y="207" x="587">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.dices_icon"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_CloseRegister" label="" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" horizontalCenter="174" verticalCenter="-144">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Ok" label="确定" horizontalCenter="1.5" x="124" scaleX="1" scaleY="1" enabled="true" width="141" anchorOffsetX="0" verticalCenter="72">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image width="50" height="26" horizontalCenter="0" verticalCenter="0" source="GW_label_tex_json.queding"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_recommend1" label="推荐1" scaleX="1" scaleY="1" enabled="true" width="128" anchorOffsetX="0" horizontalCenter="-111" verticalCenter="7">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="8,4,4,28"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="全部" size="20" verticalAlign="middle" fontFamily="SimHei" stroke="1" name="titleColor" textColor="0xffd9bc" visible="false"/>
+	<e:Image source="GW_label_tex_json.tuijian1" anchorOffsetX="0" width="70" anchorOffsetY="0" height="23" horizontalCenter="-4.5" verticalCenter="-1.5"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_recommend2" label="推荐2" scaleX="1" scaleY="1" enabled="true" width="128" horizontalCenter="111" verticalCenter="7">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="8,4,4,28"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="全部" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" stroke="1" name="titleColor" visible="false"/>
+	<e:Image anchorOffsetX="0" width="72" anchorOffsetY="0" height="23" horizontalCenter="-4.5" verticalCenter="-1.5" source="GW_label_tex_json.tuijian2"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.xiugainicheng" horizontalCenter="0" y="141"/>
+	</e:Group>
+</e:Skin>

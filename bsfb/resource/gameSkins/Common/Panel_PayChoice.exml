@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_PayChoice" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image anchorOffsetX="0" width="440" anchorOffsetY="0" height="330" scaleX="1" scaleY="1" verticalCenter="-4" horizontalCenter="0" source="GF_commonButton_json.UI_Title_7" scale9Grid="36,51,19,19"/>
+		<e:Label id="Label_Title" text="请选择支付方式" y="149" horizontalCenter="3.5" size="25" x="139" scaleX="1" scaleY="1" fontFamily="SimHei" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42" scaleX="1" scaleY="1" horizontalCenter="192" verticalCenter="-140">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_PayClick0" label="支付宝" x="255" y="197" width="390" height="70">
+			<e:skinName>
+				<e:Skin states="up">
+				<e:Image anchorOffsetX="0" width="390" anchorOffsetY="0" height="70" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="-25" y="-62" scale9Grid="6,7,3,4" source="GF_commonButton_json.Input_BG2"/>
+    			<e:Label id="labelDisplay" top="8" bottom="8" size="25" verticalAlign="middle" fontFamily="SimHei" textAlign="center" text="afafa" x="200" textColor="0xfe9800"/>
+				<e:Image anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-73" x="-15" y="-52" scale9Grid="15,13,6,6" source="payicon_json.InAppPay_icon" width="50" height="50"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_PayClick1" label="支付宝" x="255" y="277" width="390" height="70">
+			<e:skinName>
+				<e:Skin states="up">
+				<e:Image anchorOffsetX="0" width="390" anchorOffsetY="0" height="70" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="-25" y="-62" source="GF_commonButton_json.Input_BG2" scale9Grid="6,7,3,2"/>
+    			<e:Label id="labelDisplay" top="8" bottom="8" size="25" verticalAlign="middle" fontFamily="SimHei" textAlign="center" text="afafa" x="200" textColor="0xfe9800"/>
+				<e:Image anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-73" x="-15" y="-52" scale9Grid="15,13,6,6" source="payicon_json.InAppPay_icon" width="50" height="50"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_PayClick2" label="支付宝" x="255" y="357" width="390" height="70">
+			<e:skinName>
+				<e:Skin states="up">
+				<e:Image anchorOffsetX="0" width="390" anchorOffsetY="0" height="70" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="-25" y="-62" source="GF_commonButton_json.Input_BG2" scale9Grid="6,7,3,2"/>
+    			<e:Label id="labelDisplay" top="8" bottom="8" size="25" verticalAlign="middle" fontFamily="SimHei" textAlign="center" text="afafa" x="200" textColor="0xfe9800"/>
+				<e:Image anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-73" x="-15" y="-52" scale9Grid="15,13,6,6" source="payicon_json.InAppPay_icon" width="50" height="50"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.qingxuanzezhifufangshi" horizontalCenter="0" verticalCenter="-140.5"/>
+	</e:Group>
+</e:Skin>

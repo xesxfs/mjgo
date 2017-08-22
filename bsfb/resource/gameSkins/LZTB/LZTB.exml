@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LZTB_main" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	<e:Group id="LZTB_main" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Image height="100%" width="100%" fillMode="scale" scaleX="1" scaleY="1" source="4_LZTB1_png" y="0" x="-1"/>
+		<e:Image id="logo0" source="GFLogo_json.BSFB_LHDB" anchorOffsetX="0" width="205.01" anchorOffsetY="0" height="140.18" scaleX="1" scaleY="1" horizontalCenter="-292.5" verticalCenter="-82"/>
+		<e:BitmapLabel id="Label_TotalScore" x="135" y="371" text="9999999999" scaleX="0.6" scaleY="0.6" anchorOffsetX="125" font="yellow_fnt" horizontalCenter="-290"/>
+		<e:BitmapLabel id="Label_TodayScore" x="145" y="417" text="9999999999" scaleX="0.6" scaleY="0.6" anchorOffsetX="125" font="yellow_fnt" horizontalCenter="-290"/>
+		<e:BitmapLabel id="Label_SlotScore" y="115" text="9999999999" scaleX="0.45" scaleY="0.45" anchorOffsetX="125" font="yellow_fnt" textAlign="left" width="270" x="186"/>
+		<e:Label text="龙珠探宝" x="121" y="88" size="18"/>
+		<e:Group id="fireball" width="30" height="30" anchorOffsetX="0" anchorOffsetY="0" x="540" y="101"/>
+		<e:Group id="bodyGroup" width="900" height="600" scaleX="1" scaleY="1"/>
+		<e:Group id="DiamondGroup" width="900" height="600" y="0" x="0">
+			<e:Image id="club00" width="20" height="20" scaleX="1" scaleY="1" x="553" name="00" anchorOffsetX="10" anchorOffsetY="10" y="163"/>
+			<e:Image id="club10" width="20" height="20" scaleX="1" scaleY="1" x="500" name="10" anchorOffsetX="10" anchorOffsetY="10" y="238"/>
+			<e:Image id="club11" width="20" height="20" scaleX="1" scaleY="1" x="606" name="11" anchorOffsetX="10" anchorOffsetY="10" y="238"/>
+			<e:Image id="club21" width="20" height="20" scaleX="1" scaleY="1" x="553" name="21" anchorOffsetX="10" anchorOffsetY="10" y="313"/>
+			<e:Image id="club20" width="20" height="20" scaleX="1" scaleY="1" x="447" name="20" anchorOffsetX="10" anchorOffsetY="10" y="313"/>
+			<e:Image id="club22" width="20" height="20" scaleX="1" scaleY="1" x="659" name="22" anchorOffsetX="10" anchorOffsetY="10" y="313"/>
+			<e:Image id="club30" width="20" height="20" scaleX="1" scaleY="1" x="394" name="30" anchorOffsetX="10" anchorOffsetY="10" y="388"/>
+			<e:Image id="club33" width="20" height="20" scaleX="1" scaleY="1" x="712" name="33" anchorOffsetX="10" anchorOffsetY="10" y="388"/>
+			<e:Image id="club32" width="20" height="20" scaleX="1" scaleY="1" x="606" name="32" anchorOffsetX="10" anchorOffsetY="10" y="388"/>
+			<e:Image id="club31" width="20" height="20" scaleX="1" scaleY="1" x="500" name="31" anchorOffsetX="10" anchorOffsetY="10" y="388"/>
+		</e:Group>
+		<e:Group id="holes" width="900" height="600" scaleX="1" scaleY="1" x="0" y="0">
+			<e:Image width="40" height="20" y="490" scaleX="1" scaleY="1" x="338" name="30" anchorOffsetX="20" anchorOffsetY="10"/>
+			<e:Image width="40" height="20" y="490" scaleX="1" scaleY="1" x="442" name="31" anchorOffsetX="20" anchorOffsetY="10"/>
+			<e:Image width="40" height="20" y="490" scaleX="1" scaleY="1" x="550" name="32" anchorOffsetX="20" anchorOffsetY="10"/>
+			<e:Image width="40" height="20" y="490" scaleX="1" scaleY="1" x="658" name="33" anchorOffsetX="20" anchorOffsetY="10"/>
+			<e:Image width="40" height="20" y="490" scaleX="1" scaleY="1" x="763" name="31" anchorOffsetX="20" anchorOffsetY="10"/>
+			<e:Image id="search_bg" source="search_bg_png" x="271" y="478" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="awardNum" width="900" height="600" scaleX="1" scaleY="1" x="0" y="0">
+			<e:BitmapLabel x="303" font="green_fnt" text="999999999" scaleX="0.2" scaleY="0.2" anchorOffsetX="125" horizontalCenter="-110" y="496"/>
+			<e:BitmapLabel x="422" font="green_fnt" text="999999999" scaleX="0.2" scaleY="0.2" anchorOffsetX="125" horizontalCenter="-10" verticalCenter="202.5"/>
+			<e:BitmapLabel x="525" font="green_fnt" text="999999999" scaleX="0.2" scaleY="0.2" anchorOffsetX="125" horizontalCenter="100" verticalCenter="202.5"/>
+			<e:BitmapLabel x="333" font="green_fnt" text="999999999" scaleX="0.2" scaleY="0.2" anchorOffsetX="125" horizontalCenter="210" verticalCenter="202.5"/>
+			<e:BitmapLabel x="343" font="green_fnt" text="999999999" scaleX="0.2" scaleY="0.2" anchorOffsetX="125" horizontalCenter="315" verticalCenter="202.5"/>
+		</e:Group>
+		<e:Button id="Btn_Start" label="开始探宝" width="135" height="40" verticalCenter="-13" horizontalCenter="103">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="LoginBut_json.UIBtn_10" horizontalCenter="0" verticalCenter="0" scale9Grid="37,0,12,48"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="18" visible="false"/>
+	<e:Image source="GW_label_tex_json.kaishitanbao" horizontalCenter="15" verticalCenter="0.5" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	</e:Skin>

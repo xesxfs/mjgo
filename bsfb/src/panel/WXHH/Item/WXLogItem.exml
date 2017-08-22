@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WXLogItemSkin" width="611" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+<e:Group id="LogItem" width="611" height="70" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleX="1" scaleY="1">
+		<e:Image source="GF_commonButton_json.UI_line_2" scale9Grid="8,7,1,2" anchorOffsetX="0" width="609" anchorOffsetY="0" height="70" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="ling_0" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="-222" verticalCenter="1" source="WXHH_Atlas_json.UI_line_1" scale9Grid="0,0,1,1"/>
+		<e:Image id="ling_1" source="WXHH_Atlas_json.UI_line_1" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="-141" verticalCenter="1" scale9Grid="0,0,1,1"/>
+		<e:Image id="ling_2" source="WXHH_Atlas_json.UI_line_1" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="-61" verticalCenter="1" scale9Grid="0,0,1,1"/>
+		<e:Image id="ling_3" source="WXHH_Atlas_json.UI_line_1" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="19" verticalCenter="1" scale9Grid="0,0,1,1"/>
+		<e:Image id="ling_4" source="WXHH_Atlas_json.UI_line_1" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="99" verticalCenter="1" scale9Grid="0,0,1,1"/>
+		<e:Image id="ling_5" source="WXHH_Atlas_json.UI_line_1" width="1" height="100%" scaleX="1" scaleY="1" horizontalCenter="179" verticalCenter="1" scale9Grid="0,0,1,1"/>
+		<e:Image width="521" id="line_0_0" scaleX="1" scaleY="1" horizontalCenter="42" verticalCenter="6.5" source="WXHH_Atlas_json.UI_line_1" height="1" scale9Grid="0,0,1,1"/>
+		<e:Label id="Label_Result" text="999999999" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="111.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="242.5" verticalCenter="17.5"/>
+	<e:Group id="Card_LabelGroup" width="200" height="200" x="250" y="-56">
+		<e:Label id="Card_Label1" text="999999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="74.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-224.5" verticalCenter="9.5" x="-163" y="99"/>
+		<e:Label id="Card_Label2" text="999999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="74.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-143.5" verticalCenter="9.5" x="-82" y="99"/>
+		<e:Label id="Card_Label3" text="999999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="74.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="-63.5" verticalCenter="9.5" x="-2" y="99"/>
+		<e:Label id="Card_Label4" text="999999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="74.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="16.5" verticalCenter="9.5" x="78" y="99"/>
+		<e:Label id="Card_Label5" text="999999" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="74.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" horizontalCenter="96.5" verticalCenter="9.5" x="158" y="99"/>
+	</e:Group>
+		<e:Label text="最终结果:" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="91" textAlign="center" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="240" verticalCenter="-12.5" textColor="0xB77A4E"/>
+		<e:Label id="Label_time" text="11:18:30" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="80" textAlign="center" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="-265.5" verticalCenter="15.5" textColor="0xFFF5D1"/>
+		<e:Label id="Label_Date" text="5-23" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="70" textAlign="center" verticalAlign="middle" anchorOffsetX="0" horizontalCenter="-265.5" verticalCenter="-11.5" textColor="0xFFF5D1"/>
+		<e:Image source="WXHH_Atlas_json.Five_poker_0" scaleX="1" scaleY="1" horizontalCenter="-176.5" verticalCenter="-11"/>
+		<e:Image source="WXHH_Atlas_json.Five_poker_1" scaleX="1" scaleY="1" horizontalCenter="-97.5" verticalCenter="-11"/>
+		<e:Image source="WXHH_Atlas_json.Five_poker_2" scaleX="1" scaleY="1" horizontalCenter="-19.5" verticalCenter="-11"/>
+		<e:Image source="WXHH_Atlas_json.Five_poker_3" scaleX="1" scaleY="1" horizontalCenter="59.5" verticalCenter="-11"/>
+		<e:Image source="WXHH_Atlas_json.Five_poker_4" scaleX="1" scaleY="1" horizontalCenter="138.5" verticalCenter="-11"/>
+	<e:Image id="toggle" x="129" y="16.5" width="25" height="25" source="GF_commonButton_json.global_toggle_39"/>
+	</e:Group>
+</e:Skin>

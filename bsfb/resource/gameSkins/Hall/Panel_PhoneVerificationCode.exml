@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_PhoneVerificationCode" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_PhoneVerificationCode" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="408" anchorOffsetY="0" height="250" scaleX="1" scaleY="1" verticalCenter="-35" horizontalCenter="4" scale9Grid="42,53,4,8"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="181" verticalCenter="-131">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_GetCode" label="获取验证码" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="90" verticalCenter="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" scale9Grid="5,10,11,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="获取验证码" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group width="163" height="32" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-67.5" verticalCenter="8">
+		<e:Image width="100%" height="100%" source="GF_commonButton_json.Input_BG" x="0" y="0" scaleX="1" scaleY="1" scale9Grid="7,6,2,5"/>
+		<e:Rect height="100%" width="100" fillColor="0xFFFFFF" anchorOffsetX="0" x="17" y="0" scaleX="1" scaleY="1"/>
+		<e:EditableText id="Input_identifying" verticalCenter="0" left="8" right="9" width="100%" height="24" size="19" anchorOffsetX="0" x="18" y="288" scaleX="1" scaleY="1" prompt="请输入你的验证码" verticalAlign="justify" textAlign="center" restrict="0-9" maxChars="6" fontFamily="SimHei" textColor="0x000000"/>
+		</e:Group>
+		<e:Label id="Label_Title10" text="绑定手机验证" horizontalCenter="12" size="25" x="408" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-130.5" anchorOffsetX="0" width="194" textAlign="center" y="142" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+		<e:Label id="label_depositPoint13" text="手机验证码信息已过期，" x="338" y="202.1" anchorOffsetX="0" width="240" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xdbdad9"/>
+		<e:Label id="label_depositPoint0" text="为了您的账号安全，请重新认证。" x="308" y="227.1" anchorOffsetX="0" width="300" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xDBDAD9" rotation="359.97"/>
+		<e:Label id="label_depositPoint19" text="绑定手机号：" x="293" y="259" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="22" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0xffdb7d"/>
+		<e:Button id="Btn_Sure" label="验证" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="9" verticalCenter="58">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1"  scale9Grid="46,5,5,34"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" name="WhiteYellowColor" stroke="1" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.yanzheng" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Label id="Label_number" text="13654545555" x="441" y="257" anchorOffsetX="0" width="179" anchorOffsetY="0" height="24" size="24" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xd1ff00"/>
+		<e:Image source="GW_label_tex_json.bangdingshouji" horizontalCenter="0" verticalCenter="-130.5"/>
+	</e:Group>
+</e:Skin>

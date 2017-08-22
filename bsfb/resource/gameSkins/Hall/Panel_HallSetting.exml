@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_HallSetting" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_HallSetting" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="404" anchorOffsetY="0" height="289" scaleX="1" scaleY="1" verticalCenter="-31.5" horizontalCenter="1" scale9Grid="42,53,4,6"/>
+		<e:Label id="Label_Title" text="游戏设置" horizontalCenter="2" size="28" x="403" scaleX="1" scaleY="1" fontFamily="SimHei" textAlign="center" verticalCenter="-145.5" y="162" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+		<e:Label id="label_depositPoint4" text="不接受大话骰邀请消息" x="284" y="304" anchorOffsetX="0" width="208.33" anchorOffsetY="0" height="26" size="22" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" name="titleColor" stroke="1" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint2" text="背景音乐" x="284" y="194" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="24" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" name="titleColor" stroke="1" textColor="0xffcc7a"/>
+		<e:Label id="label_depositPoint1" text="游戏音效" x="284" y="248" anchorOffsetX="0" width="106.33" anchorOffsetY="0" height="27" size="24" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" stroke="1" name="titleColor" textColor="0xffcc7a"/>
+		<e:CheckBox id="Toggle_Music" label="CheckBox" width="38" height="38" selected="true" horizontalCenter="124" verticalCenter="-88">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+				</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="Toggle_Sound" label="CheckBox" width="38" height="38" selected="true" horizontalCenter="124" verticalCenter="-36">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:CheckBox id="Toggle_DiceGame" label="CheckBox" width="38" height="38" selected="false" horizontalCenter="124" verticalCenter="15">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Button id="Btn_AboutUs" label="关于我们" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" x="281" y="353">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1"  scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" name="titleColor" stroke="1" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.guanyuwomen" verticalCenter="0" horizontalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_LogOut" label="注销账号" scaleX="1" scaleY="1" enabled="true" width="150" anchorOffsetX="0" x="473" y="353">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1"  scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" name="titleColor" stroke="1" textColor="0xf5ff3d" visible="false"/>
+	<e:Image verticalCenter="0" horizontalCenter="0" width="90" height="23" source="GW_label_tex_json.zhuxiaozhanghao"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_CloseSetting" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="176" verticalCenter="-146">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.youxishezhi" horizontalCenter="0" y="138"/>
+	</e:Group>
+</e:Skin>

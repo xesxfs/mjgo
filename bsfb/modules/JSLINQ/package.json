@@ -1,0 +1,15 @@
+{
+	"name": "egret",
+	"version": "4.0.1",
+	"modules": [
+		{
+			"name": "JSLINQ",
+			"description": "JSLINQ",
+			"files": [
+				"JSLINQ.d.ts",
+				"JSLINQ.js"
+			],
+			"root": "src"
+		}
+	]
+}

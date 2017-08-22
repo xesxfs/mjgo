@@ -1,0 +1,71 @@
+{
+	"native": {
+		"path_ignore": [],
+		"android_path": "../bsfbaoApp",
+		"android_as_path": "../appDemo201"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "4.1.0",
+	"modules": [
+		{
+			"name": "egret",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "eui",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "res",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "game",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "tween",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "game",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "socket",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "md5",
+			"path": "modules/md5"
+		},
+		{
+			"name": "cryptoJS",
+			"path": "modules/cryptoJS"
+		},
+		{
+			"name": "JSLINQ",
+			"path": "modules/JSLINQ"
+		},
+		{
+			"name": "physics",
+			"path": "modules/physics"
+		},
+		{
+			"name": "dragonbones",
+			"path": "${EGRET_APP_DATA}/4.0.3"
+		},
+		{
+			"name": "particle",
+			"path": "modules/particle"
+		},
+		{
+			"name": "mouse",
+			"path": "modules/mouse"
+		}
+	]
+}

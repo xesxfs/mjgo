@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_FangChenMi" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_FangChenMi" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="423" anchorOffsetY="0" height="298" scaleX="1" scaleY="1" verticalCenter="-34" horizontalCenter="0.5" scale9Grid="42,53,4,9"/>
+		<e:Label id="label_tip" text="请进行身份认证，否则将无法进行游戏！" x="258" y="329.5" anchorOffsetX="0" width="395.33" anchorOffsetY="0" height="23" size="16" fontFamily="SimHei" textAlign="center" textColor="0xd1ff00" verticalAlign="middle"/>
+		<e:Label id="label_title" text="" x="280.67" y="135.5" anchorOffsetX="0" width="333.33" anchorOffsetY="0" height="23" size="20" fontFamily="SimHei" textAlign="center" textColor="0xffd47f"/>
+		<e:Label id="label_content" text="" anchorOffsetX="0" width="379.33" anchorOffsetY="0" height="131" size="20" fontFamily="SimHei" textAlign="center" verticalCenter="-49.5" horizontalCenter="-0.5" textColor="0xfff2ba" verticalAlign="middle"/>
+		<e:Button id="Btn_Sure" label="确 定" scaleX="1" scaleY="1" enabled="true" width="154" anchorOffsetX="0" x="373" y="355">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="144" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="-2" verticalCenter="0" text="确定" size="22" verticalAlign="middle" fontFamily="SimHei" name="YellowWhiteColor" stroke="1" textColor="0xffffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Right" label="确 定" scaleX="1" scaleY="1" enabled="true" width="160" anchorOffsetX="0" height="44" verticalCenter="77" horizontalCenter="99">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" x="0" scale9Grid="44,5,11,34" anchorOffsetX="0" width="160" y="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="-2.5" verticalCenter="0" text="确 定" size="22" verticalAlign="middle" fontFamily="SimHei" name="YellowWhiteColor" stroke="1" textColor="0xffffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Left" label="身份确认" scaleX="1" scaleY="1" enabled="true" width="160" anchorOffsetX="0" horizontalCenter="-89" verticalCenter="77">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="156" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="身份确认" size="20" verticalAlign="middle" fontFamily="SimHei" name="YellowWhiteColor" stroke="1" textColor="0xffffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.shenfenqueren" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

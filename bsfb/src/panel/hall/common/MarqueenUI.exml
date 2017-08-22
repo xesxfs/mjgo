@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Marqueen" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0" height="76" width="470" touchThrough="true">
+		<e:Rect id="maskRect" width="440" height="70%" x="12" anchorOffsetX="0" touchEnabled="false" verticalCenter="0.5"/>
+		<e:Image id="backImg" source="BSFB_Atlas_json.Sprite_LoudSpeaker" x="0" y="0" anchorOffsetX="0" width="470" scaleX="1" scaleY="1" touchEnabled="true" height="100%" scale9Grid="22,15,2,36"/>
+		<e:Group id="contentGroup" height="100%" y="0" x="0" touchEnabled="false" touchThrough="true" touchChildren="false">
+			<e:Image id="vipFlagImg" source="BSFB_Atlas_json.UI_VIP_icon" verticalCenter="1" anchorOffsetX="0" width="45" anchorOffsetY="0" height="23" touchEnabled="false" x="0"/>
+			<e:Label id="contentLab" text="" verticalCenter="0" touchEnabled="false" size="24"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

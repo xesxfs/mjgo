@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Props_Lucky" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Props_Lucky" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="400" anchorOffsetY="0" height="260" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-17" scale9Grid="42,53,4,10"/>
+		<e:Label text="" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-17" verticalCenter="-101"/>
+		<e:Label text="自动使用手气卡" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="22" width="160" verticalAlign="middle" textAlign="center" horizontalCenter="18" verticalCenter="39" anchorOffsetX="0" textColor="0x43ff07"/>
+		<e:Label text="手气卡可以增加下局某些宝石的出现概率，勾选自动使用将每局开始前使用一张手气卡。" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="89" width="369" verticalAlign="middle" textAlign="center" anchorOffsetX="0" horizontalCenter="-19.5" verticalCenter="-29.5" textColor="0xe8b076"/>
+		<e:CheckBox id="Toggle_Use_props" label="CheckBox" width="32" height="32" horizontalCenter="-89" x="7" scaleX="1" scaleY="1" verticalCenter="39">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			</e:Skin>
+			</e:skinName>
+		</e:CheckBox>
+		<e:Button id="Btn_Sure" label="" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="65" verticalCenter="95" x="10" y="10">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="42,0,13,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="50" height="26" source="GW_label_tex_json.queding"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Cancel" label="" scaleX="1" scaleY="1" enabled="true" width="130" anchorOffsetX="0" horizontalCenter="-91" verticalCenter="95">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="50" height="26" source="GW_label_tex_json.quxiao"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	</e:Skin>

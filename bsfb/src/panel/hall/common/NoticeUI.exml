@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NotesUI" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group>
+		<e:Image id="Bulletin" height="293" width="241" source="GW_HallAtlas_json.UI_Title_6" scale9Grid="48,44,3,3"/>
+		<e:Scroller id="itemScroller" width="229" height="206" y="47" anchorOffsetY="0" x="6" anchorOffsetX="0">
+			<e:Group id="itemsGroup" anchorOffsetY="0" height="202" anchorOffsetX="0" width="223" x="6" y="0">
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="title" text="公告" x="91" y="9" name="OrangeColor" border="false" bold="false" italic="false" size="28" blendMode="normal" cacheAsBitmap="true" stroke="0" fontFamily="SimHei" textColor="0x441d14" visible="false"/>
+		<e:Image source="GW_label_tex_json.gonggao" x="92" y="9"/>
+	</e:Group>
+</e:Skin>

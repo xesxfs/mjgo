@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DHT_main" width="1024" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15b422aa6a7"/>
+	<e:Image height="100%" width="100%" fillMode="scale" scaleX="1" scaleY="1" horizontalCenter="-1" verticalCenter="0" source="6_DHS_png"/>
+	<e:Group id="BSFB_menu_right0" width="53" height="245.67" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" verticalCenter="0" right="0">
+		<e:Button id="Btn_Bank" label="银行" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="120" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="-55.834999999999994">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_1" scale9Grid="0,46,36,28"/>
+			<e:Label id="labelDisplay" horizontalCenter="6.5" verticalCenter="5.5" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="121" anchorOffsetX="0" width="31" visible="false"/>
+	<e:Image source="GW_label_tex_json.yinhang2" horizontalCenter="0.5" verticalCenter="12"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ClubDole" label="公会" scaleX="1" scaleY="1" enabled="true" width="48" anchorOffsetY="0" height="120" anchorOffsetX="0" horizontalCenter="0.5" verticalCenter="64.165">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_GH_btn_2" scale9Grid="0,10,36,30"/>
+			<e:Label id="labelDisplay" horizontalCenter="6" verticalCenter="-12.5" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" visible="false"/>
+	<e:Image source="GW_label_tex_json.gonghui2" horizontalCenter="0.5" verticalCenter="-11"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	
+	<e:Group id="DHT_main" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image height="100%" width="100%" fillMode="scale" scaleX="1" scaleY="1" horizontalCenter="-1" verticalCenter="0" source="6_DHS_png" visible="false"/>
+		<e:Group id="DHT_title" width="800" height="68" horizontalCenter="0" top="0">
+			<e:Image source="GW_DHT_Atlas_json.UI_title_bg" scale9Grid="23,0,3,68" anchorOffsetX="0" width="935" scaleX="1.06" scaleY="1" verticalCenter="3.5" anchorOffsetY="0" height="75" x="-96"/>
+			<e:Image source="GW_DHT_Atlas_json.skin_3_boli" x="6" y="3" anchorOffsetX="0" width="767" anchorOffsetY="0" height="52"/>
+			<e:Button id="Btn_Help" width="48" label="账号登录" height="48" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="63.96" y="10">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.DicesGame_btn_3"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Close" width="48" label="账号登录" height="48" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="393" verticalCenter="0">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.DicesGame_btn_1"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Seting" width="48" label="账号登录" height="48" enabled="true" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="334">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.DicesGame_btn_2"/>
+					<e:Label id="labelDisplay8" verticalCenter="0" size="26" x="69"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Group width="336" height="59" horizontalCenter="-36" verticalCenter="1.5" anchorOffsetY="0" anchorOffsetX="0">
+				<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,2,3" anchorOffsetX="0" width="140" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" horizontalCenter="111" verticalCenter="-13.5"/>
+				<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,2,3" anchorOffsetX="0" width="140" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" horizontalCenter="-95" verticalCenter="-13.5"/>
+				<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,2,3" anchorOffsetX="0" width="140" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" horizontalCenter="110" verticalCenter="13.5"/>
+				<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,2,3" anchorOffsetX="0" width="140" anchorOffsetY="0" height="24" scaleX="1" scaleY="1" horizontalCenter="-95" verticalCenter="13.5" x="10" y="10"/>
+				<e:Label id="Label_GameModel" text="传统模式" size="18" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xFFC428" verticalCenter="-14.5" horizontalCenter="105"/>
+				<e:Label id="Label_RoomName" text="风一样的男子" size="18" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xFFC428" verticalCenter="-12.5" horizontalCenter="-96" height="20"/>
+				<e:Label id="Label_InputRoomPoints" text="999999999" size="18" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" verticalCenter="13.5" horizontalCenter="111" textColor="0xffecbc"/>
+				<e:Label id="Label_RoomCode" text="99999999" size="18" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" verticalCenter="13.5" horizontalCenter="-95" textColor="0xffecbc"/>
+			</e:Group>
+			<e:Label text="模式:" size="18" fontFamily="方正粗圆简体" width="57.5" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" y="11.97" x="352.46" textColor="0xffde8c"/>
+			<e:Label text="每局:" size="18" fontFamily="方正粗圆简体" width="58" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" y="40" x="351.46" textColor="0xffde8c"/>
+			<e:Label text="房间名:" size="18" fontFamily="方正粗圆简体" width="82" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" y="11.97" x="120.31" textColor="0xffde8c"/>
+			<e:Label text="房间号:" size="18" fontFamily="方正粗圆简体" width="84.5" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" y="40" x="119.31" textColor="0xffde8c"/>
+			<e:Button id="Btn_Log" label="记录" scaleX="1" scaleY="1" enabled="true" width="109" anchorOffsetX="0" anchorOffsetY="0" height="37" horizontalCenter="235.5" verticalCenter="0.5">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_2" scale9Grid="16,6,97,38" verticalCenter="0" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="领取" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.jilu" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_Buy" label="充值" y="16" x="-61.2" scaleX="1" scaleY="1" enabled="true" width="109" anchorOffsetX="0" anchorOffsetY="0" height="37">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_2" scale9Grid="16,6,97,38" verticalCenter="0" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="领取" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" visible="false"/>
+	<e:Image source="GW_label_tex_json.chongzhi" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Group_Time" width="80" height="80" x="410" y="260" visible="false">
+			<e:Image source="GW_DHT_Atlas_json.tiume_bg" horizontalCenter="0" verticalCenter="0" x="8" y="8" scaleX="1" scaleY="1"/>
+			<e:Image source="GW_DHT_Atlas_json.timeing_bg" horizontalCenter="0" verticalCenter="0" x="6" y="6" scaleX="1" scaleY="1"/>
+			<e:Label id="Label_Time" text="30" size="30" fontFamily="方正粗圆简体" width="40" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" horizontalCenter="0" verticalCenter="0" textColor="0xffdb28" verticalAlign="middle"/>
+			<e:Label id="Label_TimeTitle" text="30" size="20" fontFamily="方正粗圆简体" width="182.42" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" verticalAlign="middle" textColor="0x1ec0ff" y="-29" horizontalCenter="-10"/>
+		</e:Group>
+		<e:Button id="Btn_Ready" label="准 备" scaleX="1" scaleY="1" enabled="true" width="181" anchorOffsetX="0" horizontalCenter="0.5" y="434.53">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.game_star_1" source.down="GW_DHT_Atlas_json.game_star_2" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-4.5" text="准备" size="30" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xffe5bc" visible="false"/>
+	<e:Image width="117" height="31" horizontalCenter="0" y="10" source="GW_label_tex_json.zhunbei"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_FirstCallDice" label="首次叫骰" scaleX="1" scaleY="1" enabled="true" width="149" anchorOffsetX="0" horizontalCenter="369.5" anchorOffsetY="0" height="38" name="首次叫骰" verticalCenter="154">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_2" source.down="GW_DHT_Atlas_json.skin2_btn_2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="26" verticalAlign="middle" fontFamily="SimHei" textColor="0xbfefff" visible="false"/>
+	<e:Image source="GW_label_tex_json.shoucijiaoshai" horizontalCenter="0" verticalCenter="0" width="90" height="23"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_GameAuto" label="托管" scaleX="1" scaleY="1" enabled="true" width="149" anchorOffsetX="0" horizontalCenter="369.5" anchorOffsetY="0" height="38" verticalCenter="82">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_1" source.down="GW_DHT_Atlas_json.skin2_btn_1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="26" verticalAlign="middle" fontFamily="SimHei" textColor="0xffecbf" visible="false"/>
+	<e:Image source="GW_label_tex_json.tuoguan" verticalCenter="0" horizontalCenter="0" width="50" height="26"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Open" label="开骰" scaleX="1" scaleY="1" enabled="true" width="149" anchorOffsetX="0" horizontalCenter="369.5" anchorOffsetY="0" height="38" verticalCenter="-11">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_1" source.down="GW_DHT_Atlas_json.skin2_btn_1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="26" verticalAlign="middle" fontFamily="SimHei" textColor="0xffecbf" visible="false"/>
+	<e:Image source="GW_label_tex_json.kaishai" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_InviteFriend" label="邀请好友" scaleX="1" scaleY="1" enabled="true" width="149" anchorOffsetX="0" anchorOffsetY="0" height="46.56" x="526" y="142">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_btn_1" source.down="GW_DHT_Atlas_json.skin2_btn_1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="26" verticalAlign="middle" fontFamily="SimHei" textColor="0xffecbf" visible="false"/>
+	<e:Image source="GW_label_tex_json.yaoqinghaoyou" width="90" height="23" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="Group_OwnerCount" width="171" height="55.42" x="143" y="185" scaleX="1" scaleY="1" anchorOffsetY="0" visible="false">
+			<e:Image width="130" height="74" x="35" y="2" source="DialogBoxbg_1" scale9Grid="33,10,5,4"/>
+			<e:Label id="Label_OwnerCount" text="2个" size="30" fontFamily="方正粗圆简体" width="79.4" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" textColor="0xFFDB28" verticalAlign="middle" x="45" y="12"/>
+			<e:Image id="Image_OwnerCount" width="40" height="40" x="115" y="12" source="dices_tex_1"/>
+		</e:Group>
+		<e:Group id="Group_OpponentCount" width="134" height="66.42" x="501" y="233.79" scaleX="1" scaleY="1" anchorOffsetY="0" visible="false">
+			<e:Image width="130" height="74" x="133" y="60" source="DialogBoxbg_1" scale9Grid="33,10,5,4" scaleX="-1" anchorOffsetY="0" scaleY="-1"/>
+			<e:Label id="Label_OpponentCount" text="2个" size="30" fontFamily="方正粗圆简体" width="76.37" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" textColor="0xFFDB28" verticalAlign="middle" x="13" y="12"/>
+			<e:Image id="Image_OpponentCount" width="40" height="40" x="79" y="12" source="dices_tex_1"/>
+		</e:Group>
+		<e:Group id="Group_CallDicePiont" width="200" height="92.42" x="657" y="484" scaleX="1" scaleY="1" anchorOffsetY="0" visible="false">
+			<e:Label id="Label_CallDicePiont" text="2个" size="30" fontFamily="方正粗圆简体" width="76.37" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" textColor="0xFFDB28" verticalAlign="middle" x="26" y="8"/>
+			<e:Image id="Image_CallDicePiont" width="40" height="40" x="98" y="8" source="dices_tex_1"/>
+			<e:Button id="Btn_CloseFirstDice" label="" scaleX="1" scaleY="1" enabled="true" width="44" anchorOffsetX="0" x="143" y="5">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="skin2_btn_close"/>
+					<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-4.5" text="准备" size="30" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xffe5bc"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="Group_AnimationDown" width="100" height="100" y="0" anchorOffsetX="0" x="0">
+		</e:Group>
+		<e:Group id="Group_PlayerOwner" width="200" height="100" x="171" y="276">
+			<e:Image source="GW_DHT_Atlas_json.UI_skin4_panel_2" scale9Grid="17,14,4,7" anchorOffsetX="0" width="200" anchorOffsetY="0" height="100" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="Label_SelfName" text="天高云淡" size="20" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xFFC428" verticalCenter="-17" horizontalCenter="18" anchorOffsetY="0" height="30" verticalAlign="middle"/>
+			<e:Label id="Label_SelfCoin" text="9999999999" size="20" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" verticalCenter="25" horizontalCenter="18" anchorOffsetY="0" height="30" verticalAlign="middle" textColor="0xffecbc"/>
+			<e:Image id="Image_Self" source="GW_DHT_Atlas_json.fangzhu_1" x="12" y="12"/>
+			<e:Image source="GF_commonButton_json.coin_icon_1" x="14" y="58"/>
+		</e:Group>
+		<e:Group id="Group_PlayerOpposite" width="200" height="100" x="498" y="122">
+			<e:Image source="GW_DHT_Atlas_json.UI_skin4_panel_2" scale9Grid="17,14,4,7" anchorOffsetX="0" width="200" anchorOffsetY="0" height="100" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="Label_OpponentName" text="天高云淡" size="20" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xFFC428" verticalCenter="-17" horizontalCenter="18" anchorOffsetY="0" height="30" verticalAlign="middle"/>
+			<e:Label id="Label_IsReady" text="天高云淡" size="20" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" textColor="0xFFC428" horizontalCenter="18" anchorOffsetY="0" height="30" verticalAlign="middle" y="-10"/>
+			<e:Label id="Label_OpponentCoin" text="9999999999" size="20" fontFamily="方正粗圆简体" width="140" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" verticalCenter="25" horizontalCenter="18" anchorOffsetY="0" height="30" verticalAlign="middle" textColor="0xffecbc"/>
+			<e:Image id="Image_Opponent" source="GW_DHT_Atlas_json.fangzhu_1" x="12" y="12"/>
+			<e:Image source="GF_commonButton_json.coin_icon_1" x="14" y="58"/>
+		</e:Group>
+		<e:Group id="Group_OwnerDice" width="110.15" height="98.48" x="110.73" y="390" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="Image_mDice0" width="20" height="20" x="-43" y="-32" source="DiceNum_1"/>
+			<e:Image id="Image_mDice1" width="20" height="20" x="-25" y="-21" source="DiceNum_1"/>
+			<e:Image id="Image_mDice2" width="20" height="20" x="-16" y="-43" source="DiceNum_1"/>
+			<e:Image id="Image_mDice3" width="20" height="20" x="5" y="-36" source="DiceNum_1"/>
+			<e:Image id="Image_mDice4" width="20" height="20" x="-3" y="-17" source="DiceNum_1"/>
+		</e:Group>
+		<e:Group id="Group_OpponentDice" width="115.61" height="92.48" x="726.27" y="163" anchorOffsetX="0" anchorOffsetY="0">
+			<e:Image id="Image_oDice0" width="20" height="20" x="5" y="-1" source="DiceNum_1" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="Image_oDice1" width="20" height="20" x="23" y="-1" source="DiceNum_1" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="Image_oDice2" width="20" height="20" x="0" y="14" source="DiceNum_1" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="Image_oDice3" width="20" height="20" x="17" y="14" source="DiceNum_1" scaleX="0.8" scaleY="0.8"/>
+			<e:Image id="Image_oDice4" width="20" height="20" x="31" y="10" source="DiceNum_1" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<e:Group id="Group_AnimationUp" width="100" height="100" y="0" anchorOffsetX="0" x="0"/>
+		<e:Label id="Label_WinLost" text="+50000" size="40" fontFamily="方正粗圆简体" width="180.3" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" height="40" textColor="0xFFDB28" verticalAlign="middle" y="353" horizontalCenter="18"/>
+		<e:Group id="Group_NewBie" width="960" height="1" x="0" y="0" visible="false">
+
+
+	<e:Group id="Panel_InviteFriends" width="900" height="600" x="0" y="0" visible="false">
+		<e:Image anchorOffsetX="0" width="500" anchorOffsetY="0" height="460" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Image anchorOffsetX="0" width="492.34" anchorOffsetY="0" height="95" fillMode="repeat" horizontalCenter="0" verticalCenter="-138.5" source="GW_DHT_Atlas_json.UI_8x8_bg"/>
+		<e:Button label="" anchorOffsetX="0" width="36" anchorOffsetY="0" height="36" scaleX="1" scaleY="1" horizontalCenter="227" verticalCenter="-205">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="公会频道邀请" scaleX="1" scaleY="1" enabled="true" width="121" anchorOffsetX="0" horizontalCenter="176.5" verticalCenter="-162" anchorOffsetY="0" height="37.81" x="10" y="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" source.down="GW_DHT_Atlas_json.skin2_btn_1" scale9Grid="7,7,5,22"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="刷新列表" scaleX="1" scaleY="1" enabled="true" width="121" anchorOffsetX="0" horizontalCenter="176.5" verticalCenter="-118" anchorOffsetY="0" height="37.81" x="20" y="20">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" source.down="GW_DHT_Atlas_json.skin2_btn_1" scale9Grid="7,7,5,22"/>
+				<e:Label id="labelDisplay" horizontalCenter="0.5" verticalCenter="-1" text="" size="18" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="选择邀请目标" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" anchorOffsetX="0" horizontalCenter="0" verticalCenter="-206"/>
+		<e:Label text="在线公会成员：" size="20" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="left" anchorOffsetX="0" horizontalCenter="-149" verticalCenter="-166"/>
+		<e:Label text="接受邀请方将无需密码直接加入" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="54" width="327" verticalAlign="top" textAlign="left" anchorOffsetX="0" horizontalCenter="-70.5" textColor="0x68ff3d" verticalCenter="-125"/>
+		<e:Group id="Group_inviteItem" width="480" height="40" x="210" y="213" scaleX="1" scaleY="1">
+			<e:Image scale9Grid="8,7,1,2" anchorOffsetX="0" width="469" anchorOffsetY="0" height="40" scaleX="1" scaleY="1" source="GF_commonButton_json.Input_BG2" horizontalCenter="-0.5" verticalCenter="1"/>
+			<e:Label text="ID:" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="38.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="0.5" horizontalCenter="-215.5"/>
+			<e:Label text="748748" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="82.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="0.5" horizontalCenter="-160.5" textColor="0xCECECE"/>
+			<e:Label text="昵称:" size="20" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="51.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" textColor="0xFFCF1C" verticalCenter="0.5" horizontalCenter="-86"/>
+			<e:Label text="等待中" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="71.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="0.5" horizontalCenter="103" textColor="0xFF1500"/>
+			<e:Label text="机器人" size="18" fontFamily="方正粗圆简体" anchorOffsetY="0" height="23" scaleX="1" scaleY="1" width="127.5" textAlign="center" verticalAlign="middle" anchorOffsetX="0" verticalCenter="0.5" horizontalCenter="5" textColor="0xCECECE"/>
+			<e:Button id="Btn_Invite" label="邀请" scaleX="1" scaleY="1" enabled="true" width="82" anchorOffsetX="0" anchorOffsetY="0" height="38" horizontalCenter="189" y="3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_1" source.down="GF_commonButton_json.UI_small_btn_1_1" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="8,0,5,36"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+
+<e:Group id="Panel_CallDice" width="960" height="190" anchorOffsetY="0" anchorOffsetX="0" x="0" y="0" visible="false">
+	<e:Group width="1" height="1" x="379" y="361">
+		<e:Image anchorOffsetX="0" width="470" anchorOffsetY="0" height="184" source="GW_DHT_Atlas_json.skin2_panel_1" scale9Grid="22,24,3,2" x="4" y="3" scaleX="1" scaleY="1"/>
+		<e:Group width="464" height="186" x="6" y="2" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:Image id="Image_D1" source="GW_DHT_Atlas_json.dices_tex_1" x="44" y="45" name="1" scaleX="1" scaleY="1"/>
+			<e:Image id="Image_D2" source="GW_DHT_Atlas_json.dices_tex_2" x="104.20000000000005" y="45" name="2" scaleX="1" scaleY="1"/>
+			<e:Image id="Image_D3" source="GW_DHT_Atlas_json.dices_tex_3" x="164.39999999999998" y="45" name="3" scaleX="1" scaleY="1"/>
+			<e:Image id="Image_D4" source="GW_DHT_Atlas_json.dices_tex_4" x="225.60000000000002" y="45" name="4" scaleX="1" scaleY="1"/>
+			<e:Image id="Image_D5" source="GW_DHT_Atlas_json.dices_tex_5" x="285.79999999999995" y="45" name="5" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Label text="首次叫骰每局开始时自动叫该点数，且会自动准备。" size="16" fontFamily="方正粗圆简体" width="384" textAlign="center" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" height="30" verticalAlign="middle" textColor="0x98ff28" x="59.99999999999999" y="14"/>
+		<e:Scroller width="300" height="68" anchorOffsetY="0" anchorOffsetX="0" scrollPolicyH="off" scrollPolicyV="off" x="84" y="115.00000000000001" scaleX="1" scaleY="1">
+			<e:Group>
+			<e:Group id="Group_Num" width="590" height="57" anchorOffsetY="0" anchorOffsetX="0" x="4" y="4" scaleX="1" scaleY="1">
+				<e:Button id="Btn_Num1" label="3" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="61.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num2" label="4" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="119.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num3" label="5" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="178.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num4" label="6" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="237.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num5" label="6" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="295.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num6" label="7" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="354.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num7" label="8" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="413.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num8" label="9" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="471.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Button id="Btn_Num9" label="10" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="530.4" y="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+			</e:Group>
+			</e:Group>
+		</e:Scroller>
+		<e:Button label="&lt;" scaleX="1" scaleY="1" enabled="true" width="60" anchorOffsetX="0" anchorOffsetY="0" height="60" x="22.000000000000004" y="117">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_NUmB_btn_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="&lt;" size="40" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" bold="true"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="+1" scaleX="1" scaleY="1" enabled="true" width="60" anchorOffsetX="0" anchorOffsetY="0" height="60" x="22.000000000000004" y="117">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_NUmB_btn_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="&lt;" size="40" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" bold="true"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label="" scaleX="1" scaleY="1" enabled="true" width="40" anchorOffsetX="0" anchorOffsetY="0" height="40" y="12" x="420">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="&lt;" size="40" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" bold="true"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button label=">" scaleX="1" scaleY="1" enabled="true" width="60" anchorOffsetX="0" anchorOffsetY="0" height="60" x="389.00000000000006" y="117">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_NUmB_btn_1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text=">" size="40" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" bold="true"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Button id="Btn_Num0" label="2" scaleX="1" scaleY="1" enabled="true" width="56" anchorOffsetX="0" anchorOffsetY="0" height="56" x="469" y="480">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GW_DHT_Atlas_json.skin2_num_btn_1" source.down="GW_DHT_Atlas_json.skin2_num_btn_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="" size="40" verticalAlign="middle" fontFamily="SimHei" bold="true" textColor="0xfff432"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="Image_D6" source="GW_DHT_Atlas_json.dices_tex_6" x="731" y="408" name="6" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+
+			<e:Image id="Image_NewGuid" width="1200" height="600" x="-144" y="0" source="GF_commonButton_json.slider_bg" scale9Grid="4,4,2,2"/>
+			<e:Image id="Image_Arrow" anchorOffsetX="15" anchorOffsetY="20" scaleX="1" scaleY="1" scale9Grid="6,6,15,16" alpha="1" source="BSFB_Atlas_json.Sprite_Newbie_Arrow" width="30" height="40" x="725" y="351" rotation="180"/>
+			<e:Group id="Group_Text" width="270" height="80" x="334" y="243">
+			<e:Image id="Bg_NewBie0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="1" y="-3" alpha="1" source="GF_commonButton_json.Sprite_NewBie" scale9Grid="24,23,8,8" width="270" height="90"/>
+			<e:Label id="Label_NewBie" text="我TMD就是新手引导" size="18" fontFamily="SimHei" width="250" textAlign="center" scaleX="1" scaleY="1" y="10" textColor="0xFEFFE8" x="8" verticalAlign="middle" height="65"/>
+			</e:Group>
+			<e:Button id="Btn_NewBieSkip" label="跳过" scaleX="1" scaleY="1" enabled="true" width="120" verticalCenter="120.5" height="46" x="711">
+				<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_02" scale9Grid="25,11,6,25" verticalCenter="0" horizontalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定存入" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf1ff02" textAlign="center" visible="false"/>
+	<e:Image source="GW_label_tex_json.tiaoguo" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+	</e:Skin>

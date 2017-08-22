@@ -1,0 +1,4 @@
+{"file":"payicon.png","frames":{
+"AliPay_icon":{"x":1,"y":111,"w":108,"h":108,"offX":0,"offY":0,"sourceW":108,"sourceH":108},
+"InAppPay_icon":{"x":111,"y":1,"w":108,"h":108,"offX":0,"offY":0,"sourceW":108,"sourceH":108},
+"WeChat_icon":{"x":1,"y":1,"w":108,"h":108,"offX":0,"offY":0,"sourceW":108,"sourceH":108}}}

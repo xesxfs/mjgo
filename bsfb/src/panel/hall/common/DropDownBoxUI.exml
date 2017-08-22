@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DropDownBoxUI"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="140" height="31">
+	<e:Image source="GF_commonButton_json.Input_BG" scale9Grid="8,7,1,3" anchorOffsetY="0" height="31" anchorOffsetX="0" width="140" verticalCenter="0" horizontalCenter="0"/>
+	<e:Label id="showTxtLab" text="+86(中国)" backgroundColor="0xffffff" background="true" border="false" textColor="0x0A0909" anchorOffsetX="0" size="20" anchorOffsetY="0" verticalAlign="middle" textAlign="left" fontFamily="SimHei" scaleX="1" scaleY="1" width="132.75" height="100%" x="2.75" y="0"/>
+	<e:Image id="dropDownImg" source="GF_commonButton_json.ui_sanjiao_btn" width="27" height="21" scaleX="1" scaleY="1" right="3" y="5"/>
+	<e:Group id="showDropDown"/>
+</e:Skin>

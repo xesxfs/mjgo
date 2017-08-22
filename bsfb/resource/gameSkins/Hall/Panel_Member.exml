@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Member" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_Member" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="585" anchorOffsetY="0" height="414" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" scale9Grid="41,53,14,11"/>
+		<e:Group id="SignInPanel" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+			<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="560" anchorOffsetY="0" height="301" source="GF_commonButton_json.Input_BG2" horizontalCenter="1" verticalCenter="-0.5"/>
+			<e:Button id="Btn_Receive" label="领取" scaleX="1" scaleY="1" enabled="true" anchorOffsetX="0" verticalCenter="175" horizontalCenter="-3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="131" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" verticalCenter="0" text="领取" size="22" verticalAlign="middle" fontFamily="SimHei"  name="YellowWhiteColor" stroke="1" textColor="0xffffc9" x="45" visible="false"/>
+	<e:Image source="GW_label_tex_json.lingqu" horizontalCenter="0" verticalCenter="0" width="48" height="26"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title2" text="连续登录奖励" size="25" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-176.5" anchorOffsetX="0" width="178" textAlign="center" y="142" horizontalCenter="0" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+			<e:Label id="Label_SignInInfo" text="尊敬的独行侠ly ,您已连续登录 0 天！" size="18" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-137" anchorOffsetX="0" width="445" textAlign="left" y="142" horizontalCenter="-48.5" textColor="0x64ff00"/>
+			<e:Label id="Label_Title1" text="第二天" size="20" x="308.3333333333333" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="276" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title3" text="第一天" size="20" x="186" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="276" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title4" text="第三天" size="20" x="457.66666666666663" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="276" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title5" text="第四天" size="20" x="591.32" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="276" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title0" text="第五天" size="20" x="186" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="408" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title6" text="第六天" size="20" x="307" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="408" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="Label_Title7" text="第七天" size="20" x="455" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="408" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+			<e:Label id="label_depositPoint5" text="VIP用户才可以领取签到奖励" x="492" y="427" anchorOffsetX="0" width="277" anchorOffsetY="0" height="24" size="16" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" textColor="0xd1ff00" verticalAlign="middle"/>
+			<e:Group id="prizebgs" width="1" height="1" horizontalCenter="0.5" verticalCenter="-0.5">
+				<e:Group id="Sprite_SignIn_Bg_0" width="100" height="100" horizontalCenter="-202.5" verticalCenter="-75.5" x="100" y="-225" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="44" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group id="Sprite_SignIn_Bg_1" width="100" height="100" horizontalCenter="-66.5" verticalCenter="-75.5" x="250" y="-225" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="34" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="46" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group width="100" height="100" id="Sprite_SignIn_Bg_2" horizontalCenter="70.5" verticalCenter="-75.5" x="400" y="-225" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="45" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group width="100" height="100" id="Sprite_SignIn_Bg_3" horizontalCenter="206.5" verticalCenter="-75.5" x="550" y="-225" scaleX="1" scaleY="1">
+					<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+					<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="46" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group id="Sprite_SignIn_Bg_4" width="100" height="100" horizontalCenter="-204.5" verticalCenter="50.5" x="98" y="-71" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="44" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group width="100" height="100" id="Sprite_SignIn_Bg_5" horizontalCenter="-68.5" verticalCenter="50.5" x="248" y="-71" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="46" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+				<e:Group width="100" height="100" id="Sprite_SignIn_Bg_6" horizontalCenter="68.5" verticalCenter="50.5" x="398" y="-71" scaleX="1" scaleY="1">
+				<e:Image source="GF_commonButton_json.Task_qiandaokuan03" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="45" verticalCenter="20" source="GF_commonButton_json.global_toggle_39"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="PrizePics" width="1" height="1" horizontalCenter="-416.5" verticalCenter="45.5">
+				<e:Image scaleX="1" scaleY="1" bottom="103" right="-263" left="168" top="-167" source="GF_commonButton_json.LoudSpeaker"/>
+				<e:Image scaleX="1" scaleY="1" right="-398" bottom="103" left="303" top="-167" source="GF_commonButton_json.LoudSpeaker"/>
+				<e:Image source="GF_commonButton_json.Coin02" scaleX="1" scaleY="1" left="442" top="-167" right="-537" bottom="103"/>
+				<e:Image source="GF_commonButton_json.Coin03" scaleX="1" scaleY="1" left="576" top="-168" right="-671" bottom="104"/>
+				<e:Image source="GF_commonButton_json.Coin04" scaleX="1" scaleY="1" left="167" top="-30" right="-258" bottom="-31" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Image source="GF_commonButton_json.Coin04" scaleX="1" scaleY="1" left="302" top="-32" right="-396" bottom="-31" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Image source="GF_commonButton_json.Coin06" scaleX="1" scaleY="1" left="442" top="-30" right="-532" bottom="-31" anchorOffsetX="0" anchorOffsetY="0"/>
+			</e:Group>
+			<e:Group id="PrizeLabels" width="1" height="1" horizontalCenter="141.5" verticalCenter="-15.5">
+				<e:Label id="Label_Title13" text="1000" size="18" x="-408" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="-33" textColor="0xffffff"/>
+				<e:Label id="Label_Title14" text="1000" size="18" x="-275.67" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="-33" textColor="0xffffff"/>
+				<e:Label id="Label_Title15" text="1000" size="18" x="-136.33" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="-33" textColor="0xffffff"/>
+				<e:Label id="Label_Title19" text="1000" size="18" x="-0.68" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="-33" textColor="0xffffff"/>
+				<e:Label id="Label_Title16" text="1000" size="18" x="-410" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="94" textColor="0xffffff"/>
+				<e:Label id="Label_Title17" text="1000" size="18" x="-274" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="94" textColor="0xffffff"/>
+				<e:Label id="Label_Title18" text="1000" size="18" x="-136" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="94" textColor="0xffffff"/>
+			</e:Group>
+			<e:Image source="GW_label_tex_json.lianxudenglujiangli" horizontalCenter="0" y="106"/>
+		</e:Group>
+		<e:Group id="VIPPanel" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" x="10" y="10">
+			<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="560" anchorOffsetY="0" height="301" source="GF_commonButton_json.Input_BG2" horizontalCenter="1" verticalCenter="-0.5"/>
+			<e:RadioButton id="Btn_VIPMonth" label="" x="214" y="373" groupName="memberTg">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Btn_VIPQuarter" label="" x="401" y="373" groupName="memberTg">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="Btn_VIPYear" label="" x="587" y="373" groupName="memberTg">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_toggle_1" source.down="GF_commonButton_json.UI_toggle_2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:RadioButton>
+			<e:Button id="Btn_BecomeVIP" label="购买VIP" scaleX="1" scaleY="1" enabled="true" width="140" anchorOffsetX="0" x="377" y="453" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="140" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="1" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" name="YellowWhiteColor" stroke="1" textColor="0xffffc9"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="Btn_RenewVIP" label="续费" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" x="387" y="453" visible="false">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="120" horizontalCenter="0" verticalCenter="0"/>
+					<e:Label id="labelDisplay" horizontalCenter="1" verticalCenter="0" text="" size="20" verticalAlign="middle" fontFamily="SimHei" name="YellowWhiteColor" stroke="1" textColor="0xffffc9"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="Label_Title8" text="会员" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" verticalCenter="-177" anchorOffsetX="0" width="178" textAlign="center" y="142" horizontalCenter="0" name="titleColor" stroke="1" textColor="0xffd47f" visible="false"/>
+			<e:Label id="Label_Title9" text="VIP特权：" size="22" x="184" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="174.5" textColor="0xFFE130" name="titleColor" stroke="1"/>
+			<e:Label id="Label_Title10" text="一 每日签到领取游戏点数和道具" size="20" x="283" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="337" textAlign="center" y="199" textColor="0xdbb686"/>
+			<e:Label id="Label_Title11" text="一 VIP特有荣誉标识" size="20" x="279" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="223" textAlign="center" y="231" textColor="0xdbb686"/>
+			<e:Label id="Label_Title12" text="一 五星宏辉查看更多页历史结果" size="20" x="291" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="321" textAlign="center" y="261" textColor="0xdbb686"/>
+			<e:Label id="Label_VIPTimes" text="马上成为VIP会员，领取尊贵特权!" size="22" x="281" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" textAlign="center" y="313" height="27" textColor="0xffd500"/>
+			<e:Group id="VIPPrices" width="1" height="1" horizontalCenter="-299.5" verticalCenter="115.5">
+				<e:Label id="Label_VIPTimes0" text="25元/月" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="81" textAlign="left" textColor="0xFFDDAA" height="27" x="112" y="-35"/>
+				<e:Label id="Label_VIPTimes1" text="60元/季" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="81" textAlign="left" textColor="0xFFDDAA" height="27" x="297" y="-35"/>
+				<e:Label id="Label_VIPTimes2" text="208元/年" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="95" textAlign="left" textColor="0xFFDDAA" height="27" x="483" y="-35"/>
+			</e:Group>
+			<e:Image source="GW_label_tex_json.huiyuan" horizontalCenter="0" y="107"/>
+		</e:Group>
+		<e:RadioButton id="Toggle_VIP" label="会员信息" width="40" height="120" groupName="memberToggle" horizontalCenter="-311" verticalCenter="-92" enabled="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_1btn_1" source.down="GF_commonButton_json.Props_1btn_2" scale9Grid="11,8,24,16" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="2" verticalCenter="0" width="30" height="89" size="22" fontFamily="SimHei" name="buttonYellowWhiteColor" stroke="1" textColor="0xfff0b5" visible="false"/>
+	<e:Image source="GW_label_tex_json.huiyuanxinxi" horizontalCenter="0" verticalCenter="0" width="26" height="96"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:RadioButton id="Toggle_Sign" label="会员签到" width="40" height="120" groupName="memberToggle" horizontalCenter="-311" verticalCenter="28" enabled="true">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.Props_1btn_1" source.down="GF_commonButton_json.Props_1btn_2" scale9Grid="12,9,22,15"/>
+				<e:Label id="labelDisplay" horizontalCenter="2" verticalCenter="0" width="30" height="89" size="22" fontFamily="SimHei" name="buttonYellowWhiteColor" stroke="1" textColor="0xfff0b5" visible="false"/>
+	<e:Image horizontalCenter="0" verticalCenter="0" width="26" height="96" source="GW_label_tex_json.huiyuanqiandao"/>
+				</e:Skin>
+			</e:skinName>
+		</e:RadioButton>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="266" verticalCenter="-177">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

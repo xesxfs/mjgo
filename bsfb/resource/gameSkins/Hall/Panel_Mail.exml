@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Mail" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_Mail" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="30" y="30">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="667" anchorOffsetY="0" height="420" scaleX="1" scaleY="1" horizontalCenter="0.5" verticalCenter="0" scale9Grid="42,57,4,7"/>
+		<e:Image source="GW_label_tex_json.youjian" horizontalCenter="0" y="104"/>
+		<e:Image scale9Grid="6,5,4,6" anchorOffsetX="0" width="655" anchorOffsetY="0" height="309" source="GF_commonButton_json.Input_BG2" scaleX="1" scaleY="1" verticalCenter="-2.5" horizontalCenter="1.5"/>
+		<e:Label text="邮件" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" horizontalCenter="4" verticalCenter="-181" textColor="0xffd47f" visible="false"/>
+		<e:Group id="Content" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="40" y="40">
+			<e:Image scale9Grid="6,6,4,4" anchorOffsetX="0" width="404" anchorOffsetY="0" height="305" horizontalCenter="122" verticalCenter="-3.5" source="GF_commonButton_json.Input_BG3"/>
+			<e:Image source="GF_commonButton_json.Input_BG4" scale9Grid="7,6,3,4" anchorOffsetX="0" width="395" anchorOffsetY="0" height="260" verticalCenter="14" horizontalCenter="122.5"/>
+			<e:Label id="Label_Title" text="战士神器隐藏" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" verticalCenter="-135.5" x="389" textColor="0xfff2ba"/>
+			<e:Label id="Label_Content" text="蛛丝马迹：魔兽7.1赞隐藏BOSS夜之魇资料摘记，123123" anchorOffsetX="0" width="374" anchorOffsetY="0" height="110.01" size="18" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0x442706" verticalCenter="-50" horizontalCenter="125"/>
+			<e:Group id="MyProps1" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1" x="30" y="30">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="181" anchorOffsetY="0" height="61" scaleX="1" scaleY="1" verticalCenter="43.5" horizontalCenter="23.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="65" anchorOffsetY="0" height="52.19" scaleX="1" scaleY="1" verticalCenter="44" horizontalCenter="-28.5"/>
+			<e:Image id="PropsImage1" source="GF_commonButton_json.Coin04" anchorOffsetX="0" width="62.76" anchorOffsetY="0" height="42.49" scaleX="1" scaleY="1" verticalCenter="44" horizontalCenter="-28.5"/>
+				<e:Label id="Label_Props1" text="邮件" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" y="330" x="442" textColor="0xfff2ba"/>
+			</e:Group>
+			<e:Group id="MyProps2" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1" x="40" y="40">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="181" anchorOffsetY="0" height="61" scaleX="1" scaleY="1" verticalCenter="43.5" horizontalCenter="220.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="65" anchorOffsetY="0" height="52.19" scaleX="1" scaleY="1" verticalCenter="44" horizontalCenter="168.5"/>
+			<e:Image id="PropsImage2" source="GF_commonButton_json.UI_present_1" anchorOffsetX="0" width="50" anchorOffsetY="0" height="41.53" scaleX="1" scaleY="1" verticalCenter="44" horizontalCenter="168"/>
+				<e:Label text="邮件" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" id="Label_Props2" x="640" y="328" textColor="0xfff2ba"/>
+			</e:Group>
+			<e:Group id="MyProps3" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1" x="50" y="50">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="181" anchorOffsetY="0" height="61" scaleX="1" scaleY="1" verticalCenter="108.5" horizontalCenter="23.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="65" anchorOffsetY="0" height="52.19" scaleX="1" scaleY="1" verticalCenter="108" horizontalCenter="-28.5"/>
+			<e:Image id="PropsImage3" source="GF_commonButton_json.LuckCard" anchorOffsetX="0" width="51" anchorOffsetY="0" height="39.1" scaleX="1" scaleY="1" verticalCenter="107.5" horizontalCenter="-29.5"/>
+				<e:Label text="邮件" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" id="Label_Props3" x="443" y="397" textColor="0xfff2ba"/>
+			</e:Group>
+			<e:Group id="MyProps4" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="1" x="20" y="20">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="181" anchorOffsetY="0" height="61" verticalCenter="108.5" horizontalCenter="220.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="65" anchorOffsetY="0" height="52.19" verticalCenter="108" horizontalCenter="168.5"/>
+			<e:Image id="PropsImage4" source="GF_commonButton_json.LoudSpeaker" anchorOffsetX="0" width="51" anchorOffsetY="0" height="39.1" verticalCenter="108.5" horizontalCenter="168.5"/>
+				<e:Label text="邮件" size="22" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="128" textAlign="center" id="Label_Props4" x="642" y="396" textColor="0xfff2ba"/>
+			</e:Group>
+			<e:Group id="TimeBoard" width="900" height="600" x="0" y="0" anchorOffsetY="0" anchorOffsetX="0">
+				<e:Image width="96" height="21" source="GF_commonButton_json.Input_BG" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="266" verticalCenter="-134.5"/>	
+				<e:Label text="有效期：" anchorOffsetX="0" width="100" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" verticalCenter="-133.5" horizontalCenter="188" textColor="0xfff2ba"/>
+				<e:Label id="label_Time" text="29天5小时" anchorOffsetX="0" width="100" anchorOffsetY="0" height="21" size="18" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" textColor="0x3D2D07" verticalCenter="-132.5" horizontalCenter="265"/>
+			</e:Group>
+			<e:Group id="GetGift" width="51" height="60" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" x="519" y="302">
+				<e:Image width="89" height="76" scaleX="1" scaleY="1" scale9Grid="7,6,2,5" anchorOffsetY="0" anchorOffsetX="0" x="0" y="0" source="UI_read_icon" rotation="337.36"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="Girl_bg" width="900" height="600" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" x="50" y="50" visible="false">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="398" anchorOffsetY="0" height="301" horizontalCenter="125" verticalCenter="-5.5"/>
+			<e:Image source="GF_commonButton_json.Input_BG4" scale9Grid="7,6,3,4" anchorOffsetX="0" width="392" anchorOffsetY="0" height="260" verticalCenter="9.5" horizontalCenter="123" scaleY="0.99" scaleX="0.98"/>
+			<e:Label id="label_depositPoint4" text="邮件小秘书" anchorOffsetX="0" width="194" anchorOffsetY="0" height="21" size="22" fontFamily="SimHei" textAlign="center" scaleX="1" scaleY="1" rotation="359.97" horizontalCenter="121" verticalCenter="-135.5" textColor="0xfff2ba"/>
+			<e:Image source="GF_commonButton_json.qipao_mishu" verticalCenter="17" horizontalCenter="26" anchorOffsetX="0" width="190" anchorOffsetY="0" height="241.82"/>
+			<e:Image source="GF_commonButton_json.UI_qipao_bg" verticalCenter="-52.5" horizontalCenter="223.5" fillMode="scale" scale9Grid="23,9,164,108"/>
+		</e:Group>
+		<e:Button id="Btn_Delete" label="删 除" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="-8" verticalCenter="178" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.shanchu" horizontalCenter="0" verticalCenter="0" width="48" height="23"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Get" label="收 取" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="-8" verticalCenter="178" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.shouqu" horizontalCenter="0" verticalCenter="0" width="48" height="24"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" verticalCenter="-181" horizontalCenter="306">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Group id="MailI" x="4.5" y="4" visible="false">
+			<e:Button id="Btn_Item" label="Button" x="0" y="0" width="239" height="70"/>
+			<e:Image id="Line" source="GF_commonButton_json.UI_line_1" scale9Grid="6,5,5,6" anchorOffsetX="0" width="235" anchorOffsetY="0" height="62" verticalCenter="-1" horizontalCenter="0"/>
+			<e:Group id="Unread" anchorOffsetX="0" width="239" anchorOffsetY="0" height="70" y="0" x="0">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="232" anchorOffsetY="0" height="59" horizontalCenter="-0.5" x="-4" y="5" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay2" text="未读" size="22" verticalAlign="middle" fontFamily="SimHei" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" textAlign="center" horizontalCenter="95.5" verticalCenter="2.5" textColor="0x7FFF0A"/>
+			<e:Label id="Label_Title_Read" text="标题" anchorOffsetX="0" width="133" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E" y="13" x="69" textAlign="left"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="57" anchorOffsetY="0" height="50" scaleX="1" scaleY="1" horizontalCenter="-83" y="9"/>
+			<e:Image id="Icon_UnRead" source="GF_commonButton_json.letter_weidu" anchorOffsetX="0" width="48" anchorOffsetY="0" height="35.48" scaleX="1" scaleY="1" horizontalCenter="-83.5" y="15"/>
+			</e:Group>
+			<e:Group id="Read" anchorOffsetX="0" width="239" anchorOffsetY="0" height="70" y="0" x="0">
+			<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="232" anchorOffsetY="0" height="59" horizontalCenter="-0.5" verticalCenter="-0.5" x="-4" y="-1" scaleX="1" scaleY="1"/>
+			<e:Label id="labelDisplay3" text="已读" size="22" verticalAlign="middle" fontFamily="SimHei" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" textAlign="center" horizontalCenter="95.5" textColor="0xFCB358" y="-7"/>
+			<e:Label id="Label_Title_Unread" text="标题" anchorOffsetX="0" width="133" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E" x="69" y="13"/>
+			<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="57" anchorOffsetY="0" height="50" scaleX="1" scaleY="1" horizontalCenter="-83" verticalCenter="-1"/>
+			<e:Image id="Icon_Read" source="GF_commonButton_json.letter_yidu" verticalCenter="-0.5" horizontalCenter="-83"/>
+			</e:Group>
+			<e:Label id="Label_Time" text="时间" anchorOffsetX="0" width="135" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E"  y="37" x="69"/>
+		</e:Group>
+		<e:Scroller width="239" height="304.6" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-203.5" scrollPolicyH="off" verticalCenter="-2.5">
+			<e:List id="MailList" anchorOffsetY="0" height="303.6" x="0" y="23">
+				<e:itemRendererSkinName >
+				<e:Skin>
+					<e:Button id="Btn_Item" label="Button" x="0" y="0" width="239" height="70"/>
+					<e:Image id="Line" source="GF_commonButton_json.UI_line_1" scale9Grid="6,5,5,6" anchorOffsetX="0" width="235" anchorOffsetY="0" height="62" verticalCenter="-1" horizontalCenter="0"/>
+					<e:Group id="Unread" anchorOffsetX="0" width="239" anchorOffsetY="0" height="70" y="0" x="0">
+					<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="232" anchorOffsetY="0" height="59" horizontalCenter="-0.5" x="-4" y="5" scaleX="1" scaleY="1"/>
+					<e:Label id="labelDisplay2" text="未读" size="22" verticalAlign="middle" fontFamily="SimHei" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" textAlign="center" horizontalCenter="95.5" verticalCenter="2.5" textColor="0x7FFF0A"/>
+					<e:Label id="Label_Title_Read" text="标题" anchorOffsetX="0" width="133" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E" y="13" x="69" textAlign="left"/>
+					<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="57" anchorOffsetY="0" height="50" scaleX="1" scaleY="1" horizontalCenter="-83" y="9"/>
+					<e:Image id="Icon_UnRead" source="GF_commonButton_json.letter_weidu" anchorOffsetX="0" width="48" anchorOffsetY="0" height="35.48" scaleX="1" scaleY="1" horizontalCenter="-83.5" y="15"/>
+					</e:Group>
+					<e:Group id="Read" anchorOffsetX="0" width="239" anchorOffsetY="0" height="70" y="0" x="0">
+					<e:Image source="GF_commonButton_json.Input_BG3" scale9Grid="6,6,4,4" anchorOffsetX="0" width="232" anchorOffsetY="0" height="59" horizontalCenter="-0.5" verticalCenter="-0.5" x="-4" y="-1" scaleX="1" scaleY="1"/>
+					<e:Label id="labelDisplay3" text="已读" size="22" verticalAlign="middle" fontFamily="SimHei" anchorOffsetY="0" height="89" anchorOffsetX="0" width="30" textAlign="center" horizontalCenter="95.5" textColor="0xFCB358" y="-7"/>
+					<e:Label id="Label_Title_Unread" text="标题" anchorOffsetX="0" width="133" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E" x="69" y="13"/>
+					<e:Image source="GF_commonButton_json.Input_BG2" scale9Grid="7,6,3,4" anchorOffsetX="0" width="57" anchorOffsetY="0" height="50" scaleX="1" scaleY="1" horizontalCenter="-83" verticalCenter="-1"/>
+					<e:Image id="Icon_Read" source="GF_commonButton_json.letter_yidu" verticalCenter="-0.5" horizontalCenter="-83"/>
+					</e:Group>
+					<e:Label id="Label_Time" text="时间" anchorOffsetX="0" width="135" anchorOffsetY="0" height="21" size="20" fontFamily="SimHei" textAlign="left" scaleX="1" scaleY="1" rotation="359.97" textColor="0xFFE15E"  y="37" x="69"/>
+				</e:Skin>	
+				</e:itemRendererSkinName>
+            <!--<e:ArrayCollection>
+                <e:Array>
+                    <e:Object label="关卡 1-1 初出茅庐"/>
+                    <e:Object label="关卡 1-2 一战成名"/>
+                    <e:Object label="关卡 1-3 历尽艰辛"/>
+                    <e:Object label="关卡 1-4 百年好合"/>
+                    <e:Object label="关卡 1-5 刻苦锻炼"/>
+                    <e:Object label="关卡 1-6 天下第一"/>
+                    <e:Object label="关卡 1-7 蓦然回首"/>
+                    <e:Object label="关卡 1-8 独孤求败"/>
+                    <e:Object label="关卡 1-9 成宗立派"/>
+                    <e:Object label="关卡 1-10 香火绵延"/>
+                </e:Array>
+            </e:ArrayCollection>-->
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

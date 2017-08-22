@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_DialogBox" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+0<w:Config id="15a6f690dde"/>
+	<e:Group id="Panel_DialogBox" width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image anchorOffsetX="0" width="360" anchorOffsetY="0" height="240" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" source="GW_DHT_Atlas_json.UI_skin3_panel_bg" scale9Grid="73,49,2,2"/>
+		<e:Image anchorOffsetX="0" width="347" anchorOffsetY="0" height="134" fillMode="repeat" horizontalCenter="-0.5" verticalCenter="-4" source="GW_DHT_Atlas_json.UI_8x8_bg"/>
+		<e:Button id="Btn_CloseSetting" label="" anchorOffsetX="0" width="32" anchorOffsetY="0" height="32" scaleX="1" scaleY="1" horizontalCenter="157" verticalCenter="-96">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.skin2_btn_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label id="Label_Content" text="" y="230.5" anchorOffsetX="0" width="344.33" anchorOffsetY="0" height="127" size="20" fontFamily="SimHei" textAlign="center" horizontalCenter="-1" bold="true" textColor="0xffc360"/>
+		<e:Label id="Label_Title" text="提示" size="22" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="170" verticalAlign="middle" textAlign="center" verticalCenter="-97" anchorOffsetX="0" horizontalCenter="0" visible="false"/>
+		<e:Button id="Btn_OK" label="确定" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="96" verticalCenter="89">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="120" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="-1" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Yes" label="取消" scaleX="1" scaleY="1" enabled="true" width="120" anchorOffsetX="0" horizontalCenter="-87" verticalCenter="91">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" scale9Grid="47,0,3,44" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="身份确认" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.quxiao" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Sure" label="确定" scaleX="1" scaleY="1" enabled="true" width="154" anchorOffsetX="0" horizontalCenter="9" verticalCenter="91">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="GF_commonButton_json.UIBtn_1_1" scale9Grid="44,5,11,34" anchorOffsetX="0" width="120" verticalCenter="0" horizontalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="-1" verticalCenter="0" text="确定" size="20" verticalAlign="middle" textColor="0xF1FF02" fontFamily="SimHei" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" width="50" height="26" verticalCenter="0" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.tishi" y="188" width="59" height="30" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BSHelpDropDownBOXUI"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="95" height="30">
+	<e:Image id="dropDownImg0" width="100%" height="100%" scaleX="1" scaleY="1" y="0" x="0" source="GF_commonButton_json.Input_BG2" scale9Grid="5,5,5,6"/>
+	<e:Label id="showTxtLab" text=" 返还系数" backgroundColor="0xb87d26" background="false" border="false" anchorOffsetX="0" width="95" size="16" anchorOffsetY="0" height="30.57" verticalAlign="middle" textAlign="left" fontFamily="SimHei" scaleX="1" scaleY="1" textColor="0xfff050" verticalCenter="0.5" x="0"/>
+	<e:Image id="dropDownImg" source="GF_commonButton_json.ui_sanjiao_btn" width="20" height="20" scaleX="1" scaleY="0.8" right="2" y="8.14"/>
+	<e:Group id="showDropDown" width="100%" height="100%"/>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_SlotHelp" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	
+	<e:Group id="Panel_SlotHelp" width="900" height="600" horizontalCenter="0.5" verticalCenter="0" x="20" y="20">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="460" anchorOffsetY="0" height="298" scaleX="1" scaleY="1" scale9Grid="36,53,19,14" horizontalCenter="-16" verticalCenter="-2"/>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="185" verticalCenter="-122">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Label text="累积奖说明" size="24" fontFamily="方正粗圆简体" textColor="0xFFD816" anchorOffsetY="0" height="30" width="128" verticalAlign="middle" textAlign="center" horizontalCenter="-16" verticalCenter="-121" name="titleColor" stroke="1" visible="false"/>
+		<e:Label text="1、玩家一次使用100及以上的点数进行游戏，且第一关出现16个及以上相连的同类宝石，或第二关出现20个及以上相连的同类宝石，或第三关出现24个及以上相连的同类宝石时，本次游戏即可中出当前时刻的累积奖。累积奖单线封顶5000000游戏点数。" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" width="433" verticalAlign="top" textAlign="left" anchorOffsetX="0" horizontalCenter="-15.5" verticalCenter="-54" textColor="0xfbdb86"/>
+		<e:Label text="2、玩家在超级点数下一次使用1000及以上的点数进行游戏，且第一关出现16个及以上相连的同类宝石，或第二关出现20个及以上相连的同类宝石，或第三关出现24个及以上相连的同类宝石时，本次游戏即可中出当前时刻的累积奖。累积奖单线封顶50000000游戏点数。" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" width="433" verticalAlign="top" textAlign="left" anchorOffsetX="0" horizontalCenter="-15.5" verticalCenter="40" textColor="0xfbdb86"/>
+		<e:Label text="3、等级达到八级或以上才能参与累积奖获取。" size="16" fontFamily="方正粗圆简体" anchorOffsetY="0" height="18" width="433" verticalAlign="top" textAlign="left" anchorOffsetX="0" horizontalCenter="-15.5" verticalCenter="103" textColor="0xfbdb86"/>
+		<e:Image source="GW_label_tex_json.leijijiangshuoming" verticalCenter="-121.5" horizontalCenter="-11"/>
+	</e:Group>
+	</e:Skin>

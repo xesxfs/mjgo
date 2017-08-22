@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExitPanelSkin" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="900" height="600" horizontalCenter="0.5" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="345" anchorOffsetY="0" height="221" scaleX="1" scaleY="1" verticalCenter="-28.5" horizontalCenter="0.5" scale9Grid="43,53,4,9"/>
+		<e:Label id="Label_Title" text="确定退出游戏？" y="254" horizontalCenter="3.5" size="25" x="139" scaleX="1" scaleY="1" fontFamily="SimHei" name="titleColor" stroke="1" textColor="0xfff2ba"/>
+		<e:Label text="提示" size="28" scaleX="1" scaleY="1" fontFamily="SimHei" name="titleColor" stroke="1" horizontalCenter="0" verticalCenter="-110" textColor="0xffd47f" visible="false"/>
+		<e:Button id="Btn_OK" label="确定" y="324" x="306" scaleX="1" scaleY="1" enabled="true" width="134">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_1_1" source.down="GF_commonButton_json.UIBtn_1_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="46,0,7,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="确定" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffc9" visible="false"/>
+	<e:Image source="GW_label_tex_json.queding" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="42" anchorOffsetY="0" height="42" scaleX="1" scaleY="1" horizontalCenter="146" verticalCenter="-110">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Cancle" label="取消" y="324" x="460" scaleX="1" scaleY="1" enabled="true" width="134">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UIBtn_2_1" source.down="GF_commonButton_json.UIBtn_2_3" source.disabled="GF_commonButton_json.UIBtn_1" scale9Grid="48,0,4,44"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" text="取消" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xf5ff3d" visible="false"/>
+	<e:Image source="GW_label_tex_json.quxiao" horizontalCenter="0" verticalCenter="0" width="50" height="26"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="GW_label_tex_json.tishi" horizontalCenter="0.5" verticalCenter="-110"/>
+	</e:Group>
+</e:Skin>

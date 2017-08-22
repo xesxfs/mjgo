@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.HSliderSkin" minWidth="20" minHeight="8" xmlns:e="http://ns.egret.com/eui">
+    <e:Image id="track" scale9Grid="1,1,4,4" width="144"
+             height="16" verticalCenter="0" source="BSFB_Atlas_json.Sprite_Slider"/>
+    <e:Image id="thumb" verticalCenter="0" source="BSFB_Atlas_json.Btn_Thumb"/>
+</e:Skin>

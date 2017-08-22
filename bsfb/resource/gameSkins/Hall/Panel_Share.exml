@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_Share" width="900" height="600" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="Panel_Share" width="900" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="GF_commonButton_json.UI_Title_7" anchorOffsetX="0" width="453" anchorOffsetY="0" height="320" scaleX="1" scaleY="1" verticalCenter="-27.5" horizontalCenter="0.5" scale9Grid="42,53,4,9"/>
+		<e:Label id="Label_Title" text="邀请好友扫描二维码，一起来玩吧！" y="131.5" size="20" x="292.82" scaleX="1" scaleY="1" fontFamily="SimHei" anchorOffsetX="0" width="323" anchorOffsetY="0" height="25" name="titleColor" stroke="1" textColor="0xffe0a8" visible="false"/>
+		<e:Label id="label_depositPoint0" text="点击直接分享到：" x="225.99" y="318.5" anchorOffsetX="0" width="188.33" anchorOffsetY="0" height="22" size="18" fontFamily="SimHei" textAlign="center" name="titleColor" stroke="0" textColor="0xfff2ba"/>
+		<e:Button id="Btn_Copy" label="复制下载地址" scaleX="1" scaleY="1" enabled="true" width="170" anchorOffsetX="0" horizontalCenter="4" verticalCenter="4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="GF_commonButton_json.UI_small_btn_1_2" scale9Grid="6,6,8,24"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-2" text="全部" size="20" verticalAlign="middle" fontFamily="SimHei" textColor="0xffffff" name="titleColor" stroke="1" visible="false"/>
+	<e:Image source="GW_label_tex_json.fuzhixiazaidizhi" anchorOffsetX="0" width="134" anchorOffsetY="0" height="23.1" verticalCenter="-1.5" horizontalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ShareWXFriend" label="微信好友" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" height="76" x="288" y="346">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" width="86" height="85">
+	<e:Image source="GF_commonButton_json.UI_share_icon_3" horizontalCenter="0" verticalCenter="-12.5"/>
+	<e:Label id="labelDisplay" text="微信好友" x="-6.33" y="62" anchorOffsetX="0" width="97.33" anchorOffsetY="0" height="22" size="18" fontFamily="SimHei" textAlign="center" textColor="0xF4B700" scaleX="1" scaleY="1" name="titleColor" stroke="1" visible="false"/>
+	<e:Image anchorOffsetX="0" width="60" anchorOffsetY="0" height="57" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,3" horizontalCenter="0" verticalCenter="-13"/>
+	<e:Image source="GW_label_tex_json.weixinhaoyou" anchorOffsetX="0" verticalCenter="28" width="72" anchorOffsetY="0" height="18.62" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ShareWX" label="朋友圈" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" height="76" x="413.5" y="346">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" width="86" height="85">
+	<e:Image source="GF_commonButton_json.UI_share_icon_2" horizontalCenter="0.5" verticalCenter="-11"/>
+				<e:Label id="labelDisplay" text="朋友圈" x="-6.33" y="62" anchorOffsetX="0" width="97.33" anchorOffsetY="0" height="22" size="18" fontFamily="SimHei" textAlign="center" textColor="0xF4B700" scaleX="1" scaleY="1" name="titleColor" stroke="1" visible="false"/>
+	<e:Image anchorOffsetX="0" width="60" anchorOffsetY="0" height="57" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,3" horizontalCenter="0" verticalCenter="-11"/>
+	<e:Image source="GW_label_tex_json.pengyouquan" anchorOffsetX="0" verticalCenter="30.5" width="56" anchorOffsetY="0" height="19.54" horizontalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_ShareQQ" label="QQ好友" scaleX="1" scaleY="1" enabled="true" width="70" anchorOffsetX="0" height="76" x="539" y="346">
+			<e:skinName>
+			<e:Skin states="up,down,disabled" width="86" height="85">
+	<e:Image source="GF_commonButton_json.UI_share_icon_1" horizontalCenter="0" verticalCenter="-10.5"/>
+				<e:Label id="labelDisplay" text="QQ好友" x="-6.33" y="62" anchorOffsetX="0" width="97.33" anchorOffsetY="0" height="22" size="18" fontFamily="SimHei" textAlign="center" textColor="0xF4B700" scaleX="1" scaleY="1" name="titleColor" stroke="1" visible="false"/>
+				<e:Image anchorOffsetX="0" width="60" anchorOffsetY="0" height="57" source="GF_commonButton_json.UI_line_2" scale9Grid="7,6,2,3" horizontalCenter="0" verticalCenter="-11"/>
+	<e:Image source="GW_label_tex_json.QQhaoyou" anchorOffsetX="0" horizontalCenter="1" verticalCenter="30.5" width="74.36" anchorOffsetY="0" height="22.09"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="Btn_Close" label="" anchorOffsetX="0" width="38" anchorOffsetY="0" height="38" scaleX="1" scaleY="1" horizontalCenter="199" verticalCenter="-158">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" horizontalCenter="0" verticalCenter="0" width.down="95%" height.down="95%" source="GF_commonButton_json.UIBtn_Close_2"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image source="ewm_jpg" width="110" height="110" horizontalCenter="-1" verticalCenter="-74"/>
+		<e:Image source="GW_label_tex_json.yaoqinghaoyousaoerweima" verticalCenter="-160" anchorOffsetX="0" width="344" anchorOffsetY="0" height="23.86" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

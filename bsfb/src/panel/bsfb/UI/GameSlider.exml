@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSliderSkin" minWidth="20" minHeight="8" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="147">
+	<e:Image id="track" width="144" height="16" verticalCenter="0" horizontalCenter="0" scale9Grid="11,5,7,7" fillMode="repeat" source=""/>
+	<e:ProgressBar id="light" width="90%" height="20" x="5" y="9" value="100" slideDuration="0"/>
+    <e:Image id="thumb" verticalCenter="-2.5" source="BSFB_Atlas_json.Btn_Thumb" horizontalCenter="-55" width="37.2" height="35.2" fillMode="clip" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>
