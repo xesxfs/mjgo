@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="readyPlugin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="readyGroup" touchThrough="true" width="100%" x="0" height="100%" y="0" scaleX="1" scaleY="1">
+		<e:Image touchEnabled="false" source="ready_png" y="682" horizontalCenter="0"/>
+		<e:Image x="547" top="443" source="ready_png"/>
+		<e:Image top="157" source="ready_png" horizontalCenter="0"/>
+		<e:Image x="116" top="446" source="ready_png"/>
+		<e:Image touchEnabled="false" x="62.67" bottom="277" source="ready_png"/>
+		<e:Image x="642.25" bottom="412" source="ready_png"/>
+		<e:Image x="643.08" top="204" source="ready_png"/>
+		<e:Image x="60.22" top="313" source="ready_png"/>
+		<e:Button id="readyBtn" bottom="277" anchorOffsetX="0" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" width.down="95%" horizontalCenter="0" verticalCenter="0" height.down="95%" source="game_greenBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image width="111" height="56" width.down="105" height.down="53" anchorOffsetX="0" anchorOffsetY="0" source="cs_ready_png" horizontalCenter="0" y="15"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

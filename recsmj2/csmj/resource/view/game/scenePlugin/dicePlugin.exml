@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="dicePlugin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="diceGroup" touchThrough="true" touchEnabled="false" touchChildren="true" left="0" right="0" top="0" bottom="0">
+		<ns1:DiceAnim id="game_dice" xmlns:ns1="*" verticalCenter="-149" scaleX="0.8" scaleY="0.8" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>
