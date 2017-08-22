@@ -17,33 +17,33 @@ const (
 	MJPAI_PUTPAI = false
 )
 
-type STPAI struct {
+type PAI struct {
 	Type  int
 	Value int
 }
 
-type stCHI struct {
+type CHI struct {
 	mType   int
 	mValue1 int
 	mValue2 int
 	mValue3 int
 }
 
-type stGoodInfo struct {
+type GoodInfo struct {
 	mGoodName  string
 	mGoodValue int
 }
 
-type VecPai []STPAI
+type VecPai []PAI
 
-type CMJ struct {
+type MJ struct {
 	mMyPAvec   [6][]int
 	mChiPAvec  [6][]int
 	mPengPAvec [6][]int
 	mGangPAvec [6][]int
 
-	mLaSTPAI  STPAI
-	mGoodInfo stGoodInfo
+	mLastPAI  PAI
+	mGoodInfo GoodInfo
 
 	mMkNum int
 	mAkNum int
@@ -51,9 +51,9 @@ type CMJ struct {
 	m13Y   bool
 	m4Ak   bool
 
-	mTempChiPAvec  []stCHI
-	mTempPengPAvec []STPAI
-	mTempGangPAvec []STPAI
+	mTempChiPAvec  []CHI
+	mTempPengPAvec []PAI
+	mTempGangPAvec []PAI
 }
 
 func PrintSpace(icount int) {
@@ -63,13 +63,13 @@ func PrintSpace(icount int) {
 	}
 }
 
-func NewCMJ() *CMJ {
-	mj := CMJ{}
+func NewMJ() *MJ {
+	mj := MJ{}
 	mj.Init()
 	return &mj
 }
 
-func (mj *CMJ) Init() {
+func (mj *MJ) Init() {
 	mj.m9LBD = false
 	mj.m13Y = false
 	mj.m4Ak = false
@@ -78,20 +78,20 @@ func (mj *CMJ) Init() {
 
 }
 
-func (mj *CMJ) Check() {
+func (mj *MJ) Check() {
 
 }
 
-func (mj *CMJ) AddPai(pType int, pValue int) bool {
+func (mj *MJ) AddPai(pType int, pValue int) bool {
 	mj.mMyPAvec[pType] = append(mj.mMyPAvec[pType], pValue)
 	sort.Sort(sort.IntSlice(mj.mMyPAvec[pType]))
-	mj.mLaSTPAI.mType = pType
-	mj.mLaSTPAI.mValue = pValue
+	mj.mLastPAI.Type = pType
+	mj.mLastPAI.Value = pValue
 
 	return true
 }
 
-func (mj *CMJ) GetPaiIndex(pType int, pValue int) int {
+func (mj *MJ) GetPaiIndex(pType int, pValue int) int {
 	count := 0
 	for i := 0; i < 6; i++ {
 		pavec := mj.mMyPAvec[i]
@@ -106,7 +106,7 @@ func (mj *CMJ) GetPaiIndex(pType int, pValue int) int {
 	return -1
 }
 
-func (mj *CMJ) DelPai(pType int, pValue int) bool {
+func (mj *MJ) DelPai(pType int, pValue int) bool {
 	for i, value := range mj.mMyPAvec[pType] {
 		if value == pValue {
 			if i == 0 {
@@ -123,19 +123,45 @@ func (mj *CMJ) DelPai(pType int, pValue int) bool {
 	return false
 }
 
-func (mj *CMJ) CleanUp() {
+func (mj *MJ) DelPaiByIndex(PaiIndex int) bool {
+	count := 0
 	for i := 0; i < 6; i++ {
-		mj.mMyPAvec[i] = make([]int, 14)
+		pavec := mj.mMyPAvec[i]
+
+		for j := 0; j < len(pavec); j++ {
+
+			if count == PaiIndex {
+				if j == 0 {
+					mj.mMyPAvec[i] = mj.mMyPAvec[i][j+1:]
+				} else if j == (len(mj.mMyPAvec[i]) - 1) {
+					mj.mMyPAvec[i] = mj.mMyPAvec[i][:len(mj.mMyPAvec[i])-1]
+				} else {
+					mj.mMyPAvec[i] = append(mj.mMyPAvec[i][:j], mj.mMyPAvec[i][j+1:]...)
+				}
+
+				return true
+			}
+			count++
+		}
+
+	}
+	return false
+
+}
+
+func (mj *MJ) CleanUp() {
+	for i := 0; i < 6; i++ {
+		mj.mMyPAvec[i] = mj.mMyPAvec[i][0:0]
 	}
 
 }
 
-func (mj *CMJ) GetInfo() *stGoodInfo {
+func (mj *MJ) GetInfo() *GoodInfo {
 	return &mj.mGoodInfo
 }
 
-func (mj *CMJ) PrintAllPai() {
-	fmt.Print(" ")
+func (mj *MJ) PrintAllPai() {
+	fmt.Println(" ")
 	for i := 0; i < 13; i++ {
 		fmt.Print(i, "  - ")
 	}
@@ -145,11 +171,11 @@ func (mj *CMJ) PrintAllPai() {
 		for _, iter := range mj.mMyPAvec[0] {
 			switch iter {
 			case 1:
-				fmt.Print("[ 中]")
+				fmt.Print("[中]")
 			case 2:
-				fmt.Print("[ 发]")
+				fmt.Print("[发]")
 			case 3:
-				fmt.Print("[ 白]")
+				fmt.Print("[白]")
 
 			}
 			icount++
@@ -161,13 +187,13 @@ func (mj *CMJ) PrintAllPai() {
 		for _, iter := range mj.mMyPAvec[1] {
 			switch iter {
 			case 1:
-				fmt.Print("[ 东]")
+				fmt.Print("[东]")
 			case 2:
-				fmt.Print("[ 南]")
+				fmt.Print("[南]")
 			case 3:
-				fmt.Print("[ 西]")
+				fmt.Print("[西]")
 			case 4:
-				fmt.Print("[ 北]")
+				fmt.Print("[北]")
 
 			}
 			icount++
@@ -201,7 +227,7 @@ func (mj *CMJ) PrintAllPai() {
 
 }
 
-func (mj *CMJ) PrintPai(pType int, pValue int) {
+func (mj *MJ) PrintPai(pType int, pValue int) {
 	if pType == 0 {
 		switch pValue {
 		case 1:
@@ -241,7 +267,7 @@ func (mj *CMJ) PrintPai(pType int, pValue int) {
 
 }
 
-func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
+func (mj *MJ) CheckChiPai(pType int, pValue int) bool {
 	mj.mTempChiPAvec = mj.mTempChiPAvec[0:0]
 	if len(mj.mMyPAvec[pType]) > 0 {
 		size := len(mj.mMyPAvec[pType])
@@ -249,7 +275,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 			for i := 0; i < size-1; i++ {
 				//XBC
 				if mj.mMyPAvec[pType][i] == (pValue+1) && mj.mMyPAvec[pType][i+1] == (pValue+2) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue
 					chi.mValue2 = pValue + 1
@@ -258,7 +284,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 				}
 				//AXC
 				if mj.mMyPAvec[pType][i] == (pValue-1) && mj.mMyPAvec[pType][i+1] == (pValue+1) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue - 1
 					chi.mValue2 = pValue
@@ -268,7 +294,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 				}
 				//ABX
 				if mj.mMyPAvec[pType][i] == (pValue-1) && mj.mMyPAvec[pType][i+1] == (pValue-2) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue - 2
 					chi.mValue2 = pValue - 1
@@ -284,7 +310,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 		if size >= 3 {
 			for i := 1; i < size-1; i++ {
 				if mj.mMyPAvec[pType][i-1] == (pValue-1) && mj.mMyPAvec[pType][i] == (pValue) && mj.mMyPAvec[pType][i+1] == (pValue+1) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue - 1
 					chi.mValue2 = pValue
@@ -300,7 +326,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 		if size >= 4 {
 			for i := 1; i < size-2; i++ {
 				if mj.mMyPAvec[pType][i-1] == (pValue-1) && mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+2] == (pValue+1) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue - 1
 					chi.mValue2 = pValue
@@ -316,7 +342,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 		if size >= 5 {
 			for i := 1; i < size-3; i++ {
 				if mj.mMyPAvec[pType][i-1] == (pValue-1) && mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+3] == (pValue+1) {
-					chi := stCHI{}
+					chi := CHI{}
 					chi.mType = pType
 					chi.mValue1 = pValue - 1
 					chi.mValue2 = pValue
@@ -335,7 +361,7 @@ func (mj *CMJ) CheckChiPai(pType int, pValue int) bool {
 	return false
 }
 
-func (mj *CMJ) DoChiPai(pIndex int, pType int, pValue int) bool {
+func (mj *MJ) DoChiPai(pIndex int, pType int, pValue int) bool {
 	mj.AddPai(pType, pValue)
 	icount := 0
 	for _, iter := range mj.mTempChiPAvec {
@@ -355,7 +381,7 @@ func (mj *CMJ) DoChiPai(pIndex int, pType int, pValue int) bool {
 	return false
 }
 
-func (mj *CMJ) PrintChiChosePai() {
+func (mj *MJ) PrintChiChosePai() {
 	fmt.Println("================吃牌组合=======================")
 
 	for _, iter := range mj.mTempChiPAvec {
@@ -376,20 +402,20 @@ func (mj *CMJ) PrintChiChosePai() {
 	fmt.Printf("\n=============================================\n")
 }
 
-func (mj *CMJ) GetChiChoseNum() int {
+func (mj *MJ) GetChiChoseNum() int {
 	return len(mj.mTempChiPAvec)
 }
 
-func (mj *CMJ) CheckPengPai(pType int, pValue int) bool {
+func (mj *MJ) CheckPengPai(pType int, pValue int) bool {
 
 	if len(mj.mMyPAvec[pType]) > 0 {
 		size := len(mj.mMyPAvec[pType])
 		if size >= 2 {
 			for i := 0; i < size-1; i++ {
 				if mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+1] == pValue {
-					tPeng := STPAI{}
-					tPeng.mType = pType
-					tPeng.mValue = pValue
+					tPeng := PAI{}
+					tPeng.Type = pType
+					tPeng.Value = pValue
 					mj.mTempPengPAvec = append(mj.mTempPengPAvec, tPeng)
 					return true
 				}
@@ -401,36 +427,36 @@ func (mj *CMJ) CheckPengPai(pType int, pValue int) bool {
 	return false
 }
 
-func (mj *CMJ) DoPengPai(pType int, pValue int) bool {
+func (mj *MJ) DoPengPai(pType int, pValue int) bool {
 	mj.AddPai(pType, pValue)
 	for i := 0; i < len(mj.mTempPengPAvec); i++ {
 		pengPai := mj.mTempPengPAvec[i]
-		mj.DelPai(pengPai.mType, pengPai.mValue)
-		mj.DelPai(pengPai.mType, pengPai.mValue)
-		mj.DelPai(pengPai.mType, pengPai.mValue)
+		mj.DelPai(pengPai.Type, pengPai.Value)
+		mj.DelPai(pengPai.Type, pengPai.Value)
+		mj.DelPai(pengPai.Type, pengPai.Value)
 
-		mj.mPengPAvec[pengPai.mType] = append(mj.mPengPAvec[pengPai.mType], pengPai.mValue)
-		mj.mPengPAvec[pengPai.mType] = append(mj.mPengPAvec[pengPai.mType], pengPai.mValue)
-		mj.mPengPAvec[pengPai.mType] = append(mj.mPengPAvec[pengPai.mType], pengPai.mValue)
+		mj.mPengPAvec[pengPai.Type] = append(mj.mPengPAvec[pengPai.Type], pengPai.Value)
+		mj.mPengPAvec[pengPai.Type] = append(mj.mPengPAvec[pengPai.Type], pengPai.Value)
+		mj.mPengPAvec[pengPai.Type] = append(mj.mPengPAvec[pengPai.Type], pengPai.Value)
 		return true
 	}
 	return false
 }
 
-func (mj *CMJ) PrintPengChosePai() {
+func (mj *MJ) PrintPengChosePai() {
 	fmt.Println("=====================碰牌==================")
 	for _, iter := range mj.mTempPengPAvec {
 
-		if iter.mType == MJPAI_WAN {
-			fmt.Printf("[%d万 %d万 %d万]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_WAN {
+			fmt.Printf("[%d万 %d万 %d万]", iter.Value, iter.Value, iter.Value)
 		}
 
-		if iter.mType == MJPAI_TIAO {
-			fmt.Printf("[%d条 %d条 %d条]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_TIAO {
+			fmt.Printf("[%d条 %d条 %d条]", iter.Value, iter.Value, iter.Value)
 		}
 
-		if iter.mType == MJPAI_BING {
-			fmt.Printf("[%d筒 %d筒 %d筒]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_BING {
+			fmt.Printf("[%d筒 %d筒 %d筒]", iter.Value, iter.Value, iter.Value)
 		}
 
 	}
@@ -438,16 +464,16 @@ func (mj *CMJ) PrintPengChosePai() {
 
 }
 
-func (mj *CMJ) CheckGangPai(pType int, pValue int) bool {
+func (mj *MJ) CheckGangPai(pType int, pValue int) bool {
 	mj.mTempGangPAvec = mj.mTempPengPAvec[0:0]
 	if len(mj.mMyPAvec[pType]) > 0 {
 		size := len(mj.mMyPAvec[pType])
 		if size >= 3 {
 			for i := 0; i < size-2; i++ {
 				if mj.mMyPAvec[pType][i] == pValue && mj.mMyPAvec[pType][i+1] == pValue && mj.mMyPAvec[pType][i-2] == pValue {
-					tGang := STPAI{}
-					tGang.mType = pType
-					tGang.mValue = pValue
+					tGang := PAI{}
+					tGang.Type = pType
+					tGang.Value = pValue
 					mj.mTempGangPAvec = append(mj.mTempGangPAvec, tGang)
 					return true
 				}
@@ -459,54 +485,54 @@ func (mj *CMJ) CheckGangPai(pType int, pValue int) bool {
 	return false
 }
 
-func (mj *CMJ) DoGangPai(pType int, pValue int) bool {
+func (mj *MJ) DoGangPai(pType int, pValue int) bool {
 	mj.AddPai(pType, pValue)
 	for i := 0; i < len(mj.mTempGangPAvec); i++ {
 		gangPai := mj.mTempGangPAvec[i]
 
-		mj.DelPai(gangPai.mType, gangPai.mValue)
-		mj.DelPai(gangPai.mType, gangPai.mValue)
-		mj.DelPai(gangPai.mType, gangPai.mValue)
-		mj.DelPai(gangPai.mType, gangPai.mValue)
+		mj.DelPai(gangPai.Type, gangPai.Value)
+		mj.DelPai(gangPai.Type, gangPai.Value)
+		mj.DelPai(gangPai.Type, gangPai.Value)
+		mj.DelPai(gangPai.Type, gangPai.Value)
 
-		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.mValue)
-		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.mValue)
-		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.mValue)
-		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.mValue)
+		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.Value)
+		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.Value)
+		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.Value)
+		mj.mGangPAvec[pType] = append(mj.mGangPAvec[pType], gangPai.Value)
 		return true
 	}
 	return false
 }
 
-func (mj *CMJ) PrintGangChosePai() {
+func (mj *MJ) PrintGangChosePai() {
 
 	fmt.Println("=====================杠牌==================")
 	for _, iter := range mj.mTempPengPAvec {
 
-		if iter.mType == MJPAI_WAN {
-			fmt.Printf("[%d万 %d万 %d万]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_WAN {
+			fmt.Printf("[%d万 %d万 %d万]", iter.Value, iter.Value, iter.Value)
 		}
 
-		if iter.mType == MJPAI_TIAO {
-			fmt.Printf("[%d条 %d条 %d条]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_TIAO {
+			fmt.Printf("[%d条 %d条 %d条]", iter.Value, iter.Value, iter.Value)
 		}
 
-		if iter.mType == MJPAI_BING {
-			fmt.Printf("[%d筒 %d筒 %d筒]", iter.mValue, iter.mValue, iter.mValue)
+		if iter.Type == MJPAI_BING {
+			fmt.Printf("[%d筒 %d筒 %d筒]", iter.Value, iter.Value, iter.Value)
 		}
 
 	}
 	fmt.Printf("\n=============================================\n")
 }
 
-func (mj *CMJ) CheckAAPai(value1 int, value2 int) bool {
+func (mj *MJ) CheckAAPai(value1 int, value2 int) bool {
 	if value1 == value2 {
 		return true
 	}
 	return false
 }
 
-func (mj *CMJ) CheckABCPai(value1 int, value2 int, value3 int) bool {
+func (mj *MJ) CheckABCPai(value1 int, value2 int, value3 int) bool {
 	if value1 == (value2-1) && value2 == (value3-1) {
 		return true
 	}
@@ -514,14 +540,14 @@ func (mj *CMJ) CheckABCPai(value1 int, value2 int, value3 int) bool {
 
 }
 
-func (mj *CMJ) CheckAAAPai(value1 int, value2 int, value3 int) bool {
+func (mj *MJ) CheckAAAPai(value1 int, value2 int, value3 int) bool {
 	if value1 == (value2) && value2 == (value3) {
 		return true
 	}
 	return false
 }
 
-func (mj *CMJ) CheckAAAAPai(value1 int, value2 int, value3 int, value4 int) bool {
+func (mj *MJ) CheckAAAAPai(value1 int, value2 int, value3 int, value4 int) bool {
 	if value1 == (value2) && value2 == (value3) && value3 == value4 {
 		return true
 	}
@@ -529,7 +555,7 @@ func (mj *CMJ) CheckAAAAPai(value1 int, value2 int, value3 int, value4 int) bool
 
 }
 
-func (mj *CMJ) CheckAABBCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int) bool {
+func (mj *MJ) CheckAABBCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int) bool {
 	if value1 == value2 && value3 == value4 && value5 == value6 {
 		if value1 == (value3-1) && value3 == (value5-1) {
 
@@ -541,7 +567,7 @@ func (mj *CMJ) CheckAABBCCPai(value1 int, value2 int, value3 int, value4 int, va
 
 }
 
-func (mj *CMJ) CheckAAABBBCCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int) bool {
+func (mj *MJ) CheckAAABBBCCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int) bool {
 	if (value1 == value2 && value2 == value3) && (value4 == value5 && value5 == value6) && (value7 == value8 && value8 == value9) {
 		if (value1 == value4-1) && (value4 == value7-1) {
 			return true
@@ -550,7 +576,7 @@ func (mj *CMJ) CheckAAABBBCCCPai(value1 int, value2 int, value3 int, value4 int,
 	return false
 }
 
-func (mj *CMJ) CheckAAAABBBBCCCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
+func (mj *MJ) CheckAAAABBBBCCCCPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
 	if (value1 == value2 && value2 == value3 && value3 == value4) && (value5 == value6 && value6 == value7 && value7 == value8) && (value9 == value10 && value10 == value11 && value11 == value12) {
 
 		if (value1 == value5-1) && (value5 == value9-1) {
@@ -561,7 +587,7 @@ func (mj *CMJ) CheckAAAABBBBCCCCPai(value1 int, value2 int, value3 int, value4 i
 	return false
 }
 
-func (mj *CMJ) CheckAABBCCDDEEFFPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
+func (mj *MJ) CheckAABBCCDDEEFFPai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
 	if value1 == value2 && value3 == value4 && value5 == value6 && value7 == value8 && value9 == value10 && value11 == value12 {
 		if (value1 == value3-1) && (value3 == value5-1) && (value5 == value7-1) && (value7 == value9-1) && (value9 == value11-1) {
 			return true
@@ -571,7 +597,7 @@ func (mj *CMJ) CheckAABBCCDDEEFFPai(value1 int, value2 int, value3 int, value4 i
 	return false
 }
 
-func (mj *CMJ) Check3Pai(value1 int, value2 int, value3 int) bool {
+func (mj *MJ) Check3Pai(value1 int, value2 int, value3 int) bool {
 	if mj.CheckAAAPai(value1, value2, value3) {
 		return true
 	}
@@ -580,7 +606,7 @@ func (mj *CMJ) Check3Pai(value1 int, value2 int, value3 int) bool {
 	}
 	return false
 }
-func (mj *CMJ) Check5Pai(value1 int, value2 int, value3 int, value4 int, value5 int) bool {
+func (mj *MJ) Check5Pai(value1 int, value2 int, value3 int, value4 int, value5 int) bool {
 	if mj.CheckAAPai(value1, value2) {
 		if mj.Check3Pai(value3, value4, value5) {
 			return true
@@ -601,7 +627,7 @@ func (mj *CMJ) Check5Pai(value1 int, value2 int, value3 int, value4 int, value5 
 	return false
 }
 
-func (mj *CMJ) Check6Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int) bool {
+func (mj *MJ) Check6Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int) bool {
 	if mj.Check3Pai(value1, value2, value3) && mj.Check3Pai(value4, value5, value6) {
 		return true
 	}
@@ -617,7 +643,7 @@ func (mj *CMJ) Check6Pai(value1 int, value2 int, value3 int, value4 int, value5 
 	return false
 }
 
-func (mj *CMJ) Check8Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int) bool {
+func (mj *MJ) Check8Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int) bool {
 	if mj.CheckAAPai(value1, value2) {
 		return mj.Check6Pai(value3, value4, value5, value6, value7, value8)
 	}
@@ -633,7 +659,7 @@ func (mj *CMJ) Check8Pai(value1 int, value2 int, value3 int, value4 int, value5 
 	return false
 }
 
-func (mj *CMJ) Check9Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int) bool {
+func (mj *MJ) Check9Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int) bool {
 	if mj.CheckABCPai(value1, value2, value3) && mj.Check6Pai(value4, value5, value6, value7, value8, value9) {
 		return true
 	}
@@ -650,7 +676,7 @@ func (mj *CMJ) Check9Pai(value1 int, value2 int, value3 int, value4 int, value5 
 
 }
 
-func (mj *CMJ) Check11Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int) bool {
+func (mj *MJ) Check11Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int) bool {
 	if mj.CheckAAPai(value1, value2) {
 		return mj.Check9Pai(value3, value4, value5, value6, value7, value8, value9, value10, value11)
 	}
@@ -673,7 +699,7 @@ func (mj *CMJ) Check11Pai(value1 int, value2 int, value3 int, value4 int, value5
 	return false
 }
 
-func (mj *CMJ) Check12Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
+func (mj *MJ) Check12Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int) bool {
 
 	if mj.CheckABCPai(value1, value2, value3) && mj.Check9Pai(value4, value5, value6, value7, value8, value9, value10, value11, value12) {
 		return true
@@ -694,7 +720,7 @@ func (mj *CMJ) Check12Pai(value1 int, value2 int, value3 int, value4 int, value5
 	return false
 }
 
-func (mj *CMJ) Check14Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int, value13 int, value14 int) bool {
+func (mj *MJ) Check14Pai(value1 int, value2 int, value3 int, value4 int, value5 int, value6 int, value7 int, value8 int, value9 int, value10 int, value11 int, value12 int, value13 int, value14 int) bool {
 	if mj.CheckAAPai(value1, value2) {
 		return mj.Check12Pai(value3, value4, value5, value6, value7, value8, value9, value10, value11, value12, value13, value14)
 	}
@@ -727,13 +753,13 @@ func (mj *CMJ) Check14Pai(value1 int, value2 int, value3 int, value4 int, value5
 	return false
 }
 
-func (mj *CMJ) CheckAllPai(GetOrPut bool) {
+func (mj *MJ) CheckAllPai(GetOrPut bool) {
 	if GetOrPut {
 
 	}
 }
 
-func (mj *CMJ) CheckHU() bool {
+func (mj *MJ) CheckHU() bool {
 	// tOk := false
 	iJinagNum := 0
 	//中发白

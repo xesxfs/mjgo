@@ -6,14 +6,14 @@ import (
 	"time"
 )
 
-type STPAIEX struct {
-	NewPai stPAI
+type PAIEX struct {
+	NewPai PAI
 	PaiNum int
 	IsHz   bool
 }
 
 type CMJManage struct {
-	mMJVec    []stPAI
+	mMJVec    []PAI
 	mHZPaiNum int
 }
 
@@ -35,9 +35,9 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	cm.mHZPaiNum = pHzPaiNum
 	cm.mMJVec = cm.mMJVec[0:0]
 	for i := 1; i <= 3; i++ {
-		tPai := stPAI{}
-		tPai.mType = 0
-		tPai.mValue = i
+		tPai := PAI{}
+		tPai.Type = 0
+		tPai.Value = i
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
@@ -45,9 +45,9 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	}
 
 	for i := 1; i <= 4; i++ {
-		tPai := stPAI{}
-		tPai.mType = 1
-		tPai.mValue = i
+		tPai := PAI{}
+		tPai.Type = 1
+		tPai.Value = i
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
@@ -56,9 +56,9 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	}
 
 	for i := 1; i <= 9; i++ {
-		tPai := stPAI{}
-		tPai.mType = 2
-		tPai.mValue = i
+		tPai := PAI{}
+		tPai.Type = 2
+		tPai.Value = i
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
@@ -67,9 +67,9 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	}
 
 	for i := 1; i <= 9; i++ {
-		tPai := stPAI{}
-		tPai.mType = 3
-		tPai.mValue = i
+		tPai := PAI{}
+		tPai.Type = 3
+		tPai.Value = i
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
@@ -78,9 +78,9 @@ func (cm *CMJManage) InitPai(pHzPaiNum int) {
 	}
 
 	for i := 1; i <= 9; i++ {
-		tPai := stPAI{}
-		tPai.mType = 4
-		tPai.mValue = i
+		tPai := PAI{}
+		tPai.Type = 4
+		tPai.Value = i
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
 		cm.mMJVec = append(cm.mMJVec, tPai)
@@ -102,9 +102,9 @@ func (cm *CMJManage) XiPai() {
 
 }
 
-func (cm *CMJManage) GetAPai() STPAIEX {
+func (cm *CMJManage) GetAPai() PAIEX {
 
-	sPaiEx := STPAIEX{}
+	sPaiEx := PAIEX{}
 	sPai := cm.mMJVec[0]
 	sPaiEx.NewPai.Type = sPai.Type
 	sPaiEx.NewPai.Value = sPai.Value

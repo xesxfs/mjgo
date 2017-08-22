@@ -2,48 +2,30 @@ package main
 
 import (
 	"fmt"
-	"mj"
+	"log"
+	"net/http"
+	"strings"
 )
 
+func sayHelloName(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	fmt.Println(r.Form)
+	fmt.Println("path:", r.URL.Path)
+	fmt.Println("Schem:", r.URL.Scheme)
+	fmt.Println("url_long:", r.Form["url_long"])
+	for k, v := range r.Form {
+		fmt.Println("key:", k)
+		fmt.Println("val:", strings.Join(v, ""))
+	}
+
+	fmt.Fprint(w, "Hello world")
+
+}
+
 func main() {
-	otherPlayer := [3]*mj.CMJ{}
-	otherPlayer[0] = mj.NewCMJ()
-	otherPlayer[1] = mj.NewCMJ()
-	otherPlayer[2] = mj.NewCMJ()
-
-	myPlayer := mj.NewCMJ()
-	cm := mj.CMJManage{}
-	// score := 0
-
-	// GameStart:
-
-	cm.InitPai(0)
-	myPlayer.CleanUp()
-	for i := 0; i < 3; i++ {
-		otherPlayer[i].CleanUp()
+	http.HandleFunc("/", sayHelloName)
+	err := http.ListenAndServe(":9091", nil)
+	if err != nil {
+		log.Fatal("ListenAndServe", err)
 	}
-
-	fmt.Println("洗牌完成")
-	fmt.Println("起牌:========================================================")
-
-	for i := 0; i < 13; i++ {
-
-		tPaiEx := cm.GetAPai()
-
-		fmt.Println(tPaiEx)
-		myPlayer.AddPai(tPaiEx.NewPai.mType, tPaiEx.NewPai.mValue)
-		for j := 0; j < 3; j++ {
-			tPai2 := cm.GetAPai()
-			// otherPlayer[j].AddPai(tPai2.mNewPai.mType, tPai2.mNewPai.mValue)
-			fmt.Println(tPai2)
-		}
-
-	}
-
-	// bFinish := false
-	// bTing := false
-	// for !bFinish {
-
-	// }
-
 }
