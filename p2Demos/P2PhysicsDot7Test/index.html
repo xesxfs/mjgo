@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<script egret="lib" src="libs/modules/physics/physics.js" src-release="libs/modules/physics/physics.min.js"></script>
+	<script egret="lib" src="libs/modules/dragonBones/dragonBones.js" src-release="libs/modules/dragonBones/dragonBones.min.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件-->
+    <!--game_files_start-->
+	<script egret="game" src="bin-debug/examples/Examples_keyManager.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_addBasicBody.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_addBasicBody0.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_addBasicBody2.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_addBasicBody3.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_angleJoint.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_applyForce.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_applyImpulse.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_armatureToRagdoll.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_bodyEmitEvt.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_box.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_breakable.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_buoyancy.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_buoyancy2.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_capsule.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_carSuspension.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_carWheelFrictionTest.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_carWithAnglarForce.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_carWithMotor.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_ccd.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_character.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_collisionGroupMask.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_compound.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_concave.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_convex.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBike.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBike2.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBikeEncapsulated.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBikeEncapsulated2.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBikeKeyCtrl.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_dirtBikeTextured.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_distanceContraint.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_fixedRotation.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_fixedXY.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_forceField.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_frictions.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_frictionsCar.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_gearConstraint.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_heightField.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_interplation.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_islandSolver.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_addBasicBody0_1.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_kinematic.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_lock.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_lockChangingLocalPt.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_multiWheelsVehicle.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_p2MouseJt.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_piston.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_pivotJoint.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_prismaticAndSpring.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_prismaticBasic.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_ragdoll.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_raycast.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_rayReflect.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_rayRefract.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_restitution.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_rotationSpring.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_rotationSpringDamping.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_sensor.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_sensor2.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_simpleSceneEncap.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_surfaceVelocity_tractor_capsual.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_surfaceVelocity_tractor.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_surfaceVelocity.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_suspension.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_topdownVehicle.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_toWorldFrame.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_worldImpact.js"></script>
+	<script egret="game" src="bin-debug/examples/Examples_worldImpact2.js"></script>
+	<script egret="game" src="bin-debug/examples/Template_p2DebugDraw.js"></script>
+	<script egret="game" src="bin-debug/jbP2/DispUtil.js"></script>
+	<script egret="game" src="bin-debug/jbP2/KeyManager.js"></script>
+	<script egret="game" src="bin-debug/jbP2/MouseJointHelper.js"></script>
+	<script egret="game" src="bin-debug/jbP2/P2MouseJointHelper.js"></script>
+	<script egret="game" src="bin-debug/jbP2/P2SpaceUtil.js"></script>
+	<script egret="game" src="bin-debug/jbP2/SimpleP2Scene.js"></script>
+	<script egret="game" src="bin-debug/jbP2/VehicleSteeringCtrl.js"></script>
+	<script egret="game" src="bin-debug/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/p2DebugDraw.js"></script>
+	<script egret="game" src="bin-debug/p2Objs/DirtBike.js"></script>
+	<script egret="game" src="bin-debug/p2Objs/DirtBike2.js"></script>
+	<script egret="game" src="bin-debug/p2Objs/DirtBikeTextured.js"></script>
+	<!--game_files_end-->
+</head>
+<body>
+
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="landscape"
+         data-scale-mode="showAll"
+         data-resolution-mode="retina"
+         data-frame-rate="30"
+         data-content-width="800"
+         data-content-height="480"
+         data-show-paint-rect="false"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-log-filter="" data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9">
+    </div>
+    <script>
+        egret.runEgret();
+    </script>
+</body>
+</html>

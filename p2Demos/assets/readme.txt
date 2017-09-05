@@ -1,0 +1,2 @@
+MyMotorBike.fla是导出摩托车设计文档，Ctrl+Enter会输出若干信息，此信息会在Examples_dirtBikeTextured等使用
+BoneAniAsset是机器人动画的DragonBones工程
